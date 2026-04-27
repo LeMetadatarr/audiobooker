@@ -20,6 +20,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README rewritten to document the current scraper API
 - `LoyalBooks.search_by_narrator` now returns an empty iterator (consistent with generator protocol)
 
+### Removed
+- `StoryNory` scraper — site migrated to SvelteKit SPA, HTML scraping no longer works
+- `ThoughtAudio` scraper — site blocks automated access (403/SSL failure)
+- `SharedAudioBooks` scraper — site returns HTTP 500
+
 ## [0.2.6]  - 2019-12-12
 
 ### Changed

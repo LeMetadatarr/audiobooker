@@ -4,18 +4,15 @@ Audiobook scraper — search and iterate audiobooks from multiple free sources.
 
 ## Supported Sources
 
-| Class | Site | Search | Iterate All | Status |
-|---|---|---|---|---|
-| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) | ✅ working |
-| `LoyalBooks` | loyalbooks.com | title, author | yes | ✅ working |
-| `GoldenAudioBooks` | goldenaudiobook.co | — | yes | ✅ working |
-| `AudioAnarchy` | audioanarchy.org | — | yes | ✅ working |
-| `DarkerProjects` | darkerprojects.com | — | yes | ✅ working |
-| `HPTalesAudioBooks` | hpaudiotales.com | — | yes | ✅ working |
-| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes | ✅ working |
-| `StoryNory` | storynory.com | query | yes | ⚠️ broken (site migrated to SPA) |
-| `ThoughtAudio` | thoughtaudio.com | — | yes | ⚠️ broken (site returns 403/SSL error) |
-| `SharedAudioBooks` | sharedaudiobooks.com | — | yes | ⚠️ broken (site returns 500) |
+| Class | Site | Search | Iterate All |
+|---|---|---|---|
+| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) |
+| `LoyalBooks` | loyalbooks.com | title, author | yes |
+| `GoldenAudioBooks` | goldenaudiobook.co | — | yes |
+| `AudioAnarchy` | audioanarchy.org | — | yes |
+| `DarkerProjects` | darkerprojects.com | — | yes |
+| `HPTalesAudioBooks` | hpaudiotales.com | — | yes |
+| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes |
 
 ## Install
 
@@ -91,29 +88,18 @@ for book in lb.iterate_all():
     print(book.title)
 ```
 
-### StoryNory
-
-```python
-from audiobooker.scrappers.storynory import StoryNory
-
-for book in StoryNory().search("snow white"):
-    print(book.title, book.streams)
-```
-
 ### Other scrapers
 
 All other scrapers support `iterate_all()` to walk their full catalogue:
 
 ```python
-from audiobooker.scrappers.thoughtaudio import ThoughtAudio
 from audiobooker.scrappers.audioanarchy import AudioAnarchy
 from audiobooker.scrappers.darkerprojects import DarkerProjects
 from audiobooker.scrappers.goldenaudiobooks import GoldenAudioBooks
-from audiobooker.scrappers.sharedaudiobooks import SharedAudioBooks
 from audiobooker.scrappers.hpaudiotales import HPTalesAudioBooks
 from audiobooker.scrappers.stephenkingaudiobooks import StephenKingAudioBooks
 
-for book in ThoughtAudio().iterate_all():
+for book in AudioAnarchy().iterate_all():
     print(book.title, book.authors, book.streams)
 ```
 
