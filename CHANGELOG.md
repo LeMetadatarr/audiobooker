@@ -24,6 +24,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `StoryNory` scraper — site migrated to SvelteKit SPA, HTML scraping no longer works
 - `ThoughtAudio` scraper — site blocks automated access (403/SSL failure)
 - `SharedAudioBooks` scraper — site returns HTTP 500
+- `setup.py` — replaced by `pyproject.toml`
+- Unused `base_url`/`authors_url` class variables from Librivox, GoldenAudioBooks, StephenKingAudioBooks, AudioAnarchy
+- Unused exception imports from `scrappers/__init__.py`
+
+### Added
+- `audiobooker/version.py` with standard version block
+- 10 standard GitHub Actions workflows via `OpenVoiceOS/gh-automations@dev`
+- `test_normalize_name` and `test_calc_runtime` unit tests (16 tests total)
+- Error handling section in README
+- `[tool.pytest.ini_options]` testpaths in pyproject.toml
 
 ## [0.2.6]  - 2019-12-12
 

@@ -4,6 +4,8 @@ from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import get_soup
 
+_BASE = "https://www.audioanarchy.org"
+
 
 @dataclass
 class AudioAnarchyAudioBook:
@@ -11,47 +13,46 @@ class AudioAnarchyAudioBook:
     image: str = ""
 
     def parse_page(self) -> AudioBook:
-        base_url = "http://www.audioanarchy.org/"
         soup = get_soup(self.url)
+        if not soup:
+            return None
+
         streams = []
-        for url in soup.find_all("a"):
-            try:
-                if not url["href"].endswith(".mp3"):
-                    continue
-                streams.append(base_url + url["href"])
-            except:
-                continue
-        title = soup.find("title").text.split(" - ")[-1].split(" :: ")[-1]
+        for a in soup.find_all("a"):
+            href = a.get("href", "")
+            if href.endswith(".mp3"):
+                streams.append(_BASE + "/" + href.lstrip("/"))
+
+        title_tag = soup.find("title")
+        title = title_tag.text.split(" - ")[-1].split(" :: ")[-1] if title_tag else ""
+
         return AudioBook(
             title=title,
             streams=streams,
             image=self.image,
             tags=["Anarchy"],
             authors=[BookAuthor(last_name="Audio Anarchy")],
-            language="en"
+            language="en",
         )
 
 
 class AudioAnarchy(AudioBookSource):
-    base_url = "http://www.audioanarchy.org"
 
     def iterate_all(self):
-        soup = get_soup(self.base_url)
+        soup = get_soup(_BASE)
+        if not soup:
+            return
         for entry in soup.find_all("div", {"id": "album"}):
             try:
                 a = entry.find("a")
                 img = entry.find("img")
-                yield AudioAnarchyAudioBook(
-                    url="https://www.audioanarchy.org/" + a["href"],
-                    image="https://www.audioanarchy.org/" + img["src"]
+                if not a:
+                    continue
+                book = AudioAnarchyAudioBook(
+                    url=_BASE + "/" + a["href"].lstrip("/"),
+                    image=_BASE + "/" + img["src"].lstrip("/") if img else "",
                 ).parse_page()
-            except:
+                if book:
+                    yield book
+            except Exception:
                 continue
-
-
-if __name__ == "__main__":
-    from pprint import pprint
-
-    scraper = AudioAnarchy()
-    for book in scraper.iterate_all():
-        pprint(book)

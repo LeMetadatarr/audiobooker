@@ -1,10 +1,8 @@
 import abc
 from requests_cache import CachedSession
 from datetime import timedelta
-from audiobooker.exceptions import UnknownAuthorIdException, \
-    UnknownBookIdException, ScrappingError, UnknownAuthorException, UnknownBookException
 from audiobooker.utils import random_user_agent
-from typing import List, Iterable
+from typing import Iterable
 from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 
 
@@ -14,7 +12,6 @@ class AudioBookSource:
     session.headers.update({"User-Agent": random_user_agent()})
 
     def search(self, query) -> Iterable[AudioBook]:
-        # TODO fuzzy match instead
         for b in self.search_by_title(query):
             yield b
         for b in self.search_by_author(query):
@@ -24,9 +21,8 @@ class AudioBookSource:
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
-            if b.narrator:
-                if b.narrator.last_name.lower() in query.lower():
-                    yield b
+            if b.narrator and b.narrator.last_name.lower() in query.lower():
+                yield b
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():

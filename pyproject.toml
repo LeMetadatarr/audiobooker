@@ -29,3 +29,6 @@ include = ["audiobooker*"]
 
 [tool.setuptools.dynamic]
 version = {attr = "audiobooker.version.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["test"]

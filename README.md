@@ -4,15 +4,15 @@ Audiobook scraper — search and iterate audiobooks from multiple free sources.
 
 ## Supported Sources
 
-| Class | Site | Search | Iterate All |
+| Class | Site | Native Search | Iterate All |
 |---|---|---|---|
-| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) |
-| `LoyalBooks` | loyalbooks.com | title, author | yes |
-| `GoldenAudioBooks` | goldenaudiobook.co | — | yes |
-| `AudioAnarchy` | audioanarchy.org | — | yes |
-| `DarkerProjects` | darkerprojects.com | — | yes |
-| `HPTalesAudioBooks` | hpaudiotales.com | — | yes |
-| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes |
+| `Librivox` | librivox.org | title, author, narrator, tag (via API) | yes (paginated) |
+| `LoyalBooks` | loyalbooks.com | title, author (via sitemap) | yes |
+| `StephenKingAudioBooks` | stephenkingaudiobooks.com | full-text (via site search) | yes |
+| `GoldenAudioBooks` | goldenaudiobook.co | title, author, tag (linear scan) | yes |
+| `AudioAnarchy` | audioanarchy.org | title, author, tag (linear scan) | yes |
+| `DarkerProjects` | darkerprojects.com | title, author, tag (linear scan) | yes |
+| `HPTalesAudioBooks` | hpaudiotales.com | title, author, tag (linear scan) | yes |
 
 ## Install
 
@@ -107,6 +107,12 @@ for book in AudioAnarchy().iterate_all():
 
 HTTP responses are cached in memory for 1 hour by default (via `requests-cache`).
 The shared session lives on `AudioBookSource.session` and can be replaced if needed.
+
+## Error handling
+
+Network failures and malformed pages are swallowed per-item — a single bad page
+won't abort a full `iterate_all()` run. If a source site is down or has changed
+its HTML structure, that scraper will silently yield nothing.
 
 ## License
 
