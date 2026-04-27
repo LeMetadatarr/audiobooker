@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audiobooker"
-version = "0.5.0"
-description = "Audiobook scraper — search and stream from Librivox, LoyalBooks, StoryNory, and more"
+dynamic = ["version"]
+description = "Audiobook scraper — search and stream from Librivox, LoyalBooks, and more"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "jarbasAI", email = "jarbasai@mailfence.com" }]
@@ -26,3 +26,6 @@ Repository = "https://github.com/OpenJarbas/audiobooker"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["audiobooker*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "audiobooker.version.__version__"}
