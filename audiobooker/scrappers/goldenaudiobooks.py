@@ -78,6 +78,6 @@ class GoldenAudioBooks(AudioBookSource):
                 try:
                     book = GoldenAudioBooksAudioBook(url=str(url)).parse_page()
                     if book:
-                        yield book
+                        yield self._tag(book)
                 except Exception:
                     continue

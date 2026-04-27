@@ -94,13 +94,16 @@ class StephenKingAudioBooks(AudioBookSource):
                     yield from cls._parse_page(url=a["href"], limit=limit - 1, **params)
 
     def search(self, query) -> Iterable[AudioBook]:
-        return self._parse_page(params={"s": query})
+        for b in self._parse_page(params={"s": query}):
+            yield self._tag(b)
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
-        return self._parse_page(params={"s": query})
+        for b in self._parse_page(params={"s": query}):
+            yield self._tag(b)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
-        return self._parse_page(params={"s": query})
+        for b in self._parse_page(params={"s": query}):
+            yield self._tag(b)
 
     def iterate_all(self) -> Iterable[AudioBook]:
         sm = SiteMapParser(_SITEMAP)
@@ -108,6 +111,6 @@ class StephenKingAudioBooks(AudioBookSource):
             try:
                 book = StephenKingAudioBook(url=str(url)).parse_page()
                 if book:
-                    yield book
+                    yield self._tag(book)
             except Exception:
                 continue

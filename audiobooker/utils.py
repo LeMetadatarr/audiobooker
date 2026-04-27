@@ -1,5 +1,6 @@
 import random
 import re
+from difflib import SequenceMatcher
 
 from bs4 import BeautifulSoup
 
@@ -90,3 +91,22 @@ def normalize_name(name):
         return name.split(" ", 1)
     else:
         return name, ""
+
+
+def fuzzy_match(query: str, text: str, threshold: float = 0.6) -> bool:
+    """Return True if query fuzzy-matches text above threshold."""
+    q, t = query.lower(), text.lower()
+    if q in t:
+        return True
+    ratio = SequenceMatcher(None, q, t).ratio()
+    return ratio >= threshold
+
+
+def check_url_availability(url: str, timeout: int = 5) -> bool:
+    """Return True if a HEAD request to url returns 2xx or 3xx."""
+    from audiobooker.scrappers import AudioBookSource
+    try:
+        resp = AudioBookSource.session.head(url, timeout=timeout, allow_redirects=True)
+        return resp.status_code < 400
+    except Exception:
+        return False

@@ -49,7 +49,8 @@ def _worker(source: AudioBookSource, method: str, query: Optional[str],
 def _parallel_search(method: str, query: Optional[str],
                      sources: Optional[List[AudioBookSource]],
                      max_per_source: int,
-                     timeout: Optional[float]) -> Iterable[AudioBook]:
+                     timeout: Optional[float],
+                     deduplicate: bool = True) -> Iterable[AudioBook]:
     if sources is None:
         sources = [cls() for cls in ALL_SOURCES]
 
@@ -68,6 +69,7 @@ def _parallel_search(method: str, query: Optional[str],
     import time
     deadline = time.monotonic() + timeout if timeout is not None else None
     done = 0
+    seen: set = set()
 
     while done < len(sources):
         if deadline is not None:
@@ -86,13 +88,19 @@ def _parallel_search(method: str, query: Optional[str],
         if item is _SENTINEL:
             done += 1
         else:
+            if deduplicate:
+                key = hash(item)
+                if key in seen:
+                    continue
+                seen.add(key)
             yield item
 
 
 def search(query: str,
            sources: Optional[List[AudioBookSource]] = None,
            max_per_source: int = 10,
-           timeout: Optional[float] = 30.0) -> Iterable[AudioBook]:
+           timeout: Optional[float] = 30.0,
+           deduplicate: bool = True) -> Iterable[AudioBook]:
     """Search all sources in parallel, yielding results as they arrive.
 
     Args:
@@ -100,37 +108,42 @@ def search(query: str,
         sources: Instantiated source objects. Defaults to all sources.
         max_per_source: Max results per source (0 = unlimited).
         timeout: Seconds before cancelling slow sources (default 30s).
+        deduplicate: Skip books with identical title+author seen from another source.
     """
-    yield from _parallel_search("search", query, sources, max_per_source, timeout)
+    yield from _parallel_search("search", query, sources, max_per_source, timeout, deduplicate)
 
 
 def search_by_title(query: str,
                     sources: Optional[List[AudioBookSource]] = None,
                     max_per_source: int = 10,
-                    timeout: Optional[float] = 30.0) -> Iterable[AudioBook]:
+                    timeout: Optional[float] = 30.0,
+                    deduplicate: bool = True) -> Iterable[AudioBook]:
     """Search by title across all sources in parallel."""
-    yield from _parallel_search("search_by_title", query, sources, max_per_source, timeout)
+    yield from _parallel_search("search_by_title", query, sources, max_per_source, timeout, deduplicate)
 
 
 def search_by_author(query: str,
                      sources: Optional[List[AudioBookSource]] = None,
                      max_per_source: int = 10,
-                     timeout: Optional[float] = 30.0) -> Iterable[AudioBook]:
+                     timeout: Optional[float] = 30.0,
+                     deduplicate: bool = True) -> Iterable[AudioBook]:
     """Search by author across all sources in parallel."""
-    yield from _parallel_search("search_by_author", query, sources, max_per_source, timeout)
+    yield from _parallel_search("search_by_author", query, sources, max_per_source, timeout, deduplicate)
 
 
 def search_by_narrator(query: str,
                        sources: Optional[List[AudioBookSource]] = None,
                        max_per_source: int = 10,
-                       timeout: Optional[float] = 30.0) -> Iterable[AudioBook]:
+                       timeout: Optional[float] = 30.0,
+                       deduplicate: bool = True) -> Iterable[AudioBook]:
     """Search by narrator across all sources in parallel."""
-    yield from _parallel_search("search_by_narrator", query, sources, max_per_source, timeout)
+    yield from _parallel_search("search_by_narrator", query, sources, max_per_source, timeout, deduplicate)
 
 
 def search_by_tag(query: str,
                   sources: Optional[List[AudioBookSource]] = None,
                   max_per_source: int = 10,
-                  timeout: Optional[float] = 30.0) -> Iterable[AudioBook]:
+                  timeout: Optional[float] = 30.0,
+                  deduplicate: bool = True) -> Iterable[AudioBook]:
     """Search by tag across all sources in parallel."""
-    yield from _parallel_search("search_by_tag", query, sources, max_per_source, timeout)
+    yield from _parallel_search("search_by_tag", query, sources, max_per_source, timeout, deduplicate)

@@ -28,26 +28,31 @@ class Librivox(AudioBookSource):
     def iterate_all(self, offset=0, max_offset=100000) -> Iterable[AudioBook]:
         data = _api_get({"offset": offset})
         for k in data.get("books", []):
-            yield from self._parse_res(k)
+            for b in self._parse_res(k):
+                yield self._tag(b)
         if offset < max_offset:
             yield from self.iterate_all(offset + 50, max_offset)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"author": query}).get("books", []):
-            yield from self._parse_res(k)
+            for b in self._parse_res(k):
+                yield self._tag(b)
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"reader": query}).get("books", []):
-            yield from self._parse_res(k)
+            for b in self._parse_res(k):
+                yield self._tag(b)
 
     def search_by_tag(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"tag": query}).get("books", []):
-            yield from self._parse_res(k)
+            for b in self._parse_res(k):
+                yield self._tag(b)
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
         # Librivox's title= param returns 404; use the generic search= param
         for k in _api_get({"search": query}).get("books", []):
-            yield from self._parse_res(k)
+            for b in self._parse_res(k):
+                yield self._tag(b)
 
     def _parse_res(self, k) -> Iterable[AudioBook]:
         rss = feedparser.parse(k["url_rss"],

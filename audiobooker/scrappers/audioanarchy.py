@@ -68,5 +68,11 @@ def _scrape_section(section_url, tags):
 class AudioAnarchy(AudioBookSource):
 
     def iterate_all(self):
-        yield from _scrape_section(_BASE, ["Anarchy"])
-        yield from _scrape_section(_BASE + "/radio/", ["Anarchy", "Radio Drama"])
+        for b in _scrape_section(_BASE, ["Anarchy"]):
+            yield self._tag(b)
+        for b in _scrape_section(_BASE + "/radio/", ["Anarchy", "Radio Drama"]):
+            yield self._tag(b)
+
+    def iterate_popular(self):
+        # Front page listing is already the curated catalogue
+        return self.iterate_all()

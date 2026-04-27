@@ -56,6 +56,6 @@ class DarkerProjects(AudioBookSource):
             try:
                 book = DarkerProjectsAudioBook(url=str(url)).parse_page()
                 if book:
-                    yield book
+                    yield self._tag(book)
             except Exception:
                 continue

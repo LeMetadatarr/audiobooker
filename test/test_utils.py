@@ -1,6 +1,7 @@
 import unittest
 
-from audiobooker.utils import extract_year, extractor_narrator, normalize_name
+from audiobooker.utils import extract_year, extractor_narrator, normalize_name, fuzzy_match
+from audiobooker.base import AudioBook, BookAuthor, normalize_language
 from audiobooker.scrappers.loyalbooks import calc_runtime
 
 
@@ -88,6 +89,60 @@ class TestCalcRuntime(unittest.TestCase):
 
     def test_zero(self):
         self.assertEqual(calc_runtime({"itunes_duration": "0:00"}), 0)
+
+
+class TestFuzzyMatch(unittest.TestCase):
+    def test_exact_substring(self):
+        self.assertTrue(fuzzy_match("sherlock", "The Adventures of Sherlock Holmes"))
+
+    def test_close_spelling(self):
+        self.assertTrue(fuzzy_match("lovcraft", "lovecraft"))
+
+    def test_no_match(self):
+        self.assertFalse(fuzzy_match("xyz123", "The Great Gatsby"))
+
+    def test_case_insensitive(self):
+        self.assertTrue(fuzzy_match("HORROR", "horror"))
+
+
+class TestNormalizeLanguage(unittest.TestCase):
+    def test_full_english(self):
+        self.assertEqual(normalize_language("English"), "en")
+
+    def test_already_code(self):
+        self.assertEqual(normalize_language("fr"), "fr")
+
+    def test_mixed_case(self):
+        self.assertEqual(normalize_language("FRENCH"), "fr")
+
+    def test_empty(self):
+        self.assertEqual(normalize_language(""), "")
+
+
+class TestAudioBookHash(unittest.TestCase):
+    def test_same_book_equals(self):
+        a = AudioBook(title="Frankenstein", authors=[BookAuthor(first_name="Mary", last_name="Shelley")])
+        b = AudioBook(title="Frankenstein", authors=[BookAuthor(first_name="Mary", last_name="Shelley")])
+        self.assertEqual(a, b)
+        self.assertEqual(hash(a), hash(b))
+
+    def test_different_books_not_equal(self):
+        a = AudioBook(title="Frankenstein", authors=[BookAuthor(last_name="Shelley")])
+        b = AudioBook(title="Dracula", authors=[BookAuthor(last_name="Stoker")])
+        self.assertNotEqual(a, b)
+
+    def test_dedup_in_set(self):
+        a = AudioBook(title="Dracula", authors=[BookAuthor(last_name="Stoker")])
+        b = AudioBook(title="Dracula", authors=[BookAuthor(last_name="Stoker")])
+        self.assertEqual(len({a, b}), 1)
+
+    def test_source_field(self):
+        book = AudioBook(title="Test", source="Librivox")
+        self.assertEqual(book.source, "Librivox")
+
+    def test_language_normalized(self):
+        book = AudioBook(title="Test", language="English")
+        self.assertEqual(book.language, "en")
 
 
 if __name__ == "__main__":
