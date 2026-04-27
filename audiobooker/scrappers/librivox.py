@@ -7,6 +7,15 @@ from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import normalize_name
 
 
+def _parse_playtime(playtime: str) -> int:
+    parts = [int(p) for p in playtime.split(":")]
+    if len(parts) == 1:
+        return parts[0]
+    elif len(parts) == 2:
+        return parts[0] * 60 + parts[1]
+    return parts[0] * 3600 + parts[1] * 60 + parts[2]
+
+
 class Librivox(AudioBookSource):
     base_url = "https://librivox.org/api/feed/audiobooks/?%s&format=json"
     authors_url = "https://librivox.org/api/feed/authors/?%s&format=json"
@@ -103,7 +112,7 @@ class Librivox(AudioBookSource):
                 title=k["title"] + " | " + s["title"],
                 description=k["description"],
                 year=int(k['copyright_year']),
-                runtime=s['playtime'],
+                runtime=_parse_playtime(s['playtime']),
                 language=k["language"]  # TODO - convert to lang code
             )
 

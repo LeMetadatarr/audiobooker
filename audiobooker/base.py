@@ -1,4 +1,4 @@
-from typing import List, Union
+from typing import List
 from dataclasses import dataclass, field
 
 
@@ -25,6 +25,4 @@ class AudioBook:
     streams: List[str] = field(default_factory=list)
     narrator: AudiobookNarrator = None
     year: int = 0
-    runtime: Union[int, str] = 0
-
-
+    runtime: int = 0
