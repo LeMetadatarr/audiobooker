@@ -1,39 +1,31 @@
-"""Search a query across sources that have native search support.
+"""Unified parallel search across all sources using audiobooker.search.
 
-Sources backed by a real API or site search (Librivox, LoyalBooks,
-StephenKingAudioBooks) return targeted results quickly.
-
-Other sources (GoldenAudioBooks, AudioAnarchy, DarkerProjects,
-HPTalesAudioBooks) only support linear iteration — use their
-iterate_all() directly rather than search() for those.
+Sources with native search (Librivox, LoyalBooks, StephenKingAudioBooks)
+return results quickly. Linear-scan sources (GoldenAudioBooks, AudioAnarchy,
+DarkerProjects, HPTalesAudioBooks) will be cut off by the timeout if the
+query doesn't appear in their early catalogue pages.
 """
+import time
+from audiobooker import search, search_by_author
 from audiobooker.scrappers.librivox import Librivox
 from audiobooker.scrappers.loyalbooks import LoyalBooks
 from audiobooker.scrappers.stephenkingaudiobooks import StephenKingAudioBooks
 
-QUERY = "Lovecraft"
+# --- fast sources only (native API/site search) ---
+FAST_SOURCES = [Librivox(), LoyalBooks(), StephenKingAudioBooks()]
 
-SOURCES = [
-    ("Librivox",              Librivox()),
-    ("LoyalBooks",            LoyalBooks()),
-    ("StephenKingAudioBooks", StephenKingAudioBooks()),
-]
+print("=== search('Lovecraft') — all sources, 15s timeout ===\n")
+t0 = time.time()
+for book in search("Lovecraft", max_per_source=3, timeout=15):
+    authors = ", ".join(f"{a.first_name} {a.last_name}".strip() for a in book.authors)
+    print(f"  {book.title!r}")
+    print(f"    author={authors or '?'}  streams={len(book.streams)}  runtime={book.runtime}s")
+print(f"\nDone in {time.time() - t0:.1f}s\n")
 
-for name, source in SOURCES:
-    results = []
-    try:
-        for book in source.search(QUERY):
-            results.append(book)
-            if len(results) >= 3:
-                break
-    except Exception as e:
-        print(f"[{name}] ERROR: {e}")
-        continue
-
-    if results:
-        print(f"\n[{name}] {len(results)} result(s) for '{QUERY}':")
-        for book in results:
-            authors = ", ".join(f"{a.first_name} {a.last_name}".strip() for a in book.authors)
-            print(f"  - {book.title!r}  author={authors or '?'}  streams={len(book.streams)}")
-    else:
-        print(f"\n[{name}] no results for '{QUERY}'")
+# --- targeted search across fast sources ---
+print("=== search_by_author('Lovecraft') — fast sources only ===\n")
+t0 = time.time()
+for book in search_by_author("Lovecraft", sources=FAST_SOURCES, max_per_source=3, timeout=15):
+    authors = ", ".join(f"{a.first_name} {a.last_name}".strip() for a in book.authors)
+    print(f"  {book.title!r}  author={authors or '?'}")
+print(f"\nDone in {time.time() - t0:.1f}s")

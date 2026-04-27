@@ -96,6 +96,12 @@ class StephenKingAudioBooks(AudioBookSource):
     def search(self, query) -> Iterable[AudioBook]:
         return self._parse_page(params={"s": query})
 
+    def search_by_title(self, query) -> Iterable[AudioBook]:
+        return self._parse_page(params={"s": query})
+
+    def search_by_author(self, query) -> Iterable[AudioBook]:
+        return self._parse_page(params={"s": query})
+
     def iterate_all(self) -> Iterable[AudioBook]:
         sm = SiteMapParser(_SITEMAP)
         for url in sm.get_urls():
