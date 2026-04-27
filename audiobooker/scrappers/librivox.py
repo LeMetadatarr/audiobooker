@@ -91,7 +91,7 @@ class Librivox(AudioBookSource):
 
     def _parse_res(self, k):
         rss = feedparser.parse(k['url_rss'], agent=AudioBookSource.session.headers.get("User-Agent"),
-                               request_headers={"Connection": "close"}, timeout=10)
+                               request_headers={"Connection": "close"})
         rss_streams = [stream['media_content'][0]["url"]
                        for stream in rss["entries"]
                        if stream.get('media_content')]
