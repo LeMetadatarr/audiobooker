@@ -1,9 +1,5 @@
-from typing import List
+from typing import List, Union
 from dataclasses import dataclass, field
-from audiobooker.exceptions import UnknownAuthorIdException, \
-    UnknownBookIdException, UnknownDurationError, ScrappingError, \
-    UnknownGenreIdException, UnknownAuthorException, UnknownBookException, \
-    UnknownGenreException, ParseErrorException
 
 
 @dataclass
@@ -29,6 +25,6 @@ class AudioBook:
     streams: List[str] = field(default_factory=list)
     narrator: AudiobookNarrator = None
     year: int = 0
-    runtime: int = 0
+    runtime: Union[int, str] = 0
 
 

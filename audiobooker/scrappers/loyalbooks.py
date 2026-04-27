@@ -14,7 +14,7 @@ def calc_runtime(rss_data):
         return int(runtime[1]) + (int(runtime[0]) * 60)
     elif len(runtime) == 3:  # hours : minutes : seconds
         return int(runtime[2]) + (int(runtime[1]) * 60) + \
-            (int(runtime[0]) * 120)
+            (int(runtime[0]) * 3600)
     return 0
 
 
@@ -55,7 +55,7 @@ class LoyalBooks(AudioBookSource):
                 yield from from_rss(url + "/feed")
 
     def search_by_narrator(self, query):
-        return []  # narrator info unavailable
+        return iter([])  # narrator info unavailable
 
     def search_by_title(self, query):
         return self.search(query)

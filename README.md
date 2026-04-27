@@ -1,10 +1,21 @@
 # AudioBooker
 
-AudioBook scrapper
+Audiobook scraper — search and iterate audiobooks from multiple free sources.
 
-Currently supports [Librivox](https://librivox.org/) and [LoyalBooks](http://www.loyalbooks.com) 
+## Supported Sources
 
-Will be expanded with more sources over time, suggestions and Pull Requests welcome!
+| Class | Site | Search | Iterate All |
+|---|---|---|---|
+| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) |
+| `LoyalBooks` | loyalbooks.com | title, author | yes |
+| `StoryNory` | storynory.com | query | yes |
+| `ThoughtAudio` | thoughtaudio.com | — | yes |
+| `GoldenAudioBooks` | goldenaudiobook.co | — | yes |
+| `SharedAudioBooks` | sharedaudiobooks.com | — | yes |
+| `AudioAnarchy` | audioanarchy.org | — | yes |
+| `DarkerProjects` | darkerprojects.com | — | yes |
+| `HPTalesAudioBooks` | hpaudiotales.com | — | yes |
+| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes |
 
 ## Install
 
@@ -14,42 +25,103 @@ pip install audiobooker
 
 ## Usage
 
-search librivox
+All scrapers share the same interface via `AudioBookSource`. Methods return generators of `AudioBook` dataclass instances.
+
+### Common interface
+
+```python
+scraper.search(query)               # search by title, author, and tag
+scraper.search_by_title(query)
+scraper.search_by_author(query)
+scraper.search_by_tag(query)
+scraper.search_by_narrator(query)
+scraper.iterate_all()               # yield every book from the source
+scraper.iterate_popular()           # defaults to iterate_all()
+scraper.iterate_by_author(author)
+scraper.iterate_by_tag(tag)
+```
+
+### AudioBook fields
+
+```python
+@dataclass
+class AudioBook:
+    title: str
+    description: str
+    image: str          # cover art URL
+    language: str
+    authors: List[BookAuthor]
+    tags: List[str]
+    streams: List[str]  # direct audio URLs (mp3 / rss feed entries)
+    narrator: AudiobookNarrator
+    year: int
+    runtime: int        # seconds (where available)
+```
+
+### Librivox
+
+Librivox has a public API — searches are fast and targeted.
 
 ```python
 from audiobooker.scrappers.librivox import Librivox
 
-author = Librivox.get_author("3534")
-print(author.last_name)
+lv = Librivox()
 
-book = Librivox.get_audiobook("127")
-print(book.title)
+for book in lv.search_by_title("Art of War"):
+    print(book.title, book.streams)
 
-books = Librivox.get_all_audiobooks(limit=50)    
+for book in lv.search_by_author("Lovecraft"):
+    print(book.title, book.authors)
 
-book = Librivox.search_audiobooks(title="Art of War")[0]
-
-# interact with a book object
-print(book.title)
-print(book.description)
-print(book.authors)
-print(book.url)
-print(book.streams)
-print(book.rss_data)
-book.play()
+for book in lv.search_by_narrator("LibriVox"):
+    print(book.title, book.narrator)
 ```
 
-search loyalbooks
+### LoyalBooks
+
 ```python
 from audiobooker.scrappers.loyalbooks import LoyalBooks
 
-book = LoyalBooks.get_audiobook('Short-Science-Fiction-Collection-1')
-book.play()
+lb = LoyalBooks()
 
-scraper = LoyalBooks()
-for book in scraper.scrap_by_tag("Science fiction"):
-    print(book.as_json)
-    
-for book in LoyalBooks.search_audiobooks(author="Lovecraft"):
-    print(book.as_json)
+for book in lb.search_by_author("lovecraft"):
+    print(book.title, book.streams)
+
+for book in lb.iterate_all():
+    print(book.title)
 ```
+
+### StoryNory
+
+```python
+from audiobooker.scrappers.storynory import StoryNory
+
+for book in StoryNory().search("snow white"):
+    print(book.title, book.streams)
+```
+
+### Other scrapers
+
+All other scrapers support `iterate_all()` to walk their full catalogue:
+
+```python
+from audiobooker.scrappers.thoughtaudio import ThoughtAudio
+from audiobooker.scrappers.audioanarchy import AudioAnarchy
+from audiobooker.scrappers.darkerprojects import DarkerProjects
+from audiobooker.scrappers.goldenaudiobooks import GoldenAudioBooks
+from audiobooker.scrappers.sharedaudiobooks import SharedAudioBooks
+from audiobooker.scrappers.hpaudiotales import HPTalesAudioBooks
+from audiobooker.scrappers.stephenkingaudiobooks import StephenKingAudioBooks
+
+for book in ThoughtAudio().iterate_all():
+    print(book.title, book.authors, book.streams)
+```
+
+## Caching
+
+HTTP responses are cached in memory for 1 hour by default (via `requests-cache`).
+The shared session lives on `AudioBookSource.session` and can be replaced if needed.
+
+## License
+
+MIT

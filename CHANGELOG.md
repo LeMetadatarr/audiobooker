@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- `loyalbooks.py`: hours-to-seconds multiplier was 120, now correctly 3600
+- `thoughtaudio.py`: fallback image was a Tag object instead of its `src` string
+- `base.py`: removed unused exception imports
+
+### Changed
+- Packaging migrated from `setup.py` to `pyproject.toml`
+- CI: updated to `actions/checkout@v4`, `actions/setup-python@v5`, Python 3.11
+- CI: replaced deprecated `setup.py bdist_wheel` with `python -m build`
+- CI: build tests now also run the unit test suite
+- README rewritten to document the current scraper API
+- `LoyalBooks.search_by_narrator` now returns an empty iterator (consistent with generator protocol)
+
 ## [0.2.6]  - 2019-12-12
 
 ### Changed

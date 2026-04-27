@@ -50,10 +50,8 @@ class ThoughtAudioAudioBook:
                 break
         if not img:
             pics = soup.find_all("img")
-            if len(pics) > 1:
-                img = pics[1]
-            else:
-                img = pics[0]
+            pic = pics[1] if len(pics) > 1 else pics[0] if pics else None
+            img = pic["src"] if pic else ""
         return AudioBook(
             title=title.strip(),
             streams=streams,
