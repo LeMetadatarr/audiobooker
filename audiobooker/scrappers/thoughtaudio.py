@@ -66,6 +66,7 @@ class ThoughtAudioAudioBook:
 
 
 class ThoughtAudio(AudioBookSource):
+    # NOTE: thoughtaudio.com blocks automated access (403 / SSL failure)
 
     def iterate_all(self):
         sm = SiteMapParser('http://thoughtaudio.com/wp-sitemap-posts-post-1.xml')  # reads /sitemap.xml

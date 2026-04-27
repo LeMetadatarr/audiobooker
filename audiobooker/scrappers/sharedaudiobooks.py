@@ -43,6 +43,7 @@ class SharedAudioBook:
 
 
 class SharedAudioBooks(AudioBookSource):
+    # NOTE: sharedaudiobooks.com returns HTTP 500 — site appears to be down
 
     @classmethod
     def iterate_all(cls, limit=-1, offset=0):

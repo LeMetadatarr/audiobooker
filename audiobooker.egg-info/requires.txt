@@ -1,0 +1,6 @@
+requests
+bs4
+feedparser
+rapidfuzz
+requests-cache
+site-map-parser

@@ -1,21 +1,44 @@
+Metadata-Version: 2.4
+Name: audiobooker
+Version: 0.5.0
+Summary: Audiobook scraper — search and stream from Librivox, LoyalBooks, StoryNory, and more
+Home-page: https://github.com/OpenJarbas/audiobooker
+Author: jarbasAI
+Author-email: jarbasAI <jarbasai@mailfence.com>
+License: MIT
+Project-URL: Homepage, https://github.com/OpenJarbas/audiobooker
+Project-URL: Repository, https://github.com/OpenJarbas/audiobooker
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: feedparser
+Requires-Dist: rapidfuzz
+Requires-Dist: requests-cache
+Requires-Dist: site-map-parser
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+
 # AudioBooker
 
 Audiobook scraper — search and iterate audiobooks from multiple free sources.
 
 ## Supported Sources
 
-| Class | Site | Search | Iterate All | Status |
-|---|---|---|---|---|
-| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) | ✅ working |
-| `LoyalBooks` | loyalbooks.com | title, author | yes | ✅ working |
-| `GoldenAudioBooks` | goldenaudiobook.co | — | yes | ✅ working |
-| `AudioAnarchy` | audioanarchy.org | — | yes | ✅ working |
-| `DarkerProjects` | darkerprojects.com | — | yes | ✅ working |
-| `HPTalesAudioBooks` | hpaudiotales.com | — | yes | ✅ working |
-| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes | ✅ working |
-| `StoryNory` | storynory.com | query | yes | ⚠️ broken (site migrated to SPA) |
-| `ThoughtAudio` | thoughtaudio.com | — | yes | ⚠️ broken (site returns 403/SSL error) |
-| `SharedAudioBooks` | sharedaudiobooks.com | — | yes | ⚠️ broken (site returns 500) |
+| Class | Site | Search | Iterate All |
+|---|---|---|---|
+| `Librivox` | librivox.org | title, author, narrator, tag | yes (paginated) |
+| `LoyalBooks` | loyalbooks.com | title, author | yes |
+| `StoryNory` | storynory.com | query | yes |
+| `ThoughtAudio` | thoughtaudio.com | — | yes |
+| `GoldenAudioBooks` | goldenaudiobook.co | — | yes |
+| `SharedAudioBooks` | sharedaudiobooks.com | — | yes |
+| `AudioAnarchy` | audioanarchy.org | — | yes |
+| `DarkerProjects` | darkerprojects.com | — | yes |
+| `HPTalesAudioBooks` | hpaudiotales.com | — | yes |
+| `StephenKingAudioBooks` | stephenkingaudiobooks.com | query | yes |
 
 ## Install
 

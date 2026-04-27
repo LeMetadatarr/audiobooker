@@ -54,6 +54,7 @@ class StoryNoryAudioBook:
 
 
 class StoryNory(AudioBookSource):
+    # NOTE: storynory.com migrated to a SvelteKit SPA — HTML scraping no longer works
 
     @classmethod
     def _parse_search_page(cls, url="https://www.storynory.com",

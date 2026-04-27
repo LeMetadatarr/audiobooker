@@ -48,7 +48,7 @@ class LoyalBooks(AudioBookSource):
         sm = SiteMapParser("https://www.loyalbooks.com/sitemap.xml")  # reads /sitemap.xml
         for url in sm.get_urls():
             url = str(url)
-            if not url.startswith("https://www.loyalbooks.com/book/"):
+            if "/book/" not in url:
                 continue
             t = url.split("/")[-1].replace("-", " ").lower()
             if query.lower() in t:
@@ -70,7 +70,7 @@ class LoyalBooks(AudioBookSource):
         sm = SiteMapParser("https://www.loyalbooks.com/sitemap.xml")  # reads /sitemap.xml
         for url in sm.get_urls():
             url = str(url)
-            if not url.startswith("https://www.loyalbooks.com/book/"):
+            if "/book/" not in url:
                 continue
             yield from from_rss(url + "/feed")
 
