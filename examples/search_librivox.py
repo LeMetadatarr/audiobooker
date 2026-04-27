@@ -1,23 +1,24 @@
 from pprint import pprint
 from audiobooker.scrappers.librivox import Librivox
 
-author = Librivox.get_author("3534")
-pprint(author.last_name)
+lv = Librivox()
 
-book = Librivox.get_audiobook("127")
-pprint(book.title)
+print("=== search by title ===")
+for book in lv.search_by_title("war of the worlds"):
+    pprint(book.title)
+    pprint(book.description)
+    pprint(book.authors)
+    pprint(book.streams)
+    pprint(book.runtime)
+    break
 
-scraper = Librivox()
-#pprint(scraper.get_all_audiobooks())
+print("=== search by author ===")
+for book in lv.search_by_author("Lovecraft"):
+    pprint(book.title)
+    pprint(book.authors)
+    break
 
-book = scraper.search_audiobooks(title="war of the worlds")[0]
-pprint(book.title)
-pprint(book.description)
-pprint(book.authors)
-pprint(book.url)
-pprint(book.streams)
-pprint(book.runtime)
-#pprint(book.rss_data)
-#book.play()
-a = ", ".join([au.first_name + au.last_name for au in book.authors])
-pprint(a)
+print("=== search by tag ===")
+for book in lv.search_by_tag("horror"):
+    pprint(book.title)
+    break

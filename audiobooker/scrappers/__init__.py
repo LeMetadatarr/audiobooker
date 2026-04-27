@@ -11,6 +11,7 @@ from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 class AudioBookSource:
     expire_after = timedelta(hours=1)
     session = CachedSession(backend='memory', expire_after=expire_after)
+    session.headers.update({"User-Agent": random_user_agent()})
 
     def search(self, query) -> Iterable[AudioBook]:
         # TODO fuzzy match instead

@@ -90,9 +90,11 @@ class Librivox(AudioBookSource):
                 yield book
 
     def _parse_res(self, k):
-        rss = feedparser.parse(k['url_rss'])
-        streams = [stream['media_content'][0]["url"]
-                   for stream in rss["entries"]]
+        rss = feedparser.parse(k['url_rss'], agent=AudioBookSource.session.headers.get("User-Agent"),
+                               request_headers={"Connection": "close"}, timeout=10)
+        rss_streams = [stream['media_content'][0]["url"]
+                       for stream in rss["entries"]
+                       if stream.get('media_content')]
 
         for idx, s in enumerate(k["sections"]):
 
@@ -102,8 +104,10 @@ class Librivox(AudioBookSource):
                 f, l = normalize_name(s["readers"][0]['display_name'])
                 narrator = AudiobookNarrator(last_name=l, first_name=f)
 
+            stream = rss_streams[idx] if idx < len(rss_streams) else s.get("listen_url", "")
+
             yield AudioBook(
-                streams=[streams[idx]],
+                streams=[stream] if stream else [],
                 narrator=narrator,
                 tags=[g["name"] for g in k["genres"]],
                 authors=[BookAuthor(first_name=a["first_name"],
