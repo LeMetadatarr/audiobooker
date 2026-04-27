@@ -45,7 +45,8 @@ class Librivox(AudioBookSource):
             yield from self._parse_res(k)
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
-        for k in _api_get({"title": query}).get("books", []):
+        # Librivox's title= param returns 404; use the generic search= param
+        for k in _api_get({"search": query}).get("books", []):
             yield from self._parse_res(k)
 
     def _parse_res(self, k) -> Iterable[AudioBook]:

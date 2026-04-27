@@ -6,11 +6,19 @@ from audiobooker.utils import get_soup
 
 _BASE = "https://www.audioanarchy.org"
 
+# AudioAnarchy has two sections with books
+_SECTIONS = [_BASE, _BASE + "/radio/"]
+
 
 @dataclass
 class AudioAnarchyAudioBook:
     url: str
     image: str = ""
+    tags: list = None
+
+    def __post_init__(self):
+        if self.tags is None:
+            self.tags = ["Anarchy"]
 
     def parse_page(self) -> AudioBook:
         soup = get_soup(self.url)
@@ -30,29 +38,35 @@ class AudioAnarchyAudioBook:
             title=title,
             streams=streams,
             image=self.image,
-            tags=["Anarchy"],
+            tags=self.tags,
             authors=[BookAuthor(last_name="Audio Anarchy")],
             language="en",
         )
 
 
+def _scrape_section(section_url, tags):
+    soup = get_soup(section_url)
+    if not soup:
+        return
+    for entry in soup.find_all("div", {"id": "album"}):
+        try:
+            a = entry.find("a")
+            img = entry.find("img")
+            if not a:
+                continue
+            book = AudioAnarchyAudioBook(
+                url=_BASE + "/" + a["href"].lstrip("/"),
+                image=_BASE + "/" + img["src"].lstrip("/") if img else "",
+                tags=tags,
+            ).parse_page()
+            if book:
+                yield book
+        except Exception:
+            continue
+
+
 class AudioAnarchy(AudioBookSource):
 
     def iterate_all(self):
-        soup = get_soup(_BASE)
-        if not soup:
-            return
-        for entry in soup.find_all("div", {"id": "album"}):
-            try:
-                a = entry.find("a")
-                img = entry.find("img")
-                if not a:
-                    continue
-                book = AudioAnarchyAudioBook(
-                    url=_BASE + "/" + a["href"].lstrip("/"),
-                    image=_BASE + "/" + img["src"].lstrip("/") if img else "",
-                ).parse_page()
-                if book:
-                    yield book
-            except Exception:
-                continue
+        yield from _scrape_section(_BASE, ["Anarchy"])
+        yield from _scrape_section(_BASE + "/radio/", ["Anarchy", "Radio Drama"])

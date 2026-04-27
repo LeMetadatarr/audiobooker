@@ -6,6 +6,21 @@ from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import get_soup, normalize_name
 
+# Root sitemap auto-discovers all post-sitemap*.xml pages
+_ROOT_SITEMAP = "https://goldenaudiobook.co/sitemap.xml"
+
+
+def _iter_post_sitemaps():
+    """Yield all post-sitemap URLs from the root sitemap index."""
+    try:
+        sm = SiteMapParser(_ROOT_SITEMAP)
+        for url in sm.get_urls():
+            url = str(url)
+            if "post-sitemap" in url:
+                yield url
+    except Exception:
+        pass
+
 
 @dataclass
 class GoldenAudioBooksAudioBook:
@@ -54,9 +69,11 @@ class GoldenAudioBooksAudioBook:
 class GoldenAudioBooks(AudioBookSource):
 
     def iterate_all(self):
-        for u in ["https://goldenaudiobook.co/post-sitemap.xml",
-                  "https://goldenaudiobook.co/post-sitemap2.xml"]:
-            sm = SiteMapParser(u)
+        for sitemap_url in _iter_post_sitemaps():
+            try:
+                sm = SiteMapParser(sitemap_url)
+            except Exception:
+                continue
             for url in sm.get_urls():
                 try:
                     book = GoldenAudioBooksAudioBook(url=str(url)).parse_page()
