@@ -194,8 +194,22 @@ class BookIndex:
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._con = sqlite3.connect(str(self.db_path))
         self._con.row_factory = sqlite3.Row
+        self._migrate()
         self._con.executescript(_SCHEMA)
         self._con.commit()
+
+    def _migrate(self):
+        """Drop and recreate tables if the schema is outdated (missing id column)."""
+        cols = {r[1] for r in self._con.execute(
+            "PRAGMA table_info(books)"
+        ).fetchall()}
+        if cols and "id" not in cols:
+            # Old schema — drop everything and let _SCHEMA recreate cleanly
+            self._con.executescript("""
+                DROP TABLE IF EXISTS books_fts;
+                DROP TABLE IF EXISTS books;
+            """)
+            self._con.commit()
 
     # ------------------------------------------------------------------
     # Building
@@ -383,6 +397,9 @@ class BookIndex:
               min_score: float, max_results: int) -> List[AudioBook]:
         results = []
         for book in books:
+            # narrator search: skip books that have no narrator at all
+            if method == "search_by_narrator" and not book.narrator:
+                continue
             book.score = score_book(query, book, method)
             if book.score >= min_score:
                 results.append(book)

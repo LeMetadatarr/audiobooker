@@ -17,9 +17,22 @@ pip install audiobooker   # no extra dependencies — uses stdlib sqlite3
 Use the index when:
 - You query repeatedly (voice assistant, batch processing)
 - You need offline operation
-- You care about latency (first result in <1ms vs 10–30s)
+- You care about latency (first result in <20ms vs 10–30s)
 
-Don't bother indexing Librivox for interactive use — its REST API is fast enough.
+## Search strategy
+
+Two-phase: **FTS5 pre-filter → rapidfuzz re-rank**.
+
+1. SQLite FTS5 tokenises the query into prefix terms (`"love"*`) and
+   applies an OR across tokens. This runs in C against an inverted index
+   and returns up to 500 candidates in microseconds.
+2. rapidfuzz WRatio re-ranks the candidate shortlist with full fuzzy
+   scoring including typo handling, token reordering, and containment bonuses.
+3. If FTS returns fewer than 5 hits (e.g. a misspelled query), the search
+   automatically falls back to a full rapidfuzz scan of all rows — so typos
+   never produce zero results, they just take a bit longer (~50–100ms at 18k books).
+
+Typical query latency: **~15ms** (FTS path) vs O(N·WRatio) without an index.
 
 ## Build
 
@@ -31,20 +44,20 @@ idx.build()                        # iterate_all() on all 7 web sources
 idx.build(sources=[Librivox()])    # specific sources only
 ```
 
+`build()` clears and repopulates records for the given sources, then
+rebuilds the FTS index. Use `update()` to only add new books.
+
 Build times (single-threaded, cold HTTP cache):
 
 | Source | Books | Time |
 |---|---|---|
 | AudioAnarchy | ~11 | ~1 s |
+| HPTalesAudioBooks | ~20 | ~30 s |
+| StephenKingAudioBooks | ~113 | ~1 min |
 | DarkerProjects | ~244 | ~2 min |
 | LoyalBooks | ~3 500 | ~2 min |
 | GoldenAudioBooks | ~6 500 | ~30 min |
-| StephenKingAudioBooks | ~113 | ~1 min |
-| HPTalesAudioBooks | ~20 | ~30 s |
 | Librivox | ~18 000 | ~60 min |
-
-`build()` clears and repopulates records for the given sources. Use `update()`
-to only add new books without clearing existing records.
 
 ## Update
 
@@ -53,40 +66,52 @@ idx.update()                        # add new books from all sources
 idx.update(sources=[Librivox()])    # specific sources only
 ```
 
-`update()` uses `AudioBook.__hash__` (title + authors) as the uniqueness key —
-existing books are skipped, new ones are inserted.
+`update()` uses `AudioBook.__hash__` (title + authors) as the uniqueness key.
+Existing books are skipped; new ones are inserted and the FTS index is
+updated incrementally (no full rebuild needed).
 
 ## Search
 
-All search methods mirror the live `search*()` API and return results sorted
-by `score` descending, filtered at `min_score=0.45`:
+All methods return results sorted by `score` descending, filtered at
+`min_score=0.45`. Books without a narrator are automatically excluded from
+`search_by_narrator`.
 
 ```python
-idx.search("Lovecraft")
+idx.search("Lovecraft")                         # all fields, weighted
 idx.search_by_title("Sherlock Holmes", max_results=5)
 idx.search_by_author("Dickens")
-idx.search_by_tag("horror")
+idx.search_by_tag("Horror")
 idx.search_by_narrator("Frank Muller")
 ```
 
-Optional filters on any search method:
+### Scoring note
+
+`search()` weights: title 55%, author 30%, tag 10%, narrator 5%. A single
+genre word like "Horror" scores ~0.35 in a general search — below the 0.45
+threshold. Use `search_by_tag("Horror")` when you want genre results.
+
+### Optional filters
 
 ```python
-# Only books from Librivox
-idx.search_by_tag("horror", source="Librivox")
+idx.search_by_tag("Horror", source="Librivox")     # source filter
+idx.search_by_author("Lovecraft", language="en")   # language filter
+idx.search_by_title("Faust", max_results=3, min_score=0.6)
+```
 
-# Only English books
-idx.search_by_author("Lovecraft", language="en")
+### Typo tolerance
+
+FTS5 handles prefix matching but not typos. When FTS returns < 5 hits,
+the search automatically falls back to a full rapidfuzz scan:
+
+```python
+idx.search_by_title("Sherlok Holms")  # FTS misses, rapidfuzz finds it
 ```
 
 ## IndexedSource — drop-in for unified search()
 
-`idx.as_source()` returns an `IndexedSource` that implements the full
-`AudioBookSource` interface and can be passed anywhere a source is accepted:
-
 ```python
 from audiobooker import search
-from audiobooker.index import BookIndex
+from audiobooker.index import BookIndex, IndexedSource
 
 idx = BookIndex()
 for book in search("Lovecraft", sources=[idx.as_source()], timeout=5):
@@ -96,10 +121,11 @@ for book in search("Lovecraft", sources=[idx.as_source()], timeout=5):
 Filter by source or language at the `IndexedSource` level:
 
 ```python
-from audiobooker.index import IndexedSource
-
 librivox_only = IndexedSource(idx, source_filter="Librivox")
 english_only  = IndexedSource(idx, language_filter="en")
+
+for book in search("horror", sources=[english_only], timeout=5):
+    print(book.title)
 ```
 
 ## Stats
@@ -113,25 +139,28 @@ print(len(idx))   # total book count
 ## CLI
 
 ```bash
-# Build full index (all sources)
+# Build full index
 python -m audiobooker.index build
 
 # Build selected sources
 python -m audiobooker.index build --sources librivox loyalbooks
 
-# Add new books without clearing existing records
+# Incremental update
 python -m audiobooker.index update
+python -m audiobooker.index update --sources librivox
 
-# Show stats
+# Stats
 python -m audiobooker.index stats
 
 # Search
 python -m audiobooker.index search "Lovecraft"
 python -m audiobooker.index search "Conan" --method search_by_title --n 5
 python -m audiobooker.index search "horror" --method search_by_tag --source Librivox
+python -m audiobooker.index search "Wayne June" --method search_by_narrator
 
 # Custom database path
 python -m audiobooker.index --db /data/books.db build
+python -m audiobooker.index --db /data/books.db search "Poe"
 ```
 
 ## Custom database path
@@ -140,7 +169,7 @@ python -m audiobooker.index --db /data/books.db build
 idx = BookIndex("/data/my_books.db")
 ```
 
-Or as a context manager:
+## Context manager
 
 ```python
 with BookIndex() as idx:
@@ -149,14 +178,25 @@ with BookIndex() as idx:
         print(book.title)
 ```
 
-## YouTube sources and the index
+## YouTube sources
 
-YouTube channels change frequently (new uploads). They are excluded from the
-default `build()` source list. You can index them explicitly, but `update()`
-is better suited — run it periodically to pick up new videos:
+YouTube channels are excluded from the default `build()` source list since
+they update frequently. Use `update()` to add new videos periodically:
 
 ```python
 from audiobooker.scrappers.youtube import HorrorBabble, TheCybrarian
 
 idx.update(sources=[HorrorBabble(), TheCybrarian()])
 ```
+
+## Schema
+
+The SQLite database has two tables:
+
+- **`books`** — one row per book; primary key is an auto-increment `id`;
+  `hash` (title + authors) is a unique constraint used for deduplication;
+  `authors_text`, `tags_text`, `narrator_text` are flattened plaintext copies
+  of the JSON fields used for FTS indexing.
+- **`books_fts`** — FTS5 virtual table (unicode61 tokeniser, diacritic removal)
+  linked to `books.id`. Kept in sync via explicit insert/delete calls during
+  `build()` and `update()`.
