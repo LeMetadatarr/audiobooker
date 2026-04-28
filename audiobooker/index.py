@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS followed_sources (
 
 CREATE TABLE IF NOT EXISTS books (
     id            INTEGER PRIMARY KEY,
-    hash          INTEGER UNIQUE NOT NULL,
+    hash          TEXT UNIQUE NOT NULL,
     title         TEXT NOT NULL,
     description   TEXT DEFAULT '',
     image         TEXT DEFAULT '',
@@ -128,7 +128,7 @@ def _book_to_row(book: AudioBook) -> dict:
         narrator_json = json.dumps({"first_name": book.narrator.first_name,
                                     "last_name":  book.narrator.last_name})
     return {
-        "hash":          hash(book),
+        "hash":          book.stable_id(),
         "title":         book.title,
         "description":   book.description,
         "image":         book.image,
@@ -212,27 +212,7 @@ class BookIndex:
         self._con.commit()
 
     def _migrate(self):
-        """Evolve schema to current version without destroying data."""
-        # v1→v2: books table got an auto-increment id column
-        cols = {r[1] for r in self._con.execute(
-            "PRAGMA table_info(books)"
-        ).fetchall()}
-        if cols and "id" not in cols:
-            self._con.executescript("""
-                DROP TABLE IF EXISTS books_fts;
-                DROP TABLE IF EXISTS books;
-            """)
-            self._con.commit()
-
-        # v2→v3: followed_sources got title_blacklist column
-        fs_cols = {r[1] for r in self._con.execute(
-            "PRAGMA table_info(followed_sources)"
-        ).fetchall()}
-        if fs_cols and "title_blacklist" not in fs_cols:
-            self._con.execute(
-                "ALTER TABLE followed_sources ADD COLUMN title_blacklist TEXT DEFAULT '[]'"
-            )
-            self._con.commit()
+        pass  # no legacy DBs exist; schema is created fresh by _SCHEMA
 
     # ------------------------------------------------------------------
     # Building
@@ -325,7 +305,7 @@ class BookIndex:
 
     def _upsert_if_new(self, book: AudioBook) -> Optional[int]:
         """Insert book if not already present. Returns new rowid or None."""
-        h = hash(book)
+        h = book.stable_id()
         existing = self._con.execute(
             "SELECT id FROM books WHERE hash = ?", (h,)
         ).fetchone()

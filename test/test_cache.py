@@ -38,18 +38,23 @@ class TestPathHelpers(unittest.TestCase):
         self.tmp = tempfile.mkdtemp()
         self.root = Path(self.tmp)
 
-    def test_book_dir_uses_hash(self):
+    def test_book_dir_uses_stable_id(self):
         d = _book_dir(BOOK, self.root)
         self.assertEqual(d.parent, self.root)
-        self.assertEqual(d.name, str(hash(BOOK)))
+        self.assertEqual(d.name, BOOK.stable_id())
 
     def test_stream_filename_from_url(self):
         name = _stream_filename("http://example.com/audio.mp3", 0)
-        self.assertEqual(name, "audio.mp3")
+        self.assertEqual(name, "00_audio.mp3")
+
+    def test_stream_filename_includes_index(self):
+        name1 = _stream_filename("http://example.com/audio.mp3", 0)
+        name2 = _stream_filename("http://example.com/audio.mp3", 1)
+        self.assertNotEqual(name1, name2)
 
     def test_stream_filename_fallback(self):
         name = _stream_filename("http://example.com/stream", 2)
-        self.assertEqual(name, "stream_2.mp3")
+        self.assertEqual(name, "02_stream.mp3")
 
 
 # ---------------------------------------------------------------------------
@@ -90,13 +95,15 @@ class TestCacheStatus(unittest.TestCase):
     def test_cached_after_file_created(self):
         d = _book_dir(BOOK, self.root)
         d.mkdir(parents=True)
-        (d / "test.mp3").write_bytes(b"fake")
+        fname = _stream_filename(BOOK.streams[0], 0)
+        (d / fname).write_bytes(b"fake")
         self.assertTrue(is_cached(BOOK, self.root))
 
     def test_cached_paths_returns_existing(self):
         d = _book_dir(BOOK, self.root)
         d.mkdir(parents=True)
-        (d / "test.mp3").write_bytes(b"fake")
+        fname = _stream_filename(BOOK.streams[0], 0)
+        (d / fname).write_bytes(b"fake")
         paths = cached_paths(BOOK, self.root)
         self.assertEqual(len(paths), 1)
         self.assertTrue(paths[0].exists())
@@ -155,7 +162,7 @@ class TestDownload(unittest.TestCase):
         mock_get.return_value = self._mock_response()
         paths = download(book, stream=1, cache_root=self.root, progress=False)
         self.assertEqual(len(paths), 1)
-        self.assertEqual(paths[0].name, "part2.mp3")
+        self.assertEqual(paths[0].name, "01_part2.mp3")
 
     @patch("requests.get")
     def test_download_http_error_returns_empty(self, mock_get):

@@ -54,15 +54,15 @@ _DEFAULT_CACHE = Path("~/.cache/audiobooker").expanduser()
 # ---------------------------------------------------------------------------
 
 def _book_dir(book, cache_root: Path) -> Path:
-    return cache_root / str(hash(book))
+    return cache_root / book.stable_id()
 
 
 def _stream_filename(url: str, index: int) -> str:
     parsed = urllib.parse.urlparse(url)
     name = Path(parsed.path).name
     if not name or "." not in name:
-        name = f"stream_{index}.mp3"
-    return name
+        name = "stream.mp3"
+    return f"{index:02d}_{name}"
 
 
 def _meta_path(book_dir: Path) -> Path:
@@ -380,10 +380,10 @@ def main():
         print(f"Source:  {book.source}")
         print(f"Cached:  {is_cached(book, cache_root)}")
         print(f"Streams: {len(book.streams)}")
-        for i, (url, p) in enumerate(zip(book.streams,
-                                         [book.streams[j] for j in range(len(book.streams))])):
-            local = cache_root / str(hash(book)) / _stream_filename(url, i) if cache_root \
-                else _DEFAULT_CACHE / str(hash(book)) / _stream_filename(url, i)
+        root = cache_root or _DEFAULT_CACHE
+        book_dir = _book_dir(book, root)
+        for i, url in enumerate(book.streams):
+            local = book_dir / _stream_filename(url, i)
             status = f"{local.stat().st_size // 1024}KB" if local.exists() else "not cached"
             print(f"  [{i}] {url}  →  {status}")
     else:
