@@ -15,6 +15,8 @@ See also the `examples/` directory for runnable code:
 | Example | Shows |
 |---|---|
 | `index_usage.py` | Build index, offline search, `IndexedSource` in unified search |
+| `cache_usage.py` | Download streams to cache, `play()`, duration filters |
+| `download_cybrarian.py` | Bulk-download TheCybrarian channel; `--dry-run`, `--indexed` flags |
 | `search_all_sources.py` | Unified search across all web sources |
 | `search_librivox.py` | Librivox REST API search |
 | `search_loyalbooks.py` | LoyalBooks genre and title search |

@@ -68,6 +68,31 @@ download(book, cache_root=Path("/data/audiobooks"))
 play(book, cache_root=Path("/data/audiobooks"))
 ```
 
+## Bulk download — example with TheCybrarian
+
+Download every audiobook from a YouTube channel in one pass.
+Already-cached files are skipped automatically.
+
+```python
+from audiobooker.cache import download, is_cached
+from audiobooker.scrappers.youtube import TheCybrarian
+
+for book in TheCybrarian().iterate_all():
+    if is_cached(book):
+        print(f"[cached] {book.title}")
+        continue
+    print(f"[downloading] {book.title}")
+    paths = download(book, stream=0, progress=True)
+    if paths:
+        print(f"  → {paths[0]}")
+```
+
+`TheCybrarian` ships with `title_blacklist=["update"]` so channel-update
+announcement videos are filtered out before download.
+
+See `examples/download_cybrarian.py` for the full runnable version with
+`--dry-run` and `--indexed` (index channel first, then download from index).
+
 ## CLI
 
 ```bash
