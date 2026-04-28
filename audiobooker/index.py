@@ -2,21 +2,26 @@
 
 Build once, search instantly — no network required after indexing.
 
+Search strategy
+---------------
+Two-phase: SQLite FTS5 pre-filters candidates (token-level, fast), then
+rapidfuzz re-ranks the shortlist with WRatio scoring (typo-tolerant, accurate).
+When FTS returns no hits (e.g. a misspelled query), the search automatically
+falls back to a full rapidfuzz scan so typos never produce zero results.
+
 Usage
 -----
     from audiobooker.index import BookIndex
 
-    # Build (or update) the index from all sources
     idx = BookIndex()
     idx.build()                          # iterate_all() on every source
     idx.build(sources=[Librivox()])      # specific sources only
     idx.update(sources=[Librivox()])     # add new books, skip existing
 
-    # Search offline
     for book in idx.search_by_title("Sherlock Holmes"):
         print(book.title, book.score)
 
-    # Use as a drop-in AudioBookSource in unified search()
+    # Drop-in for unified search()
     from audiobooker import search
     for book in search("Lovecraft", sources=[idx.as_source()]):
         print(book.title)
@@ -31,7 +36,6 @@ CLI
 """
 
 import json
-import os
 import sqlite3
 import time
 from pathlib import Path
@@ -42,23 +46,46 @@ from audiobooker.utils import score_book
 
 _DEFAULT_DB = Path("~/.audiobooker/index.db").expanduser()
 
+# FTS candidate pool — rapidfuzz re-ranks this shortlist.
+# Large enough that the real answer is almost always in it;
+# small enough that re-ranking stays fast even at 18k books.
+_FTS_CANDIDATE_LIMIT = 500
+
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS books (
-    hash        INTEGER PRIMARY KEY,
-    title       TEXT NOT NULL,
-    description TEXT DEFAULT '',
-    image       TEXT DEFAULT '',
-    language    TEXT DEFAULT '',
-    year        INTEGER DEFAULT 0,
-    runtime     INTEGER DEFAULT 0,
-    source      TEXT DEFAULT '',
-    streams     TEXT DEFAULT '[]',
-    tags        TEXT DEFAULT '[]',
-    authors     TEXT DEFAULT '[]',
-    narrator    TEXT
+    id            INTEGER PRIMARY KEY,
+    hash          INTEGER UNIQUE NOT NULL,
+    title         TEXT NOT NULL,
+    description   TEXT DEFAULT '',
+    image         TEXT DEFAULT '',
+    language      TEXT DEFAULT '',
+    year          INTEGER DEFAULT 0,
+    runtime       INTEGER DEFAULT 0,
+    source        TEXT DEFAULT '',
+    streams       TEXT DEFAULT '[]',
+    tags          TEXT DEFAULT '[]',
+    authors       TEXT DEFAULT '[]',
+    narrator      TEXT,
+    -- Flattened plaintext copies for FTS indexing
+    authors_text  TEXT DEFAULT '',
+    tags_text     TEXT DEFAULT '',
+    narrator_text TEXT DEFAULT ''
 );
+CREATE INDEX IF NOT EXISTS idx_hash     ON books (hash);
 CREATE INDEX IF NOT EXISTS idx_source   ON books (source);
 CREATE INDEX IF NOT EXISTS idx_language ON books (language);
+
+-- FTS5 content table — kept in sync via _fts_insert / _fts_delete helpers.
+-- Columns mirror the four searchable text fields; rowid links to books.id.
+CREATE VIRTUAL TABLE IF NOT EXISTS books_fts USING fts5(
+    title,
+    authors_text,
+    tags_text,
+    narrator_text,
+    content=books,
+    content_rowid=id,
+    tokenize='unicode61 remove_diacritics 1'
+);
 """
 
 
@@ -66,26 +93,45 @@ CREATE INDEX IF NOT EXISTS idx_language ON books (language);
 # Serialisation helpers
 # ---------------------------------------------------------------------------
 
-def _book_to_row(book: AudioBook) -> dict:
-    narrator = None
+def _flatten_authors(book: AudioBook) -> str:
+    return " ".join(
+        f"{a.first_name} {a.last_name}".strip() for a in book.authors
+    )
+
+
+def _flatten_tags(book: AudioBook) -> str:
+    return " ".join(book.tags)
+
+
+def _flatten_narrator(book: AudioBook) -> str:
     if book.narrator:
-        narrator = json.dumps({"first_name": book.narrator.first_name,
-                               "last_name": book.narrator.last_name})
+        return f"{book.narrator.first_name} {book.narrator.last_name}".strip()
+    return ""
+
+
+def _book_to_row(book: AudioBook) -> dict:
+    narrator_json = None
+    if book.narrator:
+        narrator_json = json.dumps({"first_name": book.narrator.first_name,
+                                    "last_name":  book.narrator.last_name})
     return {
-        "hash":        hash(book),
-        "title":       book.title,
-        "description": book.description,
-        "image":       book.image,
-        "language":    book.language,
-        "year":        book.year,
-        "runtime":     book.runtime,
-        "source":      book.source,
-        "streams":     json.dumps(book.streams),
-        "tags":        json.dumps(book.tags),
-        "authors":     json.dumps([{"first_name": a.first_name,
-                                    "last_name": a.last_name}
-                                   for a in book.authors]),
-        "narrator":    narrator,
+        "hash":          hash(book),
+        "title":         book.title,
+        "description":   book.description,
+        "image":         book.image,
+        "language":      book.language,
+        "year":          book.year,
+        "runtime":       book.runtime,
+        "source":        book.source,
+        "streams":       json.dumps(book.streams),
+        "tags":          json.dumps(book.tags),
+        "authors":       json.dumps([{"first_name": a.first_name,
+                                      "last_name":  a.last_name}
+                                     for a in book.authors]),
+        "narrator":      narrator_json,
+        "authors_text":  _flatten_authors(book),
+        "tags_text":     _flatten_tags(book),
+        "narrator_text": _flatten_narrator(book),
     }
 
 
@@ -107,6 +153,26 @@ def _row_to_book(row: sqlite3.Row) -> AudioBook:
         authors=authors,
         narrator=narrator,
     )
+
+
+# ---------------------------------------------------------------------------
+# FTS query builder
+# ---------------------------------------------------------------------------
+
+def _fts_query(query: str, field: Optional[str] = None) -> str:
+    """Build an FTS5 MATCH expression from a free-text query.
+
+    Each word becomes a prefix term so "love" matches "Lovecraft".
+    Multi-word queries use OR so partial matches still surface results.
+    """
+    tokens = [w.strip('"\'.,:;!?') for w in query.split() if w.strip('"\'.,:;!?')]
+    if not tokens:
+        return '""'
+    # Prefix-match each token; quote to handle special chars
+    terms = " OR ".join(f'"{t}"*' for t in tokens)
+    if field:
+        return f"{field}:({terms})"
+    return terms
 
 
 # ---------------------------------------------------------------------------
@@ -136,30 +202,26 @@ class BookIndex:
     # ------------------------------------------------------------------
 
     def build(self, sources=None, progress: bool = True) -> int:
-        """Clear all records for the given sources and repopulate.
+        """Clear records for the given sources and repopulate from scratch.
 
-        Parameters
-        ----------
-        sources:
-            List of instantiated ``AudioBookSource`` objects.
-            Defaults to all web sources (YouTube excluded — those change too
-            fast to be worth indexing).
-        progress:
-            Print a one-line progress indicator per source.
+        Rebuilds the FTS index after each source completes.
 
-        Returns
-        -------
-        int
-            Total number of books inserted.
+        Returns the total number of books inserted.
         """
         if sources is None:
             sources = _default_sources()
         total = 0
         for source in sources:
             name = source.__class__.__name__
-            # Remove existing records for this source so a full rebuild is clean
-            self._con.execute("DELETE FROM books WHERE source = ?", (name,))
+            # Delete existing books for this source and their FTS entries
+            ids = [r[0] for r in self._con.execute(
+                "SELECT id FROM books WHERE source = ?", (name,)
+            ).fetchall()]
+            if ids:
+                self._fts_delete_ids(ids)
+                self._con.execute("DELETE FROM books WHERE source = ?", (name,))
             self._con.commit()
+
             count = 0
             t0 = time.monotonic()
             for book in source.iterate_all():
@@ -168,6 +230,8 @@ class BookIndex:
                 if progress and count % 50 == 0:
                     print(f"  {name}: {count} books…", end="\r", flush=True)
             self._con.commit()
+            # Rebuild FTS for this source's rows
+            self._fts_rebuild()
             elapsed = time.monotonic() - t0
             if progress:
                 print(f"  {name}: {count} books indexed in {elapsed:.1f}s")
@@ -179,10 +243,7 @@ class BookIndex:
 
         Uses ``AudioBook.__hash__`` (title + authors) as the uniqueness key.
 
-        Returns
-        -------
-        int
-            Number of new books inserted.
+        Returns the number of new books inserted.
         """
         if sources is None:
             sources = _default_sources()
@@ -191,37 +252,119 @@ class BookIndex:
             name = source.__class__.__name__
             count = 0
             t0 = time.monotonic()
+            new_ids = []
             for book in source.iterate_all():
-                h = hash(book)
-                exists = self._con.execute(
-                    "SELECT 1 FROM books WHERE hash = ?", (h,)
-                ).fetchone()
-                if not exists:
-                    self._upsert(book)
+                row_id = self._upsert_if_new(book)
+                if row_id is not None:
+                    new_ids.append(row_id)
                     count += 1
-            self._con.commit()
+            if new_ids:
+                self._con.commit()
+                self._fts_insert_ids(new_ids)
             elapsed = time.monotonic() - t0
             if progress:
                 print(f"  {name}: {count} new books in {elapsed:.1f}s")
             total += count
         return total
 
+    # ------------------------------------------------------------------
+    # Low-level write helpers
+    # ------------------------------------------------------------------
+
     def _upsert(self, book: AudioBook):
         row = _book_to_row(book)
         self._con.execute("""
             INSERT OR REPLACE INTO books
               (hash, title, description, image, language, year, runtime,
-               source, streams, tags, authors, narrator)
+               source, streams, tags, authors, narrator,
+               authors_text, tags_text, narrator_text)
             VALUES
               (:hash, :title, :description, :image, :language, :year, :runtime,
-               :source, :streams, :tags, :authors, :narrator)
+               :source, :streams, :tags, :authors, :narrator,
+               :authors_text, :tags_text, :narrator_text)
         """, row)
+
+    def _upsert_if_new(self, book: AudioBook) -> Optional[int]:
+        """Insert book if not already present. Returns new rowid or None."""
+        h = hash(book)
+        existing = self._con.execute(
+            "SELECT id FROM books WHERE hash = ?", (h,)
+        ).fetchone()
+        if existing:
+            return None
+        row = _book_to_row(book)
+        cur = self._con.execute("""
+            INSERT INTO books
+              (hash, title, description, image, language, year, runtime,
+               source, streams, tags, authors, narrator,
+               authors_text, tags_text, narrator_text)
+            VALUES
+              (:hash, :title, :description, :image, :language, :year, :runtime,
+               :source, :streams, :tags, :authors, :narrator,
+               :authors_text, :tags_text, :narrator_text)
+        """, row)
+        return cur.lastrowid
+
+    # ------------------------------------------------------------------
+    # FTS maintenance
+    # ------------------------------------------------------------------
+
+    def _fts_rebuild(self):
+        """Rebuild the entire FTS index from the books table."""
+        self._con.execute("INSERT INTO books_fts(books_fts) VALUES('rebuild')")
+        self._con.commit()
+
+    def _fts_insert_ids(self, ids: List[int]):
+        """Insert specific book rows into FTS by their rowid."""
+        for row_id in ids:
+            self._con.execute("""
+                INSERT INTO books_fts(rowid, title, authors_text, tags_text, narrator_text)
+                SELECT id, title, authors_text, tags_text, narrator_text
+                FROM books WHERE id = ?
+            """, (row_id,))
+        self._con.commit()
+
+    def _fts_delete_ids(self, ids: List[int]):
+        """Remove specific rows from FTS before deleting from main table."""
+        for row_id in ids:
+            self._con.execute("""
+                INSERT INTO books_fts(books_fts, rowid, title, authors_text, tags_text, narrator_text)
+                SELECT 'delete', id, title, authors_text, tags_text, narrator_text
+                FROM books WHERE id = ?
+            """, (row_id,))
+        self._con.commit()
 
     # ------------------------------------------------------------------
     # Querying
     # ------------------------------------------------------------------
 
-    def _all_books(self, source: Optional[str] = None,
+    def _fts_search(self, query: str, field: Optional[str] = None,
+                    source: Optional[str] = None,
+                    language: Optional[str] = None) -> List[AudioBook]:
+        """FTS5 pre-filter returning up to _FTS_CANDIDATE_LIMIT candidates."""
+        fts_q = _fts_query(query, field)
+        filters, params = ["books_fts MATCH ?"], [fts_q]
+        if source:
+            filters.append("b.source = ?")
+            params.append(source)
+        if language:
+            filters.append("b.language = ?")
+            params.append(language)
+        where = " AND ".join(filters)
+        params.append(_FTS_CANDIDATE_LIMIT)
+        try:
+            rows = self._con.execute(f"""
+                SELECT b.* FROM books b
+                JOIN books_fts ON books_fts.rowid = b.id
+                WHERE {where}
+                ORDER BY rank
+                LIMIT ?
+            """, params).fetchall()
+            return [_row_to_book(r) for r in rows]
+        except sqlite3.OperationalError:
+            return []
+
+    def _full_scan(self, source: Optional[str] = None,
                    language: Optional[str] = None) -> List[AudioBook]:
         clauses, params = [], []
         if source:
@@ -231,81 +374,89 @@ class BookIndex:
             clauses.append("language = ?")
             params.append(language)
         where = ("WHERE " + " AND ".join(clauses)) if clauses else ""
-        rows = self._con.execute(f"SELECT * FROM books {where}", params).fetchall()
+        rows = self._con.execute(
+            f"SELECT * FROM books {where}", params
+        ).fetchall()
         return [_row_to_book(r) for r in rows]
 
-    def search_by_title(self, query: str, max_results: int = 10,
-                        min_score: float = 0.45,
-                        source: Optional[str] = None,
-                        language: Optional[str] = None) -> List[AudioBook]:
+    def _rank(self, query: str, books: List[AudioBook], method: str,
+              min_score: float, max_results: int) -> List[AudioBook]:
         results = []
-        for book in self._all_books(source, language):
-            book.score = score_book(query, book, "search_by_title")
+        for book in books:
+            book.score = score_book(query, book, method)
             if book.score >= min_score:
                 results.append(book)
         results.sort(key=lambda b: b.score, reverse=True)
         return results[:max_results] if max_results else results
 
-    def search_by_author(self, query: str, max_results: int = 10,
-                         min_score: float = 0.45,
-                         source: Optional[str] = None,
-                         language: Optional[str] = None) -> List[AudioBook]:
-        results = []
-        for book in self._all_books(source, language):
-            book.score = score_book(query, book, "search_by_author")
-            if book.score >= min_score:
-                results.append(book)
-        results.sort(key=lambda b: b.score, reverse=True)
-        return results[:max_results] if max_results else results
+    def _search(self, query: str, method: str,
+                fts_field: Optional[str],
+                max_results: int, min_score: float,
+                source: Optional[str], language: Optional[str],
+                fts_fallback_threshold: int = 5) -> List[AudioBook]:
+        """Two-phase search: FTS pre-filter → rapidfuzz re-rank.
 
-    def search_by_tag(self, query: str, max_results: int = 10,
-                      min_score: float = 0.45,
-                      source: Optional[str] = None,
-                      language: Optional[str] = None) -> List[AudioBook]:
-        results = []
-        for book in self._all_books(source, language):
-            book.score = score_book(query, book, "search_by_tag")
-            if book.score >= min_score:
-                results.append(book)
-        results.sort(key=lambda b: b.score, reverse=True)
-        return results[:max_results] if max_results else results
-
-    def search_by_narrator(self, query: str, max_results: int = 10,
-                           min_score: float = 0.45,
-                           source: Optional[str] = None,
-                           language: Optional[str] = None) -> List[AudioBook]:
-        results = []
-        for book in self._all_books(source, language):
-            if not book.narrator:
-                continue
-            book.score = score_book(query, book, "search_by_narrator")
-            if book.score >= min_score:
-                results.append(book)
-        results.sort(key=lambda b: b.score, reverse=True)
-        return results[:max_results] if max_results else results
+        Falls back to a full table scan when FTS returns fewer than
+        ``fts_fallback_threshold`` hits (handles typos and rare terms).
+        """
+        candidates = self._fts_search(query, fts_field, source, language)
+        if len(candidates) < fts_fallback_threshold:
+            # Broaden: try without field restriction
+            if fts_field:
+                candidates = self._fts_search(query, None, source, language)
+            # Still too few — full rapidfuzz scan (typo tolerance)
+            if len(candidates) < fts_fallback_threshold:
+                candidates = self._full_scan(source, language)
+        return self._rank(query, candidates, method, min_score, max_results)
 
     def search(self, query: str, max_results: int = 10,
                min_score: float = 0.45,
                source: Optional[str] = None,
                language: Optional[str] = None) -> List[AudioBook]:
-        results = []
-        for book in self._all_books(source, language):
-            book.score = score_book(query, book, "search")
-            if book.score >= min_score:
-                results.append(book)
-        results.sort(key=lambda b: b.score, reverse=True)
-        return results[:max_results] if max_results else results
+        return self._search(query, "search", None,
+                            max_results, min_score, source, language)
+
+    def search_by_title(self, query: str, max_results: int = 10,
+                        min_score: float = 0.45,
+                        source: Optional[str] = None,
+                        language: Optional[str] = None) -> List[AudioBook]:
+        return self._search(query, "search_by_title", "title",
+                            max_results, min_score, source, language)
+
+    def search_by_author(self, query: str, max_results: int = 10,
+                         min_score: float = 0.45,
+                         source: Optional[str] = None,
+                         language: Optional[str] = None) -> List[AudioBook]:
+        return self._search(query, "search_by_author", "authors_text",
+                            max_results, min_score, source, language)
+
+    def search_by_tag(self, query: str, max_results: int = 10,
+                      min_score: float = 0.45,
+                      source: Optional[str] = None,
+                      language: Optional[str] = None) -> List[AudioBook]:
+        return self._search(query, "search_by_tag", "tags_text",
+                            max_results, min_score, source, language)
+
+    def search_by_narrator(self, query: str, max_results: int = 10,
+                           min_score: float = 0.45,
+                           source: Optional[str] = None,
+                           language: Optional[str] = None) -> List[AudioBook]:
+        return self._search(query, "search_by_narrator", "narrator_text",
+                            max_results, min_score, source, language)
+
+    # ------------------------------------------------------------------
+    # Iteration
+    # ------------------------------------------------------------------
 
     def iterate_all(self, source: Optional[str] = None,
                     language: Optional[str] = None) -> Iterable[AudioBook]:
-        yield from self._all_books(source, language)
+        yield from self._full_scan(source, language)
 
     # ------------------------------------------------------------------
-    # Stats
+    # Stats / meta
     # ------------------------------------------------------------------
 
     def stats(self) -> dict:
-        """Return a summary dict: total books, per-source counts, languages."""
         total = self._con.execute("SELECT COUNT(*) FROM books").fetchone()[0]
         by_source = dict(self._con.execute(
             "SELECT source, COUNT(*) FROM books GROUP BY source ORDER BY COUNT(*) DESC"
@@ -315,12 +466,7 @@ class BookIndex:
         ).fetchall())
         return {"total": total, "by_source": by_source, "by_language": by_language}
 
-    # ------------------------------------------------------------------
-    # AudioBookSource adapter
-    # ------------------------------------------------------------------
-
     def as_source(self) -> "IndexedSource":
-        """Return an AudioBookSource backed by this index."""
         return IndexedSource(self)
 
     def __len__(self) -> int:
@@ -346,9 +492,8 @@ class BookIndex:
 class IndexedSource:
     """AudioBookSource interface backed by a BookIndex.
 
-    Supports the full search API and can be used anywhere an
-    ``AudioBookSource`` is accepted, including ``sources=`` in
-    ``audiobooker.search()``.
+    Can be used anywhere an ``AudioBookSource`` is accepted, including
+    ``sources=`` in ``audiobooker.search()``.
 
     Parameters
     ----------
@@ -376,12 +521,14 @@ class IndexedSource:
         return self.iterate_all()
 
     def iterate_by_author(self, author: str) -> Iterable[AudioBook]:
-        for book in self._index.search_by_author(author, max_results=0):
-            yield book
+        yield from self._index.search_by_author(author, max_results=0,
+                                                source=self._source,
+                                                language=self._language)
 
     def iterate_by_tag(self, tag: str) -> Iterable[AudioBook]:
-        for book in self._index.search_by_tag(tag, max_results=0):
-            yield book
+        yield from self._index.search_by_tag(tag, max_results=0,
+                                             source=self._source,
+                                             language=self._language)
 
     def search(self, query: str) -> Iterable[AudioBook]:
         yield from self._index.search(query, max_results=0,
@@ -413,7 +560,7 @@ class IndexedSource:
 
 
 # ---------------------------------------------------------------------------
-# Default sources for build/update (web only, no YouTube)
+# Default sources (web only — no YouTube)
 # ---------------------------------------------------------------------------
 
 def _default_sources():
@@ -425,13 +572,8 @@ def _default_sources():
     from audiobooker.scrappers.hpaudiotales import HPTalesAudioBooks
     from audiobooker.scrappers.stephenkingaudiobooks import StephenKingAudioBooks
     return [
-        Librivox(),
-        LoyalBooks(),
-        StephenKingAudioBooks(),
-        GoldenAudioBooks(),
-        AudioAnarchy(),
-        DarkerProjects(),
-        HPTalesAudioBooks(),
+        Librivox(), LoyalBooks(), StephenKingAudioBooks(),
+        GoldenAudioBooks(), AudioAnarchy(), DarkerProjects(), HPTalesAudioBooks(),
     ]
 
 
@@ -476,23 +618,23 @@ def main():
     sub = parser.add_subparsers(dest="cmd")
 
     p_build = sub.add_parser("build", help="(Re)build index for all or selected sources")
-    p_build.add_argument("--sources", nargs="*", help="Sources to index (default: all)")
+    p_build.add_argument("--sources", nargs="*")
 
-    p_update = sub.add_parser("update", help="Add new books without clearing existing records")
-    p_update.add_argument("--sources", nargs="*", help="Sources to update (default: all)")
+    p_update = sub.add_parser("update", help="Add new books without clearing existing")
+    p_update.add_argument("--sources", nargs="*")
 
-    p_stats = sub.add_parser("stats", help="Show index statistics")
+    sub.add_parser("stats", help="Show index statistics")
 
     p_search = sub.add_parser("search", help="Search the index")
     p_search.add_argument("query")
     p_search.add_argument("--method", default="search",
                           choices=["search", "search_by_title", "search_by_author",
                                    "search_by_tag", "search_by_narrator"])
-    p_search.add_argument("--n", type=int, default=10, help="Max results")
-    p_search.add_argument("--source", default=None, help="Filter by source name")
+    p_search.add_argument("--n", type=int, default=10)
+    p_search.add_argument("--source", default=None)
+    p_search.add_argument("--language", default=None)
 
     args = parser.parse_args()
-
     idx = BookIndex(args.db)
 
     if args.cmd == "build":
@@ -519,8 +661,12 @@ def main():
 
     elif args.cmd == "search":
         fn = getattr(idx, args.method)
-        results = fn(args.query, max_results=args.n,
-                     **({'source': args.source} if args.source else {}))
+        kw = {}
+        if args.source:
+            kw["source"] = args.source
+        if args.language:
+            kw["language"] = args.language
+        results = fn(args.query, max_results=args.n, **kw)
         print(f"{len(results)} result(s) for {args.query!r}:\n")
         for book in results:
             authors = ", ".join(
