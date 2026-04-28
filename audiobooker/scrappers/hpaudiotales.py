@@ -39,6 +39,25 @@ class HPTalesAudioBook:
 
 class HPTalesAudioBooks(AudioBookSource):
 
+    def iterate_popular(self):
+        soup = get_soup("https://hpaudiotales.com")
+        if not soup:
+            return
+        seen = set()
+        for a in soup.find_all("a", href=True):
+            href = str(a["href"])
+            if "hpaudiotales.com" not in href or href in seen:
+                continue
+            if any(x in href for x in ["/category/", "/tag/", "/page/", "/#", "/wp-"]):
+                continue
+            seen.add(href)
+            try:
+                book = HPTalesAudioBook(url=href).parse_page()
+                if book:
+                    yield self._tag(book)
+            except Exception:
+                continue
+
     def iterate_all(self):
         for url in iter_sitemap_urls("https://hpaudiotales.com/wp-sitemap-posts-post-1.xml"):
             try:
