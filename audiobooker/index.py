@@ -419,11 +419,15 @@ class BookIndex:
         return [_row_to_book(r) for r in rows]
 
     def _rank(self, query: str, books: List[AudioBook], method: str,
-              min_score: float, max_results: int) -> List[AudioBook]:
+              min_score: float, max_results: int,
+              min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         results = []
         for book in books:
-            # narrator search: skip books that have no narrator at all
             if method == "search_by_narrator" and not book.narrator:
+                continue
+            if min_duration and book.runtime < min_duration:
+                continue
+            if max_duration and book.runtime > max_duration:
                 continue
             book.score = score_book(query, book, method)
             if book.score >= min_score:
@@ -435,6 +439,7 @@ class BookIndex:
                 fts_field: Optional[str],
                 max_results: int, min_score: float,
                 source: Optional[str], language: Optional[str],
+                min_duration: int = 0, max_duration: int = 0,
                 fts_fallback_threshold: int = 5) -> List[AudioBook]:
         """Two-phase search: FTS pre-filter → rapidfuzz re-rank.
 
@@ -443,48 +448,57 @@ class BookIndex:
         """
         candidates = self._fts_search(query, fts_field, source, language)
         if len(candidates) < fts_fallback_threshold:
-            # Broaden: try without field restriction
             if fts_field:
                 candidates = self._fts_search(query, None, source, language)
-            # Still too few — full rapidfuzz scan (typo tolerance)
             if len(candidates) < fts_fallback_threshold:
                 candidates = self._full_scan(source, language)
-        return self._rank(query, candidates, method, min_score, max_results)
+        return self._rank(query, candidates, method, min_score, max_results,
+                          min_duration, max_duration)
 
     def search(self, query: str, max_results: int = 10,
                min_score: float = 0.45,
                source: Optional[str] = None,
-               language: Optional[str] = None) -> List[AudioBook]:
+               language: Optional[str] = None,
+               min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         return self._search(query, "search", None,
-                            max_results, min_score, source, language)
+                            max_results, min_score, source, language,
+                            min_duration, max_duration)
 
     def search_by_title(self, query: str, max_results: int = 10,
                         min_score: float = 0.45,
                         source: Optional[str] = None,
-                        language: Optional[str] = None) -> List[AudioBook]:
+                        language: Optional[str] = None,
+                        min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         return self._search(query, "search_by_title", "title",
-                            max_results, min_score, source, language)
+                            max_results, min_score, source, language,
+                            min_duration, max_duration)
 
     def search_by_author(self, query: str, max_results: int = 10,
                          min_score: float = 0.45,
                          source: Optional[str] = None,
-                         language: Optional[str] = None) -> List[AudioBook]:
+                         language: Optional[str] = None,
+                         min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         return self._search(query, "search_by_author", "authors_text",
-                            max_results, min_score, source, language)
+                            max_results, min_score, source, language,
+                            min_duration, max_duration)
 
     def search_by_tag(self, query: str, max_results: int = 10,
                       min_score: float = 0.45,
                       source: Optional[str] = None,
-                      language: Optional[str] = None) -> List[AudioBook]:
+                      language: Optional[str] = None,
+                      min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         return self._search(query, "search_by_tag", "tags_text",
-                            max_results, min_score, source, language)
+                            max_results, min_score, source, language,
+                            min_duration, max_duration)
 
     def search_by_narrator(self, query: str, max_results: int = 10,
                            min_score: float = 0.45,
                            source: Optional[str] = None,
-                           language: Optional[str] = None) -> List[AudioBook]:
+                           language: Optional[str] = None,
+                           min_duration: int = 0, max_duration: int = 0) -> List[AudioBook]:
         return self._search(query, "search_by_narrator", "narrator_text",
-                            max_results, min_score, source, language)
+                            max_results, min_score, source, language,
+                            min_duration, max_duration)
 
     # ------------------------------------------------------------------
     # Iteration
@@ -787,6 +801,10 @@ def main():
     p_search.add_argument("--n", type=int, default=10)
     p_search.add_argument("--source", default=None)
     p_search.add_argument("--language", default=None)
+    p_search.add_argument("--min-duration", type=int, default=0,
+                          metavar="SECS", help="Minimum runtime in seconds")
+    p_search.add_argument("--max-duration", type=int, default=0,
+                          metavar="SECS", help="Maximum runtime in seconds")
 
     p_follow = sub.add_parser("follow", help="Follow a YouTube channel or playlist")
     p_follow.add_argument("url", help="Channel or playlist URL")
@@ -863,6 +881,10 @@ def main():
             kw["source"] = args.source
         if args.language:
             kw["language"] = args.language
+        if args.min_duration:
+            kw["min_duration"] = args.min_duration
+        if args.max_duration:
+            kw["max_duration"] = args.max_duration
         results = fn(args.query, max_results=args.n, **kw)
         print(f"{len(results)} result(s) for {args.query!r}:\n")
         for book in results:

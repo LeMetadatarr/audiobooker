@@ -6,7 +6,8 @@
 | [scoring.md](scoring.md) | How scores are computed, field weights, fuzzy matching details |
 | [sources.md](sources.md) | Each web scraper — catalogue size, native search, quirks |
 | [youtube.md](youtube.md) | YouTube channel and playlist sources (`YoutubeChannelSource`, `YoutubePlaylistSource`, `TheCybrarian`, `HorrorBabble`) |
-| [index.md](index.md) | `BookIndex` — persistent SQLite index, offline search, CLI |
+| [index.md](index.md) | `BookIndex` — persistent SQLite index, offline search, follow YouTube, CLI |
+| [cache.md](cache.md) | `audiobooker.cache` — download streams, cache to disk, play, duration filters |
 | [api.md](api.md) | Full API reference: `AudioBook`, `BookAuthor`, `AudioBookSource`, utilities |
 
 See also the `examples/` directory for runnable code:
