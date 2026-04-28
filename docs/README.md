@@ -6,12 +6,14 @@
 | [scoring.md](scoring.md) | How scores are computed, field weights, fuzzy matching details |
 | [sources.md](sources.md) | Each web scraper — catalogue size, native search, quirks |
 | [youtube.md](youtube.md) | YouTube channel and playlist sources (`YoutubeChannelSource`, `YoutubePlaylistSource`, `TheCybrarian`, `HorrorBabble`) |
+| [index.md](index.md) | `BookIndex` — persistent SQLite index, offline search, CLI |
 | [api.md](api.md) | Full API reference: `AudioBook`, `BookAuthor`, `AudioBookSource`, utilities |
 
 See also the `examples/` directory for runnable code:
 
 | Example | Shows |
 |---|---|
+| `index_usage.py` | Build index, offline search, `IndexedSource` in unified search |
 | `search_all_sources.py` | Unified search across all web sources |
 | `search_librivox.py` | Librivox REST API search |
 | `search_loyalbooks.py` | LoyalBooks genre and title search |
