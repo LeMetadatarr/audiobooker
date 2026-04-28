@@ -27,6 +27,13 @@ ALL_SOURCES: List[Type[AudioBookSource]] = [
     HPTalesAudioBooks,
 ]
 
+# YouTube sources are optional — included only when tutubo is installed
+try:
+    from audiobooker.scrappers.youtube import TheCybrarian, HorrorBabble
+    ALL_SOURCES += [TheCybrarian, HorrorBabble]
+except ImportError:
+    pass
+
 
 def _worker(source: AudioBookSource, method: str, query: Optional[str],
             result_queue: queue.Queue, max_results: int,

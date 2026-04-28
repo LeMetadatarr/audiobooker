@@ -48,6 +48,11 @@ dependencies = [
     { name = "site-map-parser" },
 ]
 
+[package.optional-dependencies]
+youtube = [
+    { name = "tutubo" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "bs4" },
@@ -56,7 +61,9 @@ requires-dist = [
     { name = "requests" },
     { name = "requests-cache" },
     { name = "site-map-parser" },
+    { name = "tutubo", marker = "extra == 'youtube'" },
 ]
+provides-extras = ["youtube"]
 
 [[package]]
 name = "beautifulsoup4"
@@ -502,6 +509,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432, upload-time = "2024-03-01T18:36:20.211Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892, upload-time = "2024-03-01T18:36:18.57Z" },
+]
+
+[[package]]
+name = "pytube"
+version = "15.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/e7/16fec46c8d255c4bbc4b185d89c91dc92cdb802836570d8004d0db169c91/pytube-15.0.0.tar.gz", hash = "sha256:076052efe76f390dfa24b1194ff821d4e86c17d41cb5562f3a276a8bcbfc9d1d", size = 67229, upload-time = "2023-05-07T19:39:01.903Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/64/bcf8632ed2b7a36bbf84a0544885ffa1d0b4bcf25cc0903dba66ec5fdad9/pytube-15.0.0-py3-none-any.whl", hash = "sha256:07b9904749e213485780d7eb606e5e5b8e4341aa4dccf699160876da00e12d78", size = 57594, upload-time = "2023-05-07T19:38:59.191Z" },
 ]
 
 [[package]]
@@ -956,6 +972,25 @@ wheels = [
 ]
 
 [[package]]
+name = "tutubo"
+version = "2.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "bs4" },
+    { name = "pytube" },
+    { name = "requests", version = "2.32.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "requests", version = "2.32.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
+    { name = "requests", version = "2.33.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "ytmusicapi", version = "1.7.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "ytmusicapi", version = "1.10.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
+    { name = "ytmusicapi", version = "1.11.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0b/a6/f1013c35c2dc42e552fe4cc3fc135c1ab1107ce2ed23753681419e04591d/tutubo-2.0.2.tar.gz", hash = "sha256:7762fe73478f2fdf88157d519ad9179fe49e1ca52dcb6582158762e02fbe7ee4", size = 62464, upload-time = "2024-09-06T22:47:56.473Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/7b/4edc040b4c54e32f054f7f31681355d0837de9ed02ba49c7b9424e18935d/tutubo-2.0.2-py3-none-any.whl", hash = "sha256:6dcad355ff4f3405271eacb1ffdaff2b7840f283b5a22160d27515420cf94b42", size = 63699, upload-time = "2024-09-06T22:47:55.099Z" },
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.13.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1034,4 +1069,49 @@ resolution-markers = [
 sdist = { url = "https://files.pythonhosted.org/packages/c7/24/5f1b3bdffd70275f6661c76461e25f024d5a38a46f04aaca912426a2b1d3/urllib3-2.6.3.tar.gz", hash = "sha256:1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed", size = 435556, upload-time = "2026-01-07T16:24:43.925Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl", hash = "sha256:bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4", size = 131584, upload-time = "2026-01-07T16:24:42.685Z" },
+]
+
+[[package]]
+name = "ytmusicapi"
+version = "1.7.5"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.9'",
+]
+dependencies = [
+    { name = "requests", version = "2.32.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0e/87/00639254448358344df97f9a1a77287dc506a5143f6bd370728c54376eeb/ytmusicapi-1.7.5.tar.gz", hash = "sha256:b306c330bdf81888f01d9f62fea96bf19bdd521999536988e98dbf6be41009fe", size = 277989, upload-time = "2024-07-13T18:31:45.78Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/70/07/221922283da2922d7048222f0e080788ff1b5a43f153ac19266f8f77cc07/ytmusicapi-1.7.5-py3-none-any.whl", hash = "sha256:fb46169553b4ed59b7450b088c861eda86d88cff0080b9ddf53d4452dba92386", size = 86798, upload-time = "2024-07-13T18:31:43.539Z" },
+]
+
+[[package]]
+name = "ytmusicapi"
+version = "1.10.3"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version == '3.9.*'",
+]
+dependencies = [
+    { name = "requests", version = "2.32.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/87/2e/30b77a0aec8383a5d3b1472e763ff14f845c275c103da78d3c0045cd691a/ytmusicapi-1.10.3.tar.gz", hash = "sha256:7235361ac9d5958d49a29f586eec55b1c83e90f7b063361e8a206e1cf4f76216", size = 311765, upload-time = "2025-04-03T09:03:24.738Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/13/2c/cba9e462497adbf5960fe74fdc5d7bb44153f0037264f3dea7653e5d4969/ytmusicapi-1.10.3-py3-none-any.whl", hash = "sha256:07059d6a60d824636edc4032c30603f45f8072961821c6159e33d61cd02fc451", size = 93484, upload-time = "2025-04-03T09:03:22.918Z" },
+]
+
+[[package]]
+name = "ytmusicapi"
+version = "1.11.5"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.10'",
+]
+dependencies = [
+    { name = "requests", version = "2.33.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ac/4b/a44292f732903dc26a90236ad1cf284da974ed5491df388cf15713b38429/ytmusicapi-1.11.5.tar.gz", hash = "sha256:48f35901291c8af9934ec0aa9cd6b9fd1a19c543f843c39c9e8b396356b47801", size = 413046, upload-time = "2026-01-31T09:51:27.86Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/aa/a8/8feb17eaa8b2bf36b0617ba37f949a7036b6ece652672bd4517a54326f0e/ytmusicapi-1.11.5-py3-none-any.whl", hash = "sha256:f6b1e031408cce45bef207bfda449e3ecf548f7c4ff0c091c575d4a27eb21da6", size = 102313, upload-time = "2026-01-31T09:51:26.255Z" },
 ]

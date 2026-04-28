@@ -19,6 +19,9 @@ dependencies = [
     "site-map-parser",
 ]
 
+[project.optional-dependencies]
+youtube = ["tutubo"]
+
 [project.urls]
 Homepage = "https://github.com/OpenJarbas/audiobooker"
 Repository = "https://github.com/OpenJarbas/audiobooker"

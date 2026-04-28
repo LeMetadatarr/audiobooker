@@ -16,7 +16,14 @@ Parallel search across all sources, fuzzy matching, relevance scoring, and a uni
 | `DarkerProjects` | darkerprojects.com | ~244 episodes | title, author, tag (linear scan) | Audio Drama |
 | `HPTalesAudioBooks` | hpaudiotales.com | ~20 books | title, author, tag (linear scan) | Harry Potter |
 
-**Total indexed:** ~28 000+ titles across 7 sources.
+**YouTube sources** (optional, requires `pip install audiobooker[youtube]`):
+
+| Source | Channel | Content | Tags |
+|---|---|---|---|
+| `TheCybrarian` | [@TheCybrarian](https://www.youtube.com/@TheCybrarian) | Robert E. Howard fiction (Conan, Solomon Kane, Kull…) | Fantasy, Sword and Sorcery, Robert E. Howard |
+| `HorrorBabble` | [@HorrorBabble](https://www.youtube.com/@HorrorBabble) | Horror short fiction narrated by Ian Gordon | Horror, Lovecraft, Weird Fiction |
+
+**Total indexed:** ~28 000+ titles across 7 web sources + 2 YouTube channels.
 
 **LoyalBooks genres** (41): Action and Adventure, Ancient Texts, Animals, Art Design and Architecture,
 Biography and Memoir, Children in Fiction, Children Non-fiction, Classics (Antiquity),
@@ -27,6 +34,54 @@ Myths Legends and Fairy Tales, Nature and Wildlife, Non-fiction, Philosophy, Poe
 Politics and Economics, Psychology, Religion, Science, Science Fiction, Short Stories,
 Short Works, Spiritual and Inspirational, Sport and Recreation, Tragedy,
 Travel and Geography, War and Military, Westerns.
+
+## YouTube support
+
+Install the optional YouTube extra:
+
+```bash
+pip install audiobooker[youtube]
+# or
+pip install tutubo
+```
+
+Use the pre-configured channel sources or define your own:
+
+```python
+from audiobooker.scrappers.youtube import HorrorBabble, TheCybrarian, YoutubeChannelSource
+from audiobooker.base import BookAuthor
+
+# Pre-configured channels
+for book in HorrorBabble().iterate_all():
+    print(book.title, book.streams)  # streams = YouTube watch URLs
+
+for book in TheCybrarian().search_by_title("Conan"):
+    print(book.title, book.runtime)
+
+# Custom channel
+my_channel = YoutubeChannelSource(
+    channel_url="https://www.youtube.com/@SomeChannel/videos",
+    authors=[BookAuthor(last_name="Unknown")],
+    tags=["Audiobook"],
+    language="en",
+    min_runtime=300,  # skip anything under 5 minutes
+)
+for book in my_channel.iterate_all():
+    print(book.title)
+
+# Custom playlist
+from audiobooker.scrappers.youtube import YoutubePlaylistSource
+playlist = YoutubePlaylistSource(
+    playlist_url="https://www.youtube.com/playlist?list=PLxxxxxx",
+    authors=[BookAuthor(last_name="Various")],
+    tags=["Horror"],
+)
+for book in playlist.iterate_all():
+    print(book.title, book.runtime)
+```
+
+When tutubo is installed, `TheCybrarian` and `HorrorBabble` are automatically included
+in `ALL_SOURCES` and participate in all unified `search*()` calls.
 
 ## Install
 
