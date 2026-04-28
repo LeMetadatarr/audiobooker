@@ -455,5 +455,70 @@ class TestIndexedSource(unittest.TestCase):
         self.assertIn("BookIndex", repr(self.src))
 
 
+# ---------------------------------------------------------------------------
+# BookIndex — follow / unfollow / list_followed
+# ---------------------------------------------------------------------------
+
+class TestFollowedSources(unittest.TestCase):
+
+    def setUp(self):
+        self.idx = _make_index([])  # empty index
+
+    def tearDown(self):
+        self.idx.close()
+
+    def test_follow_adds_entry(self):
+        self.idx.follow("https://www.youtube.com/@Test/videos", kind="channel",
+                        name="Test Channel", tags=["Horror"], language="en")
+        followed = self.idx.list_followed()
+        self.assertEqual(len(followed), 1)
+        self.assertEqual(followed[0]["url"], "https://www.youtube.com/@Test/videos")
+        self.assertEqual(followed[0]["kind"], "channel")
+        self.assertEqual(followed[0]["name"], "Test Channel")
+        self.assertEqual(followed[0]["tags"], ["Horror"])
+        self.assertEqual(followed[0]["language"], "en")
+
+    def test_follow_playlist(self):
+        self.idx.follow("https://www.youtube.com/playlist?list=PLabc",
+                        kind="playlist", name="My Playlist")
+        followed = self.idx.list_followed()
+        self.assertEqual(followed[0]["kind"], "playlist")
+
+    def test_follow_upserts_on_duplicate_url(self):
+        url = "https://www.youtube.com/@Test/videos"
+        self.idx.follow(url, name="Old Name")
+        self.idx.follow(url, name="New Name")
+        followed = self.idx.list_followed()
+        self.assertEqual(len(followed), 1)
+        self.assertEqual(followed[0]["name"], "New Name")
+
+    def test_unfollow_removes_entry(self):
+        url = "https://www.youtube.com/@Test/videos"
+        self.idx.follow(url)
+        removed = self.idx.unfollow(url)
+        self.assertTrue(removed)
+        self.assertEqual(self.idx.list_followed(), [])
+
+    def test_unfollow_returns_false_when_missing(self):
+        removed = self.idx.unfollow("https://www.youtube.com/@nonexistent/videos")
+        self.assertFalse(removed)
+
+    def test_follow_with_blacklist(self):
+        self.idx.follow("https://www.youtube.com/@Test/videos",
+                        title_blacklist=["update", "compilation"])
+        followed = self.idx.list_followed()
+        self.assertEqual(followed[0]["title_blacklist"], ["update", "compilation"])
+
+    def test_list_followed_empty(self):
+        self.assertEqual(self.idx.list_followed(), [])
+
+    def test_follow_with_narrator(self):
+        from audiobooker.base import AudiobookNarrator
+        n = AudiobookNarrator(first_name="Wayne", last_name="June")
+        self.idx.follow("https://www.youtube.com/@Test/videos", narrator=n)
+        followed = self.idx.list_followed()
+        self.assertEqual(followed[0]["narrator"]["last_name"], "June")
+
+
 if __name__ == "__main__":
     unittest.main()

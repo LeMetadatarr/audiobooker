@@ -316,6 +316,11 @@ class _YtSourceMixin(AudioBookSource):
     min_runtime: int
     narrator: Optional[object]  # AudiobookNarrator or None
     extract_metadata: bool
+    title_blacklist: List[str]  # skip books whose title contains any of these strings
+
+    def _title_blocked(self, title: str) -> bool:
+        tl = title.lower()
+        return any(s.lower() in tl for s in self.title_blacklist)
 
     def _make_book(self, v: dict) -> AudioBook:
         return _video_to_book(
@@ -388,12 +393,16 @@ class YoutubeChannelSource(_YtSourceMixin):
     language: str = "en"
     min_runtime: int = 300
     extract_metadata: bool = True
+    title_blacklist: List[str] = field(default_factory=list)
 
     def iterate_all(self):
         for v in _iter_channel_videos(self.channel_url):
             if _length_to_seconds(v.get("length", "")) < self.min_runtime:
                 continue
-            yield self._tag(self._make_book(v))
+            book = self._make_book(v)
+            if self._title_blocked(book.title):
+                continue
+            yield self._tag(book)
 
 
 @dataclass
@@ -424,12 +433,16 @@ class YoutubePlaylistSource(_YtSourceMixin):
     language: str = "en"
     min_runtime: int = 300
     extract_metadata: bool = True
+    title_blacklist: List[str] = field(default_factory=list)
 
     def iterate_all(self):
         for v in _iter_playlist_videos(self.playlist_url):
             if _length_to_seconds(v.get("length", "")) < self.min_runtime:
                 continue
-            yield self._tag(self._make_book(v))
+            book = self._make_book(v)
+            if self._title_blocked(book.title):
+                continue
+            yield self._tag(book)
 
 
 # ---------------------------------------------------------------------------
@@ -450,6 +463,7 @@ class TheCybrarian(YoutubeChannelSource):
             tags=["Fantasy", "Sword and Sorcery", "Robert E. Howard", "Conan"],
             language="en",
             min_runtime=120,
+            title_blacklist=["update"],
         )
 
 

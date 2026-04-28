@@ -52,6 +52,19 @@ _DEFAULT_DB = Path("~/.audiobooker/index.db").expanduser()
 _FTS_CANDIDATE_LIMIT = 500
 
 _SCHEMA = """
+CREATE TABLE IF NOT EXISTS followed_sources (
+    id              INTEGER PRIMARY KEY,
+    kind            TEXT NOT NULL,   -- 'channel' or 'playlist'
+    url             TEXT NOT NULL UNIQUE,
+    name            TEXT DEFAULT '',
+    tags            TEXT DEFAULT '[]',
+    authors         TEXT DEFAULT '[]',
+    narrator        TEXT,
+    language        TEXT DEFAULT 'en',
+    min_runtime     INTEGER DEFAULT 300,
+    title_blacklist TEXT DEFAULT '[]'
+);
+
 CREATE TABLE IF NOT EXISTS books (
     id            INTEGER PRIMARY KEY,
     hash          INTEGER UNIQUE NOT NULL,
@@ -199,16 +212,26 @@ class BookIndex:
         self._con.commit()
 
     def _migrate(self):
-        """Drop and recreate tables if the schema is outdated (missing id column)."""
+        """Evolve schema to current version without destroying data."""
+        # v1→v2: books table got an auto-increment id column
         cols = {r[1] for r in self._con.execute(
             "PRAGMA table_info(books)"
         ).fetchall()}
         if cols and "id" not in cols:
-            # Old schema — drop everything and let _SCHEMA recreate cleanly
             self._con.executescript("""
                 DROP TABLE IF EXISTS books_fts;
                 DROP TABLE IF EXISTS books;
             """)
+            self._con.commit()
+
+        # v2→v3: followed_sources got title_blacklist column
+        fs_cols = {r[1] for r in self._con.execute(
+            "PRAGMA table_info(followed_sources)"
+        ).fetchall()}
+        if fs_cols and "title_blacklist" not in fs_cols:
+            self._con.execute(
+                "ALTER TABLE followed_sources ADD COLUMN title_blacklist TEXT DEFAULT '[]'"
+            )
             self._con.commit()
 
     # ------------------------------------------------------------------
@@ -256,11 +279,13 @@ class BookIndex:
         """Add books not yet in the index; skip existing records.
 
         Uses ``AudioBook.__hash__`` (title + authors) as the uniqueness key.
+        When ``sources`` is ``None``, also includes any channels/playlists
+        registered via ``follow()``.
 
         Returns the number of new books inserted.
         """
         if sources is None:
-            sources = _default_sources()
+            sources = _default_sources() + self._followed_as_sources()
         total = 0
         for source in sources:
             name = source.__class__.__name__
@@ -470,6 +495,118 @@ class BookIndex:
         yield from self._full_scan(source, language)
 
     # ------------------------------------------------------------------
+    # Followed YouTube sources
+    # ------------------------------------------------------------------
+
+    def follow(self, url: str, kind: str = "channel", *,
+               name: str = "",
+               tags: Optional[List[str]] = None,
+               authors: Optional[List[BookAuthor]] = None,
+               narrator=None,
+               language: str = "en",
+               min_runtime: int = 300,
+               title_blacklist: Optional[List[str]] = None) -> None:
+        """Register a YouTube channel or playlist to be included in update().
+
+        Parameters
+        ----------
+        url:
+            Full YouTube channel URL (``https://www.youtube.com/@Name/videos``)
+            or playlist URL (``https://www.youtube.com/playlist?list=PLxxx``).
+        kind:
+            ``"channel"`` or ``"playlist"``.
+        name:
+            Human-readable label (displayed in ``list_followed()``).
+        tags:
+            Tags stamped on every book from this source.
+        authors:
+            Default author list (extraction can override per-video).
+        narrator:
+            Default narrator stamped on every book.
+        language:
+            ISO 639-1 code, default ``"en"``.
+        min_runtime:
+            Skip videos shorter than this many seconds.
+        """
+        narrator_json = None
+        if narrator is not None:
+            narrator_json = json.dumps({"first_name": narrator.first_name,
+                                        "last_name":  narrator.last_name})
+        authors_json = json.dumps([{"first_name": a.first_name,
+                                    "last_name":  a.last_name}
+                                   for a in (authors or [])])
+        self._con.execute("""
+            INSERT OR REPLACE INTO followed_sources
+              (kind, url, name, tags, authors, narrator, language, min_runtime, title_blacklist)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (kind, url, name, json.dumps(tags or []),
+              authors_json, narrator_json, language, min_runtime,
+              json.dumps(title_blacklist or [])))
+        self._con.commit()
+
+    def unfollow(self, url: str) -> bool:
+        """Remove a followed source by URL. Returns True if it existed."""
+        cur = self._con.execute(
+            "DELETE FROM followed_sources WHERE url = ?", (url,)
+        )
+        self._con.commit()
+        return cur.rowcount > 0
+
+    def list_followed(self) -> List[dict]:
+        """Return all followed sources as a list of dicts."""
+        rows = self._con.execute(
+            "SELECT * FROM followed_sources ORDER BY kind, name, url"
+        ).fetchall()
+        result = []
+        for r in rows:
+            result.append({
+                "kind":            r["kind"],
+                "url":             r["url"],
+                "name":            r["name"],
+                "tags":            json.loads(r["tags"]),
+                "authors":         json.loads(r["authors"]),
+                "narrator":        json.loads(r["narrator"]) if r["narrator"] else None,
+                "language":        r["language"],
+                "min_runtime":     r["min_runtime"],
+                "title_blacklist": json.loads(r["title_blacklist"]) if r["title_blacklist"] else [],
+            })
+        return result
+
+    def _followed_as_sources(self):
+        """Instantiate all followed YouTube sources."""
+        try:
+            from audiobooker.scrappers.youtube import (
+                YoutubeChannelSource, YoutubePlaylistSource
+            )
+        except ImportError:
+            return []
+
+        sources = []
+        for f in self.list_followed():
+            authors = [BookAuthor(**a) for a in f["authors"]]
+            narrator = None
+            if f["narrator"]:
+                from audiobooker.base import AudiobookNarrator
+                narrator = AudiobookNarrator(**f["narrator"])
+            kwargs = dict(
+                authors=authors,
+                narrator=narrator,
+                tags=f["tags"],
+                language=f["language"],
+                min_runtime=f["min_runtime"],
+                title_blacklist=f["title_blacklist"],
+            )
+            if f["kind"] == "playlist":
+                sources.append(YoutubePlaylistSource(
+                    playlist_url=f["url"], **kwargs
+                ))
+            else:
+                sources.append(YoutubeChannelSource(
+                    channel_url=f["url"], **kwargs
+                ))
+        return sources
+
+    # ------------------------------------------------------------------
     # Stats / meta
     # ------------------------------------------------------------------
 
@@ -651,6 +788,22 @@ def main():
     p_search.add_argument("--source", default=None)
     p_search.add_argument("--language", default=None)
 
+    p_follow = sub.add_parser("follow", help="Follow a YouTube channel or playlist")
+    p_follow.add_argument("url", help="Channel or playlist URL")
+    p_follow.add_argument("--kind", default="channel", choices=["channel", "playlist"])
+    p_follow.add_argument("--name", default="", help="Human-readable label")
+    p_follow.add_argument("--tags", nargs="*", default=[], metavar="TAG")
+    p_follow.add_argument("--language", default="en")
+    p_follow.add_argument("--min-runtime", type=int, default=300,
+                          help="Skip videos shorter than N seconds (default 300)")
+    p_follow.add_argument("--blacklist", nargs="*", default=[], metavar="PHRASE",
+                          help="Skip books whose title contains any of these strings")
+
+    p_unfollow = sub.add_parser("unfollow", help="Stop following a channel or playlist")
+    p_unfollow.add_argument("url", help="Channel or playlist URL to remove")
+
+    sub.add_parser("list", help="List followed YouTube sources")
+
     args = parser.parse_args()
     idx = BookIndex(args.db)
 
@@ -665,6 +818,33 @@ def main():
         print("Updating index…")
         total = idx.update(sources=sources)
         print(f"Done. {total} new books added.")
+
+    elif args.cmd == "follow":
+        idx.follow(args.url, kind=args.kind, name=args.name,
+                   tags=args.tags, language=args.language,
+                   min_runtime=args.min_runtime,
+                   title_blacklist=args.blacklist)
+        label = args.name or args.url
+        print(f"Following {args.kind}: {label}")
+
+    elif args.cmd == "unfollow":
+        removed = idx.unfollow(args.url)
+        if removed:
+            print(f"Unfollowed: {args.url}")
+        else:
+            print(f"Not found: {args.url}")
+
+    elif args.cmd == "list":
+        followed = idx.list_followed()
+        if not followed:
+            print("No followed sources.")
+        else:
+            print(f"{'Kind':<10} {'Name/URL':<50} {'Language':<8} {'Tags'}")
+            print("-" * 80)
+            for f in followed:
+                label = f["name"] or f["url"]
+                tags = ", ".join(f["tags"]) if f["tags"] else ""
+                print(f"  {f['kind']:<8} {label:<50} {f['language']:<8} {tags}")
 
     elif args.cmd == "stats":
         s = idx.stats()

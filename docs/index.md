@@ -145,7 +145,7 @@ python -m audiobooker.index build
 # Build selected sources
 python -m audiobooker.index build --sources librivox loyalbooks
 
-# Incremental update
+# Incremental update (includes followed YouTube sources automatically)
 python -m audiobooker.index update
 python -m audiobooker.index update --sources librivox
 
@@ -158,9 +158,22 @@ python -m audiobooker.index search "Conan" --method search_by_title --n 5
 python -m audiobooker.index search "horror" --method search_by_tag --source Librivox
 python -m audiobooker.index search "Wayne June" --method search_by_narrator
 
+# Follow a YouTube channel or playlist
+python -m audiobooker.index follow https://www.youtube.com/@HorrorBabble/videos \
+    --kind channel --name HorrorBabble --tags Horror "Weird Fiction"
+python -m audiobooker.index follow https://www.youtube.com/playlist?list=PLxxx \
+    --kind playlist --name "My Playlist" --blacklist update compilation
+
+# List followed sources
+python -m audiobooker.index list
+
+# Unfollow
+python -m audiobooker.index unfollow https://www.youtube.com/@HorrorBabble/videos
+
 # Custom database path
 python -m audiobooker.index --db /data/books.db build
 python -m audiobooker.index --db /data/books.db search "Poe"
+python -m audiobooker.index --db /data/books.db follow https://www.youtube.com/@Test/videos
 ```
 
 ## Custom database path
@@ -178,10 +191,79 @@ with BookIndex() as idx:
         print(book.title)
 ```
 
-## YouTube sources
+## Following YouTube channels and playlists
+
+Register channels or playlists so they are automatically included in `update()`
+without having to name them every time. Third-party consumers of your index get
+the same videos automatically.
+
+```python
+from audiobooker.base import AudiobookNarrator
+
+# Follow a channel
+idx.follow(
+    "https://www.youtube.com/@HorrorBabble/videos",
+    kind="channel",
+    name="HorrorBabble",
+    tags=["Horror", "Weird Fiction"],
+    language="en",
+    min_runtime=300,
+    title_blacklist=["compilation", "update"],  # skip non-audiobook videos
+)
+
+# Follow a playlist
+idx.follow(
+    "https://www.youtube.com/playlist?list=PLxxxxxx",
+    kind="playlist",
+    name="My Audiobook Playlist",
+)
+
+# Inspect followed sources
+for f in idx.list_followed():
+    print(f["kind"], f["name"] or f["url"])
+
+# Remove a followed source
+idx.unfollow("https://www.youtube.com/@HorrorBabble/videos")
+
+# update() with no args now includes followed sources automatically
+idx.update()
+```
+
+### Title blacklist
+
+Use `title_blacklist` to skip videos whose title contains specific strings
+(case-insensitive). Useful for filtering out channel-update videos, compilations,
+or other non-audiobook content. `TheCybrarian` ships with `["update"]` by default.
+
+```python
+idx.follow(url, title_blacklist=["update", "live stream", "q&a"])
+```
+
+### CLI
+
+```bash
+# Follow a channel
+python -m audiobooker.index follow https://www.youtube.com/@HorrorBabble/videos \
+    --kind channel --name HorrorBabble --tags Horror "Weird Fiction" --language en
+
+# Follow with a title blacklist
+python -m audiobooker.index follow https://www.youtube.com/@TheCybrarian/videos \
+    --blacklist update compilation
+
+# List followed sources
+python -m audiobooker.index list
+
+# Unfollow
+python -m audiobooker.index unfollow https://www.youtube.com/@HorrorBabble/videos
+
+# update() now includes followed sources
+python -m audiobooker.index update
+```
+
+## YouTube sources (built-in)
 
 YouTube channels are excluded from the default `build()` source list since
-they update frequently. Use `update()` to add new videos periodically:
+they update frequently. Use `update()` or `follow()` to add them periodically:
 
 ```python
 from audiobooker.scrappers.youtube import HorrorBabble, TheCybrarian
