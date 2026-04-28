@@ -4,54 +4,83 @@ from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import get_soup
 
+_BASE = "https://www.audioanarchy.org"
+
+# AudioAnarchy has two sections with books
+_SECTIONS = [_BASE, _BASE + "/radio/"]
+
 
 @dataclass
 class AudioAnarchyAudioBook:
     url: str
     image: str = ""
+    tags: list = None
+
+    def __post_init__(self):
+        if self.tags is None:
+            self.tags = ["Anarchy"]
 
     def parse_page(self) -> AudioBook:
-        base_url = "http://www.audioanarchy.org/"
         soup = get_soup(self.url)
+        if not soup:
+            return None
+
         streams = []
-        for url in soup.find_all("a"):
-            try:
-                if not url["href"].endswith(".mp3"):
-                    continue
-                streams.append(base_url + url["href"])
-            except:
-                continue
-        title = soup.find("title").text.split(" - ")[-1].split(" :: ")[-1]
+        for a in soup.find_all("a"):
+            href = a.get("href", "")
+            if href.endswith(".mp3"):
+                streams.append(_BASE + "/" + href.lstrip("/"))
+
+        title_tag = soup.find("title")
+        title = title_tag.text.split(" - ")[-1].split(" :: ")[-1] if title_tag else ""
+
         return AudioBook(
             title=title,
             streams=streams,
             image=self.image,
-            tags=["Anarchy"],
+            tags=self.tags,
             authors=[BookAuthor(last_name="Audio Anarchy")],
-            language="en"
+            language="en",
         )
 
 
+def _scrape_section(section_url, tags):
+    soup = get_soup(section_url)
+    if not soup:
+        return
+    # Ensure section_url ends with / so relative hrefs resolve correctly
+    base = section_url.rstrip("/") + "/"
+    for entry in soup.find_all("div", {"id": "album"}):
+        try:
+            a = entry.find("a")
+            img = entry.find("img")
+            if not a:
+                continue
+            href = a["href"].lstrip("/")
+            # Absolute URLs pass through; relative ones resolve against section base
+            if href.startswith("http"):
+                url = href
+            else:
+                url = base + href
+            book = AudioAnarchyAudioBook(
+                url=url,
+                image=_BASE + "/" + img["src"].lstrip("/") if img else "",
+                tags=tags,
+            ).parse_page()
+            if book:
+                yield book
+        except Exception:
+            continue
+
+
 class AudioAnarchy(AudioBookSource):
-    base_url = "http://www.audioanarchy.org"
 
     def iterate_all(self):
-        soup = get_soup(self.base_url)
-        for entry in soup.find_all("div", {"id": "album"}):
-            try:
-                a = entry.find("a")
-                img = entry.find("img")
-                yield AudioAnarchyAudioBook(
-                    url="https://www.audioanarchy.org/" + a["href"],
-                    image="https://www.audioanarchy.org/" + img["src"]
-                ).parse_page()
-            except:
-                continue
+        for b in _scrape_section(_BASE, ["Anarchy"]):
+            yield self._tag(b)
+        for b in _scrape_section(_BASE + "/radio/", ["Anarchy", "Radio Drama"]):
+            yield self._tag(b)
 
-
-if __name__ == "__main__":
-    from pprint import pprint
-
-    scraper = AudioAnarchy()
-    for book in scraper.iterate_all():
-        pprint(book)
+    def iterate_popular(self):
+        # Front page listing is already the curated catalogue
+        return self.iterate_all()

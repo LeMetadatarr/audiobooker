@@ -1,12 +1,13 @@
 from dataclasses import dataclass
 from typing import Iterable
 
-from sitemapparser import SiteMapParser
-
 from audiobooker.exceptions import ParseErrorException
 from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import get_soup, extractor_narrator, extract_year
+from audiobooker.utils import get_soup, extractor_narrator, extract_year, iter_sitemap_urls
+
+_BASE = "https://stephenkingaudiobooks.com"
+_SITEMAP = "https://stephenkingaudiobooks.com/wp-sitemap-posts-post-1.xml"
 
 
 @dataclass
@@ -15,29 +16,44 @@ class StephenKingAudioBook:
 
     def parse_page(self):
         soup = get_soup(self.url)
+        if not soup:
+            return None
+
         tags = soup.find("span", {"class": "post-meta-category"})
-        title = soup.find("h1", {"class": "title-page"}).text.replace("\xa0", " ")
+        h1 = soup.find("h1", {"class": "title-page"})
+        if not h1:
+            return None
+        title = h1.text.replace("\xa0", " ")
+
         content = soup.find("div", {"class": "post-single clearfix"})
-        desc = content.find("p").text.replace("\xa0", " ")
+        if not content:
+            return None
 
-        img = content.find("img")["src"]
+        p = content.find("p")
+        desc = p.text.replace("\xa0", " ") if p else ""
 
-        if "Harry Potter" not in tags.text:
+        img_tag = content.find("img")
+        img = img_tag["src"] if img_tag else ""
+
+        if tags and "Harry Potter" not in tags.text:
             authors = [BookAuthor(first_name="Stephen", last_name="King")]
         else:
             authors = [BookAuthor(first_name="J.K.", last_name="Rowling")]
 
-        if "Stephen Fry" in title and "Harry Potter" in tags.text:
-            narrator = AudiobookNarrator(first_name="Stephen",
-                                         last_name="Fry")
+        if tags and "Stephen Fry" in title and "Harry Potter" in tags.text:
+            narrator = AudiobookNarrator(first_name="Stephen", last_name="Fry")
         else:
-            narrator = (extractor_narrator(title) or
-                        extractor_narrator(desc))
+            narrator = extractor_narrator(title) or extractor_narrator(desc)
 
-        streams = [s.find("a").text for s in content.find_all("audio")]
+        streams = []
+        for audio in content.find_all("audio"):
+            a = audio.find("a")
+            if a:
+                streams.append(a.text)
 
         if not streams:
             raise ParseErrorException("No streams found")
+
         return AudioBook(
             title=title.replace(" Audiobook", ""),
             streams=streams,
@@ -46,52 +62,60 @@ class StephenKingAudioBook:
             image=img,
             tags=[],
             authors=authors,
-            year=extract_year(title) or
-                 extract_year(desc),
-            language="en"
+            year=extract_year(title) or extract_year(desc),
+            language="en",
         )
 
 
 class StephenKingAudioBooks(AudioBookSource):
-    base_url = "https://stephenkingaudiobooks.com"
+
     @classmethod
-    def _parse_page(cls,url = "https://stephenkingaudiobooks.com", limit=-1, **params):
+    def _parse_page(cls, url=_BASE, limit=-1, **params) -> Iterable[AudioBook]:
         soup = get_soup(url, **params)
+        if not soup:
+            return
         for entry in soup.find_all("article"):
             try:
                 a = entry.find("a")
-                url = a["href"]
-                yield StephenKingAudioBook(url=url).parse_page()
-            except:
+                if not a:
+                    continue
+                book = StephenKingAudioBook(url=a["href"]).parse_page()
+                if book:
+                    yield book
+            except Exception:
                 continue
         if limit == -1 or limit > 0:
-            limit -= 1
             next_page = soup.find("div", {"class": "nav-previous"})
             if next_page:
-                url = next_page.find("a")["href"]
-                for ntry in cls._parse_page(url=url, limit=limit, **params):
-                    yield ntry
+                a = next_page.find("a")
+                if a:
+                    yield from cls._parse_page(url=a["href"], limit=limit - 1, **params)
 
-    def search(self, query):
-        return self._parse_page(params={"s": query})
+    def search(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
+        for b in self._parse_page(params={"s": query}):
+            if fuzzy_match(query, b.title) or \
+               any(fuzzy_match(query, f"{a.first_name} {a.last_name}") for a in b.authors):
+                yield self._tag(b)
 
+    def search_by_title(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
+        for b in self._parse_page(params={"s": query}):
+            if fuzzy_match(query, b.title):
+                yield self._tag(b)
 
-    def iterate_all(self):
-        sm = SiteMapParser('https://stephenkingaudiobook.net/wp-sitemap-posts-post-1.xml')  # reads /sitemap.xml
-        urls = sm.get_urls()  # returns iterator of sitemapper.Url instances
-        for url in urls:
+    def search_by_author(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
+        for b in self._parse_page(params={"s": query}):
+            if any(fuzzy_match(query, f"{a.first_name} {a.last_name}") or
+                   fuzzy_match(query, a.last_name) for a in b.authors):
+                yield self._tag(b)
+
+    def iterate_all(self) -> Iterable[AudioBook]:
+        for url in iter_sitemap_urls(_SITEMAP):
             try:
-                yield StephenKingAudioBook(url=str(url)).parse_page()
-            except:
-                pass
-
-if __name__ == "__main__":
-    from pprint import pprint
-
-    scraper = StephenKingAudioBooks()
-    for book in scraper.search("Dark Tower"):
-        pprint(book)
-
-    exit()
-    for book in scraper.iterate_all():
-        pprint(book)
+                book = StephenKingAudioBook(url=url).parse_page()
+                if book:
+                    yield self._tag(book)
+            except Exception:
+                continue

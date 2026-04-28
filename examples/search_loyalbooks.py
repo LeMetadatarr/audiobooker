@@ -1,18 +1,21 @@
 from pprint import pprint
 from audiobooker.scrappers.loyalbooks import LoyalBooks
 
-print(LoyalBooks().tags)
-print(LoyalBooks.get_tag(40))
+lb = LoyalBooks()
 
-for book in LoyalBooks.search_audiobooks(author="Lovecraft"):
-    pprint(book.as_json)
+print("=== search by author ===")
+for book in lb.search_by_author("Lovecraft"):
+    pprint(book.title)
+    pprint(book.streams)
+    break
 
-scraper = LoyalBooks()
-#for book in scraper.scrap_popular():
-#    pprint(book.as_json)
+print("=== search by title ===")
+for book in lb.search_by_title("sherlock"):
+    pprint(book.title)
+    break
 
-for book in scraper.scrap_by_tag("Science fiction"):
-    pprint(book.as_json)
-
-#pprint(scraper.scrap_tags())
-#pprint(scraper.tags)
+print("=== iterate all (first 3) ===")
+for i, book in enumerate(lb.iterate_all()):
+    pprint(book.title)
+    if i >= 2:
+        break

@@ -1,0 +1,44 @@
+# Python build artifacts
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# uv / pip
+.uv/
+
+# Agent pipeline artifacts
+brainstorm.md
+sprint.md
+spec.md
+plan.md
+decisions.md
+implementation-notes.md
+status.md
+audit.md

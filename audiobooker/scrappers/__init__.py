@@ -1,48 +1,70 @@
 import abc
 from requests_cache import CachedSession
 from datetime import timedelta
-from audiobooker.exceptions import UnknownAuthorIdException, \
-    UnknownBookIdException, ScrappingError, UnknownAuthorException, UnknownBookException
-from audiobooker.utils import random_user_agent
-from typing import List, Iterable
+from audiobooker.utils import random_user_agent, fuzzy_match
+from typing import Iterable
 from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 
 
 class AudioBookSource:
     expire_after = timedelta(hours=1)
     session = CachedSession(backend='memory', expire_after=expire_after)
+    session.headers.update({"User-Agent": random_user_agent()})
+
+    @property
+    def source_name(self) -> str:
+        return self.__class__.__name__
+
+    def _tag(self, book: AudioBook) -> AudioBook:
+        """Stamp the source field and return the book."""
+        if not book.source:
+            book.source = self.source_name
+        return book
 
     def search(self, query) -> Iterable[AudioBook]:
-        # TODO fuzzy match instead
+        seen = set()
         for b in self.search_by_title(query):
-            yield b
+            if id(b) not in seen:
+                seen.add(id(b))
+                yield b
         for b in self.search_by_author(query):
-            yield b
+            if id(b) not in seen:
+                seen.add(id(b))
+                yield b
         for b in self.search_by_tag(query):
-            yield b
+            if id(b) not in seen:
+                seen.add(id(b))
+                yield b
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
             if b.narrator:
-                if b.narrator.last_name.lower() in query.lower():
-                    yield b
+                full = f"{b.narrator.first_name} {b.narrator.last_name}".strip()
+                if fuzzy_match(query, full) or fuzzy_match(query, b.narrator.last_name):
+                    yield self._tag(b)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
+        q_words = query.split()
+        q_last = q_words[-1]  # last token of the query is typically the surname
         for b in self.iterate_all():
             for a in b.authors:
-                if (a.last_name and a.last_name.lower() in query.lower()) or \
-                        (a.first_name and a.first_name.lower() in query.lower()):
-                    yield b
+                full = f"{a.first_name} {a.last_name}".strip()
+                # Always require the last token of the query to match the candidate last name
+                if not fuzzy_match(q_last, a.last_name):
+                    continue
+                if fuzzy_match(query, full) or fuzzy_match(query, a.last_name):
+                    yield self._tag(b)
+                    break
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
-            if query.lower() in b.title.lower():
-                yield b
+            if fuzzy_match(query, b.title):
+                yield self._tag(b)
 
     def search_by_tag(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
-            if query.lower() in [t.lower() for t in b.tags]:
-                yield b
+            if any(fuzzy_match(query, t) for t in b.tags):
+                yield self._tag(b)
 
     @abc.abstractmethod
     def iterate_all(self) -> Iterable[AudioBook]:
@@ -54,10 +76,11 @@ class AudioBookSource:
     def iterate_by_author(self, author) -> Iterable[AudioBook]:
         for b in self.iterate_all():
             for a in b.authors:
-                if a.last_name.lower() in author.lower():
-                    yield b
+                if fuzzy_match(author, a.last_name):
+                    yield self._tag(b)
+                    break
 
     def iterate_by_tag(self, tag) -> Iterable[AudioBook]:
         for b in self.iterate_all():
             if tag in b.tags:
-                yield b
+                yield self._tag(b)

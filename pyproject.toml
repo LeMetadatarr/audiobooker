@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiobooker"
+dynamic = ["version"]
+description = "Audiobook scraper — search and stream from Librivox, LoyalBooks, and more"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "jarbasAI", email = "jarbasai@mailfence.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "bs4",
+    "feedparser",
+    "rapidfuzz",
+    "requests-cache",
+    "site-map-parser",
+]
+
+[project.optional-dependencies]
+youtube = ["tutubo"]
+
+[project.urls]
+Homepage = "https://github.com/OpenJarbas/audiobooker"
+Repository = "https://github.com/OpenJarbas/audiobooker"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["audiobooker*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "audiobooker.version.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
