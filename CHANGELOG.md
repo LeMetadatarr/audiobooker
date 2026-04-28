@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a1](https://github.com/TigreGotico/audiobooker/tree/0.7.0a1) (2026-04-28)
+
+[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.6.0a1...0.7.0a1)
+
+**Merged pull requests:**
+
+- feat: click CLI, local cache with offline playback, duration filters, TheDustyTome [\#12](https://github.com/TigreGotico/audiobooker/pull/12) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.6.0a1](https://github.com/TigreGotico/audiobooker/tree/0.6.0a1) (2026-04-28)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.5.1a1...0.6.0a1)
