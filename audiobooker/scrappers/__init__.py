@@ -38,14 +38,19 @@ class AudioBookSource:
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
-            if b.narrator and fuzzy_match(query, b.narrator.last_name):
-                yield self._tag(b)
+            if b.narrator:
+                full = f"{b.narrator.first_name} {b.narrator.last_name}".strip()
+                if fuzzy_match(query, full) or fuzzy_match(query, b.narrator.last_name):
+                    yield self._tag(b)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
         for b in self.iterate_all():
             for a in b.authors:
-                if (a.last_name and fuzzy_match(query, a.last_name)) or \
-                        (a.first_name and fuzzy_match(query, a.first_name)):
+                full = f"{a.first_name} {a.last_name}".strip()
+                # Match full name, or last name alone (for single-word queries)
+                q_words = query.split()
+                if fuzzy_match(query, full) or \
+                   (len(q_words) == 1 and a.last_name and fuzzy_match(query, a.last_name)):
                     yield self._tag(b)
                     break
 

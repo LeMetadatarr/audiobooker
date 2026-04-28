@@ -104,6 +104,13 @@ class TestFuzzyMatch(unittest.TestCase):
     def test_case_insensitive(self):
         self.assertTrue(fuzzy_match("HORROR", "horror"))
 
+    def test_similar_names_not_matched(self):
+        # "Stephen King" must not match "Stephen Crane"
+        self.assertFalse(fuzzy_match("Stephen King", "Stephen Crane"))
+
+    def test_partial_name_in_full(self):
+        self.assertTrue(fuzzy_match("Conan Doyle", "Sir Arthur Conan Doyle"))
+
 
 class TestNormalizeLanguage(unittest.TestCase):
     def test_full_english(self):

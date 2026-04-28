@@ -15,7 +15,8 @@ def normalize_language(lang: str) -> str:
     """Normalise any language string to an ISO 639-1 code."""
     if not lang:
         return ""
-    s = lang.strip().lower()
+    # strip region subtag: "en-US", "en_US" → "en"
+    s = lang.strip().lower().split("-")[0].split("_")[0]
     if s in _LANG_MAP:
         return _LANG_MAP[s]
     if len(s) == 2:

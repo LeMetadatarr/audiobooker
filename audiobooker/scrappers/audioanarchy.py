@@ -48,14 +48,22 @@ def _scrape_section(section_url, tags):
     soup = get_soup(section_url)
     if not soup:
         return
+    # Ensure section_url ends with / so relative hrefs resolve correctly
+    base = section_url.rstrip("/") + "/"
     for entry in soup.find_all("div", {"id": "album"}):
         try:
             a = entry.find("a")
             img = entry.find("img")
             if not a:
                 continue
+            href = a["href"].lstrip("/")
+            # Absolute URLs pass through; relative ones resolve against section base
+            if href.startswith("http"):
+                url = href
+            else:
+                url = base + href
             book = AudioAnarchyAudioBook(
-                url=_BASE + "/" + a["href"].lstrip("/"),
+                url=url,
                 image=_BASE + "/" + img["src"].lstrip("/") if img else "",
                 tags=tags,
             ).parse_page()

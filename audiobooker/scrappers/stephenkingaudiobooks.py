@@ -94,16 +94,24 @@ class StephenKingAudioBooks(AudioBookSource):
                     yield from cls._parse_page(url=a["href"], limit=limit - 1, **params)
 
     def search(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
         for b in self._parse_page(params={"s": query}):
-            yield self._tag(b)
+            if fuzzy_match(query, b.title) or \
+               any(fuzzy_match(query, f"{a.first_name} {a.last_name}") for a in b.authors):
+                yield self._tag(b)
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
         for b in self._parse_page(params={"s": query}):
-            yield self._tag(b)
+            if fuzzy_match(query, b.title):
+                yield self._tag(b)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
+        from audiobooker.utils import fuzzy_match
         for b in self._parse_page(params={"s": query}):
-            yield self._tag(b)
+            if any(fuzzy_match(query, f"{a.first_name} {a.last_name}") or
+                   fuzzy_match(query, a.last_name) for a in b.authors):
+                yield self._tag(b)
 
     def iterate_all(self) -> Iterable[AudioBook]:
         sm = SiteMapParser(_SITEMAP)

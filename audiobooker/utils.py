@@ -93,13 +93,19 @@ def normalize_name(name):
         return name, ""
 
 
-def fuzzy_match(query: str, text: str, threshold: float = 0.6) -> bool:
+def fuzzy_match(query: str, text: str, threshold: float = 0.80) -> bool:
     """Return True if query fuzzy-matches text above threshold."""
     q, t = query.lower(), text.lower()
     if q in t:
         return True
-    ratio = SequenceMatcher(None, q, t).ratio()
-    return ratio >= threshold
+    # Single-word query: slide over text (catches "Lovecraft" inside "H. P. Lovecraft")
+    if " " not in q and len(q) <= len(t):
+        for i in range(len(t) - len(q) + 1):
+            if SequenceMatcher(None, q, t[i:i + len(q)]).ratio() >= threshold:
+                return True
+        return False
+    # Multi-word query: compare directly (sliding creates false positives like "stephen king" ≈ "stephen vinc")
+    return SequenceMatcher(None, q, t).ratio() >= threshold
 
 
 def check_url_availability(url: str, timeout: int = 5) -> bool:

@@ -91,6 +91,7 @@ class LoyalBooks(AudioBookSource):
         return self.search(query)
 
     def search_by_tag(self, query):
+        seen_urls = set()
         for genre in _GENRE_PATHS:
             if not fuzzy_match(query, genre.replace("_", " ")):
                 continue
@@ -99,13 +100,17 @@ class LoyalBooks(AudioBookSource):
                 continue
             for a in soup.find_all("a", href=True):
                 href = str(a["href"])
-                if "/book/" in href:
-                    url = href if href.startswith("http") else _BASE + href
-                    try:
-                        for b in from_rss(url + "/feed"):
-                            yield self._tag(b)
-                    except Exception:
-                        continue
+                if "/book/" not in href:
+                    continue
+                url = href if href.startswith("http") else _BASE + href
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                try:
+                    for b in from_rss(url + "/feed"):
+                        yield self._tag(b)
+                except Exception:
+                    continue
 
     def iterate_popular(self):
         soup = get_soup(_BASE)
