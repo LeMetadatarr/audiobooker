@@ -1,10 +1,8 @@
 from dataclasses import dataclass
 
-from sitemapparser import SiteMapParser
-
 from audiobooker.base import AudioBook
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import get_soup
+from audiobooker.utils import get_soup, iter_sitemap_urls
 
 
 @dataclass
@@ -42,10 +40,9 @@ class HPTalesAudioBook:
 class HPTalesAudioBooks(AudioBookSource):
 
     def iterate_all(self):
-        sm = SiteMapParser("https://hpaudiotales.com/wp-sitemap-posts-post-1.xml")
-        for url in sm.get_urls():
+        for url in iter_sitemap_urls("https://hpaudiotales.com/wp-sitemap-posts-post-1.xml"):
             try:
-                book = HPTalesAudioBook(url=str(url)).parse_page()
+                book = HPTalesAudioBook(url=url).parse_page()
                 if book:
                     yield self._tag(book)
             except Exception:

@@ -1,12 +1,10 @@
 from dataclasses import dataclass
 from typing import Iterable
 
-from sitemapparser import SiteMapParser
-
 from audiobooker.exceptions import ParseErrorException
 from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import get_soup, extractor_narrator, extract_year
+from audiobooker.utils import get_soup, extractor_narrator, extract_year, iter_sitemap_urls
 
 _BASE = "https://stephenkingaudiobooks.com"
 _SITEMAP = "https://stephenkingaudiobooks.com/wp-sitemap-posts-post-1.xml"
@@ -114,10 +112,9 @@ class StephenKingAudioBooks(AudioBookSource):
                 yield self._tag(b)
 
     def iterate_all(self) -> Iterable[AudioBook]:
-        sm = SiteMapParser(_SITEMAP)
-        for url in sm.get_urls():
+        for url in iter_sitemap_urls(_SITEMAP):
             try:
-                book = StephenKingAudioBook(url=str(url)).parse_page()
+                book = StephenKingAudioBook(url=url).parse_page()
                 if book:
                     yield self._tag(book)
             except Exception:

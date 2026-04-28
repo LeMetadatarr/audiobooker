@@ -1,7 +1,7 @@
 import unittest
 
-from audiobooker.utils import extract_year, extractor_narrator, normalize_name, fuzzy_match
-from audiobooker.base import AudioBook, BookAuthor, normalize_language
+from audiobooker.utils import extract_year, extractor_narrator, normalize_name, fuzzy_match, score_book
+from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator, normalize_language
 from audiobooker.scrappers.loyalbooks import calc_runtime
 
 
@@ -150,6 +150,50 @@ class TestAudioBookHash(unittest.TestCase):
     def test_language_normalized(self):
         book = AudioBook(title="Test", language="English")
         self.assertEqual(book.language, "en")
+
+
+class TestScoreBook(unittest.TestCase):
+    def _book(self, title, authors=None, tags=None, narrator=None):
+        return AudioBook(
+            title=title,
+            authors=authors or [],
+            tags=tags or [],
+            narrator=narrator,
+        )
+
+    def test_exact_title_scores_highest(self):
+        target = self._book("Harry Potter and the Philosopher's Stone",
+                            authors=[BookAuthor(first_name="J.K.", last_name="Rowling")])
+        other = self._book("Great Big Treasury of Beatrix Potter",
+                           authors=[BookAuthor(first_name="Beatrix", last_name="Potter")])
+        s_target = score_book("Harry Potter", target, "search_by_title")
+        s_other = score_book("Harry Potter", other, "search_by_title")
+        self.assertGreater(s_target, s_other)
+
+    def test_author_method_ignores_title(self):
+        king = self._book("Fairy Tale", authors=[BookAuthor(first_name="Stephen", last_name="King")])
+        crane = self._book("Red Badge of Courage", authors=[BookAuthor(first_name="Stephen", last_name="Crane")])
+        s_king = score_book("Stephen King", king, "search_by_author")
+        s_crane = score_book("Stephen King", crane, "search_by_author")
+        self.assertGreater(s_king, s_crane)
+
+    def test_narrator_method_scores_narrator(self):
+        book = self._book("It", narrator=AudiobookNarrator(first_name="Frank", last_name="Muller"))
+        score = score_book("Frank Muller", book, "search_by_narrator")
+        self.assertGreater(score, 0.9)
+
+    def test_tag_method_scores_tag(self):
+        book = self._book("Letters of Insurgents", tags=["Anarchy", "Radio Drama"])
+        score = score_book("Anarchy", book, "search_by_tag")
+        self.assertGreater(score, 0.9)
+
+    def test_min_score_above_zero_for_match(self):
+        book = self._book("The Dark Tower", authors=[BookAuthor(first_name="Stephen", last_name="King")])
+        self.assertGreater(score_book("Dark Tower", book, "search_by_title"), 0.5)
+
+    def test_irrelevant_book_scores_low(self):
+        book = self._book("Romeo and Juliet", authors=[BookAuthor(first_name="William", last_name="Shakespeare")])
+        self.assertLess(score_book("Lovecraft", book, "search_by_author"), 0.3)
 
 
 if __name__ == "__main__":

@@ -1,10 +1,11 @@
 from dataclasses import dataclass
 
-from sitemapparser import SiteMapParser
-
 from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import get_soup
+from audiobooker.utils import get_soup, iter_sitemap_urls
+
+_SITEMAP = "https://darkerprojects.com/wp-sitemap-posts-post-1.xml"
+_BASE = "https://darkerprojects.com"
 
 
 @dataclass
@@ -50,11 +51,31 @@ class DarkerProjectsAudioBook:
 
 class DarkerProjects(AudioBookSource):
 
-    def iterate_all(self):
-        sm = SiteMapParser("https://darkerprojects.com/wp-sitemap-posts-post-1.xml")
-        for url in sm.get_urls():
+    def iterate_popular(self):
+        """Yield shows listed on the DarkerProjects front page."""
+        soup = get_soup(_BASE)
+        if not soup:
+            return
+        seen = set()
+        for a in soup.find_all("a", href=True):
+            href = str(a["href"])
+            if _BASE not in href or href in seen:
+                continue
+            path = href.replace(_BASE, "").strip("/")
+            if not path or "?" in path or "." in path:
+                continue
+            seen.add(href)
             try:
-                book = DarkerProjectsAudioBook(url=str(url)).parse_page()
+                book = DarkerProjectsAudioBook(url=href).parse_page()
+                if book and book.streams:
+                    yield self._tag(book)
+            except Exception:
+                continue
+
+    def iterate_all(self):
+        for url in iter_sitemap_urls(_SITEMAP):
+            try:
+                book = DarkerProjectsAudioBook(url=url).parse_page()
                 if book:
                     yield self._tag(book)
             except Exception:

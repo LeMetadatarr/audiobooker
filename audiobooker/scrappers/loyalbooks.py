@@ -1,9 +1,8 @@
 import feedparser
-from sitemapparser import SiteMapParser
 
 from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import normalize_name, get_soup, fuzzy_match
+from audiobooker.utils import normalize_name, get_soup, fuzzy_match, iter_sitemap_urls
 
 _BASE = "https://www.loyalbooks.com"
 _SITEMAP = _BASE + "/sitemap.xml"
@@ -71,9 +70,7 @@ def from_rss(rss_url):
 class LoyalBooks(AudioBookSource):
 
     def search(self, query):
-        sm = SiteMapParser(_SITEMAP)
-        for url in sm.get_urls():
-            url = str(url)
+        for url in iter_sitemap_urls(_SITEMAP):
             if "/book/" not in url:
                 continue
             slug = url.split("/")[-1].replace("-", " ")
@@ -127,9 +124,7 @@ class LoyalBooks(AudioBookSource):
                     continue
 
     def iterate_all(self):
-        sm = SiteMapParser(_SITEMAP)
-        for url in sm.get_urls():
-            url = str(url)
+        for url in iter_sitemap_urls(_SITEMAP):
             if "/book/" not in url:
                 continue
             try:

@@ -1,8 +1,13 @@
+import logging
 import random
 import re
 
 from bs4 import BeautifulSoup
 from rapidfuzz import fuzz
+
+# sitemapparser logs.critical when get_urls/get_sitemaps is called on the wrong
+# root type — silence it; we guard with has_urls()/has_sitemaps() ourselves.
+logging.getLogger("sitemapparser").setLevel(logging.ERROR)
 
 USER_AGENTS = [
     ('Mozilla/5.0 (X11; Linux x86_64) '
@@ -169,6 +174,25 @@ def score_book(query: str, book, method: str = "search") -> float:
     if total_weight == 0:
         return 0.0
     return sum(scores[f] * w for f, w in weights.items()) / total_weight
+
+
+def iter_sitemap_urls(url: str):
+    """Yield every leaf URL from a sitemap or sitemap index, recursively.
+
+    Handles both <urlset> (plain sitemap) and <sitemapindex> transparently
+    without logging noise.  Silently skips URLs that fail to fetch or parse.
+    """
+    from sitemapparser import SiteMapParser
+    try:
+        sm = SiteMapParser(url)
+    except Exception:
+        return
+    if sm.has_urls():
+        for u in sm.get_urls():
+            yield str(u)
+    elif sm.has_sitemaps():
+        for child in sm.get_sitemaps():
+            yield from iter_sitemap_urls(str(child.loc))
 
 
 def check_url_availability(url: str, timeout: int = 5) -> bool:

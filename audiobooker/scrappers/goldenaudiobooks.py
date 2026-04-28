@@ -1,25 +1,18 @@
 from dataclasses import dataclass
 
-from sitemapparser import SiteMapParser
-
 from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import get_soup, normalize_name
+from audiobooker.utils import get_soup, normalize_name, iter_sitemap_urls
 
-# Root sitemap auto-discovers all post-sitemap*.xml pages
 _ROOT_SITEMAP = "https://goldenaudiobook.co/sitemap.xml"
+_FRONT_PAGE = "https://goldenaudiobook.co"
 
 
 def _iter_post_sitemaps():
-    """Yield all post-sitemap URLs from the root sitemap index."""
-    try:
-        sm = SiteMapParser(_ROOT_SITEMAP)
-        for url in sm.get_urls():
-            url = str(url)
-            if "post-sitemap" in url:
-                yield url
-    except Exception:
-        pass
+    """Yield all post-sitemap leaf URLs from the root sitemap index."""
+    for url in iter_sitemap_urls(_ROOT_SITEMAP):
+        if "post-sitemap" in url:
+            yield url
 
 
 @dataclass
@@ -68,15 +61,33 @@ class GoldenAudioBooksAudioBook:
 
 class GoldenAudioBooks(AudioBookSource):
 
-    def iterate_all(self):
-        for sitemap_url in _iter_post_sitemaps():
+    def iterate_popular(self):
+        """Yield books featured on the front page (curated selection)."""
+        soup = get_soup(_FRONT_PAGE)
+        if not soup:
+            return
+        seen = set()
+        for a in soup.find_all("a", href=True):
+            href = str(a["href"])
+            if _FRONT_PAGE not in href or href in seen:
+                continue
+            # Front page book links contain a slug-style path with no query string
+            path = href.replace(_FRONT_PAGE, "").strip("/")
+            if not path or "?" in path or "." in path or "/" in path:
+                continue
+            seen.add(href)
             try:
-                sm = SiteMapParser(sitemap_url)
+                book = GoldenAudioBooksAudioBook(url=href).parse_page()
+                if book:
+                    yield self._tag(book)
             except Exception:
                 continue
-            for url in sm.get_urls():
+
+    def iterate_all(self):
+        for sitemap_url in _iter_post_sitemaps():
+            for url in iter_sitemap_urls(sitemap_url):
                 try:
-                    book = GoldenAudioBooksAudioBook(url=str(url)).parse_page()
+                    book = GoldenAudioBooksAudioBook(url=url).parse_page()
                     if book:
                         yield self._tag(book)
                 except Exception:
