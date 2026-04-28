@@ -171,8 +171,8 @@ _NARRATOR_RE = re.compile(
     r'\b(?:narrated|read)\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2})',
     re.IGNORECASE,
 )
-# Hashtags: #audiobook #horror
-_HASHTAG_RE = re.compile(r'#(\w+)')
+# Hashtags: #audiobook  OR  # audiobook (space after #)
+_HASHTAG_RE = re.compile(r'#\s*(\w+)')
 # Year: "published in 1934", "publication in January 1934", "March 1933"
 _YEAR_RE = re.compile(r'\b(1[6-9]\d{2}|20[0-2]\d)\b')
 # Pipe/dash noise suffixes: "| HorrorBabble", "| Clark Ashton Smith's Zothique Cycle",
@@ -180,7 +180,18 @@ _YEAR_RE = re.compile(r'\b(1[6-9]\d{2}|20[0-2]\d)\b')
 _NOISE_SUFFIX_RE = re.compile(
     r'\s*[|/–\-]\s*(?:HorrorBabble|The Cybrarian'
     r"|[A-Z][a-zA-Z ']+Cycle"
-    r'|(?:A\s+)?(?:Cthulhu Mythos|Doctor Satan|Clean Read).*)',
+    r'|(?:A\s+)?(?:Cthulhu Mythos|Doctor Satan|Clean Read).*'
+    r'|(?:FULL\s+)?AUDIOBOOK.*'
+    r'|(?:AUDIO\s*DRAMA|AUDIODRAMA).*'
+    r'|in\s+INFOVISION.*'
+    r'|INFOVISION.*)',
+    re.IGNORECASE,
+)
+# Trailing standalone noise not preceded by a separator
+_TRAILING_NOISE_RE = re.compile(
+    r'\s*[-–]?\s*(?:FULL\s+AUDIOBOOK|AUDIOBOOK|AUDIO\s*DRAMA|AUDIODRAMA'
+    r'|(?:in|an)\s+INFOVISION(?:\s+Audio\s+Drama)?|INFOVISION'
+    r'|REMASTERED)\s*[!]?\s*$',
     re.IGNORECASE,
 )
 # Bracketed noise: [PREVIEW], [REMASTERED], [English], [unabridged], etc.
@@ -240,6 +251,7 @@ def extract_yt_metadata(title: str, desc: str) -> dict:
     # --- clean title: strip hashtags, noise suffixes, bracketed labels ---
     clean = _BRACKET_RE.sub("", title)
     clean = _NOISE_SUFFIX_RE.sub("", clean)
+    clean = _TRAILING_NOISE_RE.sub("", clean)
     clean = _HASHTAG_RE.sub("", clean).strip(" ,–-|")
     # collapse multiple spaces
     clean = re.sub(r'\s{2,}', ' ', clean).strip()
@@ -279,10 +291,8 @@ def _video_to_book(v: dict, authors: List[BookAuthor], tags: List[str],
         resolved_narrator = narrator if narrator is not None else meta["narrator"]
         # Year
         year = meta["year"]
-        # Merge tags: configured base + hashtag-derived extras (deduplicated)
-        extra_lower = {t.lower() for t in tags}
-        extra_tags = [t for t in meta["extra_tags"] if t not in extra_lower]
-        resolved_tags = tags + extra_tags
+        # Tags: use per-video hashtags when available; fall back to channel base tags
+        resolved_tags = meta["extra_tags"] if meta["extra_tags"] else tags
     else:
         resolved_authors = authors
         resolved_narrator = narrator
@@ -463,7 +473,8 @@ class TheCybrarian(YoutubeChannelSource):
             tags=["Fantasy", "Sword and Sorcery", "Robert E. Howard", "Conan"],
             language="en",
             min_runtime=120,
-            title_blacklist=["update"],
+            title_blacklist=["update", "preview", "cracking packs", "magic the gathering",
+                             "board game", "tabletop", "mtg"],
         )
 
 
@@ -480,4 +491,19 @@ class HorrorBabble(YoutubeChannelSource):
             tags=["Horror", "Lovecraft", "Weird Fiction", "Short Stories"],
             language="en",
             min_runtime=300,
+        )
+
+
+class TheDustyTome(YoutubeChannelSource):
+    """Classic literature, horror, and weird fiction audiobooks by The Dusty Tome."""
+
+    def __init__(self):
+        super().__init__(
+            channel_url="https://www.youtube.com/@TheDustyTome/videos",
+            authors=[],  # extracted per-video from title
+            narrator=None,  # extracted per-video
+            tags=["Classic Literature", "Horror", "Weird Fiction", "Audiobook"],
+            language="en",
+            min_runtime=600,
+            extract_metadata=True,
         )

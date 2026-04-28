@@ -1,3 +1,4 @@
+import hashlib
 from typing import List, Optional
 from dataclasses import dataclass, field
 
@@ -77,15 +78,25 @@ class AudioBook:
             self.language = normalize_language(self.language)
 
     def __hash__(self):
-        author_key = tuple(sorted(
-            (a.first_name.lower(), a.last_name.lower()) for a in self.authors
-        ))
-        return hash((self.title.lower().strip(), author_key))
+        return int(self.stable_id(), 16) & 0x7FFFFFFFFFFFFFFF
 
     def __eq__(self, other):
         if not isinstance(other, AudioBook):
             return False
-        return hash(self) == hash(other)
+        return self.stable_id() == other.stable_id()
+
+    def stable_id(self) -> str:
+        """Deterministic hex digest derived from title + authors.
+
+        Safe to use as a cache directory name or database key — unlike
+        Python's built-in hash(), this value is stable across processes
+        and Python versions (not affected by PYTHONHASHSEED).
+        """
+        author_key = "|".join(sorted(
+            f"{a.first_name.lower()}_{a.last_name.lower()}" for a in self.authors
+        ))
+        raw = f"{self.title.lower().strip()}||{author_key}"
+        return hashlib.sha256(raw.encode()).hexdigest()[:16]
 
     def has_live_streams(self) -> bool:
         """Return True if at least one stream URL is reachable."""
