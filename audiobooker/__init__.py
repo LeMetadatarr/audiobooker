@@ -9,6 +9,7 @@ from audiobooker.search import (
     search_by_narrator, search_by_tag, ALL_SOURCES,
 )
 from audiobooker.utils import check_url_availability, score_book, iter_sitemap_urls
+from audiobooker.index import BookIndex, IndexedSource
 
 try:
     from audiobooker.scrappers.youtube import YoutubeChannelSource, YoutubePlaylistSource, TheCybrarian, HorrorBabble
