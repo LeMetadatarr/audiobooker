@@ -279,10 +279,8 @@ def _video_to_book(v: dict, authors: List[BookAuthor], tags: List[str],
         resolved_narrator = narrator if narrator is not None else meta["narrator"]
         # Year
         year = meta["year"]
-        # Merge tags: configured base + hashtag-derived extras (deduplicated)
-        extra_lower = {t.lower() for t in tags}
-        extra_tags = [t for t in meta["extra_tags"] if t not in extra_lower]
-        resolved_tags = tags + extra_tags
+        # Tags: use per-video hashtags when available; fall back to channel base tags
+        resolved_tags = meta["extra_tags"] if meta["extra_tags"] else tags
     else:
         resolved_authors = authors
         resolved_narrator = narrator
