@@ -481,3 +481,18 @@ class HorrorBabble(YoutubeChannelSource):
             language="en",
             min_runtime=300,
         )
+
+
+class TheDustyTome(YoutubeChannelSource):
+    """Classic literature and fantasy audiobooks read by The Dusty Tome."""
+
+    def __init__(self):
+        super().__init__(
+            channel_url="https://www.youtube.com/@TheDustyTome/videos",
+            authors=[],  # extracted per-video from title
+            narrator=None,  # extracted per-video
+            tags=["Classic Literature", "Fantasy", "Audiobook"],
+            language="en",
+            min_runtime=300,
+            extract_metadata=True,
+        )

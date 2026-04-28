@@ -17,10 +17,14 @@ dependencies = [
     "rapidfuzz",
     "requests-cache",
     "site-map-parser",
+    "click>=8.0",
 ]
 
 [project.optional-dependencies]
 youtube = ["tutubo"]
+
+[project.scripts]
+audiobooker = "audiobooker.cli:cli"
 
 [project.urls]
 Homepage = "https://github.com/OpenJarbas/audiobooker"

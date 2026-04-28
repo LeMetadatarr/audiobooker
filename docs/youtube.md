@@ -8,8 +8,8 @@ pip install audiobooker[youtube]
 pip install tutubo
 ```
 
-When installed, `TheCybrarian` and `HorrorBabble` are automatically added to
-`ALL_SOURCES` and participate in every `search*()` call.
+When installed, `TheCybrarian`, `HorrorBabble`, and `TheDustyTome` are
+automatically added to `ALL_SOURCES` and participate in every `search*()` call.
 
 ## Pre-configured channels
 
@@ -45,6 +45,23 @@ for book in HorrorBabble().search_by_title("Lovecraft"):
 - Authors: `BookAuthor(last_name="Various")`
 - Tags: Horror, Lovecraft, Weird Fiction, Short Stories
 - `min_runtime`: 300 s (5 minutes — filters out shorts and trailers)
+
+### TheDustyTome
+
+Classic literature and fantasy audiobooks. Authors and narrators are extracted
+per-video from the title/description using `extract_metadata=True`.
+
+```python
+from audiobooker.scrappers.youtube import TheDustyTome
+
+for book in TheDustyTome().iterate_all():
+    print(book.title, book.authors)
+```
+
+- Channel: [@TheDustyTome](https://www.youtube.com/@TheDustyTome)
+- Authors: extracted per-video (falls back to empty)
+- Tags: Classic Literature, Fantasy, Audiobook
+- `min_runtime`: 300 s
 
 ## YoutubeChannelSource
 

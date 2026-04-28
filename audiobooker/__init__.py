@@ -12,6 +12,6 @@ from audiobooker.utils import check_url_availability, score_book, iter_sitemap_u
 from audiobooker.index import BookIndex, IndexedSource
 
 try:
-    from audiobooker.scrappers.youtube import YoutubeChannelSource, YoutubePlaylistSource, TheCybrarian, HorrorBabble
+    from audiobooker.scrappers.youtube import YoutubeChannelSource, YoutubePlaylistSource, TheCybrarian, HorrorBabble, TheDustyTome
 except ImportError:
     pass
