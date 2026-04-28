@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0a1](https://github.com/TigreGotico/audiobooker/tree/0.6.0a1) (2026-04-28)
+
+[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.5.1a1...0.6.0a1)
+
+**Merged pull requests:**
+
+- feat: BookIndex — persistent SQLite index with offline search and YouTube follow [\#10](https://github.com/TigreGotico/audiobooker/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.5.1a1](https://github.com/TigreGotico/audiobooker/tree/0.5.1a1) (2026-04-28)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.2.6...0.5.1a1)
