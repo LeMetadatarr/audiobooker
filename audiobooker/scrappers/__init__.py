@@ -44,13 +44,15 @@ class AudioBookSource:
                     yield self._tag(b)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
+        q_words = query.split()
+        q_last = q_words[-1]  # last token of the query is typically the surname
         for b in self.iterate_all():
             for a in b.authors:
                 full = f"{a.first_name} {a.last_name}".strip()
-                # Match full name, or last name alone (for single-word queries)
-                q_words = query.split()
-                if fuzzy_match(query, full) or \
-                   (len(q_words) == 1 and a.last_name and fuzzy_match(query, a.last_name)):
+                # Always require the last token of the query to match the candidate last name
+                if not fuzzy_match(q_last, a.last_name):
+                    continue
+                if fuzzy_match(query, full) or fuzzy_match(query, a.last_name):
                     yield self._tag(b)
                     break
 

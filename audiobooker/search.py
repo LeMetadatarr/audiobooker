@@ -1,10 +1,12 @@
 """Unified parallel search across all audiobooker sources."""
 import queue
 import threading
+import time
 from typing import Iterable, List, Optional, Type
 
 from audiobooker.base import AudioBook
 from audiobooker.scrappers import AudioBookSource
+from audiobooker.utils import score_book, _METHOD_WEIGHTS
 from audiobooker.scrappers.librivox import Librivox
 from audiobooker.scrappers.loyalbooks import LoyalBooks
 from audiobooker.scrappers.goldenaudiobooks import GoldenAudioBooks
@@ -50,7 +52,8 @@ def _parallel_search(method: str, query: Optional[str],
                      sources: Optional[List[AudioBookSource]],
                      max_per_source: int,
                      timeout: Optional[float],
-                     deduplicate: bool = True) -> Iterable[AudioBook]:
+                     deduplicate: bool = True,
+                     min_score: float = 0.45) -> Iterable[AudioBook]:
     if sources is None:
         sources = [cls() for cls in ALL_SOURCES]
 
@@ -66,10 +69,10 @@ def _parallel_search(method: str, query: Optional[str],
             daemon=True,
         ).start()
 
-    import time
     deadline = time.monotonic() + timeout if timeout is not None else None
     done = 0
     seen: set = set()
+    collected: List[AudioBook] = []
 
     while done < len(sources):
         if deadline is not None:
@@ -77,7 +80,7 @@ def _parallel_search(method: str, query: Optional[str],
             if remaining <= 0:
                 for s in stop_events:
                     s.set()
-                return  # daemon threads will clean up on their own
+                break
             try:
                 item = result_queue.get(timeout=min(remaining, 1.0))
             except queue.Empty:
@@ -93,7 +96,15 @@ def _parallel_search(method: str, query: Optional[str],
                 if key in seen:
                     continue
                 seen.add(key)
-            yield item
+            if query is not None:
+                item.score = score_book(query, item, method)
+                if item.score < min_score:
+                    continue
+            collected.append(item)
+
+    if query is not None:
+        collected.sort(key=lambda b: b.score, reverse=True)
+    yield from collected
 
 
 def search(query: str,

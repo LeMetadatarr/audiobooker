@@ -70,6 +70,7 @@ class AudioBook:
     year: int = 0
     runtime: int = 0
     source: str = ""
+    score: float = 0.0
 
     def __post_init__(self):
         if self.language:

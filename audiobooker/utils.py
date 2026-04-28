@@ -1,8 +1,8 @@
 import random
 import re
-from difflib import SequenceMatcher
 
 from bs4 import BeautifulSoup
+from rapidfuzz import fuzz
 
 USER_AGENTS = [
     ('Mozilla/5.0 (X11; Linux x86_64) '
@@ -93,19 +93,82 @@ def normalize_name(name):
         return name, ""
 
 
+def _wratio(a: str, b: str) -> float:
+    """rapidfuzz WRatio normalised to 0..1."""
+    return fuzz.WRatio(a, b, processor=str.lower) / 100.0
+
+
 def fuzzy_match(query: str, text: str, threshold: float = 0.80) -> bool:
-    """Return True if query fuzzy-matches text above threshold."""
-    q, t = query.lower(), text.lower()
-    if q in t:
-        return True
-    # Single-word query: slide over text (catches "Lovecraft" inside "H. P. Lovecraft")
-    if " " not in q and len(q) <= len(t):
-        for i in range(len(t) - len(q) + 1):
-            if SequenceMatcher(None, q, t[i:i + len(q)]).ratio() >= threshold:
-                return True
-        return False
-    # Multi-word query: compare directly (sliding creates false positives like "stephen king" ≈ "stephen vinc")
-    return SequenceMatcher(None, q, t).ratio() >= threshold
+    """Return True if query fuzzy-matches text at or above threshold (0..1)."""
+    # WRatio handles partial matches, token reordering, and typos in one call
+    return _wratio(query, text) >= threshold
+
+
+def _title_score(query: str, title: str) -> float:
+    """Score a query against a book title.
+
+    Combines WRatio with a containment bonus so 'Harry Potter' in
+    'Harry Potter and the Philosopher's Stone' scores higher than
+    'Beatrix Potter' (which shares only the 'Potter' token).
+    """
+    base = fuzz.WRatio(query, title, processor=str.lower) / 100.0
+    # Bonus when all query words appear in the title
+    q_words = query.lower().split()
+    t_lower = title.lower()
+    if all(w in t_lower for w in q_words):
+        base = min(1.0, base + 0.15)
+    return base
+
+
+_SCORE_WEIGHTS = {
+    "title":    ("title",    0.55),
+    "author":   ("author",   0.30),
+    "tag":      ("tag",      0.10),
+    "narrator": ("narrator", 0.05),
+}
+
+# Per-method field weights: only score the primary field at full weight
+_METHOD_WEIGHTS = {
+    "search_by_title":    {"title": 1.0},
+    "search_by_author":   {"author": 1.0},
+    "search_by_tag":      {"tag": 1.0},
+    "search_by_narrator": {"narrator": 1.0},
+    "search":             {"title": 0.55, "author": 0.30, "tag": 0.10, "narrator": 0.05},
+    "iterate_all":        {},
+}
+
+
+def score_book(query: str, book, method: str = "search") -> float:
+    """Return a relevance score 0..1 for query against an AudioBook.
+
+    The scoring field weights depend on the search method so that
+    search_by_title('Harry Potter') doesn't boost Beatrix Potter via author.
+    """
+    weights = _METHOD_WEIGHTS.get(method, _METHOD_WEIGHTS["search"])
+    if not weights:
+        return 0.0
+
+    title_score = _title_score(query, book.title)
+
+    author_score = 0.0
+    for a in book.authors:
+        full = f"{a.first_name} {a.last_name}".strip()
+        s = max(_wratio(query, full), _wratio(query, a.last_name))
+        author_score = max(author_score, s)
+
+    tag_score = max((_wratio(query, t) for t in book.tags), default=0.0)
+
+    narrator_score = 0.0
+    if book.narrator:
+        full = f"{book.narrator.first_name} {book.narrator.last_name}".strip()
+        narrator_score = max(_wratio(query, full), _wratio(query, book.narrator.last_name))
+
+    scores = {"title": title_score, "author": author_score,
+              "tag": tag_score, "narrator": narrator_score}
+    total_weight = sum(weights.values())
+    if total_weight == 0:
+        return 0.0
+    return sum(scores[f] * w for f, w in weights.items()) / total_weight
 
 
 def check_url_availability(url: str, timeout: int = 5) -> bool:
