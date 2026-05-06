@@ -15,12 +15,13 @@ dependencies = [
     "bs4",
     "feedparser",
     "rapidfuzz",
-    "requests-cache",
     "site-map-parser",
     "click>=8.0",
+    "mediavocab>=0.1.0",
 ]
 
 [project.optional-dependencies]
+test = ["pytest"]
 youtube = ["tutubo"]
 
 [project.scripts]

@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased]
+
+**mediavocab integration:**
+
+- `mediavocab>=0.1.0` added as a hard runtime dep (the
+  `audiobooker.converters.audiobook_to_release()` adapter has been
+  implicit-importing it).
+- `test` extra (`pytest`) declared in `pyproject.toml`.
+
 ## [0.7.0a1](https://github.com/TigreGotico/audiobooker/tree/0.7.0a1) (2026-04-28)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.6.0a1...0.7.0a1)

@@ -1,14 +1,12 @@
 import abc
-from requests_cache import CachedSession
-from datetime import timedelta
+import requests
 from audiobooker.utils import random_user_agent, fuzzy_match
 from typing import Iterable
 from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
 
 
 class AudioBookSource:
-    expire_after = timedelta(hours=1)
-    session = CachedSession(backend='memory', expire_after=expire_after)
+    session = requests.Session()
     session.headers.update({"User-Agent": random_user_agent()})
 
     @property
