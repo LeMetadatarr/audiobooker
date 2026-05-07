@@ -92,7 +92,7 @@ def from_rss(rss_url):
         language=lang,
         description=desc,
         tags=tags,
-        genres=tags,
+        genres=list(tags),
         image=img,
         streams=streams,
         title=feed_title,
