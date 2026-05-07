@@ -1,29 +1,29 @@
-# audiobooker — Developer Docs
+# audiobooker — Docs
 
 | Document | Contents |
 |---|---|
+| [getting-started.md](getting-started.md) | Install, first search, key concepts |
 | [search.md](search.md) | Unified parallel search API, parameters, `ALL_SOURCES` |
-| [scoring.md](scoring.md) | How scores are computed, field weights, fuzzy matching details |
+| [scoring.md](scoring.md) | Score computation, field weights, fuzzy matching details |
 | [sources.md](sources.md) | Each web scraper — catalogue size, native search, quirks |
-| [youtube.md](youtube.md) | YouTube channel and playlist sources (`YoutubeChannelSource`, `YoutubePlaylistSource`, `TheCybrarian`, `HorrorBabble`) |
-| [index.md](index.md) | `BookIndex` — persistent SQLite index, offline search, follow YouTube, CLI |
-| [cache.md](cache.md) | `audiobooker.cache` — download streams, cache to disk, play, duration filters |
+| [youtube.md](youtube.md) | `YoutubeChannelSource`, `YoutubePlaylistSource`, `TheCybrarian`, `HorrorBabble` |
+| [index.md](index.md) | `BookIndex` — SQLite index, offline search, YouTube follow, CLI |
+| [cache.md](cache.md) | Download streams to disk, play, cache management |
+| [converters.md](converters.md) | `audiobook_to_release()` — mediavocab `Release` field mapping |
+| [transport.md](transport.md) | HTTP session, `AUDIOBOOKER_TRANSPORT`, stealth backend |
 | [api.md](api.md) | Full API reference: `AudioBook`, `BookAuthor`, `AudioBookSource`, utilities |
 
-See also the `examples/` directory for runnable code:
+Examples are in `../examples/` — numbered 01 → 10 from quickstart to advanced:
 
-| Example | Shows |
+| File | Shows |
 |---|---|
-| `index_usage.py` | Build index, offline search, `IndexedSource` in unified search |
-| `cache_usage.py` | Download streams to cache, `play()`, duration filters |
-| `download_cybrarian.py` | Bulk-download TheCybrarian channel; `--dry-run`, `--indexed` flags |
-| `search_all_sources.py` | Unified search across all web sources |
-| `search_librivox.py` | Librivox REST API search |
-| `search_loyalbooks.py` | LoyalBooks genre and title search |
-| `search_stephenkingaudiobooks.py` | StephenKingAudioBooks native search |
-| `iterate_goldenaudiobooks.py` | GoldenAudioBooks full catalogue iteration |
-| `iterate_audioanarchy.py` | AudioAnarchy catalogue |
-| `iterate_darkerprojects.py` | DarkerProjects audio dramas |
-| `iterate_hpaudiotales.py` | HPTalesAudioBooks |
-| `youtube_sources.py` | YouTube channel + playlist sources, unified search |
-| `low_level_usage.py` | Direct scraper usage without the search layer |
+| `01_quickstart.py` | Search LibriVox for one book |
+| `02_search_all_sources.py` | Unified parallel search orchestrator |
+| `03_filter_by_author.py` | Author search with score display |
+| `04_download_and_cache.py` | Download streams to local cache |
+| `05_play_with_cache.py` | Play from cache (download if missing) |
+| `06_convert_to_mediavocab.py` | Convert to mediavocab `Release` |
+| `07_custom_session.py` | Inject a custom HTTP session; curl_cffi opt-in |
+| `08_youtube_audiobooks.py` | YouTube sources (requires `[youtube]` extra) |
+| `09_advanced_index.py` | `IndexedSource` + SQLite index + follow |
+| `10_cli_pipeline.py` | Shell-callable search → download pipeline |
