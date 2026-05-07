@@ -248,19 +248,25 @@ normalize_language("English")   # → "en"
 normalize_language("en-US")     # → "en"
 ```
 
-## Caching
+## mediavocab integration
 
-HTTP responses are cached in memory for 1 hour via `requests-cache`.
-The shared session lives on `AudioBookSource.session`:
+`mediavocab` is a hard runtime dependency. Every `AudioBook` can be projected
+into the typed `mediavocab.Release` schema via `audiobook_to_release()`:
 
 ```python
-from audiobooker.scrappers import AudioBookSource
-from requests_cache import CachedSession
-from datetime import timedelta
+from audiobooker import search, audiobook_to_release
 
-# Replace with a persistent SQLite cache
-AudioBookSource.session = CachedSession("audiobooker_cache", expire_after=timedelta(hours=6))
+# Search → typed mediavocab Release with parsed_license filtering
+for book in search("Lovecraft", max_per_source=3):
+    release = audiobook_to_release(book)
+    if release.parsed_license and release.parsed_license.is_open():
+        # public domain / CC-licensed: free to redistribute
+        print(release.work.title, release.parsed_license.identifier)
 ```
+
+LibriVox content is tagged `license="public_domain"` automatically, which
+parses to an open `License` object (`is_open()` → `True`). `release_date` is
+populated from `AudioBook.year` as an `IsoDate`-compatible `YYYY` string.
 
 ## Error handling
 

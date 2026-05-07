@@ -74,15 +74,14 @@ from audiobooker.scrappers import AudioBookSource
 ### Class-level shared session
 
 ```python
-AudioBookSource.session   # requests_cache.CachedSession, 1-hour in-memory TTL
+AudioBookSource.session   # plain requests.Session shared across all scrapers
 ```
 
-Replace with a persistent cache:
+Replace with your own session if you need caching, retries, or a custom adapter:
 
 ```python
-from requests_cache import CachedSession
-from datetime import timedelta
-AudioBookSource.session = CachedSession("audiobooker_cache", expire_after=timedelta(hours=6))
+import requests
+AudioBookSource.session = requests.Session()
 ```
 
 ### source_name property

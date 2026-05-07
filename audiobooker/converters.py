@@ -66,12 +66,25 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
         external_ids=external_ids,
         extra=extra,
     )
+
+    # IsoDate-compatible YYYY string when we only know the year
+    release_date = str(book.year) if book.year else ""
+
+    # LibriVox content is public domain by policy. Other sources may set their own
+    # license elsewhere; we leave it empty when unknown.
+    license_id = ""
+    src = (book.source or "").lower()
+    if "librivox" in src:
+        license_id = "public_domain"
+
     uri = book.streams[0] if book.streams else ""
     return MvRelease(
         work=work,
         uri=uri,
         image=book.image,
         stream_mode=StreamMode.ON_DEMAND,
+        release_date=release_date,
+        license=license_id,
         external_ids=external_ids,
         extra=extra,
     )

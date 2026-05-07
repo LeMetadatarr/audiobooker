@@ -8,6 +8,14 @@
   `audiobooker.converters.audiobook_to_release()` adapter has been
   implicit-importing it).
 - `test` extra (`pytest`) declared in `pyproject.toml`.
+- `audiobook_to_release()` now populates `Release.release_date` from
+  `AudioBook.year` (IsoDate-compatible `YYYY` string) and stamps
+  `Release.license = "public_domain"` for LibriVox content so
+  `parsed_license.is_open()` returns `True`.
+- README, `docs/api.md`, `docs/sources.md` updated for the post-PR mediavocab
+  surface and the plain `requests.Session` (caching layer was removed).
+- New example `examples/mediavocab_release.py` demonstrating
+  search → typed `Release` with `parsed_license` filtering.
 
 ## [0.7.0a1](https://github.com/TigreGotico/audiobooker/tree/0.7.0a1) (2026-04-28)
 

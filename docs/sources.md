@@ -119,17 +119,16 @@ from audiobooker.scrappers.hpaudiotales import HPTalesAudioBooks
 - **Genre:** Harry Potter fan recordings
 - **Native search:** linear scan via sitemap
 
-## Caching
+## Shared HTTP session
 
-All sources share a single `requests-cache` in-memory session (1-hour TTL):
+All sources share a single `requests.Session`. Override it on the class if you
+need caching, retries, or a custom adapter:
 
 ```python
+import requests
 from audiobooker.scrappers import AudioBookSource
-from requests_cache import CachedSession
-from datetime import timedelta
 
-# Replace with a persistent SQLite cache
-AudioBookSource.session = CachedSession("audiobooker_cache", expire_after=timedelta(hours=6))
+AudioBookSource.session = requests.Session()
 ```
 
 See [youtube.md](youtube.md) for YouTube channel and playlist sources.
