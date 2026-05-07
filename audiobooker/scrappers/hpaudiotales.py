@@ -33,6 +33,7 @@ class HPTalesAudioBook:
             title=title,
             streams=streams,
             tags=tags,
+            genres=["Fantasy"],
             language="en",
         )
 

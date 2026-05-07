@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from mediavocab import (
+    Chapter as MvChapter,
     Credit,
     CreditSection as MvCreditSection,
     EntityKind,
@@ -13,7 +14,15 @@ from mediavocab import (
     Work,
 )
 
-from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
+from audiobooker.base import (
+    AudioBook,
+    AudioBookChapter,
+    AudiobookNarrator,
+    BookAuthor,
+)
+
+# Sources whose entire catalogue is dedicated public-domain material.
+_PUBLIC_DOMAIN_SOURCES = {"librivox", "loyalbooks"}
 
 
 def _author_ref(author: BookAuthor) -> EntityRef:
@@ -26,19 +35,46 @@ def _narrator_ref(narrator: AudiobookNarrator) -> EntityRef:
     return EntityRef(name=name, kind=EntityKind.PERSON)
 
 
+def _to_mv_chapter(c: AudioBookChapter) -> MvChapter:
+    return MvChapter(
+        offset=float(c.offset),
+        title=c.title,
+        image=c.image,
+        end=(float(c.offset) + float(c.runtime)) if c.runtime else None,
+    )
+
+
 def audiobook_to_release(book: AudioBook) -> MvRelease:
     """Convert an ``AudioBook`` to a mediavocab ``Release``."""
     credits: list = []
     for author in book.authors:
-        ref = _author_ref(author)
-        credits.append(Credit(entity=ref, role="author",
-                               relation_role=RelationRole.CREATOR,
-                               section=MvCreditSection.PRINCIPAL))
-    if book.narrator:
-        ref = _narrator_ref(book.narrator)
-        credits.append(Credit(entity=ref, role="narrator",
-                               relation_role=RelationRole.PERFORMER,
-                               section=MvCreditSection.PRINCIPAL))
+        credits.append(
+            Credit(
+                entity=_author_ref(author),
+                role="author",
+                relation_role=RelationRole.CREATOR,
+                section=MvCreditSection.PRINCIPAL,
+            )
+        )
+    # Multi-reader sources (LibriVox) populate ``narrators``; single-reader
+    # sources still populate ``narrator``. base.AudioBook keeps them in sync.
+    narrators = book.narrators or ([book.narrator] if book.narrator else [])
+    seen_narrators: set = set()
+    for narrator in narrators:
+        if not narrator:
+            continue
+        key = (narrator.first_name.lower(), narrator.last_name.lower())
+        if key in seen_narrators:
+            continue
+        seen_narrators.add(key)
+        credits.append(
+            Credit(
+                entity=_narrator_ref(narrator),
+                role="narrator",
+                relation_role=RelationRole.PERFORMER,
+                section=MvCreditSection.PRINCIPAL,
+            )
+        )
 
     extra: dict = {}
     if book.source:
@@ -53,8 +89,18 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
         extra["description"] = book.description
 
     external_ids: dict = {}
+    # Pass through typed external_ids the source already populated
+    # (e.g. ``librivox_id`` from the LibriVox API). Keys must match
+    # mediavocab.ExternalIds field names.
+    for key, val in (book.external_ids or {}).items():
+        if val:
+            external_ids[key] = str(val)
     if book.stable_id():
         external_ids["audiobooker_id"] = book.stable_id()
+
+    # Genres: prefer the dedicated ``genres`` field; fall back to ``tags``
+    # only when the source doesn't distinguish them.
+    content_genres = list(book.genres) if book.genres else []
 
     work = Work(
         title=book.title,
@@ -63,6 +109,7 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
         runtime=float(book.runtime) if book.runtime else None,
         language=book.language,
         credits=credits,
+        content_genres=content_genres,
         external_ids=external_ids,
         extra=extra,
     )
@@ -70,14 +117,15 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
     # IsoDate-compatible YYYY string when we only know the year
     release_date = str(book.year) if book.year else ""
 
-    # LibriVox content is public domain by policy. Other sources may set their own
-    # license elsewhere; we leave it empty when unknown.
     license_id = ""
     src = (book.source or "").lower()
-    if "librivox" in src:
+    if any(s in src for s in _PUBLIC_DOMAIN_SOURCES):
         license_id = "public_domain"
 
     uri = book.streams[0] if book.streams else ""
+
+    chapters = [_to_mv_chapter(c) for c in (book.chapters or [])]
+
     return MvRelease(
         work=work,
         uri=uri,
@@ -85,6 +133,10 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
         stream_mode=StreamMode.ON_DEMAND,
         release_date=release_date,
         license=license_id,
+        codec=book.codec or "",
+        bitrate=book.bitrate or "",
+        audio_language=book.language or "",
+        chapters=chapters,
         external_ids=external_ids,
         extra=extra,
     )

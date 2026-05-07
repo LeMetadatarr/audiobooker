@@ -2,7 +2,12 @@ from typing import Iterable
 
 import feedparser
 
-from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
+from audiobooker.base import (
+    AudioBook,
+    AudioBookChapter,
+    AudiobookNarrator,
+    BookAuthor,
+)
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import normalize_name
 
@@ -10,6 +15,8 @@ _API = "https://librivox.org/api/feed/audiobooks"
 
 
 def _parse_playtime(playtime: str) -> int:
+    if not playtime:
+        return 0
     parts = [int(p) for p in playtime.split(":")]
     if len(parts) == 1:
         return parts[0]
@@ -19,8 +26,93 @@ def _parse_playtime(playtime: str) -> int:
 
 
 def _api_get(params: dict) -> dict:
-    resp = AudioBookSource.session.get(_API, params={"extended": 1, "format": "json", "limit": 50, **params})
+    resp = AudioBookSource.session.get(
+        _API, params={"extended": 1, "format": "json", "limit": 50, **params}
+    )
     return resp.json()
+
+
+def _section_streams(rss_url: str) -> list:
+    rss = feedparser.parse(
+        rss_url,
+        agent=AudioBookSource.session.headers.get("User-Agent"),
+        request_headers={"Connection": "close"},
+    )
+    return [
+        e["media_content"][0]["url"]
+        for e in rss.get("entries", [])
+        if e.get("media_content")
+    ]
+
+
+def _build_book(k: dict) -> AudioBook:
+    """Convert one LibriVox API record into a single typed ``AudioBook``."""
+    rss_streams = _section_streams(k["url_rss"])
+
+    chapters: list = []
+    narrators: list = []
+    seen_readers: set = set()
+    offset = 0.0
+
+    for idx, s in enumerate(k.get("sections", [])):
+        playtime = _parse_playtime(s.get("playtime", "0"))
+        stream = (
+            rss_streams[idx]
+            if idx < len(rss_streams)
+            else s.get("listen_url", "")
+        )
+        chapters.append(
+            AudioBookChapter(
+                title=s.get("title", ""),
+                offset=offset,
+                runtime=float(playtime),
+                stream=stream,
+            )
+        )
+        offset += playtime
+        for r in s.get("readers", []) or []:
+            display = r.get("display_name", "")
+            if not display or display in seen_readers:
+                continue
+            seen_readers.add(display)
+            f, l = normalize_name(display)
+            narrators.append(AudiobookNarrator(first_name=f, last_name=l))
+
+    # Total runtime: prefer the API-supplied figure, fall back to summed sections.
+    total_secs = int(k.get("totaltimesecs") or 0) or int(offset)
+
+    # Streams: book-level list is every section URL in order.
+    streams = [c.stream for c in chapters if c.stream]
+
+    external_ids: dict = {}
+    if k.get("id"):
+        external_ids["librivox_id"] = str(k["id"])
+
+    genres = [g["name"] for g in k.get("genres") or []]
+
+    book = AudioBook(
+        streams=streams,
+        narrators=narrators,
+        tags=genres,
+        genres=genres,
+        authors=[
+            BookAuthor(
+                first_name=a.get("first_name", ""),
+                last_name=a.get("last_name", ""),
+            )
+            for a in k.get("authors") or []
+        ],
+        title=k.get("title", ""),
+        description=k.get("description", ""),
+        year=int(k.get("copyright_year") or 0),
+        runtime=total_secs,
+        language=k.get("language", ""),
+        chapters=chapters,
+        codec="mp3",  # LibriVox publishes 64/128 kbps MP3 by policy
+        bitrate="128",
+        external_ids=external_ids,
+    )
+    return book
 
 
 class Librivox(AudioBookSource):
@@ -28,57 +120,23 @@ class Librivox(AudioBookSource):
     def iterate_all(self, offset=0, max_offset=100000) -> Iterable[AudioBook]:
         data = _api_get({"offset": offset})
         for k in data.get("books", []):
-            for b in self._parse_res(k):
-                yield self._tag(b)
-        if offset < max_offset:
+            yield self._tag(_build_book(k))
+        if offset < max_offset and data.get("books"):
             yield from self.iterate_all(offset + 50, max_offset)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"author": query}).get("books", []):
-            for b in self._parse_res(k):
-                yield self._tag(b)
+            yield self._tag(_build_book(k))
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"reader": query}).get("books", []):
-            for b in self._parse_res(k):
-                yield self._tag(b)
+            yield self._tag(_build_book(k))
 
     def search_by_tag(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"tag": query}).get("books", []):
-            for b in self._parse_res(k):
-                yield self._tag(b)
+            yield self._tag(_build_book(k))
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
         # Librivox's title= param returns 404; use the generic search= param
         for k in _api_get({"search": query}).get("books", []):
-            for b in self._parse_res(k):
-                yield self._tag(b)
-
-    def _parse_res(self, k) -> Iterable[AudioBook]:
-        rss = feedparser.parse(k["url_rss"],
-                               agent=AudioBookSource.session.headers.get("User-Agent"),
-                               request_headers={"Connection": "close"})
-        rss_streams = [e["media_content"][0]["url"]
-                       for e in rss["entries"] if e.get("media_content")]
-
-        for idx, s in enumerate(k["sections"]):
-            if len(s["readers"]) > 1:
-                narrator = AudiobookNarrator(last_name="Various")
-            else:
-                f, l = normalize_name(s["readers"][0]["display_name"])
-                narrator = AudiobookNarrator(first_name=f, last_name=l)
-
-            stream = rss_streams[idx] if idx < len(rss_streams) else s.get("listen_url", "")
-
-            yield AudioBook(
-                streams=[stream] if stream else [],
-                narrator=narrator,
-                tags=[g["name"] for g in k["genres"]],
-                authors=[BookAuthor(first_name=a["first_name"], last_name=a["last_name"])
-                         for a in k["authors"]],
-                title=k["title"] + " | " + s["title"],
-                description=k["description"],
-                year=int(k["copyright_year"]),
-                runtime=_parse_playtime(s["playtime"]),
-                language=k["language"],
-            )
+            yield self._tag(_build_book(k))

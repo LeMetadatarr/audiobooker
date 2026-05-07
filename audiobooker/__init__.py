@@ -1,4 +1,10 @@
-from audiobooker.base import BookAuthor, AudioBook, AudiobookNarrator, normalize_language
+from audiobooker.base import (
+    AudioBook,
+    AudioBookChapter,
+    AudiobookNarrator,
+    BookAuthor,
+    normalize_language,
+)
 from audiobooker.converters import audiobook_to_release
 from audiobooker.exceptions import (
     UnknownAuthorIdException, UnknownBookIdException, UnknownDurationError,
