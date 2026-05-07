@@ -12,5 +12,5 @@ jobs:
       python_version: '3.11'
       coverage_source: 'audiobooker'
       test_path: 'test/'
-      install_extras: 'test'
+      install_extras: '.[test]'
       min_coverage: 0
