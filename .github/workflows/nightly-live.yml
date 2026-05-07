@@ -1,0 +1,32 @@
+name: nightly-live
+
+# Re-runs the cassette-backed parser tests in record-all mode against
+# real upstream endpoints, so silent upstream drift surfaces within 24h
+# instead of when a user notices empty results in production.
+#
+# Cassettes are NOT committed back — this job is detect-only. A failure
+# here means the cassettes need re-recording locally.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # 04:17 UTC daily
+  workflow_dispatch:
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[test]
+      - name: Run VCR tests against live endpoints
+        run: |
+          # --vcr-record=all forces re-recording (overwrites cassettes
+          # in the runner workspace; not committed).
+          pytest -q test/ -k "_vcr" --vcr-record=all
