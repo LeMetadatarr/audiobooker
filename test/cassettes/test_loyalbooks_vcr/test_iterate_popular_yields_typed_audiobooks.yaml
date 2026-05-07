@@ -1,0 +1,482 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://www.loyalbooks.com/
+  response:
+    body:
+      string: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html
+        xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://ogp.me/ns/fb#\">
+        \n<head>\n\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n\n<title>7,000+
+        Free Audio Books & eBook Downloads - Loyal Books</title>\n<meta name=\"description\"
+        content=\"Free Audio Books! Books Should be Free. Best Online Audiobook Downloads
+        for Android, iPhone & mp3. Listen to Audible & Talking Books on Tape. eBooks
+        in English, French, Spanish, Tamil, Portuguese, German & more.\">\n<meta name=\"keywords\"
+        content=\"audio books,free audio books,free audio book downloads,ebooks,mp3,ipod,itunes,books,audio,download,free,adventure,children,comedy,fairy
+        tales,fantasy,fiction,historical fiction,history,humor,literature,mystery,non-fiction,philosophy,poetry,romance,religion,science
+        fiction,short stories,teen,young adult\">\n<link rel=\"canonical\" href=\"https://www.loyalbooks.com\">\n<meta
+        property=\"og:title\" content=\"LoyalBooks.com\">\n<meta property=\"og:type\"
+        content=\"website\">\n<meta property=\"fb:app_id\" content=\"130567253662565\">\n<meta
+        property=\"og:url\" content=\"https://www.loyalbooks.com\">\n<meta property=\"og:image\"
+        content=\"https://www.loyalbooks.com/image/ui/logo.png\">\n<meta property=\"og:site_name\"
+        content=\"Loyal Books\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/desktop3.css\">\r\n\r\n\r\n\r\n</head>\r\n<body>\r\n\r\n<!--
+        Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-819143-4\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'UA-819143-4');\n</script>\n\r\n<div
+        id=\"topsection\"><div class=\"innertube\">\r\n\r\n<table class=\"header\"
+        border=\"1\" style=\"width:931px;\">\r\n<tr>\r\n<td class=\"header\" width=\"145px\">\r\n\r\n<div
+        id=\"header\" style=\"display:block;\"><a href=\"/\" style=\"text-decoration:none\"><img
+        src=\"/image/ui/logo.png\" class=\"header\" alt=\"LoyalBooks.com logo\"></a></div>\r\n\r\n</td><td
+        class=\"header\" style=\"width:425px;\">\r\n\r\n\r\n<a href=\"/\" class=\"header-name\"><font
+        class=\"header-name\">Books Should Be Free</font></a><br>\r\n<a href=\"/\"
+        class=\"header-name\"><font class=\"header-loyal\">Loyal Books</font></a><br>\r\n<a
+        href=\"/\" class=\"header-sub-name\"><font class=\"header-sub-name\">Free
+        Public Domain Audiobooks & eBook Downloads</font></a><br>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n\r\n<td
+        class=\"header\" style=\"width:361px;\">\r\n\r\n\r\n<table style=\"width:361px;\"
+        summary=\"Search for audio books\"><tr><th ><div style=\"color:#3399CC\">Search
+        by: Title, Author or Keyword</div><script async src=\"https://cse.google.com/cse.js?cx=71dbe754842244413\"></script><div
+        class=\"gcse-searchbox-only\"></div></th></tr></table>\r\n</td>\r\n</tr>\r\n</table>\r\n\r\n</div></div>\r\n<div
+        id=\"contentwrapper\"><div id=\"contentcolumn\"><div class=\"innertube\">\r\n<br><table
+        class=\"layout2-blue\" summary=\"Audio books\"><tr><th class=\"layout2-blue\"
+        colspan=\"4\"><h1>Popular free audio books</h1></th></tr><tr>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan\">\n<img
+        class=\"layout\" src=\"/image/layout2/Sinking-of-the-Titanic-and-Gr.jpg\"
+        alt=\"The Sinking of the Titanic and Great Sea Disasters by Logan Marshall\"></a><br>\n<a
+        href=\"/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan\">\n<b>The
+        Sinking of the Titanic and Great Sea Disasters</b></a><br>Logan Marshall\n<br><a
+        href=\"/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan\">\n<div
+        class=\"s-desktop\" id=\"star3\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/jude-the-obscure-by-thomas-hardy\">\n<img
+        class=\"layout\" src=\"/image/layout2/jude-the-obscure-by-thomas-hardy.jpg\"
+        alt=\"Jude the Obscure by Thomas Hardy\"></a><br>\n<a href=\"/book/jude-the-obscure-by-thomas-hardy\">\n<b>Jude
+        the Obscure</b></a><br>Thomas Hardy\n<br><a href=\"/book/jude-the-obscure-by-thomas-hardy\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/peter-pan-by-j-m-barrie\">\n<img
+        class=\"layout\" src=\"/image/layout2/Peter-Pan.jpg\" alt=\"Peter Pan by J.
+        M. Barrie\"></a><br>\n<a href=\"/book/peter-pan-by-j-m-barrie\">\n<b>Peter
+        Pan</b></a><br>J. M. Barrie\n<br><a href=\"/book/peter-pan-by-j-m-barrie\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-man-who-was-thursday-a-nightmare-by-gk-chesterton\">\n<img
+        class=\"layout\" src=\"/image/layout2/Man-Who-Was-Thursday-Nightmar.jpg\"
+        alt=\"The Man Who was Thursday by G. K. Chesterton\"></a><br>\n<a href=\"/book/the-man-who-was-thursday-a-nightmare-by-gk-chesterton\">\n<b>The
+        Man Who was Thursday</b></a><br>G. K. Chesterton\n<br><a href=\"/book/the-man-who-was-thursday-a-nightmare-by-gk-chesterton\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n</tr>\n<tr><td class=\"layout2-blue\"
+        colspan=\"4\">\n\n\n\n\n\n\n\n\n<style>\n.bsbf-r-index-horizontal { width:
+        320px; height: 50px; }\n@media(min-width: 500px) { .bsbf-r-index-horizontal
+        { width: 468px; height: 60px; } }\n@media(min-width: 800px) { .bsbf-r-index-horizontal
+        { width: 728px; height: 90px; } }\n</style>\n<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n<!--
+        BSBF-r Index Horizontal -->\n<ins class=\"adsbygoogle bsbf-r-index-horizontal\"\n
+        \    style=\"display:inline-block\"\n     data-ad-client=\"ca-pub-5879764092668092\"\n
+        \    data-ad-slot=\"2682249270\"></ins>\n<script>\n(adsbygoogle = window.adsbygoogle
+        || []).push({});\n</script>\n\n\n\n</tr><tr>\n<td class=\"layout2-blue\" width=\"25%\"
+        valign=\"top\" align=\"center\">\n<a href=\"/book/the-pilgrims-progress-by-john-bunyan\">\n<img
+        class=\"layout\" src=\"/image/layout2/Pilgrim-s-Progress.jpg\" alt=\"The Pilgrim's
+        Progress by John Bunyan\"></a><br>\n<a href=\"/book/the-pilgrims-progress-by-john-bunyan\">\n<b>The
+        Pilgrim's Progress</b></a><br>John Bunyan\n<br><a href=\"/book/the-pilgrims-progress-by-john-bunyan\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/a-tale-of-two-cities-by-charles-dickens\">\n<img
+        class=\"layout\" src=\"/image/layout2/Tale-of-Two-Cities-Charles-Dickens.jpg\"
+        alt=\"A Tale of Two Cities by Charles Dickens\"></a><br>\n<a href=\"/book/a-tale-of-two-cities-by-charles-dickens\">\n<b>A
+        Tale of Two Cities</b></a><br>Charles Dickens\n<br><a href=\"/book/a-tale-of-two-cities-by-charles-dickens\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/tom-sawyer-by-mark-twain\">\n<img
+        class=\"layout\" src=\"/image/layout2/49.jpg\" alt=\"The Adventures of Tom
+        Sawyer by Mark Twain\"></a><br>\n<a href=\"/book/tom-sawyer-by-mark-twain\">\n<b>The
+        Adventures of Tom Sawyer</b></a><br>Mark Twain\n<br><a href=\"/book/tom-sawyer-by-mark-twain\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-wind-in-the-willows-by-kenneth-grahame\">\n<img
+        class=\"layout\" src=\"/image/layout2/Wind-in-the-Willows.jpg\" alt=\"The
+        Wind in the Willows by Kenneth Grahame\"></a><br>\n<a href=\"/book/the-wind-in-the-willows-by-kenneth-grahame\">\n<b>The
+        Wind in the Willows</b></a><br>Kenneth Grahame\n<br><a href=\"/book/the-wind-in-the-willows-by-kenneth-grahame\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n</tr>\n<tr>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/wuthering-heights-by-emily-bronte\">\n<img
+        class=\"layout\" src=\"/image/layout2/Wuthering-Heights-Emily-Bronte.jpg\"
+        alt=\"Wuthering Heights by Emily Bronte\"></a><br>\n<a href=\"/book/wuthering-heights-by-emily-bronte\">\n<b>Wuthering
+        Heights</b></a><br>Emily Bronte\n<br><a href=\"/book/wuthering-heights-by-emily-bronte\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-wonderful-wizard-of-oz\">\n<img
+        class=\"layout\" src=\"/image/layout2/Wonderful-Wizard-of-Oz.jpg\" alt=\"The
+        Wonderful Wizard of Oz by L. Frank Baum\"></a><br>\n<a href=\"/book/the-wonderful-wizard-of-oz\">\n<b>The
+        Wonderful Wizard of Oz</b></a><br>L. Frank Baum\n<br><a href=\"/book/the-wonderful-wizard-of-oz\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/anne-of-the-island-by-lucy-maud-montgomery\">\n<img
+        class=\"layout\" src=\"/image/layout2/Anne-of-the-Island.jpg\" alt=\"Anne
+        of the Island by Lucy Maud Montgomery\"></a><br>\n<a href=\"/book/anne-of-the-island-by-lucy-maud-montgomery\">\n<b>Anne
+        of the Island</b></a><br>Lucy Maud Montgomery\n<br><a href=\"/book/anne-of-the-island-by-lucy-maud-montgomery\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/paradise-lost-by-john-milton\">\n<img
+        class=\"layout\" src=\"/image/layout2/paradise_lost.jpg\" alt=\"Paradise Lost
+        by John Milton\"></a><br>\n<a href=\"/book/paradise-lost-by-john-milton\">\n<b>Paradise
+        Lost</b></a><br>John Milton\n<br><a href=\"/book/paradise-lost-by-john-milton\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n</tr>\n<tr>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/anne-of-green-gables-by-lucy-maud-montgomery\">\n<img
+        class=\"layout\" src=\"/image/layout2/Anne-of-Green-Gables.jpg\" alt=\"Anne
+        of Green Gables by Lucy Maud Montgomery\"></a><br>\n<a href=\"/book/anne-of-green-gables-by-lucy-maud-montgomery\">\n<b>Anne
+        of Green Gables</b></a><br>Lucy Maud Montgomery\n<br><a href=\"/book/anne-of-green-gables-by-lucy-maud-montgomery\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/anthem-by-ayn-rand\">\n<img
+        class=\"layout\" src=\"/image/layout2/Anthem.jpg\" alt=\"Anthem by Ayn Rand\"></a><br>\n<a
+        href=\"/book/anthem-by-ayn-rand\">\n<b>Anthem</b></a><br>Ayn Rand\n<br><a
+        href=\"/book/anthem-by-ayn-rand\">\n<div class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td
+        class=\"layout2-blue\" width=\"25%\" valign=\"top\" align=\"center\">\n<a
+        href=\"/book/the-art-of-war-by-sun-tzu\">\n<img class=\"layout\" src=\"/image/layout2/Art-of-War-Sun-Tzu.jpg\"
+        alt=\"The Art of War by Sun Tzu\"></a><br>\n<a href=\"/book/the-art-of-war-by-sun-tzu\">\n<b>The
+        Art of War</b></a><br>Sun Tzu\n<br><a href=\"/book/the-art-of-war-by-sun-tzu\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-return-of-sherlock-holmes-by-sir-arthur-conan-doyle\">\n<img
+        class=\"layout\" src=\"/image/layout2/Return-of-Sherlock-Holmes.jpg\" alt=\"The
+        Return of Sherlock Holmes by Sir Arthur Conan Doyle\"></a><br>\n<a href=\"/book/the-return-of-sherlock-holmes-by-sir-arthur-conan-doyle\">\n<b>The
+        Return of Sherlock Holmes</b></a><br>Sir Arthur Conan Doyle\n<br><a href=\"/book/the-return-of-sherlock-holmes-by-sir-arthur-conan-doyle\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n</tr>\n<tr>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-federalist-papers-by-alexander-hamilton-john-jay-and-james-madison\">\n<img
+        class=\"layout\" src=\"/image/layout2/Federalist-Papers.jpg\" alt=\"The Federalist
+        Papers by Alexander Hamilton\"></a><br>\n<a href=\"/book/the-federalist-papers-by-alexander-hamilton-john-jay-and-james-madison\">\n<b>The
+        Federalist Papers</b></a><br>Alexander Hamilton\n<br><a href=\"/book/the-federalist-papers-by-alexander-hamilton-john-jay-and-james-madison\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/mystery-of-the-yellow-room-by-gaston-leroux\">\n<img
+        class=\"layout\" src=\"/image/layout2/Mystery-of-the-Yellow-Room.jpg\" alt=\"The
+        Mystery of the Yellow Room by Gaston Leroux\"></a><br>\n<a href=\"/book/mystery-of-the-yellow-room-by-gaston-leroux\">\n<b>The
+        Mystery of the Yellow Room</b></a><br>Gaston Leroux\n<br><a href=\"/book/mystery-of-the-yellow-room-by-gaston-leroux\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<img
+        class=\"layout\" src=\"/image/layout2/Pollyanna-.jpg\" alt=\"Pollyanna by
+        Eleanor H. Porter\"></a><br>\n<a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<b>Pollyanna</b></a><br>Eleanor
+        H. Porter\n<br><a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<div class=\"s-desktop\"
+        id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\" width=\"25%\"
+        valign=\"top\" align=\"center\">\n<a href=\"/book/myths-legends-of-ancient-greece-rome-by-em-berens\">\n<img
+        class=\"layout\" src=\"/image/layout2/Myths-and-Legends-of-Ancient-Greece-and-Rome.jpg\"
+        alt=\"Myths and Legends of Ancient Greece and Rome by E.M. Berens\"></a><br>\n<a
+        href=\"/book/myths-legends-of-ancient-greece-rome-by-em-berens\">\n<b>Myths
+        and Legends of Ancient Greece and Rome</b></a><br>E.M. Berens\n<br><a href=\"/book/myths-legends-of-ancient-greece-rome-by-em-berens\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n</tr>\n</table>\n\n<br>\n\n\n\n</div></div></div>\n\n<style>#leftcolumn{width:175px
+        !important;}#contentcolumn{margin:0 0 0 172px !important;}</style>\n<div id=\"leftcolumn\">\n<div
+        class=\"innertube\">\n\n\n<strong>Popular Genres</strong>\n<div id=\"glossymenu\">\n<ul
+        class=\"glossymenu\">\n<li><a href=\"/Top_100\">Top 100</a></li>\n<li><a href=\"/genre/Children\">Kids</a></li>\n<li><a
+        href=\"/genre/Fiction\">Fiction</a></li>\n<li><a href=\"/genre/Fantasy\">Fantasy</a></li>\n<li><a
+        href=\"/genre/Mystery\">Mystery</a></li>\n</ul>\n</div><br>\n\n<strong>More
+        Genres</strong>\n<div id=\"glossymenu\">\n<ul class=\"glossymenu\">\n\n<li><a
+        href=\"/genre/Adventure\">Adventure</a></li><li><a href=\"/genre/Children\">Kids</a></li><li><a
+        href=\"/genre/Comedy\">Comedy</a></li><li><a href=\"/genre/Fairy_tales\">Fairy
+        tales</a></li><li><a href=\"/genre/Fantasy\">Fantasy</a></li><li><a href=\"/genre/Fiction\">Fiction</a></li><li><a
+        href=\"/genre/Historical_Fiction\">Historical Fiction</a></li><li><a href=\"/genre/History\">History</a></li><li><a
+        href=\"/genre/Humor\">Humor</a></li><li><a href=\"/genre/Literature\">Literature</a></li><li><a
+        href=\"/genre/Mystery\">Mystery</a></li><li><a href=\"/genre/Non-fiction\">Non-fiction</a></li><li><a
+        href=\"/genre/Philosophy\">Philosophy</a></li><li><a href=\"/genre/Poetry\">Poetry</a></li><li><a
+        href=\"/genre/Romance\">Romance</a></li><li><a href=\"/genre/Religion\">Religion</a></li><li><a
+        href=\"/genre/Science_fiction\">Science fiction</a></li><li><a href=\"/genre/Short_stories\">Short
+        stories</a></li><li><a href=\"/genre/Teen_Young_adult\">Teen/Young adult</a></li><li><a
+        href=\"/genre-menu\">More...</a></li></ul>\n</div><br>\n\n<strong>Languages</strong>\n<div
+        id=\"glossymenu\">\n<ul class=\"glossymenu\">\n<li><a href=\"/language/Chinese\">Chinese</a></li><li><a
+        href=\"/language/French\">French</a></li>\n<li><a href=\"/language/German\">German</a></li>\n<li><a
+        href=\"/language/Italian\">Italian</a></li>\n<li><a href=\"/language/Japanese\">Japanese</a></li>\n<li><a
+        href=\"/language/Spanish\">Spanish</a></li>\n<li><a href=\"/language-menu\">More...</a></li>\n</ul>\n</div><br>\n\n<strong>Paid
+        Books</strong>\n<div id=\"glossymenu\">\n<ul class=\"glossymenu\">\n<li><a
+        href=\"/paid\">Best Sellers</a></li>\n<li><a href=\"/paid?tag=kids\" rel=\"nofollow\">Kid's
+        Books</a></li>\n<li><a href=\"/paid?tag=opera\" rel=\"nofollow\">Oprah's Book
+        Club</a></li>\n<li><a href=\"/paid?tag=business\" rel=\"nofollow\">Business</a></li>\n</ul>\n</div>\n\n</div><div
+        style=\"padding-left:7px; margin-bottom:-10px; margin-top:20px;\">\n\n<script
+        async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>\n<!--
+        BSBF Skyscraper Left Index -->\n<ins class=\"adsbygoogle\"\n     style=\"display:inline-block;width:160px;height:600px\"\n
+        \    data-ad-client=\"ca-pub-5879764092668092\"\n     data-ad-slot=\"0642329526\"></ins>\n<script>\n(adsbygoogle
+        = window.adsbygoogle || []).push({});\n</script>\n\n\n</div><div class=\"innertube\">\n</div></div>\r\n\r\n\r\n<div
+        id=\"footer\">\r\n\r\n\r\n<footer class=\"footer\">\r\n\r\n<div class=\"f-box\">\r\n\t<ul
+        class=\"f-ul\">\r\n\t\t\t<li class=\"f-social f-social-m1\">\r\n\t\t\t\t\t\t\t\t<a
+        href=\"https://www.facebook.com/MyLoyalBooks\" target=\"_blank\">\r\n\t\t\t\t\t<div
+        class=\"s-desktop\" id=\"facebook\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li
+        class=\"f-social f-social-m1\">\r\n\t\t\t\t<a href=\"https://twitter.com/LoyalBooks\"
+        target=\"_blank\">\r\n\t\t\t\t\t<div class=\"s-desktop\" id=\"twitter\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t\t\t\t<li
+        class=\"f-social f-social-m2\">\r\n\t\t\t\t<a href=\"mailto:?subject=3000%20Free%20Audio%20Books%20%26%20eBooks&body=Check%20out%20the%20free%20books%20at%20this%20site%3A%0A%0Ahttps%3A%2F%2Fwww.loyalbooks.com\"
+        target=\"_blank\">\r\n\t\t\t\t\t<div class=\"s-desktop\" id=\"email\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li
+        class=\"f-social-clear\">&copy;2026 Loyal Books | <a href=\"/about\">About</a>
+        | <a href=\"/privacy\">Privacy</a></li>\r\n\t</ul>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"f-box\">\r\n\t<ul class=\"f-ul\">\r\n\t\t<li class=\"f-title-small\"><a
+        href=\"/articles/\">Articles</a></li>\r\n\t\t<li class=\"f-title-small\"><a
+        href=\"/app\">Android & iPhone App</a></li>\r\n\t\t\t\t<li>\r\n\t\t\t<div
+        class=\"f-mobile\">\r\n\t\t\t\t\t\t<form action=\"\" method=\"post\" style=\"height:
+        25px;\"> \r\n\t\t\t<input type=\"hidden\" name=\"isMobile\" value=\"1\">\r\n\t\t\t<input
+        type=\"submit\" class=\"mobileview\" style=\"cursor: pointer;\" value=\"Mobile
+        View\">\r\n\t\t\t</form>\r\n\t\t</div>\r\n\t\t</li>\r\n\t</ul>\r\n</div>\r\n\r\n\r\n</footer>\r\n\r\n\r\n</div>\r\n<script>\r\ndocument.addEventListener(\"DOMContentLoaded\",
+        () => {\r\n  grecaptcha.enterprise.ready(async () => {\r\n    try {\r\n      const
+        token = await grecaptcha.enterprise.execute(\r\n        \"6LdgTVUsAAAAAIQTvFhKGtOKeUrFvanXSkMyxii2\",\r\n
+        \       { action: \"PAGE_LOAD\" }\r\n      );\r\n\r\n      // Send the token
+        to the backend\r\n      fetch('/recaptcha-monitor.php', {\r\n        method:
+        'POST',\r\n        headers: { 'Content-Type': 'application/json' },\r\n        body:
+        JSON.stringify({ token: token, action: 'PAGE_LOAD' })\r\n      });\r\n\r\n
+        \   } catch (e) {\r\n      console.warn(\"reCAPTCHA failed\", e);\r\n    }\r\n
+        \ });\r\n});\r\n</script>\r\n\r\n\r\n<script>(function(){function c(){var
+        b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9f815feace0dcc69',t:'MTc3ODE2ODk2Ng=='};var
+        a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var
+        a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else
+        if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var
+        e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\t"
+    headers:
+      CF-RAY:
+      - 9f815feace0dcc69-MAD
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:49:27 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RBuqBTHTY%2BZWmZsLZ26iCnRtSflOIi7Nk0zx2TEYa8w0n%2F2C8c3h%2F6XnpKSKkJN0nh%2FoDysXq4RR8Y7WG1s%2B4a3%2BbS3C7E%2BuxA2ClAlVfp8OoFpoGyf0ec2pc0aabimCLMrEihVxFX%2FWpwhDVSi9fkI%3D"}]}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=57ce5db419bc475dfdbbb74f87b60884; path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '18841'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      pragma:
+      - no-cache
+      vary:
+      - User-Agent,Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      A-Im:
+      - feed
+      Accept:
+      - application/atom+xml,application/rdf+xml,application/rss+xml,application/x-netcdf,application/xml;q=0.9,text/xml;q=0.2,*/*;q=0.1
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - close
+      Host:
+      - www.loyalbooks.com
+    method: GET
+    uri: https://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan/feed
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\" xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"
+        xmlns:atom=\"http://www.w3.org/2005/Atom\">\n<channel>\n\n<title><![CDATA[The
+        Sinking of the Titanic and Great Sea Disasters by Logan Marshall]]></title>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<language>en-us</language>\n<copyright>&#169;
+        2026 LoyalBooks.com</copyright>\n<itunes:author>Loyal Books</itunes:author>\n\n<itunes:subtitle><![CDATA[Logan
+        Marshall's book \"The Sinking of the Titanic and Great Sea Disasters\" gives
+        readers a first-hand account of the greatest sea disaster of all time straight
+        from the survivors of the ill-fated sunken ship...]]></itunes:subtitle>\n\n<itunes:summary><![CDATA[Logan
+        Marshall's book \"The Sinking of the Titanic and Great Sea Disasters\" gives
+        readers a first-hand account of the greatest sea disaster of all time straight
+        from the survivors of the ill-fated sunken ship. Unlike many of the books
+        about the Titanic that was written recently, Logan Marshall was fortunate
+        that he was able to interview the survivors of the Titanic and access to all
+        the important documents about the ship, including the diagrams, maps and actual
+        photographs related to the disaster. With this, he was able to write the best
+        book that has a complete and accurate account of the Titanic and its tragic
+        fate. \r\nThe Titanic as most people know was the biggest ocean liner during
+        her time and was hailed as \u201Cunsinkable\u201D by the company which made
+        it. Officially known as the RMS Titanic, this mammoth ship can carry more
+        than 2,000 passengers and owned by British shipping company White Star Line.
+        The ship has a double-bottomed hull and watertight compartments which make
+        her \u201Cunsinkable\u201D according to her owners. But as we all know, this
+        claim was proven to be wrong when she sank in the North Atlantic during her
+        maiden voyage. \r\nLogan Marshall did well to make use of all the resources
+        that were at his disposal. Not only was he able to make detailed descriptions
+        of the disaster, he was also able to narrate them well from a human point
+        of view without compromising any truth about the biggest sea tragedy of all
+        time. This book is a must read for anybody who's deeply interested in the
+        Titanic and its unfortunate end. \r\nThe movie \u201CTitanic\u201D is now
+        considered as a timeless classic and so is this book. If you're a fan of the
+        movie which features Leonardo Di Caprio and Kate Winslet, you'll also like
+        reading this book.\r\n]]></itunes:summary>\n\n<description><![CDATA[Logan
+        Marshall's book \"The Sinking of the Titanic and Great Sea Disasters\" gives
+        readers a first-hand account of the greatest sea disaster of all time straight
+        from the survivors of the ill-fated sunken ship. Unlike many of the books
+        about the Titanic that was written recently, Logan Marshall was fortunate
+        that he was able to interview the survivors of the Titanic and access to all
+        the important documents about the ship, including the diagrams, maps and actual
+        photographs related to the disaster. With this, he was able to write the best
+        book that has a complete and accurate account of the Titanic and its tragic
+        fate. \r\nThe Titanic as most people know was the biggest ocean liner during
+        her time and was hailed as \u201Cunsinkable\u201D by the company which made
+        it. Officially known as the RMS Titanic, this mammoth ship can carry more
+        than 2,000 passengers and owned by British shipping company White Star Line.
+        The ship has a double-bottomed hull and watertight compartments which make
+        her \u201Cunsinkable\u201D according to her owners. But as we all know, this
+        claim was proven to be wrong when she sank in the North Atlantic during her
+        maiden voyage. \r\nLogan Marshall did well to make use of all the resources
+        that were at his disposal. Not only was he able to make detailed descriptions
+        of the disaster, he was also able to narrate them well from a human point
+        of view without compromising any truth about the biggest sea tragedy of all
+        time. This book is a must read for anybody who's deeply interested in the
+        Titanic and its unfortunate end. \r\nThe movie \u201CTitanic\u201D is now
+        considered as a timeless classic and so is this book. If you're a fan of the
+        movie which features Leonardo Di Caprio and Kate Winslet, you'll also like
+        reading this book.\r\n]]></description>\n\n<itunes:keywords><![CDATA[The Sinking
+        of the Titanic and Great Sea Disasters, Logan Marshall, loyalbooks.com, Loyal
+        Books, audio books, audiobook, free audio books, ebooks]]></itunes:keywords>\n\n<itunes:explicit>clean</itunes:explicit>\n\n<itunes:owner>\n<itunes:name>Loyal
+        Books</itunes:name>\n<itunes:email>feeds@loyalbooks.com</itunes:email>\n</itunes:owner>\n\n<itunes:image
+        href=\"http://www.loyalbooks.com/image/feed/Sinking-of-the-Titanic-and-Gr.jpg\"
+        />\n<image>\n<url>http://www.loyalbooks.com/image/feed/Sinking-of-the-Titanic-and-Gr.jpg</url>\n<title><![CDATA[The
+        Sinking of the Titanic and Great Sea Disasters by Logan Marshall]]></title>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n</image>\n\n<atom:link
+        href=\"http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan/feed\"
+        rel=\"self\" type=\"application/rss+xml\" />\n\n<itunes:category text=\"Arts\">\n<itunes:category
+        text=\"Literature\" />\n</itunes:category>\n\n<ttl>43,200</ttl>\n\n<item>\n<title><![CDATA[Chapter
+        1]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_01_marshall_64kb.mp3\"
+        length=\"5000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_01_marshall_64kb.mp3</guid>\n<pubDate>Fri,
+        02 Jan 2026 00:00:00 +0000</pubDate>\n<itunes:duration>12:03</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        2 and 3]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_02and03_marshall_64kb.mp3\"
+        length=\"10000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_02and03_marshall_64kb.mp3</guid>\n<pubDate>Thu,
+        01 Jan 2026 00:00:00 +0000</pubDate>\n<itunes:duration>22:27</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        4 and 5]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_04and05_marshall_64kb.mp3\"
+        length=\"13000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_04and05_marshall_64kb.mp3</guid>\n<pubDate>Wed,
+        31 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>28:45</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        6]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_06_marshall_64kb.mp3\"
+        length=\"15000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_06_marshall_64kb.mp3</guid>\n<pubDate>Tue,
+        30 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>32:54</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        7]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_07_marshall_64kb.mp3\"
+        length=\"15000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_07_marshall_64kb.mp3</guid>\n<pubDate>Mon,
+        29 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>31:39</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        8 and 9]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_08and09_marshall_64kb.mp3\"
+        length=\"17000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_08and09_marshall_64kb.mp3</guid>\n<pubDate>Sun,
+        28 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>35:40</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        10]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_10_marshall_64kb.mp3\"
+        length=\"8000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_10_marshall_64kb.mp3</guid>\n<pubDate>Sat,
+        27 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>18:10</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        11]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_11_marshall_64kb.mp3\"
+        length=\"8000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_11_marshall_64kb.mp3</guid>\n<pubDate>Fri,
+        26 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>18:32</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        12 part 1]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_12part1_marshall_64kb.mp3\"
+        length=\"15000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_12part1_marshall_64kb.mp3</guid>\n<pubDate>Thu,
+        25 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>32:53</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        12 part 2]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_12part2_marshall_64kb.mp3\"
+        length=\"12000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_12part2_marshall_64kb.mp3</guid>\n<pubDate>Wed,
+        24 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>26:23</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        13 and 14]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_13and14_marshall_64kb.mp3\"
+        length=\"9000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_13and14_marshall_64kb.mp3</guid>\n<pubDate>Tue,
+        23 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>20:36</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        15, 16 and 17]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_15and16and17_marshall_64kb.mp3\"
+        length=\"12000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_15and16and17_marshall_64kb.mp3</guid>\n<pubDate>Mon,
+        22 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>25:42</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        18 and 19]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_18and19_marshall_64kb.mp3\"
+        length=\"11000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_18and19_marshall_64kb.mp3</guid>\n<pubDate>Sun,
+        21 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>24:08</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        20]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_20_marshall_64kb.mp3\"
+        length=\"8000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_20_marshall_64kb.mp3</guid>\n<pubDate>Sat,
+        20 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>17:27</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        21 and 22]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_21and22_marshall_64kb.mp3\"
+        length=\"12000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_21and22_marshall_64kb.mp3</guid>\n<pubDate>Fri,
+        19 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>25:04</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        23, 24 and 25]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_23and24and25_marshall_64kb.mp3\"
+        length=\"12000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_23and24and25_marshall_64kb.mp3</guid>\n<pubDate>Thu,
+        18 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>25:18</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapters
+        26 and 27]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_26and27_marshall_64kb.mp3\"
+        length=\"11000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_26and27_marshall_64kb.mp3</guid>\n<pubDate>Wed,
+        17 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>24:03</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        28]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_28_marshall_64kb.mp3\"
+        length=\"6000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_28_marshall_64kb.mp3</guid>\n<pubDate>Tue,
+        16 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>13:04</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[Chapter
+        29]]></title>\n<itunes:author><![CDATA[Logan Marshall]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-sinking-of-the-titanic-and-great-sea-disasters-by-marshall-logan</link>\n<enclosure
+        url=\"http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_29_marshall_64kb.mp3\"
+        length=\"17000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/sinking_of_the_titanic_librivox/sinkingoftitanic_29_marshall_64kb.mp3</guid>\n<pubDate>Mon,
+        15 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>36:21</itunes:duration>\n</item>\n\n</channel>\n</rss>"
+    headers:
+      CF-RAY:
+      - 9f815fec9d47cfaa-MAD
+      Cache-Control:
+      - max-age=172800
+      Connection:
+      - close
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:49:27 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S2qjM6%2B0p%2Fk1W1xM2HV%2BC5cm4Sw7p5xbsW24A%2BBAMf%2BhJQ6KU6ORX9Ii6Fe5ONSGgu8cv%2Fgv3NPjuJXhkWK64i5%2BU1mZRuITJyrsf9BusLO9Aimgied7Eo2QXJAUTl3SUzQA1sFx2agvN7l0FxAi4kw%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '19287'
+      expires:
+      - Sat, 09 May 2026 15:49:27 GMT
+      vary:
+      - User-Agent
+    status:
+      code: 200
+      message: OK
+version: 1
