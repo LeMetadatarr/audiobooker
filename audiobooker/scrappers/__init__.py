@@ -2,7 +2,7 @@ import abc
 import requests
 from audiobooker.utils import random_user_agent, fuzzy_match
 from typing import Iterable
-from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
+from audiobooker.base import AudioBook
 
 
 class AudioBookSource:

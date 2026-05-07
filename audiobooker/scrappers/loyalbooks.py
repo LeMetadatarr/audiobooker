@@ -171,7 +171,6 @@ class LoyalBooks(AudioBookSource):
 
 
 if __name__ == "__main__":
-    from pprint import pprint
 
     for book in LoyalBooks().search_by_author("lovecraft"):
         print(book)

@@ -275,7 +275,6 @@ def _video_to_book(v: dict, authors: List[BookAuthor], tags: List[str],
     ``authors`` and ``narrator`` take precedence: they are only replaced by
     extracted values when not explicitly set.
     """
-    from audiobooker.base import AudiobookNarrator
 
     title = v["title"]
     desc = v.get("desc", "")

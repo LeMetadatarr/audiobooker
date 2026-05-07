@@ -6,7 +6,7 @@ from typing import Iterable, List, Optional, Type
 
 from audiobooker.base import AudioBook
 from audiobooker.scrappers import AudioBookSource
-from audiobooker.utils import score_book, _METHOD_WEIGHTS
+from audiobooker.utils import score_book
 from audiobooker.scrappers.librivox import Librivox
 from audiobooker.scrappers.loyalbooks import LoyalBooks
 from audiobooker.scrappers.goldenaudiobooks import GoldenAudioBooks

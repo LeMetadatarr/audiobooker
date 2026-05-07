@@ -26,10 +26,21 @@ def _parse_playtime(playtime: str) -> int:
 
 
 def _api_get(params: dict) -> dict:
-    resp = AudioBookSource.session.get(
-        _API, params={"extended": 1, "format": "json", "limit": 50, **params}
-    )
-    return resp.json()
+    """Query the LibriVox API.
+
+    LibriVox returns HTTP 500 for some parameter combinations (e.g.,
+    ``title=^X`` combined with ``author=Y``).  Treat any non-2xx response or
+    JSON-decode failure as an empty result rather than raising.
+    """
+    try:
+        resp = AudioBookSource.session.get(
+            _API, params={"extended": 1, "format": "json", "limit": 50, **params}
+        )
+        if resp.status_code >= 400:
+            return {}
+        return resp.json()
+    except Exception:
+        return {}
 
 
 def _section_streams(rss_url: str) -> list:

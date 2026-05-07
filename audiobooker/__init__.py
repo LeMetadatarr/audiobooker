@@ -19,6 +19,41 @@ from audiobooker.utils import check_url_availability, score_book, iter_sitemap_u
 from audiobooker.index import BookIndex, IndexedSource
 
 try:
-    from audiobooker.scrappers.youtube import YoutubeChannelSource, YoutubePlaylistSource, TheCybrarian, HorrorBabble, TheDustyTome
+    from audiobooker.scrappers.youtube import (  # noqa: F401
+        YoutubeChannelSource,
+        YoutubePlaylistSource,
+        TheCybrarian,
+        HorrorBabble,
+        TheDustyTome,
+    )
 except ImportError:
     pass
+
+__all__ = [
+    "AudioBook",
+    "AudioBookChapter",
+    "AudiobookNarrator",
+    "BookAuthor",
+    "normalize_language",
+    "audiobook_to_release",
+    "UnknownAuthorIdException",
+    "UnknownBookIdException",
+    "UnknownDurationError",
+    "ScrappingError",
+    "UnknownGenreIdException",
+    "UnknownAuthorException",
+    "UnknownBookException",
+    "UnknownGenreException",
+    "ParseErrorException",
+    "search",
+    "search_by_title",
+    "search_by_author",
+    "search_by_narrator",
+    "search_by_tag",
+    "ALL_SOURCES",
+    "check_url_availability",
+    "score_book",
+    "iter_sitemap_urls",
+    "BookIndex",
+    "IndexedSource",
+]
