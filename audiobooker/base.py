@@ -106,6 +106,9 @@ class AudioBook:
         if self.narrator and not self.narrators:
             self.narrators = [self.narrator]
         elif self.narrators:
+            if self.narrator and self.narrator not in self.narrators:
+                # Both supplied and diverge — prepend singular to list
+                self.narrators = [self.narrator] + self.narrators
             self.narrator = self.narrators[0]
 
     def __hash__(self):
