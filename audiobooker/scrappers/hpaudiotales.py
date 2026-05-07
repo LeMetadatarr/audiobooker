@@ -8,6 +8,7 @@ from audiobooker.utils import get_soup, iter_sitemap_urls
 @dataclass
 class HPTalesAudioBook:
     url: str
+    session: object = None
 
     def parse_page(self):
         soup = get_soup(self.url)
@@ -24,7 +25,8 @@ class HPTalesAudioBook:
         root = soup.find("div", {"class": "audioigniter-root"})
         if not root or not root.get("data-tracks-url"):
             return None
-        data = AudioBookSource.session.get(root["data-tracks-url"]).json()
+        sess = self.session if self.session is not None else AudioBookSource.session
+        data = sess.get(root["data-tracks-url"]).json()
 
         tags += list(set(s["subtitle"] for s in data if s.get("subtitle")))
         streams = [s["audio"] for s in data if s.get("audio")]
@@ -53,7 +55,7 @@ class HPTalesAudioBooks(AudioBookSource):
                 continue
             seen.add(href)
             try:
-                book = HPTalesAudioBook(url=href).parse_page()
+                book = HPTalesAudioBook(url=href, session=self.session).parse_page()
                 if book:
                     yield self._tag(book)
             except Exception:
@@ -62,7 +64,7 @@ class HPTalesAudioBooks(AudioBookSource):
     def iterate_all(self):
         for url in iter_sitemap_urls("https://hpaudiotales.com/wp-sitemap-posts-post-1.xml"):
             try:
-                book = HPTalesAudioBook(url=url).parse_page()
+                book = HPTalesAudioBook(url=url, session=self.session).parse_page()
                 if book:
                     yield self._tag(book)
             except Exception:

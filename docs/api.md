@@ -148,3 +148,50 @@ normalize_language("de")        # → "de"
 ```
 
 Called automatically by `AudioBook.__post_init__` on the `language` field.
+
+## HTTP transport
+
+Every scraper inherits from `AudioBookSource`, which holds a class-level
+`requests.Session` (with a randomised User-Agent) for backward
+compatibility. You can also inject a per-instance session through the
+constructor — handy for testing, custom retries, proxies, or alternative
+HTTP backends:
+
+```python
+import requests
+from audiobooker.scrappers.librivox import Librivox
+
+s = requests.Session()
+s.proxies = {"https": "http://localhost:8888"}
+lv = Librivox(session=s)
+```
+
+### `[stealth]` extra and `AUDIOBOOKER_TRANSPORT`
+
+Some sites front their pages with bot-protection that fingerprints the
+TLS handshake and blocks plain `requests`. Install the optional
+`[stealth]` extra to pull in [`curl_cffi`](https://github.com/yifeikong/curl_cffi),
+which impersonates a real browser's TLS fingerprint:
+
+```bash
+pip install audiobooker[stealth]
+```
+
+Then set `AUDIOBOOKER_TRANSPORT=curl_cffi` in the environment and call
+`audiobooker.transport.default_session()` to obtain a `curl_cffi`-backed
+session you can pass into any scraper:
+
+```python
+import os
+os.environ["AUDIOBOOKER_TRANSPORT"] = "curl_cffi"
+
+from audiobooker.transport import default_session
+from audiobooker.scrappers.librivox import Librivox
+
+lv = Librivox(session=default_session())
+```
+
+If `curl_cffi` isn't importable, `default_session()` silently falls back
+to a plain `requests.Session`. Note that LibriVox's RSS fetch uses
+`feedparser`, which goes through `urllib` internally — injected sessions
+do not apply to that call (only the User-Agent header is forwarded).

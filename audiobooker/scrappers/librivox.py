@@ -25,15 +25,20 @@ def _parse_playtime(playtime: str) -> int:
     return parts[0] * 3600 + parts[1] * 60 + parts[2]
 
 
-def _api_get(params: dict) -> dict:
+def _api_get(params: dict, session=None) -> dict:
     """Query the LibriVox API.
 
     LibriVox returns HTTP 500 for some parameter combinations (e.g.,
     ``title=^X`` combined with ``author=Y``).  Treat any non-2xx response or
     JSON-decode failure as an empty result rather than raising.
+
+    ``session`` may be any ``requests.Session``-compatible object; when
+    ``None``, the class-level default on :class:`AudioBookSource` is used
+    (preserves prior behaviour).
     """
+    sess = session if session is not None else AudioBookSource.session
     try:
-        resp = AudioBookSource.session.get(
+        resp = sess.get(
             _API, params={"extended": 1, "format": "json", "limit": 50, **params}
         )
         if resp.status_code >= 400:
@@ -43,10 +48,18 @@ def _api_get(params: dict) -> dict:
         return {}
 
 
-def _section_streams(rss_url: str) -> list:
+def _section_streams(rss_url: str, session=None) -> list:
+    # NOTE: ``feedparser.parse`` uses ``urllib`` internally and does NOT
+    # accept a ``requests.Session``. Injected sessions therefore do not
+    # apply to RSS fetches — only the User-Agent header is forwarded.
+    sess = session if session is not None else AudioBookSource.session
+    try:
+        ua = sess.headers.get("User-Agent")
+    except Exception:
+        ua = None
     rss = feedparser.parse(
         rss_url,
-        agent=AudioBookSource.session.headers.get("User-Agent"),
+        agent=ua,
         request_headers={"Connection": "close"},
     )
     return [
@@ -56,9 +69,9 @@ def _section_streams(rss_url: str) -> list:
     ]
 
 
-def _build_book(k: dict) -> AudioBook:
+def _build_book(k: dict, session=None) -> AudioBook:
     """Convert one LibriVox API record into a single typed ``AudioBook``."""
-    rss_streams = _section_streams(k["url_rss"])
+    rss_streams = _section_streams(k["url_rss"], session=session)
 
     chapters: list = []
     narrators: list = []
@@ -129,25 +142,25 @@ def _build_book(k: dict) -> AudioBook:
 class Librivox(AudioBookSource):
 
     def iterate_all(self, offset=0, max_offset=100000) -> Iterable[AudioBook]:
-        data = _api_get({"offset": offset})
+        data = _api_get({"offset": offset}, session=self.session)
         for k in data.get("books", []):
-            yield self._tag(_build_book(k))
+            yield self._tag(_build_book(k, session=self.session))
         if offset < max_offset and data.get("books"):
             yield from self.iterate_all(offset + 50, max_offset)
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
-        for k in _api_get({"author": query}).get("books", []):
-            yield self._tag(_build_book(k))
+        for k in _api_get({"author": query}, session=self.session).get("books", []):
+            yield self._tag(_build_book(k, session=self.session))
 
     def search_by_narrator(self, query) -> Iterable[AudioBook]:
-        for k in _api_get({"reader": query}).get("books", []):
-            yield self._tag(_build_book(k))
+        for k in _api_get({"reader": query}, session=self.session).get("books", []):
+            yield self._tag(_build_book(k, session=self.session))
 
     def search_by_tag(self, query) -> Iterable[AudioBook]:
-        for k in _api_get({"tag": query}).get("books", []):
-            yield self._tag(_build_book(k))
+        for k in _api_get({"tag": query}, session=self.session).get("books", []):
+            yield self._tag(_build_book(k, session=self.session))
 
     def search_by_title(self, query) -> Iterable[AudioBook]:
         # Librivox's title= param returns 404; use the generic search= param
-        for k in _api_get({"search": query}).get("books", []):
-            yield self._tag(_build_book(k))
+        for k in _api_get({"search": query}, session=self.session).get("books", []):
+            yield self._tag(_build_book(k, session=self.session))

@@ -1,13 +1,33 @@
 import abc
+from typing import Iterable, Optional
+
 import requests
-from audiobooker.utils import random_user_agent, fuzzy_match
-from typing import Iterable
+
 from audiobooker.base import AudioBook
+from audiobooker.utils import fuzzy_match, random_user_agent
+
+
+# Module-level default session preserves the historical class-level
+# attribute behaviour: callers that touch ``AudioBookSource.session``
+# directly (or omit the constructor argument) keep working unchanged.
+_default_session = requests.Session()
+_default_session.headers.update({"User-Agent": random_user_agent()})
 
 
 class AudioBookSource:
-    session = requests.Session()
-    session.headers.update({"User-Agent": random_user_agent()})
+    # Class-level default for backward compatibility — code that reads
+    # ``AudioBookSource.session`` directly continues to work.
+    session: requests.Session = _default_session
+
+    def __init__(self, session: Optional[requests.Session] = None):
+        """Optionally inject a custom HTTP session per instance.
+
+        Pass any ``requests.Session``-compatible object (e.g. a
+        ``curl_cffi.requests.Session`` from the ``[stealth]`` extra).
+        When ``None``, the class-level default session is used.
+        """
+        if session is not None:
+            self.session = session
 
     @property
     def source_name(self) -> str:
