@@ -95,8 +95,7 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
     for key, val in (book.external_ids or {}).items():
         if val:
             external_ids[key] = str(val)
-    if book.stable_id():
-        external_ids["audiobooker_id"] = book.stable_id()
+    external_ids["audiobooker_id"] = book.stable_id()
 
     # Genres: prefer the dedicated ``genres`` field; fall back to ``tags``
     # only when the source doesn't distinguish them.

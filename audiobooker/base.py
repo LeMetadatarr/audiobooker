@@ -101,10 +101,11 @@ class AudioBook:
         if self.language:
             self.language = normalize_language(self.language)
         # Keep singular ``narrator`` and plural ``narrators`` consistent so
-        # callers can use either.
+        # callers can use either.  When both are supplied, the list is
+        # authoritative; ``narrator`` is reconciled to its first element.
         if self.narrator and not self.narrators:
             self.narrators = [self.narrator]
-        elif self.narrators and not self.narrator:
+        elif self.narrators:
             self.narrator = self.narrators[0]
 
     def __hash__(self):

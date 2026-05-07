@@ -43,7 +43,8 @@ book.has_live_streams() -> bool
 ```
 
 Issues a HEAD request to each stream URL and returns `True` if at least one
-responds with HTTP < 400. Uses the shared cached session.
+responds with HTTP < 400. Uses the shared plain `requests.Session`
+(`AudioBookSource.session`).
 
 ## BookAuthor
 

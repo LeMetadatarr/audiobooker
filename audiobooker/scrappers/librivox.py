@@ -105,7 +105,7 @@ def _build_book(k: dict) -> AudioBook:
         streams=streams,
         narrators=narrators,
         tags=genres,
-        genres=genres,
+        genres=list(genres),
         authors=[
             BookAuthor(
                 first_name=a.get("first_name", ""),
@@ -120,7 +120,7 @@ def _build_book(k: dict) -> AudioBook:
         language=k.get("language", ""),
         chapters=chapters,
         codec="mp3",  # LibriVox publishes 64/128 kbps MP3 by policy
-        bitrate="128",
+        bitrate="",
         external_ids=external_ids,
     )
     return book
