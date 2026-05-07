@@ -1,0 +1,784 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/xml;charset=utf-8
+    method: GET
+    uri: https://darkerprojects.com/wp-sitemap-posts-post-1.xml
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <?xml-stylesheet type="text/xsl" href="https://darkerprojects.com/wp-sitemap.xsl"
+        ?>
+
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://darkerprojects.com/outer-limits/outer-limits-001-the-spark-of-life/</loc><lastmod>2022-02-20T22:50:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/173/</loc><lastmod>2022-02-21T18:52:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-004-reprecussions/</loc><lastmod>2022-02-21T19:07:25-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/episode-001-nightmares-conception/</loc><lastmod>2022-02-21T18:57:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-002-shifts-in-time/</loc><lastmod>2022-02-21T19:00:48-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-003-backlash/</loc><lastmod>2022-02-21T19:03:33-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-005-challenges/</loc><lastmod>2022-02-21T19:10:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-006-truth-and-consequences/</loc><lastmod>2022-02-21T19:13:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-007-what-you-see-isnt-what-you-get/</loc><lastmod>2022-02-21T19:15:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-008-all-roses-have-thorns/</loc><lastmod>2022-02-21T19:17:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-009-getting-to-know-you-what-a-pain-part-1/</loc><lastmod>2022-02-21T19:41:55-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-010-getting-to-know-you-what-a-pain-part-2/</loc><lastmod>2022-02-21T19:43:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-009-getting-to-know-you-what-a-pain-part-3/</loc><lastmod>2022-02-21T19:46:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-010-three-degrees-of-intent-part-1/</loc><lastmod>2022-02-21T19:49:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-episode-010-three-degrees-of-intent-part-2/</loc><lastmod>2022-02-21T19:51:51-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml000prologue-mp3/</loc><lastmod>2022-02-20T19:04:55-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-000-prologue/</loc><lastmod>2022-02-20T19:08:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-001/</loc><lastmod>2022-02-20T19:09:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-007/</loc><lastmod>2022-02-20T19:14:28-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-006/</loc><lastmod>2022-02-20T19:13:46-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-006-2/</loc><lastmod>2022-02-20T19:12:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/272/</loc><lastmod>2022-02-20T19:11:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-003/</loc><lastmod>2022-02-20T19:11:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/batman-no-mans-land/bnml-episode-002/</loc><lastmod>2022-02-20T19:10:29-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-001-elevator-music/</loc><lastmod>2022-02-21T15:23:06-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-002-tow-truck/</loc><lastmod>2022-02-21T16:20:07-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-003-are-you-watching-me/</loc><lastmod>2022-02-21T15:27:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-004-ring-ring/</loc><lastmod>2022-02-21T15:31:05-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-005-black-angels/</loc><lastmod>2022-02-21T15:33:12-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-006-mcmeat/</loc><lastmod>2022-02-21T15:35:33-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-007-the-codgers-tale/</loc><lastmod>2022-02-21T15:38:19-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-008-every-step-of-the-way/</loc><lastmod>2022-02-21T15:40:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-009-masks/</loc><lastmod>2022-02-21T18:28:46-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s1-ep-010-hallowed-grounds/</loc><lastmod>2022-02-21T15:45:38-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-ep-011-the-grave/</loc><lastmod>2022-02-21T15:48:25-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-ep-001-lucky-guy/</loc><lastmod>2022-02-21T18:31:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-001-the-man-in-the-chair/</loc><lastmod>2022-02-21T17:54:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-000-intro/</loc><lastmod>2022-02-21T17:57:57-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-002-the-bug-doctor/</loc><lastmod>2022-02-21T17:52:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-003-love-and-murder/</loc><lastmod>2022-02-21T17:49:59-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-004-ghost-county-usa/</loc><lastmod>2022-02-21T18:01:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-005-last-call/</loc><lastmod>2022-02-21T17:45:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-006-byrons-tale/</loc><lastmod>2022-02-21T17:42:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-007-they-the-man-in-the-machine/</loc><lastmod>2022-02-21T17:39:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-008-blacklist/</loc><lastmod>2022-02-21T17:35:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-009-voices-of-the-soul/</loc><lastmod>2022-02-21T17:33:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-010-and-god-looked/</loc><lastmod>2022-02-21T17:30:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-011-the-house-in-the-clock/</loc><lastmod>2022-02-21T17:28:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-012-forever-december/</loc><lastmod>2022-02-21T17:25:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-013-the-carnegie-stone/</loc><lastmod>2022-02-21T17:22:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-014-the-horror-of-cardmoor-abbey/</loc><lastmod>2022-02-21T18:04:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-015-the-choice/</loc><lastmod>2022-02-21T18:06:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-016-roadside-castle/</loc><lastmod>2022-02-21T17:15:31-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-017-the-rosetta-noise/</loc><lastmod>2022-02-21T17:12:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-ep-018-pitter-patter/</loc><lastmod>2022-02-21T17:08:20-05:00</lastmod></url><url><loc>https://darkerprojects.com/he-man-the-parody/he-man-the-parody-part-1/</loc><lastmod>2022-02-20T22:42:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/he-man-the-parody/he-man-the-parody-part-2-for-whom-the-wind-breaks/</loc><lastmod>2022-02-20T22:41:59-05:00</lastmod></url><url><loc>https://darkerprojects.com/he-man-the-parody/he-man-the-parody-part-3/</loc><lastmod>2022-02-20T22:41:21-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-01-the-long-road/</loc><lastmod>2022-02-21T14:27:37-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-02-the-lords-of-time/</loc><lastmod>2022-02-21T18:22:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-03-the-legacy-of-gallifrey/</loc><lastmod>2022-02-21T14:30:12-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-04-summer-cutaway/</loc><lastmod>2022-02-21T14:18:13-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-05-the-dreamers-part-1/</loc><lastmod>2022-02-21T14:14:02-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-06-the-dreamers-part-2/</loc><lastmod>2022-02-21T14:11:46-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-3-ep-07-the-dreamers-part-3/</loc><lastmod>2022-02-21T14:09:13-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-special-doctor-who-and-the-silver-spiral/</loc><lastmod>2022-02-21T14:05:07-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-01-caribbean-blue-part-1/</loc><lastmod>2022-02-21T13:58:02-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-02-caribbean-blue-part-2/</loc><lastmod>2022-02-21T13:54:02-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-03-caribbean-blue-part-3/</loc><lastmod>2022-02-21T13:49:02-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-04-caribbean-blue-part-4/</loc><lastmod>2022-02-21T13:46:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-05-caribbean-blue-part-5/</loc><lastmod>2022-02-21T13:43:51-05:00</lastmod></url><url><loc>https://darkerprojects.com/other-voices/ov-ep-001-an-open-letter/</loc><lastmod>2022-02-21T14:45:11-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-leap/ql-ep-001-devils-due/</loc><lastmod>2025-10-27T23:16:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-000-introduction/</loc><lastmod>2022-02-20T21:30:41-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-001-the-specimen/</loc><lastmod>2022-02-20T21:33:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-002-the-last-shot-for-freedom/</loc><lastmod>2022-02-20T21:40:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-003-zombie-pumpkinheads-from-outer-space/</loc><lastmod>2022-02-20T21:43:31-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-04-the-grey-matter/</loc><lastmod>2022-02-20T21:46:32-05:00</lastmod></url><url><loc>https://darkerprojects.com/dark-matter/dm-ep-05-heroes/</loc><lastmod>2022-02-20T21:49:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/httpdarkerprojects-dreamhosters-comaudioautumnautumn-trailer_darker-projects-mp3/</loc><lastmod>2022-08-24T19:08:32-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-01/</loc><lastmod>2022-02-20T18:39:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-02/</loc><lastmod>2022-02-20T18:38:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-03/</loc><lastmod>2022-02-20T18:37:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-04/</loc><lastmod>2022-02-20T18:38:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-05/</loc><lastmod>2022-02-20T18:41:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/autumn/autumn-ep-06/</loc><lastmod>2022-02-20T18:42:46-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-000-promo/</loc><lastmod>2022-02-22T15:53:10-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-001-the-cult-of-serpents/</loc><lastmod>2022-02-22T15:55:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-002-the-curse-of-the-wolf/</loc><lastmod>2022-02-22T16:48:19-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-003-the-reaper-tapestry/</loc><lastmod>2022-02-22T16:00:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-004-beneath-the-foundation/</loc><lastmod>2022-02-22T16:02:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-005-return-of-the-serpents/</loc><lastmod>2022-02-22T16:04:52-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-006-day-one/</loc><lastmod>2022-02-22T16:07:18-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-007-the-amulet-and-the-scroll/</loc><lastmod>2022-02-22T16:10:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-008-the-screaming-woman/</loc><lastmod>2022-02-22T16:12:40-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-009-haunting-pierpointe/</loc><lastmod>2022-02-22T16:15:03-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-010-the-trouble-with-jane/</loc><lastmod>2022-02-22T16:19:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-011-bloody-haven/</loc><lastmod>2022-02-22T16:44:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-012-beyond-the-veil/</loc><lastmod>2022-02-22T16:42:28-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum/tm-ep-013-finale-the-battle-for-the-museum/</loc><lastmod>2022-02-22T16:44:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/fb-ep-000-teaser/</loc><lastmod>2022-02-22T14:35:10-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-001-freedoms-spark/</loc><lastmod>2022-02-22T14:39:04-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-002-new-friends-old-enemies/</loc><lastmod>2022-02-22T14:46:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-003-for-duty-and-crew/</loc><lastmod>2022-02-22T14:51:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-004-the-future-remembered-part-1/</loc><lastmod>2022-02-22T14:56:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-005-the-future-remembered-part-2/</loc><lastmod>2022-02-22T15:05:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-006-foundations/</loc><lastmod>2022-02-22T15:07:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-007-of-ships-and-stars/</loc><lastmod>2022-02-22T15:13:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-007a-red-relief/</loc><lastmod>2022-02-22T15:10:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-008-the-stuff-of-legends-and-other-histories-part-1/</loc><lastmod>2022-02-22T15:20:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-009-the-stuff-of-legends-and-other-histories-part-2/</loc><lastmod>2022-02-22T15:24:37-05:00</lastmod></url><url><loc>https://darkerprojects.com/the-falcon-banner/tfb-ep-010-the-stuff-of-legends-and-other-histories-part-3/</loc><lastmod>2022-02-22T15:45:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-ep-000-welcome/</loc><lastmod>2022-08-24T17:59:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-ep-000-opening/</loc><lastmod>2022-02-22T17:04:49-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-4-ep-003-prime/</loc><lastmod>2022-02-22T21:46:33-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-04-ep-002-ghost-ship/</loc><lastmod>2022-02-22T21:41:02-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-4-ep-001-neros-legacy/</loc><lastmod>2022-02-22T21:38:59-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-001-altered-reflection-part-1/</loc><lastmod>2022-02-22T17:07:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-002-altered-reflection-part-2/</loc><lastmod>2022-02-22T17:09:13-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-003-altered-reflection-part-3/</loc><lastmod>2022-02-22T17:10:57-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-004-altered-reflection-part-4/</loc><lastmod>2022-02-22T17:14:01-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-005-shades-of-grey/</loc><lastmod>2022-02-22T17:17:13-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-006-the-sum-of-ones-memories/</loc><lastmod>2022-02-22T17:19:21-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-007-crimson-the-key/</loc><lastmod>2022-02-22T17:21:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-008-the-awakening/</loc><lastmod>2022-02-22T17:24:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-01-ep-009-bold-venture-part-1/</loc><lastmod>2022-02-22T17:26:24-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-010-bold-venture-part-2/</loc><lastmod>2022-02-22T17:28:19-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-011-harbinger/</loc><lastmod>2022-02-22T17:30:30-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-012-in-his-name/</loc><lastmod>2022-02-22T17:32:33-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-013-distant-shores/</loc><lastmod>2022-02-22T17:34:15-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-1-ep-014-knowledge-is-power/</loc><lastmod>2022-02-22T21:55:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-001-dark-alliance/</loc><lastmod>2022-02-22T17:38:32-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-002-absent-friends/</loc><lastmod>2022-02-22T17:40:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-003-the-gathering-storm/</loc><lastmod>2022-02-22T17:43:26-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-004-storm-warning/</loc><lastmod>2022-02-22T17:45:11-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-005-storm-break/</loc><lastmod>2022-02-22T17:52:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-006-fallout/</loc><lastmod>2022-02-22T17:54:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-007-reflections-from-the-gulf/</loc><lastmod>2022-02-22T17:56:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-008-shattered-dominion/</loc><lastmod>2022-02-22T17:58:37-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-009-a-god-by-any-other-name/</loc><lastmod>2022-02-22T18:00:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-010-korg/</loc><lastmod>2022-02-22T18:02:05-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-011-the-hour-of-judgement-part-1/</loc><lastmod>2022-02-22T18:06:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-2-ep-012-the-hour-of-judgement-part-2/</loc><lastmod>2022-02-22T18:07:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-001-escape-from-rura-penthe-part-1/</loc><lastmod>2022-02-22T18:10:07-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-002-escape-from-rura-penthe-part-2/</loc><lastmod>2022-02-22T18:11:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-003-escape-from-rura-penthe-part-3/</loc><lastmod>2022-02-22T18:13:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-004-invasion-part-1-the-gateway/</loc><lastmod>2022-02-22T18:15:17-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-005-invasion-part-2-doomsday-unleashed/</loc><lastmod>2022-02-22T18:17:38-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-006-invasion-part-3-warday/</loc><lastmod>2022-02-22T18:19:31-05:00</lastmod></url><url><loc>https://darkerprojects.com/section31/st-31-season-3-ep-007-invasion-part-4-the-last-stand/</loc><lastmod>2022-02-22T18:21:51-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/star-trek-lost-frontier-intro/</loc><lastmod>2022-02-21T21:33:20-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-001-hope/</loc><lastmod>2022-02-21T21:39:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-002-a-star-to-steer-her-by/</loc><lastmod>2022-02-21T21:42:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-004-escape-from-korsava-4/</loc><lastmod>2022-02-21T21:50:04-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-003-prisoner/</loc><lastmod>2022-02-21T21:46:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-005-the-fallen-empire/</loc><lastmod>2022-02-21T21:52:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-006-remnant-of-the-klingons/</loc><lastmod>2022-02-21T21:55:25-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-007-resistance/</loc><lastmod>2022-02-21T22:00:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-008-a-legend-falls/</loc><lastmod>2022-02-21T22:04:05-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-009-movement-in-shadows/</loc><lastmod>2022-02-21T22:06:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-010-of-q-and-women/</loc><lastmod>2022-02-21T22:09:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-011-a-prophet-without-honor/</loc><lastmod>2022-02-21T22:13:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-012-power-and-dominion-part-1/</loc><lastmod>2022-02-21T22:16:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-013-power-and-dominion-part-2/</loc><lastmod>2022-02-21T22:18:55-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-014-the-valiant-part-1/</loc><lastmod>2022-02-21T22:21:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-015-the-valiant-part-2/</loc><lastmod>2022-02-21T22:24:05-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-016-caduceus/</loc><lastmod>2022-02-21T22:27:19-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-017-the-rift/</loc><lastmod>2022-02-21T22:30:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-000-intro/</loc><lastmod>2022-02-20T19:21:43-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-001-judah-friese-on-the-history-of-darker-projects/</loc><lastmod>2022-02-20T19:36:07-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-002-elie-hirschman-on-the-he-man-the-parody/</loc><lastmod>2022-02-20T19:31:01-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-003-mark-bruzee-on-the-transition-from-stage-acting-to-voice-acting/</loc><lastmod>2022-02-20T19:33:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-004-paul-mannering-on-growing-up-a-kiwi/</loc><lastmod>2022-02-20T19:36:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-005-alexander-davis-on-making-money-in-audio-drama/</loc><lastmod>2022-02-20T19:38:19-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-006-fiona-conn-and-shire-smith/</loc><lastmod>2022-02-20T19:40:16-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-007-david-ault/</loc><lastmod>2022-02-20T19:42:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-008-clym-angus-and-matt-manning/</loc><lastmod>2022-02-20T19:45:29-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-009-chris-snyder/</loc><lastmod>2022-02-20T19:47:26-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-010-3-authors/</loc><lastmod>2022-02-20T19:49:28-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-011-laura-post/</loc><lastmod>2022-02-20T19:51:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-012-christopher-patrick-lydon-2/</loc><lastmod>2022-02-20T19:54:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/bts-ep-013-eric-busby/</loc><lastmod>2022-02-20T19:56:04-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-000-commercial/</loc><lastmod>2022-02-21T17:04:47-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-001-please-come-with-me-part-1/</loc><lastmod>2022-02-21T17:02:24-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-001-please-come-with-me-part-2/</loc><lastmod>2022-02-21T16:58:25-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-018-cosa-nostra/</loc><lastmod>2022-02-21T22:33:25-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-ep-002-asking-for-it/</loc><lastmod>2022-02-21T15:54:45-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-011-mixed-signals/</loc><lastmod>2022-02-21T19:53:41-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-002-the-whole-towns-sleeping-2/</loc><lastmod>2022-02-21T16:53:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-06-caribbean-blue-part-6/</loc><lastmod>2022-02-21T13:40:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-012-mixed-shaken-not-stirred-part-1/</loc><lastmod>2022-02-21T19:56:29-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/m-ep-000-trailer-1/</loc><lastmod>2022-02-21T14:53:27-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-003-the-house-in-cypress-canyon/</loc><lastmod>2022-02-21T16:47:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/m-ep-000-trailer-2/</loc><lastmod>2022-02-21T14:58:54-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/m-ep-001-madness/</loc><lastmod>2022-02-21T15:00:47-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/m-ep-002-highway-to-hell/</loc><lastmod>2022-02-21T15:04:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-019-cats-claw/</loc><lastmod>2022-02-21T22:35:29-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-07-salvage-wars-part-1/</loc><lastmod>2022-02-21T13:35:49-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/ep-003-madness-house-of-the-devil/</loc><lastmod>2022-02-21T15:07:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-006-yuppo-knows/</loc><lastmod>2022-02-21T16:36:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-012-mixed-shaken-not-stirred-part-2/</loc><lastmod>2022-02-21T19:59:06-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-013-opportunity-knocks-twice/</loc><lastmod>2022-02-21T20:02:14-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-015-macarena-chocolate-anyone-part-1/</loc><lastmod>2023-12-23T15:06:20-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-ep-003-all-up-in-smoke/</loc><lastmod>2022-02-21T15:58:01-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-004-holiday-shopping/</loc><lastmod>2022-02-21T16:00:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-004-to-sleep-perchance-to-dream/</loc><lastmod>2022-02-21T16:44:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-005-the-hooded-figure/</loc><lastmod>2022-02-21T16:40:06-05:00</lastmod></url><url><loc>https://darkerprojects.com/other-voices/ov-ep-002-the-raven/</loc><lastmod>2022-02-21T14:47:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-005-death-by-zombie/</loc><lastmod>2022-02-21T16:03:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/ep-004-madness-home-is-where-the-heart-is-lost/</loc><lastmod>2022-02-21T15:10:09-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-08-salvage-wars-part-2/</loc><lastmod>2022-02-21T13:37:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-206-its-the-great-pumpkin/</loc><lastmod>2022-02-21T16:05:41-05:00</lastmod></url><url><loc>https://darkerprojects.com/behind-the-scenes/behind-the-scenes-ep-15/</loc><lastmod>2022-02-20T20:38:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-leap/ql-ep-002-cry-angel-cry/</loc><lastmod>2025-10-27T14:36:31-05:00</lastmod></url><url><loc>https://darkerprojects.com/madness/ep-005-madness-a-new-sherriff-in-town/</loc><lastmod>2022-02-21T15:16:13-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-007-giggles/</loc><lastmod>2022-02-21T16:32:23-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum-the-beginning/tm-tb-ep-01-sleepwalker/</loc><lastmod>2022-08-24T20:47:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-008-i-madman/</loc><lastmod>2022-02-21T16:28:55-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-001/</loc><lastmod>2022-02-21T18:18:36-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-002/</loc><lastmod>2022-02-20T22:54:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-014-prelude-to-a-party/</loc><lastmod>2022-02-21T21:13:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-003/</loc><lastmod>2022-02-20T22:54:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-004/</loc><lastmod>2022-02-20T22:53:22-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-005/</loc><lastmod>2022-02-20T22:52:42-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum-the-beginning/tm-tb-ep-02-mummys-treasure/</loc><lastmod>2022-08-24T20:48:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s-2-007-breathe-the-night/</loc><lastmod>2022-02-21T16:09:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-008-incident-over-edgecombe/</loc><lastmod>2022-02-21T16:11:35-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-009-what-cost-victory/</loc><lastmod>2022-02-21T16:15:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/five-minute-fears/fmf-s2-ep-10-closing-time/</loc><lastmod>2022-02-21T16:18:44-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-006/</loc><lastmod>2022-02-20T22:52:03-05:00</lastmod></url><url><loc>https://darkerprojects.com/other-voices/ov-ep-003-dead-mans-hate/</loc><lastmod>2022-02-21T14:50:00-05:00</lastmod></url><url><loc>https://darkerprojects.com/lostfrontier/st-lf-season-1-ep-20-philanthropy/</loc><lastmod>2022-02-21T22:45:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/doctor-who/dw-season-04-ep-09-salvage-wars-part-3/</loc><lastmod>2022-02-20T22:39:57-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-leap/ql-ep-003-double-the-leap-double-the-danger/</loc><lastmod>2025-10-27T15:49:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-007/</loc><lastmod>2023-07-26T14:26:53-05:00</lastmod></url><url><loc>https://darkerprojects.com/tales-from-the-museum-the-beginning/tm-tb-ep-03-the-silver-death/</loc><lastmod>2023-04-15T21:59:57-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-009-brothers-blood/</loc><lastmod>2023-09-30T01:33:45-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-008/</loc><lastmod>2023-09-30T01:35:06-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-leap/ql-ep-004-silent-victims/</loc><lastmod>2025-07-10T16:08:21-05:00</lastmod></url><url><loc>https://darkerprojects.com/dp-uncovered/dp-uncovered-ep-009/</loc><lastmod>2025-08-30T18:24:34-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-015-macarena-chocolate-anyone-part-2/</loc><lastmod>2024-10-30T18:52:56-05:00</lastmod></url><url><loc>https://darkerprojects.com/quantum-retribution/qr-ep-016a-1-2-3-they-all-fall-down/</loc><lastmod>2025-08-29T17:22:05-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season-2-ep-010-lettermans-jacket/</loc><lastmod>2025-08-29T17:23:39-05:00</lastmod></url><url><loc>https://darkerprojects.com/night-terrors/nt-season2-ep-011-on-a-country-road/</loc><lastmod>2025-10-31T16:08:02-05:00</lastmod></url></urlset>
+
+        '
+    headers:
+      Cache-Control:
+      - max-age=172800
+      Connection:
+      - Upgrade, Keep-Alive
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:47:57 GMT
+      Expires:
+      - Sat, 09 May 2026 15:47:57 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Permissions-Policy:
+      - private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com"
+        "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"),
+        private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com"
+        "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+      Server:
+      - Apache
+      Upgrade:
+      - h2
+      Vary:
+      - Accept-Encoding,User-Agent
+      content-length:
+      - '34614'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://darkerprojects.com/outer-limits/outer-limits-001-the-spark-of-life/
+  response:
+    body:
+      string: "<!doctype html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n
+        \   <link rel=\"profile\" href=\"http://gmpg.org/xfn/11\">\n\n    <title>OL
+        &#8211; Ep 001: The Spark of Life &#8211; Darker Projects</title>\n<meta name='robots'
+        content='max-image-preview:large' />\n<link rel='dns-prefetch' href='//fonts.googleapis.com'
+        />\n<link rel=\"alternate\" title=\"oEmbed (JSON)\" type=\"application/json+oembed\"
+        href=\"https://darkerprojects.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarkerprojects.com%2Fouter-limits%2Fouter-limits-001-the-spark-of-life%2F\"
+        />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\"
+        href=\"https://darkerprojects.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdarkerprojects.com%2Fouter-limits%2Fouter-limits-001-the-spark-of-life%2F&#038;format=xml\"
+        />\n<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>\nimg:is([sizes=auto
+        i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css
+        */\n</style>\n<link rel='stylesheet' id='scap.flashblock-css' href='https://darkerprojects.com/wp-content/plugins/compact-wp-audio-player/css/flashblock.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='scap.player-css'
+        href='https://darkerprojects.com/wp-content/plugins/compact-wp-audio-player/css/player.css?ver=6.9.4'
+        type='text/css' media='all' />\n<style id='wp-emoji-styles-inline-css' type='text/css'>\n\n\timg.wp-smiley,
+        img.emoji {\n\t\tdisplay: inline !important;\n\t\tborder: none !important;\n\t\tbox-shadow:
+        none !important;\n\t\theight: 1em !important;\n\t\twidth: 1em !important;\n\t\tmargin:
+        0 0.07em !important;\n\t\tvertical-align: -0.1em !important;\n\t\tbackground:
+        none !important;\n\t\tpadding: 0 !important;\n\t}\n/*# sourceURL=wp-emoji-styles-inline-css
+        */\n</style>\n<link rel='stylesheet' id='wp-block-library-css' href='https://darkerprojects.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n\n<style id='global-styles-inline-css' type='text/css'>\n:root{--wp--preset--aspect-ratio--square:
+        1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2:
+        3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9:
+        16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray:
+        #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink:
+        #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange:
+        #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan:
+        #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue:
+        #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple:
+        #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227)
+        0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:
+        linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
+        linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:
+        linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
+        linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
+        linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186)
+        40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:
+        linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:
+        linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62)
+        100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
+        0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:
+        linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181)
+        100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128)
+        0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129)
+        0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium:
+        20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large:
+        42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40:
+        1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70:
+        3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural:
+        6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px
+        rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0,
+        0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255),
+        6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root
+        { --wp--style--global--content-size: 740px;--wp--style--global--wide-size:
+        1244px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float:
+        left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left:
+        2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left:
+        auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start:
+        24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start:
+        0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root {
+        --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start:
+        0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root
+        :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root
+        :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root
+        :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained)
+        > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap:
+        24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float:
+        left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float:
+        right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left:
+        auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float:
+        left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained
+        > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained
+        > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left:
+        auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width:
+        var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap:
+        wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display:
+        grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right:
+        0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration:
+        none;}:root :where(.wp-element-button, .wp-block-button__link){background-color:
+        #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style:
+        inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top:
+        calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em
+        + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform:
+        inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange)
+        !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber)
+        !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan)
+        !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan)
+        !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue)
+        !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue)
+        !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple)
+        !important;}.has-black-background-color{background-color: var(--wp--preset--color--black)
+        !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray)
+        !important;}.has-white-background-color{background-color: var(--wp--preset--color--white)
+        !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color:
+        var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color:
+        var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
+        var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
+        var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
+        !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
+        var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background:
+        var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
+        var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
+        var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
+        var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
+        var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
+        var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
+        var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size:
+        var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size:
+        var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size:
+        var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size:
+        var(--wp--preset--font-size--x-large) !important;}\n/*# sourceURL=global-styles-inline-css
+        */\n</style>\n\n<link rel='stylesheet' id='contact-form-7-css' href='https://darkerprojects.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='aft-icons-css'
+        href='https://darkerprojects.com/wp-content/themes/darknews/assets/icons/style.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='bootstrap-css'
+        href='https://darkerprojects.com/wp-content/themes/darknews/assets/bootstrap/css/bootstrap.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='slick-css-css'
+        href='https://darkerprojects.com/wp-content/themes/darknews/assets/slick/css/slick.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='sidr-css' href='https://darkerprojects.com/wp-content/themes/darknews/assets/sidr/css/jquery.sidr.dark.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='magnific-popup-css'
+        href='https://darkerprojects.com/wp-content/themes/darknews/assets/magnific-popup/magnific-popup.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='darknews-google-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Open%20Sans:400,400italic,600,700|Open%20Sans:400,400italic,600,700|Open%20Sans:400,400italic,600,700&#038;subset=latin,latin-ext'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='darknews-style-css'
+        href='https://darkerprojects.com/wp-content/themes/darknews/style.css?ver=6.9.4'
+        type='text/css' media='all' />\n<style id='darknews-style-inline-css' type='text/css'>\n\n
+        \                   body.aft-dark-mode #sidr,\n            body.aft-dark-mode,\n
+        \           body.aft-dark-mode #af-preloader {\n            background-color:
+        #000000;\n            }\n        \n                    body.aft-default-mode
+        #sidr,\n            body.aft-default-mode #af-preloader {\n            background-color:
+        #eeeeee ;\n            }\n            body.aft-default-mode.custom-background,\n
+        \           body.aft-default-mode {\n            background-color: #eeeeee
+        \ ;\n            }\n        \n                    .woocommerce #respond input#submit.disabled,\n
+        \           .woocommerce #respond input#submit:disabled,\n            .woocommerce
+        #respond input#submit:disabled[disabled],\n            .woocommerce a.button.disabled,\n
+        \           .woocommerce a.button:disabled,\n            .woocommerce a.button:disabled[disabled],\n
+        \           .woocommerce button.button.disabled,\n            .woocommerce
+        button.button:disabled,\n            .woocommerce button.button:disabled[disabled],\n
+        \           .woocommerce input.button.disabled,\n            .woocommerce
+        input.button:disabled,\n            .woocommerce input.button:disabled[disabled],\n
+        \           .woocommerce #respond input#submit,\n            .woocommerce
+        a.button,\n            .woocommerce button.button,\n            .woocommerce
+        input.button,\n            .woocommerce #respond input#submit.alt,\n            .woocommerce
+        a.button.alt,\n            .woocommerce button.button.alt,\n            .woocommerce
+        input.button.alt,\n\n            .order-again .button:hover,\n            .woocommerce
+        a.button.add_to_cart_button:hover,\n            .woocommerce-Address .edit:hover,\n
+        \           .woocommerce-Button:hover,\n            .wc-block-components-button:hover,\n
+        \           .woocommerce #respond input#submit.alt:hover,\n            .woocommerce
+        a.button.alt:hover,\n            .woocommerce button.button.alt:hover,\n            .woocommerce
+        input.button.alt:hover,\n            .woocommerce-active a.added_to_cart :hover,\n
+        \           .woocommerce a.added_to_cart:hover,\n            body.aft-default-mode
+        .entry-content a.wc-block-components-button,\n            body .wc-block-components-button,\n
+        \           .woocommerce-account .addresses .title .edit,\n\n            .wc-block-checkout
+        .wp-block-button__link,\n            :root .wc-block-featured-product__link
+        :where(.wp-element-button, .wp-block-button__link),\n            :root .wc-block-featured-category__link
+        :where(.wp-element-button, .wp-block-button__link),\n            .woocommerce-notices-wrapper
+        .button,\n            .wc-block-grid .wp-block-button__link,\n            .wp-block-button.wc-block-components-product-button
+        .wp-block-button__link,\n            .wc-block-grid__product-add-to-cart.wp-block-button
+        .wp-block-button__link,\n            button.wc-block-mini-cart__button,\n
+        \           .woocommerce ul.products li.product .button:hover,\n\n            .widget-title-fill-and-border
+        .wp-block-search__label,\n            .widget-title-fill-and-no-border .wp-block-search__label,\n
+        \           .widget-title-fill-and-border .wp-block-group .wp-block-heading,\n
+        \           .widget-title-fill-and-no-border .wp-block-group .wp-block-heading,\n\n
+        \           .widget-title-fill-and-border .wp_post_author_widget .widget-title
+        .header-after,\n            .widget-title-fill-and-no-border .wp_post_author_widget
+        .widget-title .header-after,\n\n            footer .aft-small-social-menu
+        ul li a:hover,\n            header .top-header .aft-small-social-menu ul li
+        a:hover,\n            .darknews_author_info_widget .aft-small-social-menu
+        ul li a:hover,\n            footer .aft-small-social-menu ul li a:hover,\n
+        \           body.widget-title-border-center .widget-title .heading-line-before,\n
+        \           body.widget-title-border-bottom .header-after1 .heading-line-before,\n
+        \           body.widget-title-border-bottom .widget-title .heading-line-before,\n
+        \           body .af-cat-widget-carousel a.darknews-categories.category-color-1,\n
+        \           .widget-title-fill-and-no-border .widget-title .heading-line,\n
+        \           .widget-title-fill-and-border .widget-title .heading-line,\n            .widget-title-border-bottom
+        .wp-block-search__label::before,\n            .widget-title-border-bottom
+        .wp-block-group .wp-block-heading::before,\n            .widget-title-border-bottom
+        .wp_post_author_widget .widget-title .header-after::before,\n            .widget-title-border-center
+        .wp-block-search__label::before,\n            .widget-title-border-center
+        .wp-block-group .wp-block-heading::before,\n            .widget-title-border-center
+        .wp_post_author_widget .widget-title .heading-line-before,\n            .widget-title-border-center
+        .wp_post_author_widget .widget-title .header-after::before,\n\n            .aft-posts-tabs-panel
+        .nav-tabs>li>a.active,\n            .aft-main-banner-wrapper .widget-title
+        .heading-line,\n            a.sidr-class-sidr-button-close,\n            .aft-default-mode
+        .entry-content button.button:hover,\n            .aft-default-mode .entry-content
+        a.button:hover,\n            .aft-dark-mode .entry-content button.button:hover,\n
+        \           .aft-dark-mode .entry-content a.button:hover,\n\n            .widget-title-fill-and-border
+        .wp-block-search__label::before,\n            .widget-title-fill-and-border
+        .wp-block-group .wp-block-heading::before,\n\n            body.aft-dark-mode
+        .is-style-fill a.wp-block-button__link:not(.has-text-color),\n            body.aft-default-mode
+        .is-style-fill a.wp-block-button__link:not(.has-text-color),\n\n            body.aft-dark-mode
+        input[type=\"button\"],\n            body.aft-dark-mode input[type=\"reset\"],\n
+        \           body.aft-dark-mode input[type=\"submit\"],\n            body.aft-dark-mode
+        .inner-suscribe input[type=submit],\n            body.aft-default-mode input[type=\"button\"],\n
+        \           body.aft-default-mode input[type=\"reset\"],\n            body.aft-default-mode
+        input[type=\"submit\"],\n            .wp-block-search__button,\n            body.aft-default-mode
+        .inner-suscribe input[type=submit],\n            .af-youtube-slider .af-video-wrap
+        .af-bg-play i,\n            .af-youtube-video-list .entry-header-yt-video-wrapper
+        .af-yt-video-play i,\n            body .btn-style1 a:visited,\n            body
+        .btn-style1 a,\n            body .darknews-pagination .nav-links .page-numbers.current,\n
+        \           body #scroll-up,\n            .aft-readmore-wrapper a.aft-readmore:hover,\n
+        \           body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,\n
+        \           footer.site-footer .aft-readmore-wrapper a.aft-readmore:hover,\n
+        \           .aft-readmore-wrapper a.aft-readmore:hover,\n            .read-img
+        .trending-no,\n            body .trending-posts-vertical .trending-no{\n            background-color:
+        #d72924;\n            }\n\n            .grid-design-texts-over-image .aft-readmore-wrapper
+        a.aft-readmore:hover,\n            .aft-readmore-wrapper a.aft-readmore:hover,\n
+        \           body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,\n
+        \           body.aft-default-mode .aft-readmore-wrapper a.aft-readmore:hover,\n\n
+        \           body.single .entry-header .aft-post-excerpt-and-meta .post-excerpt,\n
+        \           .aft-posts-tabs-panel .nav-tabs,\n            .widget-title-fill-and-border
+        .widget-title,\n            body.aft-dark-mode.single span.tags-links a:hover,\n
+        \           .darknews-pagination .nav-links .page-numbers.current,\n            .aft-readmore-wrapper
+        a.aft-readmore:hover,\n            p.awpa-more-posts a:hover{\n            border-color:
+        #d72924;\n            }\n            .woocommerce div.product .woocommerce-tabs
+        ul.tabs li.active,\n            body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),\n
+        \           body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),\n
+        \           .wp-post-author-meta .wp-post-author-meta-more-posts a.awpa-more-posts:hover{\n
+        \           border-color: #d72924;\n            }\n            #scroll-up::after,\n
+        \           .aft-dark-mode #loader,\n            .aft-default-mode #loader
+        {\n            border-bottom-color: #d72924;\n            }\n            body.aft-default-mode
+        .woocommerce-loop-product__title:hover,\n            body.aft-dark-mode .woocommerce-loop-product__title:hover,\n
+        \           body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),\n
+        \           body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),\n
+        \           body.aft-default-mode #secondary .darknews-widget ol[class*=\"wp-block-\"]
+        a:hover,\n            body.aft-default-mode #secondary .darknews-widget ul[class*=\"wp-block-\"]
+        a:hover,\n            body.aft-dark-mode #secondary .darknews-widget ol[class*=\"wp-block-\"]
+        a:hover,\n            body.aft-dark-mode #secondary .darknews-widget ul[class*=\"wp-block-\"]
+        a:hover,\n            .widget_text a ,\n            body.aft-default-mode
+        .sidebar-area .wp-block-tag-cloud a:hover,\n            body.aft-default-mode
+        .site-footer .wp-block-tag-cloud a:hover,\n            body.aft-default-mode
+        .site-footer .tagcloud a:hover,\n            .wp_post_author_widget .wp-post-author-meta
+        .awpa-display-name a:hover,\n            body.aft-dark-mode .sidebar-area
+        .wp-block-tag-cloud a:hover,\n            body.aft-dark-mode .site-footer
+        .wp-block-tag-cloud a:hover,\n            body.aft-dark-mode .site-footer
+        .tagcloud a:hover,\n            .wp-post-author-meta .wp-post-author-meta-more-posts
+        a.awpa-more-posts:hover,\n            body.aft-default-mode .af-breadcrumbs
+        a:hover,\n            body.aft-dark-mode .af-breadcrumbs a:hover,\n            .aft-default-mode
+        .site-footer .wp-calendar-nav a,\n            body.aft-dark-mode .wp-calendar-nav
+        a,\n            body p.logged-in-as a,\n            a, a:visited, a:hover,
+        a:focus, a:active,\n            span.posted_in a:hover,span.tagged_as a:hover
+        ,\n            body.aft-default-mode .wp-post-author-meta .awpa-display-name
+        a:hover,\n            body.aft-default-mode .tagcloud a:hover,\n            body.aft-default-mode.single
+        span.tags-links a:hover,\n            body.aft-default-mode p.awpa-more-posts
+        a:hover,\n            body.aft-default-mode p.awpa-website a:hover ,\n            body.aft-default-mode
+        .widget ul.menu >li a:hover,\n            body.aft-default-mode .nav-links
+        a:hover,\n            body.aft-default-mode ul.trail-items li a:hover,\n            body.aft-dark-mode
+        .wp-post-author-meta .awpa-display-name a:hover,\n            body.aft-dark-mode
+        .tagcloud a:hover,\n            body.aft-dark-mode.single span.tags-links
+        a:hover,\n            body.aft-dark-mode p.awpa-more-posts a:hover,\n            body.aft-dark-mode
+        p.awpa-website a:hover ,\n            body.aft-dark-mode .widget ul.menu >li
+        a:hover,\n            body.aft-dark-mode .nav-links a:hover,\n            body.aft-dark-mode
+        ul.trail-items li a:hover,\n            .site-footer .secondary-footer a:hover,\n
+        \           body.aft-default-mode .comment-meta a:hover,\n            body.aft-dark-mode
+        .comment-meta a:hover,\n            body.aft-default-mode .fn a:hover,\n            body.aft-dark-mode
+        .fn a:hover,\n            body.aft-dark-mode .entry-content a:hover,\n            body.aft-dark-mode
+        .entry-content > [class*=\"wp-block-\"] a:not(.has-text-color):hover,\n            body.aft-dark-mode
+        .entry-content > ol a:hover,\n            body.aft-dark-mode .entry-content
+        > ul a:hover,\n            body.aft-dark-mode .entry-content > p a:hover,\n
+        \           body.aft-default-mode .entry-content a:hover,\n            body.aft-default-mode
+        .entry-content > [class*=\"wp-block-\"] a:not(.has-text-color):hover,\n            body.aft-default-mode
+        .entry-content > ol a:hover,\n            body.aft-default-mode .entry-content
+        > ul a:hover,\n            body.aft-default-mode .entry-content > p a:hover,\n
+        \           .comment-metadata a{\n            color:#d72924;\n            }\n\n
+        \           @media only screen and (min-width: 992px){\n            body.aft-default-mode
+        .darknews-header .main-navigation .menu-desktop > ul > li:hover > a:before,\n
+        \           body.aft-default-mode .darknews-header .main-navigation .menu-desktop
+        > ul > li.current-menu-item > a:before {\n            background-color: #d72924;\n
+        \           }\n            }\n        \n                    .woocommerce-product-search
+        button[type=\"submit\"], input.search-submit{\n            background-color:
+        #d72924;\n            }\n            #wp-calendar tbody td a,\n            body.aft-dark-mode
+        #wp-calendar tbody td#today,\n            body.aft-default-mode #wp-calendar
+        tbody td#today,\n            body .entry-content > [class*=\"wp-block-\"]
+        a:not(.has-text-color),\n            body .entry-content > ul a, body .entry-content
+        > ul a:visited,\n            body .entry-content > ol a, body .entry-content
+        > ol a:visited,\n            body .entry-content > p a, body .entry-content
+        > p a:visited\n            {\n            color: #d72924;\n            }\n
+        \           .woocommerce-product-search button[type=\"submit\"], input.search-submit,\n
+        \           body.single span.tags-links a:hover{\n            border-color:
+        #d72924;\n            }\n\n            @media only screen and (min-width:
+        993px){\n            .main-navigation .menu-desktop > li.current-menu-item::after,\n
+        \           .main-navigation .menu-desktop > ul > li.current-menu-item::after,\n
+        \           .main-navigation .menu-desktop > li::after, .main-navigation .menu-desktop
+        > ul > li::after{\n            background-color: #d72924;\n            }\n
+        \           }\n        \n\n                    .site-title {\n            font-family:
+        Open Sans;\n            }\n        \n                    body,\n            button,\n
+        \           input,\n            select,\n            optgroup,\n            .cat-links
+        li a,\n            .min-read,\n            .af-social-contacts .social-widget-menu
+        .screen-reader-text,\n            textarea {\n            font-family: Open
+        Sans;\n            }\n        \n                    .wp-block-search__label,\n
+        \           div.custom-menu-link > a,\n            .aft-main-banner-wrapper
+        .nav-tabs>li>a,\n            .aft-posts-tabs-panel .nav-tabs>li>a,\n            .exclusive-posts
+        .exclusive-now span,\n            .aft-posts-tabs-panel .nav-tabs>li>a,\n
+        \           .nav-tabs>li,\n            .widget ul ul li,\n            .widget
+        ul.menu >li ,\n            .widget > ul > li,\n            .main-navigation
+        ul li a,\n            h1, h2, h3, h4, h5, h6 {\n            font-family: Open
+        Sans;\n            }\n        \n        .elementor-page .elementor-section.elementor-section-full_width
+        > .elementor-container,\n        .elementor-page .elementor-section.elementor-section-boxed
+        > .elementor-container,\n        .elementor-default .elementor-section.elementor-section-full_width
+        > .elementor-container,\n        .elementor-default .elementor-section.elementor-section-boxed
+        > .elementor-container{\n        max-width: 1244px;\n        }\n        @media
+        screen and (min-width: 1360px){\n        .af-full-layout.elementor-page .elementor-section.elementor-section-full_width
+        > .elementor-container,\n        .af-full-layout.elementor-page .elementor-section.elementor-section-boxed
+        > .elementor-container,\n        .af-full-layout.elementor-default .elementor-section.elementor-section-full_width
+        > .elementor-container,\n        .af-full-layout.elementor-default .elementor-section.elementor-section-boxed
+        > .elementor-container{\n        max-width: 1920px;\n        }\n        }\n
+        \       .full-width-content .elementor-section-stretched,\n        .align-content-left
+        .elementor-section-stretched,\n        .align-content-right .elementor-section-stretched
+        {\n        max-width: 100%;\n        left: 0 !important;\n        }\n\n/*#
+        sourceURL=darknews-style-inline-css */\n</style>\n<link rel='stylesheet' id='wp-pagenavi-css'
+        href='https://darkerprojects.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70'
+        type='text/css' media='all' />\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/plugins/compact-wp-audio-player/js/soundmanager2-nodebug-jsmin.js?ver=6.9.4\"
+        id=\"scap.soundmanager2-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\"
+        id=\"jquery-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1\"
+        id=\"jquery-migrate-js\"></script>\n<link rel=\"https://api.w.org/\" href=\"https://darkerprojects.com/wp-json/\"
+        /><link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://darkerprojects.com/wp-json/wp/v2/posts/30\"
+        /><link rel=\"EditURI\" type=\"application/rsd+xml\" title=\"RSD\" href=\"https://darkerprojects.com/xmlrpc.php?rsd\"
+        />\n<meta name=\"generator\" content=\"WordPress 6.9.4\" />\n<link rel=\"canonical\"
+        href=\"https://darkerprojects.com/outer-limits/outer-limits-001-the-spark-of-life/\"
+        />\n<link rel='shortlink' href='https://darkerprojects.com/?p=30' />\n            <script
+        type=\"text/javascript\"><!--\n                                function powerpress_pinw(pinw_url){window.open(pinw_url,
+        'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');\treturn
+        false;}\n                //-->\n\n                // tabnab protection\n                window.addEventListener('load',
+        function () {\n                    // make all links have rel=\"noopener noreferrer\"\n
+        \                   document.querySelectorAll('a[target=\"_blank\"]').forEach(link
+        => {\n                        link.setAttribute('rel', 'noopener noreferrer');\n
+        \                   });\n                });\n            </script>\n            \n<style
+        type=\"text/css\" xmlns=\"http://www.w3.org/1999/html\">\n\n/*\nPowerPress
+        subscribe sidebar widget\n*/\n.widget-area .widget_powerpress_subscribe h2,\n.widget-area
+        .widget_powerpress_subscribe h3,\n.widget-area .widget_powerpress_subscribe
+        h4,\n.widget_powerpress_subscribe h2,\n.widget_powerpress_subscribe h3,\n.widget_powerpress_subscribe
+        h4 {\n\tmargin-bottom: 0;\n\tpadding-bottom: 0;\n}\n</style>\n        <style
+        type=\"text/css\">\n                        .site-title a,\n            .site-header
+        .site-branding .site-title a:visited,\n            .site-header .site-branding
+        .site-title a:hover,\n            .site-description {\n                color:
+        #f3f3f3;\n            }\n\n            .header-layout-3 .site-header .site-branding
+        .site-title,\n            .site-branding .site-title {\n                font-size:
+        130px;\n            }\n\n            @media only screen and (max-width: 640px)
+        {\n                .site-branding .site-title {\n                    font-size:
+        40px;\n\n                }\n              }   \n\n           @media only screen
+        and (max-width: 375px) {\n                    .site-branding .site-title {\n
+        \                       font-size: 32px;\n\n                    }\n                }\n\n
+        \           \n\n        </style>\n        <link rel=\"icon\" href=\"https://darkerprojects.com/wp-content/uploads/2018/03/cropped-10565268_10152595974054469_6770952868158940649_n-32x32.jpg\"
+        sizes=\"32x32\" />\n<link rel=\"icon\" href=\"https://darkerprojects.com/wp-content/uploads/2018/03/cropped-10565268_10152595974054469_6770952868158940649_n-192x192.jpg\"
+        sizes=\"192x192\" />\n<link rel=\"apple-touch-icon\" href=\"https://darkerprojects.com/wp-content/uploads/2018/03/cropped-10565268_10152595974054469_6770952868158940649_n-180x180.jpg\"
+        />\n<meta name=\"msapplication-TileImage\" content=\"https://darkerprojects.com/wp-content/uploads/2018/03/cropped-10565268_10152595974054469_6770952868158940649_n-270x270.jpg\"
+        />\n\t\t<style type=\"text/css\" id=\"wp-custom-css\">\n\t\t\t.site-title,
+        .top-header {display:none}\t\t</style>\n\t\t<style id=\"sccss\"></style><link
+        rel='stylesheet' id='mediaelement-css' href='https://darkerprojects.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='wp-mediaelement-css'
+        href='https://darkerprojects.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n\n</head>\n\n<body class=\"wp-singular post-template-default
+        single single-post postid-30 single-format-standard wp-custom-logo wp-embed-responsive
+        wp-theme-darknews aft-dark-mode aft-header-layout-default header-image-default
+        widget-title-fill-and-border default-content-layout single-content-mode-default
+        align-content-right af-wide-layout\">\n\n    <div id=\"af-preloader\">\n        <div
+        id=\"loader-wrapper\">\n            <div id=\"loader\">\n            </div>\n
+        \       </div>\n    </div>\n\n<div id=\"page\" class=\"site af-whole-wrapper\">\n
+        \   <a class=\"skip-link screen-reader-text\" href=\"#content\">Skip to content</a>\n\n
+        \   \n    <header id=\"masthead\" class=\"header-layout-default darknews-header\">\n
+        \       <div class=\"top-header\">\n    <div class=\"container-wrapper\">\n
+        \     <div class=\"top-bar-flex\">\n        <div class=\"top-bar-left col-2\">\n
+        \         <div class=\"date-bar-left\">\n                  <span class=\"topbar-date\">\n
+        \       May 7, 2026      </span>\n              </div>\n        </div>\n        <div
+        class=\"top-bar-right col-2\">\n          <div class=\"aft-small-social-menu\">\n
+        \               \n      <div class=\"social-navigation\"><ul id=\"menu-primary\"
+        class=\"menu\"><li id=\"menu-item-2129\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-2129\"><a href=\"https://www.facebook.com/DarkerProjects\"><span
+        class=\"screen-reader-text\">Facebook Page</span></a></li>\n<li id=\"menu-item-2130\"
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-2130\"><a
+        href=\"http://www.twitter.com/darker_projects\"><span class=\"screen-reader-text\">Twitter</span></a></li>\n</ul></div>\n
+        \               </div>\n        </div>\n      </div>\n    </div>\n  </div>\n<div
+        class=\"af-middle-header af-header-image data-bg\"\n  data-background=\"https://darkerprojects.com/wp-content/uploads/2015/05/cropped-Darker-Projects-Banner3-e1434511132621-2.jpg\">\n
+        \ <div class=\"container-wrapper\">\n    <div class=\"af-middle-container\">\n
+        \     <div class=\"logo\">\n            <div class=\"site-branding\">\n      <a
+        href=\"https://darkerprojects.com/\" class=\"custom-logo-link\" rel=\"home\"><img
+        width=\"230\" height=\"100\" src=\"https://darkerprojects.com/wp-content/uploads/2011/09/cropped-Darker-Projects-Neo-Sapien2-e1428732338372.png\"
+        class=\"custom-logo\" alt=\"Darker Projects\" decoding=\"async\" /></a>        <p
+        class=\"site-title font-family-1\">\n          <a href=\"https://darkerprojects.com/\"
+        class=\"site-title-anchor\"\n            rel=\"home\">Darker Projects</a>\n
+        \       </p>\n      \n              <p class=\"site-description\">Audio Drama
+        In A Darker Shade</p>\n          </div>\n\n      </div>\n\n      <div class=\"header-promotion\">\n
+        \             <div class=\"banner-promotions-wrapper\">\n        <div class=\"promotion-section\">\n
+        \         <div id=\"block-6\" class=\"widget darknews-widget widget_block\">Welcome
+        to Darker Projects! \r\nOur podcasts are down below!  Enjoy! </div>        </div>\n
+        \     </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n<div id=\"main-navigation-bar\"
+        class=\"af-bottom-header\">\n  <div class=\"container-wrapper\">\n    <div
+        class=\"bottom-bar-flex\">\n      <div class=\"offcanvas-navigaiton\">\n                <div
+        class=\"af-bottom-head-nav\">\n              <div class=\"navigation-container\">\n
+        \     <nav class=\"main-navigation clearfix\">\n\n        <button class=\"toggle-menu\"
+        aria-controls=\"primary-menu\" aria-expanded=\"false\">\n          <span class=\"screen-reader-text\">\n
+        \           Primary Menu          </span>\n          <i class=\"ham\"></i>\n
+        \       </button>\n\n\n        <div class=\"menu main-menu menu-desktop show-menu-border\"><ul
+        id=\"primary-menu\" class=\"menu\"><li id=\"menu-item-2127\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-2127\"><a href=\"https://www.darkerprojects.com\">Home</a></li>\n<li
+        id=\"menu-item-1975\" class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-1975\"><a href=\"https://darkerprojects.com/about/\">About Us</a></li>\n<li
+        id=\"menu-item-1979\" class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-1979\"><a href=\"https://darkerprojects.com/auditions-2/\">Auditions!</a></li>\n<li
+        id=\"menu-item-1987\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-1987\"><a href=\"https://darkerprojects.blogspot.com/\">Blog</a></li>\n<li
+        id=\"menu-item-2128\" class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-2128\"><a href=\"https://darkerprojects.com/contact/\">Contact Us</a></li>\n<li
+        id=\"menu-item-1978\" class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-1978\"><a href=\"https://darkerprojects.com/contribute/\">Contribute!</a></li>\n<li
+        id=\"menu-item-1986\" class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-has-children menu-item-1986\"><a href=\"https://darkerprojects.com/dp-shows/\">Our
+        Podcasts</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-1982\" class=\"menu-item
+        menu-item-type-post_type menu-item-object-page menu-item-1982\"><a href=\"https://darkerprojects.com/dp-shows/fan-fiction-shows/\">Fan
+        Fiction Shows</a></li>\n\t<li id=\"menu-item-1981\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-page menu-item-1981\"><a href=\"https://darkerprojects.com/dp-shows/original-shows/\">Original
+        Shows</a></li>\n</ul>\n</li>\n<li id=\"menu-item-1974\" class=\"menu-item
+        menu-item-type-post_type menu-item-object-page menu-item-1974\"><a href=\"https://darkerprojects.com/updates/\">Updates</a></li>\n</ul></div>
+        \     </nav>\n    </div>\n\n\n          </div>\n      </div>\n      <div class=\"search-watch\">\n
+        \           <div class=\"af-search-wrap\">\n      <div class=\"search-overlay\">\n
+        \       <a href=\"#\" title=\"Search\" class=\"search-icon\">\n          <i
+        class=\"fa fa-search\"></i>\n        </a>\n        <div class=\"af-search-form\">\n
+        \         <form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://darkerprojects.com/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span
+        class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\"
+        class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"
+        />\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\"
+        value=\"Search\" />\n\t\t\t</form>        </div>\n      </div>\n    </div>\n\n
+        \           \n          </div>\n    </div>\n  </div>\n</div>    </header>\n\n
+        \   <!-- end slider-section -->\n  \n        <div id=\"content\" class=\"container-wrapper\">\n
+        \       \n\n    <div class=\"section-block-upper\">\n        <div id=\"primary\"
+        class=\"content-area\">\n            <main id=\"main\" class=\"site-main\">\n
+        \                                   <article id=\"post-30\" class=\"af-single-article
+        post-30 post type-post status-publish format-standard has-post-thumbnail hentry
+        category-outer-limits\">\n\n                        <div class=\"entry-content-wrap
+        read-single social-after-title\">\n\n                                    <header
+        class=\"entry-header pos-rel\">\n            <div class=\"read-details\">\n
+        \               <div class=\"entry-header-details af-cat-widget-carousel\">\n
+        \                   \n                        <div class=\"figure-categories
+        read-categories figure-categories-bg \">\n                                                        <ul
+        class=\"cat-links\"><li class=\"meta-category\">\n                             <a
+        class=\"darknews-categories category-color-1\" aria-label=\"Outer Limits\"
+        href=\"https://darkerprojects.com/category/outer-limits/\">\n                                 Outer
+        Limits\n                             </a>\n                        </li></ul>
+        \                       </div>\n                                        <h1
+        class=\"entry-title\">OL &#8211; Ep 001: The Spark of Life</h1>\n\n                    <div
+        class=\"aft-post-excerpt-and-meta color-pad\">\n                                                \n
+        \                       <div class=\"entry-meta\">\n\n                            \n\n
+        \     <span class=\"author-links\">\n        \n\n        \n      </span>\n
+        \                                                       \n                        </div>\n
+        \                   </div>\n                </div>\n            </div>\n\n\n\n
+        \       </header><!-- .entry-header -->\n\n\n\n\n        <!-- end slider-section
+        -->\n        \n\n                            \n                            \n\n
+        \   <div class=\"color-pad\">\n        <div class=\"entry-content read-details\">\n
+        \           <div class=\"inner-entry-content\">\n            <!--powerpress_player--><div
+        class=\"powerpress_player\" id=\"powerpress_player_2400\"><audio class=\"wp-audio-shortcode\"
+        id=\"audio-30-1\" preload=\"none\" style=\"width: 100%;\" controls=\"controls\"><source
+        type=\"audio/mpeg\" src=\"http://darkerprojects.dreamhosters.com/audio/outer_limits/001-OUTER-LIMITS-TSOL.mp3?_=1\"
+        /><a href=\"http://darkerprojects.dreamhosters.com/audio/outer_limits/001-OUTER-LIMITS-TSOL.mp3\">http://darkerprojects.dreamhosters.com/audio/outer_limits/001-OUTER-LIMITS-TSOL.mp3</a></audio></div><p
+        class=\"powerpress_links powerpress_links_mp3\" style=\"margin-bottom: 1px
+        !important;\">Podcast: <a href=\"http://darkerprojects.dreamhosters.com/audio/outer_limits/001-OUTER-LIMITS-TSOL.mp3\"
+        class=\"powerpress_link_pinw\" target=\"_blank\" title=\"Play in new window\"
+        onclick=\"return powerpress_pinw('https://darkerprojects.com/?powerpress_pinw=30-podcast');\"
+        rel=\"nofollow\">Play in new window</a> | <a href=\"http://darkerprojects.dreamhosters.com/audio/outer_limits/001-OUTER-LIMITS-TSOL.mp3\"
+        class=\"powerpress_link_d\" title=\"Download\" rel=\"nofollow\" download=\"001-OUTER-LIMITS-TSOL.mp3\">Download</a>
+        (Duration: 0:30 &#8212; 55.7MB)</p><p class=\"powerpress_links powerpress_subscribe_links\">Subscribe:
+        <a href=\"https://darkerprojects.com/category/outer-limits/feed/podcast/\"
+        class=\"powerpress_link_subscribe powerpress_link_subscribe_rss\" target=\"_blank\"
+        title=\"Subscribe via RSS\" rel=\"nofollow\">RSS</a></p><h3><strong>Outer
+        Limits:\_<i>The Spark of Life<a href=\"http://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits.jpg\"><img
+        fetchpriority=\"high\" decoding=\"async\" class=\"size-medium wp-image-1243
+        alignright\" src=\"http://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits-300x300.jpg\"
+        alt=\"\" width=\"300\" height=\"300\" srcset=\"https://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits-300x300.jpg
+        300w, https://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits-100x100.jpg
+        100w, https://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits-144x144.jpg
+        144w, https://darkerprojects.com/wp-content/uploads/2018/03/Outer_Limits.jpg
+        450w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></a></i></strong></h3>\n<p>Written
+        by The Immortal One<br />\nScript by Mark Bruzee</p>\n<p><strong>Featured
+        in the cast were:</strong></p>\n<p style=\"padding-left: 30px;\">Ben Dawes
+        as David<br />\nKae Woo as Jeffrey and the Little Boy<br />\nGwendolyn Jensen
+        Woodard as Maggie<br />\nRich Matheson as the man<br />\nC. E. Krawiec as
+        the mother<br />\nCaith Donovan as the Driver<br />\nAlex Gilmour as the narrator<br
+        />\nJustin Grant as The Delivery Man and Messenger<br />\nKim Gianopoulous
+        as the computer<br />\nTanja Milojevic as the Art Broker<br />\nPatrick Lewis
+        as the Web Dealer<br />\nMJ Cogburn as Lisa<br />\nEric Campbell as the Doctor<br
+        />\nApril Sadowski as another mother and<br />\nMark Bruzee as Hollum and
+        the control voice</p>\n<p>Music by Kevin MacCloud and Theme music used from
+        the show The Outer Limits.</p>\n<p>Art and post production was by MJ Cogburn.</p>\n<p>The
+        executive producer of Darker Projects is Mark Bruzee.</p>\n            </div>\n
+        \                           <div class=\"post-item-metadata entry-meta\">\n
+        \                                   </div>\n                        \n\t<nav
+        class=\"navigation post-navigation\" aria-label=\"Post navigation\">\n\t\t<h2
+        class=\"screen-reader-text\">Post navigation</h2>\n\t\t<div class=\"nav-links\"><div
+        class=\"nav-previous\"><a href=\"https://darkerprojects.com/quantum-retribution/qr-episode-010-three-degrees-of-intent-part-2/\"
+        rel=\"prev\"><span class=\"em-post-navigation\">Previous</span> QR &#8211;
+        Ep 010: Three Degrees of Intent Part 2</a></div><div class=\"nav-next\"><a
+        href=\"https://darkerprojects.com/night-terrors/nt-season-2-ep-000-commercial/\"
+        rel=\"next\"><span class=\"em-post-navigation\">Next</span> NT \u2013 Season
+        2 EP 000: Commercial</a></div></div>\n\t</nav>            \n        </div><!--
+        .entry-content -->\n    </div>\n                        </div>\n\n\n                        \n\n
+        \                       \n                    </article>\n                \n
+        \           </main><!-- #main -->\n        </div><!-- #primary -->\n\n        \n\n\n<div
+        id=\"secondary\" class=\"sidebar-area sidebar-sticky-top\">\n        <aside
+        class=\"widget-area color-pad\">\n            \n\t\t<div id=\"recent-posts-1\"
+        class=\"widget darknews-widget widget_recent_entries\">\n\t\t<h2 class=\"widget-title
+        widget-title-1\"><span class=\"heading-line-before\"></span><span class=\"heading-line\">Latest
+        Episode:</span><span class=\"heading-line-after\"></span></h2>\n\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a
+        href=\"https://darkerprojects.com/night-terrors/nt-season2-ep-011-on-a-country-road/\">NT:
+        \ Season2 Ep 011:  On A Country Road</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\n\t\t</div><div
+        id=\"categories-2\" class=\"widget darknews-widget widget_categories\"><h2
+        class=\"widget-title widget-title-1\"><span class=\"heading-line-before\"></span><span
+        class=\"heading-line\">Our Podcasts</span><span class=\"heading-line-after\"></span></h2>\n\t\t\t<ul>\n\t\t\t\t\t<li
+        class=\"cat-item cat-item-29\"><a href=\"https://darkerprojects.com/category/autumn/\">Autumn</a>
+        (7)\n</li>\n\t<li class=\"cat-item cat-item-14\"><a href=\"https://darkerprojects.com/category/batman-no-mans-land/\">Batman:
+        No Man&#039;s Land</a> (9)\n</li>\n\t<li class=\"cat-item cat-item-32\"><a
+        href=\"https://darkerprojects.com/category/behind-the-scenes/\">Behind The
+        Scenes</a> (15)\n</li>\n\t<li class=\"cat-item cat-item-30\"><a href=\"https://darkerprojects.com/category/dark-matter/\">Dark
+        Matter</a> (6)\n</li>\n\t<li class=\"cat-item cat-item-38\"><a href=\"https://darkerprojects.com/category/dp-uncovered/\">Darker
+        Projects: Uncovered</a> (9)\n</li>\n\t<li class=\"cat-item cat-item-6\"><a
+        href=\"https://darkerprojects.com/category/doctor-who/\">Doctor Who</a> (17)\n</li>\n\t<li
+        class=\"cat-item cat-item-15\"><a href=\"https://darkerprojects.com/category/five-minute-fears/\">Five
+        Minute Fears</a> (21)\n</li>\n\t<li class=\"cat-item cat-item-27\"><a href=\"https://darkerprojects.com/category/he-man-the-parody/\">He-Man:
+        The Parody</a> (3)\n</li>\n\t<li class=\"cat-item cat-item-36\"><a href=\"https://darkerprojects.com/category/madness/\">Madness</a>
+        (7)\n</li>\n\t<li class=\"cat-item cat-item-19\"><a href=\"https://darkerprojects.com/category/night-terrors/\">Night
+        Terrors</a> (32)\n</li>\n\t<li class=\"cat-item cat-item-22\"><a href=\"https://darkerprojects.com/category/other-voices/\">Other
+        Voices</a> (3)\n</li>\n\t<li class=\"cat-item cat-item-8\"><a href=\"https://darkerprojects.com/category/outer-limits/\">Outer
+        Limits</a> (1)\n</li>\n\t<li class=\"cat-item cat-item-31\"><a href=\"https://darkerprojects.com/category/quantum-leap/\">Quantum
+        Leap</a> (4)\n</li>\n\t<li class=\"cat-item cat-item-11\"><a href=\"https://darkerprojects.com/category/quantum-retribution/\">Quantum
+        Retribution</a> (22)\n</li>\n\t<li class=\"cat-item cat-item-35\"><a href=\"https://darkerprojects.com/category/lostfrontier/\">Star
+        Trek: Lost Frontier</a> (21)\n</li>\n\t<li class=\"cat-item cat-item-34\"><a
+        href=\"https://darkerprojects.com/category/section31/\">Star Trek: Section
+        31</a> (38)\n</li>\n\t<li class=\"cat-item cat-item-20\"><a href=\"https://darkerprojects.com/category/tales-from-the-museum/\">Tales
+        From The Museum</a> (14)\n</li>\n\t<li class=\"cat-item cat-item-39\"><a href=\"https://darkerprojects.com/category/tales-from-the-museum-the-beginning/\">Tales
+        From The Museum: The Beginning</a> (3)\n</li>\n\t<li class=\"cat-item cat-item-21\"><a
+        href=\"https://darkerprojects.com/category/the-falcon-banner/\">The Falcon
+        Banner</a> (12)\n</li>\n\t\t\t</ul>\n\n\t\t\t</div>\n        </aside>\n</div>
+        \   </div>\n\n\n</div>\n\n\n\n\n        <section class=\"aft-blocks above-footer-widget-section\">\n
+        \                   </section>\n        \n<footer class=\"site-footer aft-footer-sidebar-col-0\"
+        data-background=\"\">\n    \n    \n            <div class=\"secondary-footer\">\n
+        \       <div class=\"container-wrapper\">\n            <div class=\"af-container-row
+        clearfix af-flex-container\">\n                                                    <div
+        class=\"float-l pad color-pad col-1\">\n                        <div class=\"footer-social-wrapper\">\n
+        \                           <div class=\"aft-small-social-menu\">\n                                <div
+        class=\"social-navigation\"><ul id=\"menu-primary-1\" class=\"menu\"><li class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-2129\"><a href=\"https://www.facebook.com/DarkerProjects\"><span
+        class=\"screen-reader-text\">Facebook Page</span></a></li>\n<li class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-2130\"><a href=\"http://www.twitter.com/darker_projects\"><span
+        class=\"screen-reader-text\">Twitter</span></a></li>\n</ul></div>                            </div>\n
+        \                       </div>\n                    </div>\n                            </div>\n
+        \       </div>\n    </div>\n            <div class=\"site-info\">\n        <div
+        class=\"container-wrapper\">\n            <div class=\"af-container-row\">\n
+        \               <div class=\"col-1 color-pad\">\n                                                                Darker
+        Projects - Copyright \xA9 2022 - All rights reserved.                                                                                    <span
+        class=\"sep\"> | </span>\n                        <a href=\"https://afthemes.com/products/darknews/\"
+        target=\"_blank\">DarkNews</a> by AF themes.                                    </div>\n
+        \           </div>\n        </div>\n    </div>\n</footer>\n</div>\n\n    <a
+        id=\"scroll-up\" class=\"secondary-color right\">\n    </a>\n<script type=\"speculationrules\">\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/darknews/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch,
+        .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n</script>\n\n<!--
+        WP Audio player plugin v1.9.15 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/
+        -->\n    <script type=\"text/javascript\">\n        soundManager.useFlashBlock
+        = true; // optional - if used, required flashblock.css\n        soundManager.url
+        = 'https://darkerprojects.com/wp-content/plugins/compact-wp-audio-player/swf/soundmanager2.swf';\n
+        \       function play_mp3(flg, ids, mp3url, volume, loops)\n        {\n            //Check
+        the file URL parameter value\n            var pieces = mp3url.split(\"|\");\n
+        \           if (pieces.length > 1) {//We have got an .ogg file too\n                mp3file
+        = pieces[0];\n                oggfile = pieces[1];\n                //set
+        the file URL to be an array with the mp3 and ogg file\n                mp3url
+        = new Array(mp3file, oggfile);\n            }\n\n            soundManager.createSound({\n
+        \               id: 'btnplay_' + ids,\n                volume: volume,\n                url:
+        mp3url\n            });\n\n            if (flg == 'play') {\n    stop_all_tracks();
+        \               soundManager.play('btnplay_' + ids, {\n                    onfinish:
+        function() {\n                        if (loops == 'true') {\n                            loopSound('btnplay_'
+        + ids);\n                        }\n                        else {\n                            document.getElementById('btnplay_'
+        + ids).style.display = 'inline';\n                            document.getElementById('btnstop_'
+        + ids).style.display = 'none';\n                        }\n                    }\n
+        \               });\n            }\n            else if (flg == 'stop') {\n
+        \   //soundManager.stop('btnplay_'+ids);\n                soundManager.pause('btnplay_'
+        + ids);\n            }\n        }\n        function show_hide(flag, ids)\n
+        \       {\n            if (flag == 'play') {\n                document.getElementById('btnplay_'
+        + ids).style.display = 'none';\n                document.getElementById('btnstop_'
+        + ids).style.display = 'inline';\n            }\n            else if (flag
+        == 'stop') {\n                document.getElementById('btnplay_' + ids).style.display
+        = 'inline';\n                document.getElementById('btnstop_' + ids).style.display
+        = 'none';\n            }\n        }\n        function loopSound(soundID)\n
+        \       {\n            window.setTimeout(function() {\n                soundManager.play(soundID,
+        {onfinish: function() {\n                        loopSound(soundID);\n                    }});\n
+        \           }, 1);\n        }\n        function stop_all_tracks()\n        {\n
+        \           soundManager.stopAll();\n            var inputs = document.getElementsByTagName(\"input\");\n
+        \           for (var i = 0; i < inputs.length; i++) {\n                if
+        (inputs[i].id.indexOf(\"btnplay_\") == 0) {\n                    inputs[i].style.display
+        = 'inline';//Toggle the play button\n                }\n                if
+        (inputs[i].id.indexOf(\"btnstop_\") == 0) {\n                    inputs[i].style.display
+        = 'none';//Hide the stop button\n                }\n            }\n        }\n
+        \   </script>\n    <script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1\"
+        id=\"wp-hooks-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375\"
+        id=\"wp-i18n-js\"></script>\n<script type=\"text/javascript\" id=\"wp-i18n-js-after\">\n/*
+        <![CDATA[ */\nwp.i18n.setLocaleData( { 'text direction\\u0004ltr': [ 'ltr'
+        ] } );\n//# sourceURL=wp-i18n-js-after\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://darkerprojects.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5\"
+        id=\"swv-js\"></script>\n<script type=\"text/javascript\" id=\"contact-form-7-js-before\">\n/*
+        <![CDATA[ */\nvar wpcf7 = {\n    \"api\": {\n        \"root\": \"https:\\/\\/darkerprojects.com\\/wp-json\\/\",\n
+        \       \"namespace\": \"contact-form-7\\/v1\"\n    }\n};\n//# sourceURL=contact-form-7-js-before\n/*
+        ]]> */\n</script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5\"
+        id=\"contact-form-7-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/js/navigation.js?ver=20151215\"
+        id=\"darknews-navigation-js\"></script>\n<script type=\"text/javascript\"
+        src=\"https://darkerprojects.com/wp-content/themes/darknews/js/skip-link-focus-fix.js?ver=20151215\"
+        id=\"darknews-skip-link-focus-fix-js\"></script>\n<script type=\"text/javascript\"
+        src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/slick/js/slick.min.js?ver=6.9.4\"
+        id=\"slick-js-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/bootstrap/js/bootstrap.min.js?ver=6.9.4\"
+        id=\"bootstrap-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/sidr/js/jquery.sidr.min.js?ver=6.9.4\"
+        id=\"sidr-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/magnific-popup/jquery.magnific-popup.min.js?ver=6.9.4\"
+        id=\"magnific-popup-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/jquery-match-height/jquery.matchHeight.min.js?ver=6.9.4\"
+        id=\"matchheight-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/assets/marquee/jquery.marquee.js?ver=6.9.4\"
+        id=\"marquee-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0\"
+        id=\"imagesloaded-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/masonry.min.js?ver=4.2.2\"
+        id=\"masonry-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/themes/darknews/admin-dashboard/dist/darknews_scripts.build.js?ver=6.9.4\"
+        id=\"darknews-script-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-content/plugins/powerpress/player.min.js?ver=6.9.4\"
+        id=\"powerpress-player-js\"></script>\n<script type=\"text/javascript\" id=\"mediaelement-core-js-before\">\n/*
+        <![CDATA[ */\nvar mejsL10n = {\"language\":\"en\",\"strings\":{\"mejs.download-file\":\"Download
+        File\",\"mejs.install-flash\":\"You are using a browser that does not have
+        Flash player enabled or installed. Please turn on your Flash player plugin
+        or download the latest version from https://get.adobe.com/flashplayer/\",\"mejs.fullscreen\":\"Fullscreen\",\"mejs.play\":\"Play\",\"mejs.pause\":\"Pause\",\"mejs.time-slider\":\"Time
+        Slider\",\"mejs.time-help-text\":\"Use Left/Right Arrow keys to advance one
+        second, Up/Down arrows to advance ten seconds.\",\"mejs.live-broadcast\":\"Live
+        Broadcast\",\"mejs.volume-help-text\":\"Use Up/Down Arrow keys to increase
+        or decrease volume.\",\"mejs.unmute\":\"Unmute\",\"mejs.mute\":\"Mute\",\"mejs.volume-slider\":\"Volume
+        Slider\",\"mejs.video-player\":\"Video Player\",\"mejs.audio-player\":\"Audio
+        Player\",\"mejs.captions-subtitles\":\"Captions/Subtitles\",\"mejs.captions-chapters\":\"Chapters\",\"mejs.none\":\"None\",\"mejs.afrikaans\":\"Afrikaans\",\"mejs.albanian\":\"Albanian\",\"mejs.arabic\":\"Arabic\",\"mejs.belarusian\":\"Belarusian\",\"mejs.bulgarian\":\"Bulgarian\",\"mejs.catalan\":\"Catalan\",\"mejs.chinese\":\"Chinese\",\"mejs.chinese-simplified\":\"Chinese
+        (Simplified)\",\"mejs.chinese-traditional\":\"Chinese (Traditional)\",\"mejs.croatian\":\"Croatian\",\"mejs.czech\":\"Czech\",\"mejs.danish\":\"Danish\",\"mejs.dutch\":\"Dutch\",\"mejs.english\":\"English\",\"mejs.estonian\":\"Estonian\",\"mejs.filipino\":\"Filipino\",\"mejs.finnish\":\"Finnish\",\"mejs.french\":\"French\",\"mejs.galician\":\"Galician\",\"mejs.german\":\"German\",\"mejs.greek\":\"Greek\",\"mejs.haitian-creole\":\"Haitian
+        Creole\",\"mejs.hebrew\":\"Hebrew\",\"mejs.hindi\":\"Hindi\",\"mejs.hungarian\":\"Hungarian\",\"mejs.icelandic\":\"Icelandic\",\"mejs.indonesian\":\"Indonesian\",\"mejs.irish\":\"Irish\",\"mejs.italian\":\"Italian\",\"mejs.japanese\":\"Japanese\",\"mejs.korean\":\"Korean\",\"mejs.latvian\":\"Latvian\",\"mejs.lithuanian\":\"Lithuanian\",\"mejs.macedonian\":\"Macedonian\",\"mejs.malay\":\"Malay\",\"mejs.maltese\":\"Maltese\",\"mejs.norwegian\":\"Norwegian\",\"mejs.persian\":\"Persian\",\"mejs.polish\":\"Polish\",\"mejs.portuguese\":\"Portuguese\",\"mejs.romanian\":\"Romanian\",\"mejs.russian\":\"Russian\",\"mejs.serbian\":\"Serbian\",\"mejs.slovak\":\"Slovak\",\"mejs.slovenian\":\"Slovenian\",\"mejs.spanish\":\"Spanish\",\"mejs.swahili\":\"Swahili\",\"mejs.swedish\":\"Swedish\",\"mejs.tagalog\":\"Tagalog\",\"mejs.thai\":\"Thai\",\"mejs.turkish\":\"Turkish\",\"mejs.ukrainian\":\"Ukrainian\",\"mejs.vietnamese\":\"Vietnamese\",\"mejs.welsh\":\"Welsh\",\"mejs.yiddish\":\"Yiddish\"}};\n//#
+        sourceURL=mediaelement-core-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://darkerprojects.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17\"
+        id=\"mediaelement-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://darkerprojects.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.9.4\"
+        id=\"mediaelement-migrate-js\"></script>\n<script type=\"text/javascript\"
+        id=\"mediaelement-js-extra\">\n/* <![CDATA[ */\nvar _wpmejsSettings = {\"pluginPath\":\"/wp-includes/js/mediaelement/\",\"classPrefix\":\"mejs-\",\"stretching\":\"responsive\",\"audioShortcodeLibrary\":\"mediaelement\",\"videoShortcodeLibrary\":\"mediaelement\"};\n//#
+        sourceURL=mediaelement-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://darkerprojects.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.9.4\"
+        id=\"wp-mediaelement-js\"></script>\n<script id=\"wp-emoji-settings\" type=\"application/json\">\n{\"baseUrl\":\"https://s.w.org/images/core/emoji/17.0.2/72x72/\",\"ext\":\".png\",\"svgUrl\":\"https://s.w.org/images/core/emoji/17.0.2/svg/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https://darkerprojects.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4\"}}\n</script>\n<script
+        type=\"module\">\n/* <![CDATA[ */\n/*! This file is auto-generated */\nconst
+        a=JSON.parse(document.getElementById(\"wp-emoji-settings\").textContent),o=(window._wpemojiSettings=a,\"wpEmojiSettingsSupports\"),s=[\"flag\",\"emoji\"];function
+        i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function
+        c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new
+        Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const
+        a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return
+        t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var
+        n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function
+        u(e,t,n,a){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\udde8\\ud83c\\uddf6\",\"\\ud83c\\udde8\\u200b\\ud83c\\uddf6\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!a(e,\"\\ud83e\\u1fac8\")}return!1}function
+        f(e,t,n,a){let r;const o=(r=\"undefined\"!=typeof WorkerGlobalScope&&self
+        instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement(\"canvas\")).getContext(\"2d\",{willReadFrequently:!0}),s=(o.textBaseline=\"top\",o.font=\"600
+        32px Arial\",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var
+        t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new
+        Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof
+        e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&\"object\"==typeof
+        e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(\"undefined\"!=typeof
+        Worker&&\"undefined\"!=typeof OffscreenCanvas&&\"undefined\"!=typeof URL&&URL.createObjectURL&&\"undefined\"!=typeof
+        Blob)try{var e=\"postMessage(\"+f.toString()+\"(\"+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(\",\")+\"));\",a=new
+        Blob([e],{type:\"text/javascript\"});const r=new Worker(URL.createObjectURL(a),{name:\"wpTestEmojiSupports\"});return
+        void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const
+        n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],\"flag\"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var
+        t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});\n//#
+        sourceURL=https://darkerprojects.com/wp-includes/js/wp-emoji-loader.min.js\n/*
+        ]]> */\n</script>\n\n</body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - max-age=600
+      Connection:
+      - Upgrade, Keep-Alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:47:59 GMT
+      Expires:
+      - Thu, 07 May 2026 15:57:59 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Link:
+      - <https://darkerprojects.com/wp-json/>; rel="https://api.w.org/", <https://darkerprojects.com/wp-json/wp/v2/posts/30>;
+        rel="alternate"; title="JSON"; type="application/json", <https://darkerprojects.com/?p=30>;
+        rel=shortlink
+      Permissions-Policy:
+      - private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com"
+        "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"),
+        private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com"
+        "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      Upgrade:
+      - h2
+      Vary:
+      - Accept-Encoding,User-Agent
+      content-length:
+      - '65044'
+    status:
+      code: 200
+      message: OK
+version: 1

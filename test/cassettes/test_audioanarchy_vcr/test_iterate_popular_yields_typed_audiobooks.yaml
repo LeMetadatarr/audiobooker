@@ -1,0 +1,281 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://www.audioanarchy.org/
+  response:
+    body:
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html>\n<head>\n
+        \ <title>Audio Anarchy</title>\n                           \n  <meta http-equiv=\"content-type\"
+        content=\"text/html; charset=ISO-8859-1\">\n  <link rel=StyleSheet href=\"main.css\">\n</head>\n\n<body>\n\n<div
+        id=\"frame\">\n  <div id=\"contenttop\"><img src=\"ahead6.gif\"></div>\n  <div
+        id=\"navbar\">\n  <span class=\"navlink\">Audio Books</span>\n  <span class=\"navspacer\"></span>\n
+        \ <span class=\"navlink\"><a href=\"/radio/\">Original Recordings</a></span>\n
+        \ <span class=\"navspacer\"></span>\n  <span class=\"navlink\"><a href=\"/store/\">Store</a></span>\n
+        \ </div>\n\n<div id=\"contentleft\">\n\n    <div id=\"description\">\n      <i>Audio
+        Anarchy</i> is a project for transcribing anarchist books into audio format.\n
+        \     <p>\n      Hopefully, this can help make anarchist texts and ideas more
+        accessable.  Beyond the\n      obvious appeal for people who don't like to
+        read (or don't have <i>time</i> to read in this busy\n      on-the-go world),
+        hearing a book read aloud can also be enjoyable.\n      <p>\n      The <i>Audio
+        Anarchy</i> project is organized in a distributed way.  Instead of having\n
+        \     a single person or group of people read an entire book, different people
+        read separate\n      chapters to distribute the work load.  Ideally, this
+        site will do more to help facilitate\n      that kind of organization in the
+        future.\n      <p>\n</div>\n\n<p>\n  </div>\n  <div id=\"contentcenter\">\n\n
+        \   <div id=\"album\">\n    <div id=\"graphic\"><img src=\"letters.gif\" alt=\"Letters
+        Of Insurgents\"></div>\n\tFreddy Perlman's <i>Letters Of Insurgents</i> is
+        a thoroughly brilliant\n\tstory about anarchist ideas.  It takes the form
+        of fictional letters between\n\ttwo eastern european workers who were separated
+        after a failed\n\trevolution;  one spent twelve years in statist jails, the
+        other \n\tescaped to the west.  After twenty-five years without contact, they\n\tbegin
+        to write each-other about their experiences, their lives, their\n\thopes,
+        and their memories of the past.  The characters that emerge from\n\tthese
+        narratives tell a story that is both incredibly subtle and\n\tinfinitely complex.
+        \ Nothing is taken for granted, no assumptions are\n\tleft unchallenged, and
+        the reader is left with a set of questions that\n\tonly a story about relationships
+        could present.\n\t<p>\n\tBeing a particularly long book, each letter will
+        be presented here\n\ta week at a time until the entire recording is finished.
+        \ And everyone \n\twho\n\tlistens to the entire book will receive a Letters
+        Of Insurgents Merit\n\tBadge.\n    <div id=\"subalbum\">\n    <a href=\"letters.html\">Download
+        MP3s</a>\n    </a>\n    </div>\n  </div>\n<p>\n\n    <div id=\"album\">\n
+        \   <div id=\"graphic\"><img src=\"spectacle.gif\" alt=\"Thoughts On Society
+        Of The Spectacle\"></div>\n    \"The whole life of those societies in which
+        modern conditions of production\n    prevail presents itself as an immense
+        accumulation of <i>spectacles</i>.\n    All that once was directly lived has
+        become mere representation.\"\n    <p>\n    Instead of a direct recording
+        of the text, here a collection of people read\n    some of their favorite
+        aphorisms, and tell stories about how those aphorisms\n    relate to their
+        lives.\n    <div id=\"subalbum\">\n    <a href=\"spectacle.html\">Download
+        MP3s</a>\n    </a>\n    </div>\n  </div>\n<p>\n\n    <div id=\"album\">\n
+        \   <div id=\"graphic\"><img src=\"submission.jpg\" alt=\"Against The Logic
+        Of Submission\"></div>\n    \"Submission to domination is enforced not solely,
+        nor even most significantly, through blatant repression, but rather through
+        subtle manipulations worked into the fabric of everyday social relationships.
+        These manipulations &mdash; ingrained in the social fabric not because domination
+        is everywhere and nowhere, but because the institutions of domination create
+        rules, laws, mores and customs that enforce such manipulations &mdash; create
+        a logic of submission, an often unconscious tendency to justify resignation
+        and subservience in one's everyday relations in the world. For this reason,
+        it is necessary for those who are serious about developing an anarchist insurrectional
+        project to confront this tendency wherever it appears &mdash; in their lives,
+        their relationships and the ideas and practices of the struggles in which
+        they participate. Such a confrontation is not a matter of therapy, which itself
+        partakes of the logic of submission, but of defiant refusal.\"\n    <div id=\"subalbum\">\n
+        \   <a href=\"submission.html\">Download MP3s</a>\n    </a>\n    </div>\n
+        \ </div>\n<p>\n\n    <div id=\"album\">\n    <div id=\"graphic\"><img src=\"tension.jpg\"
+        alt=\"The Anarchist Tension\"></div>\n\"Anarchism is not a concept that can
+        be locked up in a word like a gravestone.  It is not a political theory.  It
+        is a way of conceiving life.  And life, young or old as we may be, is not
+        something definitive: it is a stake we must play day after day.  When we wake
+        up in the morning and put our feet on the ground we must have a good reason
+        for getting up.  If we don't it makes no difference whether we are anarchists
+        or not.  We might as well stay in bed and sleep.\"<p>\nAlfredo M. Bonanno,
+        an Italian anarchist currently serving six years for charges related to the
+        famous \"Marini Trial,\" writes about insurrectionary anarchism. \n    <div
+        id=\"subalbum\">\n    <a href=\"tension.html\">Download MP3s</a>\n    </a>\n
+        \   </div>\n  </div>\n<p>\n\n\n    <div id=\"album\">\n    <div id=\"graphic\"><img
+        src=\"antiwork.jpg\" alt=\"Anti-Work Essays\"></div>\n\"Why do we work? From
+        necessity or love? If the former, then our world is failing us, we are being
+        exploited, being made slaves for the benefit of others. The ethic that work
+        is a 'good thing' is a throwback to a Victorian mentality of puritanical pain
+        and denial of our humanity, an ethic that is so far removed from the reality
+        of our human nature as to be pathological.\"<p>\n    A collection of essays
+        written from the anti-work perspective.  These essays investigate concepts
+        of freedom, compulsory labor, the 'work ethic', the wages system, employment,
+        and 'occupations.'\n    <div id=\"subalbum\">\n    <a href=\"antiwork.html\">Download
+        MP3s</a>    \n    </a>\n    </div>\n  </div>\n<p>\n\n    <div id=\"album\">\n
+        \   <div id=\"graphic\"><img src=\"daysofwarnightsoflove.jpg\" alt=\"Days
+        Of War, Nights Of Love\"></div>\n    \"Less of a novel and more of an exploded
+        manifesto, <i>Days of War, Nights of Love</i> might be just what we need.
+        It is the type of book you'd thumb through in the store and actually want
+        to buy (or steal)... Topics range from anarchy to hierarchy, work to sex,
+        alienation to liberation and technology, but every page burns with a passion
+        for a freer life... When you make it to the end, the personal testimonials
+        about not working and the closing art pieces become an aria of voices urging
+        you to close the book and live. Glorious, even for the most cynical reader.
+        What more can we ask from a book?\" - <i>Clamor Magazine #6, Dec.00/Jan.01</i>\n
+        \   <div id=\"subalbum\">\n    <a href=\"downol.html\">Download MP3s</a>    \n
+        \   </a>\n    </div>\n  </div>\n<p>\n    <div id=\"album\">\n    <div id=\"graphic\"><img
+        src=\"emma.jpg\" alt=\"Emma Goldman Essays\"></div>\n    \"In the eighteen-nineties
+        and for years thereafter, America reverberated with the name of the 'notorious
+        Anarchist,' feminist, revolutionist and agitator, Emma Goldman.  A Russian
+        Jewish immigrant at the age of 17, she moved by her own efforts from seamstress
+        in a clothing factory to internationally known radical lecturer, writer, editor
+        and friend of the oppressed.  ...a collection of her remarkably penetrating
+        essays, far in advance of their time, originally published by the <i>Mother
+        Earth</i> press which she founded.\"\n    <div id=\"subalbum\">\n    <a href=\"emma.html\">Download
+        MP3s</a>    \n    <a href=\"/store/\">Order 2 CD Set</a>\n    </a>\n    </div>\n
+        \ </div>\n<p>\n    <a href=\"rss.xml\"><img src=\"xml.gif\" border=\"0\"></a>\n<p><br>\n
+        \ </body>\n</html>\n"
+    headers:
+      Age:
+      - '43224'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '7809'
+      Content-Type:
+      - text/html
+      Date:
+      - Thu, 07 May 2026 15:47:35 GMT
+      ETag:
+      - '"f700630a635c55dab18e47068e0c789d"'
+      Last-Modified:
+      - Fri, 07 May 2021 20:15:55 GMT
+      Server:
+      - AmazonS3
+      Via:
+      - 1.1 2f8f88c5d6534e0ffeb87b5babe5e2c0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - nlhc2jBc1sPTH4hOre8KzTXp2kkC1iWNTwKPYte0PX-fFg2-V2cyIw==
+      X-Amz-Cf-Pop:
+      - LIS50-P2
+      X-Cache:
+      - Hit from cloudfront
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://www.audioanarchy.org/letters.html
+  response:
+    body:
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n<html>\n<head>\n
+        \ <title>Audio Anarchy :: Letters Of Insurgents</title>\n                           \n
+        \ <meta http-equiv=\"content-type\" content=\"text/html; charset=ISO-8859-1\">\n
+        \ <link rel=StyleSheet href=\"album.css\">\n</head>\n\n  <body>\n\n  <br>\n\n
+        \ <div id=\"frame\">\n    <div id=\"logo\"><a href=\"index.html\"><img src=\"ahead5.gif\"
+        border=\"0\"></a></div>\n    <div id=\"title\"><span class=\"tt\"><a href=\"index.html\">Audio
+        Anarchy Catalog</a> > Letters Of Insurgents</span></div>\n    <div id=\"trackbox\">\n
+        \     <div id=\"graphicbox\">\n      <div id=\"graphic\"><img src=\"letters.gif\"></div>\n
+        \     </div>\n      <div id=\"tracks\">\n      <table width=\"100%\"><tr>\n
+        \     <td valign=\"top\">\n      <table cellspacing=\"2\" cellpadding=\"2\"
+        align=\"left\">\n      <tr><td>1. </td><td><a href=\"letters/01-Yarostans-First-Letter.mp3\">Yarostan's
+        First Letter</td><td><span class=\"description\">(14:09)</span></td></tr>\n
+        \     <tr><td>2. </td><td><a href=\"letters/02-Sophias-First-Letter.mp3\">Sophia's
+        First Letter</td><td><span class=\"description\">(39:51)</span></td></tr>\n
+        \     <tr><td>3. </td><td><a href=\"letters/03-Yarostans-Second-Letter.mp3\">Yarostan's
+        Second Letter</td><td><span class=\"description\">(1:14:40)</span></td></tr>\n
+        \     <tr><td>4. </td><td><a href=\"letters/04-Sophias-Second-Letter-p1.mp3\">Sophia's
+        Second Letter [Part 1]</td><td><span class=\"description\">(1:02:48)</span></td></tr>\n
+        \     <tr><td>5. </td><td><a href=\"letters/05-Sophias-Second-Letter-p2.mp3\">Sophia's
+        Second Letter [Part 2]</td><td><span class=\"description\">(57:03)</span></td></tr>\n
+        \     <tr><td>6. </td><td><a href=\"letters/06-Yarostans-Third-Letter-p1.mp3\">Yarostan's
+        Third Letter [Part 1]</td><td><span class=\"description\">(46:15)</span></td></tr>\n
+        \     <tr><td>7. </td><td><a href=\"letters/07-Yarostans-Third-Letter-p2.mp3\">Yarostan's
+        Third Letter [Part 2]</td><td><span class=\"description\">(47:20)</span></td></tr>\n
+        \     <tr><td>8. </td><td><a href=\"letters/08-Sophias-Third-Letter-p1.mp3\">Sophia's
+        Third Letter [Part 1]</td><td><span class=\"description\">(44:54)</span></td></tr>\n
+        \     <tr><td>9. </td><td><a href=\"letters/09-Sophias-Third-Letter-p2.mp3\">Sophia's
+        Third Letter [Part 2]</td><td><span class=\"description\">(45:06)</span></td></tr>\n
+        \     <tr><td>10.</td><td><a href=\"letters/10-Yarostans-Fourth-Letter-p1.mp3\">Yarostan's
+        Fourth Letter [Part 1]</td><td><span class=\"description\">(47:18)</span></td></tr>\n
+        \     <tr><td>11.</td><td><a href=\"letters/11-Yarostans-Fourth-Letter-p2.mp3\">Yarostan's
+        Fourth Letter [Part 2]</td><td><span class=\"description\">(50:03)</span></td></tr>\n
+        \     <tr><td>12.</td><td><a href=\"letters/12-Sophias-Fourth-Letter-p1.mp3\">Sophia's
+        Fourth Letter [Part 1]</td><td><span class=\"description\">(1:02:56)</span></td></tr>\n
+        \     <tr><td>13.</td><td><a href=\"letters/13-Sophias-Fourth-Letter-p2.mp3\">Sophia's
+        Fourth Letter [Part 2]</td><td><span class=\"description\">(57:53)</span></td></tr>\n
+        \     <tr><td>14.</td><td><a href=\"letters/14-Yarostans-Fifth-Letter-p1.mp3\">Yarostan's
+        Fifth Letter [Part 1]</td><td><span class=\"description\">(1:06:55)</span></td></tr>\n
+        \     <tr><td>15.</td><td><a href=\"letters/15-Yarostans-Fifth-Letter-p2.mp3\">Yarostan's
+        Fifth Letter [Part 2]</td><td><span class=\"description\">(47:59)</span></td></tr>\n
+        \     <tr><td>16.</td><td><a href=\"letters/16-Sophias-Fifth-Letter-p1.mp3\">Sophia's
+        Fifth Letter [Part 1]</td><td><span class=\"description\">(1:10:28)</span></td></tr>\n
+        \     <tr><td>17.</td><td><a href=\"letters/17-Sophias-Fifth-Letter-p2.mp3\">Sophia's
+        Fifth Letter [Part 2]</td><td><span class=\"description\">(58:22)</span></td></tr>\n
+        \     <tr><td>18.</td><td><a href=\"letters/18-Sophias-Fifth-Letter-p3.mp3\">Sophia's
+        Fifth Letter [Part 3]</td><td><span class=\"description\">(51:57)</span></td></tr>\n
+        \     <tr><td>19.</td><td><a href=\"letters/19-Yarostans-Sixth-Letter-p1.mp3\">Yarostan's
+        Sixth Letter [Part 1]</td><td><span class=\"description\">(52:52)</span></td></tr>\n</table></td><td
+        valign=\"top\">\n<table cellspacing=\"2\" cellpadding=\"2\">\n      <tr><td>20.</td><td><a
+        href=\"letters/20-Yarostans-Sixth-Letter-p2.mp3\">Yarostan's Sixth Letter
+        [Part2]</td><td><span class=\"description\">(47:33)</span></td></tr>\n      <tr><td>21.</td><td><a
+        href=\"letters/21-Sophias-Sixth-Letter-p1.mp3\">Sophia's Sixth Letter [Part
+        1]</td><td><span class=\"description\">(45:25)</span></td></tr>\n     <tr><td>22.</td><td><A
+        href=\"letters/22-Sophias-Sixth-Letter-p2.mp3\">Sophia's Sixth Letter [Part
+        2]</td><td><span class=\"description\">(51:01)</span></td></tr>\n     <tr><td>23.</td><td><a
+        href=\"letters/23-Yarostans-Seventh-Letter-p1.mp3\">Yarostan's Seventh Letter
+        [Part 1]</td><td><span class=\"description\">(46:00)</span></td></tr>\n     <tr><td>24.</td><td><a
+        href=\"letters/24-Yarostans-Seventh-Letter-p2.mp3\">Yarostan's Seventh Letter
+        [Part 2]</td><td><span class=\"description\">(39:12)</span></td></tr>\n     <tr><td>25.</td><td><a
+        href=\"letters/25-Sophias-Seventh-Letter-p1.mp3\">Sophia's Seventh Letter
+        [Part 1]</td><td><span class=\"description\">(57:45)</span></td></tr>\n     <tr><td>26.</td><td><a
+        href=\"letters/26-Sophias-Seventh-Letter-p2.mp3\">Sophia's Seventh Letter
+        [Part 2]</td><td><span class=\"description\">(1:10:16)</span></td></tr>\n
+        \    <tr><td>27.</td><td><a href=\"letters/27-Yarostans-Eighth-Letter.mp3\">Yarostan's
+        Eighth Letter</td><td><span class=\"description\">(1:11:33)</span></td></tr>\n
+        \    <tr><td>28.</td><td><a href=\"letters/28-Sophias-Eighth-Letter-p1.mp3\">Sophia's
+        Eighth Letter [Part 1]</td><td><span class=\"description\">(45:42)</span></td></tr>\n
+        \    <tr><td>29.</td><td><a href=\"letters/29-Sophias-Eighth-Letter-p2.mp3\">Sophia's
+        Eighth Letter [Part 2]</td><td><span class=\"description\">(55:19)</span></td></tr>\n
+        \    <tr><td>30.</td><td><a href=\"letters/30-Yarostans-Ninth-Letter-p1.mp3\">Yarostan's
+        Ninth Letter [Part 1]</td><td><span class=\"description\">(45:04)</span></td></tr>\n
+        \    <tr><td>31.</td><td><a href=\"letters/31-Yarostans-Ninth-Letter-p2.mp3\">Yarostan's
+        Ninth Letter [Part 2]</td><td><span class=\"description\">(29:55)</span></td></tr>\n
+        \    <tr><td>32.</td><td><a href=\"letters/32-Sophias-Ninth-Letter-p1.mp3\">Sophia's
+        Ninth Letter [Part 1]</td><td><span class=\"description\">(43:06)</span></td></tr>\n
+        \    <tr><td>33.</td><td><a href=\"letters/33-Sophias-Ninth-Letter-p2.mp3\">Sophia's
+        Ninth Letter [Part 2]</td><td><span class=\"description\">(53:22)</span></td></tr>\n
+        \    <tr><td>34.</td><td><a href=\"letters/34-Yarostans-Last-Letter-p1.mp3\">Yarostan's
+        Last Letter [Part 1]</td><td><span class=\"description\">(1:00:55)</span></td></tr>\n
+        \    <tr><td>35.</td><td><a href=\"letters/35-Yarostans-Last-Letter-p2.mp3\">Yarostan's
+        Last Letter [Part 2]</td><td><span class=\"description\">(1:00:31)</span></td></tr>\n
+        \    <tr><td>36.</td><td><a href=\"letters/36-Yarostans-Last-Letter-p3.mp3\">Yarostan's
+        Last Letter [Part 3]</td><td><span class=\"description\">(30:38)</span></td></tr>\n
+        \    <tr><td>37.</td><td><a href=\"letters/37-Sophias-Last-Letter.mp3\">Sophia's
+        Last Letter</td><td><span class=\"description\">(1:03:32)</span></td></tr>\n
+        \    <tr><td>38.</td><td><a href=\"letters/38-Sophias-Postscript.mp3\">Sophia's
+        Postscript</td><td><span class=\"description\">(1:45)</span></td></tr>\n      </table>\n
+        \     </td></tr>\n<tr><td></td><td></td></tr>\n<tr><td colspan=\"2\">\n<i>We
+        enjoyed reading these letters to each-ot\nher.  But these are long letters,
+        and recording all 31 hours of this over the co\nurse of a few months did,
+        at times, make us somewhat delirious.  This is some of\n our delirium, caught
+        by the microphone.</i></td>\n</tr><tr>\n<td></td><td>\n<table>\n<tr><td>39.</td><td><a
+        href=\"letters/39-Reader-Delirium.mp3\">Our Delirium</\na></td><td><span class=\"description\">(17:52)</span></td></tr>\n</table>\n</td>\n\n\n</tr>\n\n
+        \     </table>\n\n      <div id=\"torrentbox\">\n      <a href=\"letters.torrent\">Download</a>
+        the entire album with\n      <a href=\"http://www.bittorrent.com\">BitTorrent</a>\n<p>\n
+        \     </div>\n\n</div>\n</div>\n\n  </div>\n  </body>\n</html>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '7914'
+      Content-Type:
+      - text/html
+      Date:
+      - Thu, 07 May 2026 15:47:37 GMT
+      ETag:
+      - '"118bfb1967c065faff558382113c33fe"'
+      Last-Modified:
+      - Fri, 07 May 2021 20:21:28 GMT
+      Server:
+      - AmazonS3
+      Via:
+      - 1.1 7440b5ea829c3cf28f8128e219cde53a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - xkqHoYRvSJdAMmIMjwE-BhYRO25P3oxZCYO9nY4GzJhxKnwcIDp2bQ==
+      X-Amz-Cf-Pop:
+      - LIS50-P2
+      X-Cache:
+      - RefreshHit from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -59,6 +59,21 @@ class AudiobookNarrator:
 
 
 @dataclass
+class AudioBookChapter:
+    """A single chapter / section of an audiobook.
+
+    ``offset`` is the start position in seconds from the beginning of the
+    book. ``runtime`` is the chapter duration in seconds. ``stream`` is the
+    per-chapter audio URL when known.
+    """
+    title: str = ""
+    offset: float = 0.0
+    runtime: float = 0.0
+    stream: str = ""
+    image: str = ""
+
+
+@dataclass
 class AudioBook:
     title: str = ""
     description: str = ""
@@ -68,14 +83,33 @@ class AudioBook:
     tags: List[str] = field(default_factory=list)
     streams: List[str] = field(default_factory=list)
     narrator: Optional[AudiobookNarrator] = None
+    narrators: List[AudiobookNarrator] = field(default_factory=list)
+    chapters: List[AudioBookChapter] = field(default_factory=list)
+    genres: List[str] = field(default_factory=list)
     year: int = 0
     runtime: int = 0
     source: str = ""
     score: float = 0.0
+    # Codec / bitrate of the primary audio stream when known by the source.
+    codec: str = ""
+    bitrate: str = ""
+    # Source-specific identifiers (e.g. librivox_id, gutenberg_id, isbn_13).
+    # Keys must match mediavocab.ExternalIds field names where applicable.
+    external_ids: dict = field(default_factory=dict)
 
     def __post_init__(self):
         if self.language:
             self.language = normalize_language(self.language)
+        # Keep singular ``narrator`` and plural ``narrators`` consistent so
+        # callers can use either.  When both are supplied, the list is
+        # authoritative; ``narrator`` is reconciled to its first element.
+        if self.narrator and not self.narrators:
+            self.narrators = [self.narrator]
+        elif self.narrators:
+            if self.narrator and self.narrator not in self.narrators:
+                # Both supplied and diverge — prepend singular to list
+                self.narrators = [self.narrator] + self.narrators
+            self.narrator = self.narrators[0]
 
     def __hash__(self):
         return int(self.stable_id(), 16) & 0x7FFFFFFFFFFFFFFF

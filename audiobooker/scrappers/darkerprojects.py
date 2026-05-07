@@ -43,6 +43,7 @@ class DarkerProjectsAudioBook:
             streams=streams,
             image=img,
             tags=["audio drama"],
+            genres=["Audio Drama"],
             description=desc,
             authors=[BookAuthor(last_name="Darker Projects")],
             language="en",

@@ -207,19 +207,33 @@ for book in DarkerProjects().iterate_popular():
 
 ```python
 @dataclass
+class AudioBookChapter:
+    title: str   = ""
+    offset: float = 0.0   # seconds from start of book
+    runtime: float = 0.0  # seconds
+    stream: str  = ""     # per-chapter audio URL
+    image: str   = ""
+
+@dataclass
 class AudioBook:
     title: str          = ""
     description: str    = ""
     image: str          = ""   # cover art URL
     language: str       = ""   # ISO 639-1 code (normalised from source)
-    authors: List[BookAuthor]         = field(default_factory=list)
-    tags: List[str]               = field(default_factory=list)
-    streams: List[str]            = field(default_factory=list)  # direct audio URLs
-    narrator: Optional[AudiobookNarrator] = None
+    authors: List[BookAuthor]              = field(default_factory=list)
+    tags: List[str]                        = field(default_factory=list)
+    streams: List[str]                     = field(default_factory=list)  # direct audio URLs
+    narrator: Optional[AudiobookNarrator]  = None  # primary reader
+    narrators: List[AudiobookNarrator]     = field(default_factory=list)  # full reader cast
+    chapters: List[AudioBookChapter]       = field(default_factory=list)
+    genres: List[str]                      = field(default_factory=list)  # taxonomy genres
     year: int           = 0
     runtime: int        = 0    # seconds (where available)
     source: str         = ""   # e.g. "Librivox", "LoyalBooks"
     score: float        = 0.0  # relevance score from last search (0..1)
+    codec: str          = ""   # e.g. "mp3"
+    bitrate: str        = ""   # e.g. "128"
+    external_ids: dict  = field(default_factory=dict)  # e.g. {"librivox_id": "47"}
 
     def has_live_streams(self) -> bool: ...  # HEAD-checks stream URLs
 ```
@@ -248,19 +262,39 @@ normalize_language("English")   # → "en"
 normalize_language("en-US")     # → "en"
 ```
 
-## Caching
+## mediavocab integration
 
-HTTP responses are cached in memory for 1 hour via `requests-cache`.
-The shared session lives on `AudioBookSource.session`:
+`mediavocab` is a hard runtime dependency. Every `AudioBook` can be projected
+into the typed `mediavocab.Release` schema via `audiobook_to_release()`:
 
 ```python
-from audiobooker.scrappers import AudioBookSource
-from requests_cache import CachedSession
-from datetime import timedelta
+from audiobooker import search, audiobook_to_release
 
-# Replace with a persistent SQLite cache
-AudioBookSource.session = CachedSession("audiobooker_cache", expire_after=timedelta(hours=6))
+# Search → typed mediavocab Release with parsed_license filtering
+for book in search("Lovecraft", max_per_source=3):
+    release = audiobook_to_release(book)
+    if release.parsed_license and release.parsed_license.is_open():
+        # public domain / CC-licensed: free to redistribute
+        print(release.work.title, release.parsed_license.identifier)
 ```
+
+The converter populates a wide swath of the `Release` / `Work` schema:
+
+| mediavocab field            | Source data                                  |
+|---|---|
+| `Work.title`, `Work.year`, `Work.runtime`, `Work.language` | direct |
+| `Work.content_genres`       | `AudioBook.genres` (e.g. LibriVox `genres`)  |
+| `Work.credits`              | authors → `RelationRole.CREATOR`, every reader → `RelationRole.PERFORMER` |
+| `Work.external_ids`         | `librivox_id` and any other typed ID the source supplied |
+| `Release.chapters`          | `AudioBook.chapters` → `Chapter(offset, end, title)` |
+| `Release.codec`, `Release.bitrate` | LibriVox publishes 128 kbps MP3 by policy |
+| `Release.audio_language`    | mirrors `Work.language` |
+| `Release.license`           | `public_domain` for LibriVox / LoyalBooks |
+| `Release.release_date`      | `IsoDate`-compatible `YYYY` from `AudioBook.year` |
+
+LibriVox emits one `Release` per book with full per-section `chapters` and a
+deduplicated reader cast. Other sources populate whatever subset their public
+data exposes — fields are only set when the source actually carries the data.
 
 ## Error handling
 

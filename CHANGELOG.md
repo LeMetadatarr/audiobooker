@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.8.0 — unreleased
+
+### mediavocab integration
+
+- `mediavocab>=0.1.0` is now a **hard runtime dependency** (the `audiobooker.converters.audiobook_to_release()` adapter has been implicit-importing it).
+- `test` extra (`pytest`) declared in `pyproject.toml`.
+
+### Added (rich Release fields)
+
+- **Chapters** — `Release.chapters` is now populated from LibriVox book sections, preserving section order, titles, and individual durations so downstream players can navigate the book.
+- **Full reader cast** — every LibriVox reader is emitted as a mediavocab credit with `RelationRole.PERFORMER`, not just the lead narrator.
+- **Genres** — LibriVox genre tags are mapped into `content_genres` on the emitted `Work` for filtering and recommendation.
+- **License** — `Release.license = "public_domain"` is stamped for LibriVox content so `parsed_license.is_open()` returns `True`.
+- **release_date** — populated from `AudioBook.year` as an `IsoDate`-compatible `YYYY` string.
+- **External IDs** — LibriVox book/section IDs propagated onto the typed models for round-tripping.
+
+### Changed (architecture)
+
+- **One `AudioBook` per book, not per section.** Previously every LibriVox section was being emitted as a standalone book; sections now collapse into a single `AudioBook` with a `chapters` list, matching the user-facing model and de-duplicating search results.
+- `audiobook_to_release()` updated to track the latest mediavocab API.
+- README, `docs/api.md`, `docs/sources.md` updated for the post-PR mediavocab surface and the plain `requests.Session` (the caching layer was removed).
+
+### Examples
+
+- New `examples/mediavocab_release.py` demonstrating search → typed `Release` with `parsed_license` filtering.
+
+### Migration notes
+
+- Consumers iterating over LibriVox results should expect roughly N× fewer items (one per book) and use `release.chapters` to surface section-level information.
+
 ## [0.7.0a1](https://github.com/TigreGotico/audiobooker/tree/0.7.0a1) (2026-04-28)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.6.0a1...0.7.0a1)

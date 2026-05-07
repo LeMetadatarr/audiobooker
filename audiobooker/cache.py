@@ -358,6 +358,10 @@ def main():
         print(f"Cleared {n} cached book(s).")
         return
 
+    if args.cmd is None:
+        parser.print_help()
+        sys.exit(2)
+
     # Commands that need a book lookup
     book = _find_book(args.query, args.method, getattr(args, "source", None))
     if book is None:

@@ -1,0 +1,772 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/xml;charset=utf-8
+    method: GET
+    uri: https://stephenkingaudiobooks.com/wp-sitemap-posts-post-1.xml
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/xsl\"
+        href=\"https://stephenkingaudiobooks.com/wp-sitemap.xsl\" ?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>https://stephenkingaudiobooks.com/carrie-audio/</loc><lastmod>2020-10-13T17:41:08+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/salems-lot/</loc><lastmod>2019-08-12T17:54:12+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/rage/</loc><lastmod>2019-08-12T16:29:37+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-shining/</loc><lastmod>2020-10-13T17:46:38+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/night-shift/</loc><lastmod>2019-08-11T19:23:07+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-stand-audiobook-free/</loc><lastmod>2023-07-15T17:45:51+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-dead-zone/</loc><lastmod>2020-10-13T17:41:46+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-long-walk/</loc><lastmod>2022-01-07T11:59:55+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-firestarter/</loc><lastmod>2021-04-23T13:51:56+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/cujo-audiobook/</loc><lastmod>2021-04-23T13:51:21+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/danse-macabre/</loc><lastmod>2019-08-11T09:42:58+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-roadwork/</loc><lastmod>2021-04-23T13:51:03+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/different-seasons/</loc><lastmod>2019-08-11T09:59:59+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/dark-tower-1/</loc><lastmod>2020-10-13T17:47:31+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-drawing-of-the-three/</loc><lastmod>2021-04-23T13:50:54+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-waste-lands-audio-book/</loc><lastmod>2020-09-27T14:07:44+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/wizard-and-glass-audio-book/</loc><lastmod>2020-09-27T14:07:55+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-wolves-of-the-calla/</loc><lastmod>2019-08-15T08:36:39+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/song-of-susannah/</loc><lastmod>2019-08-13T08:47:45+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-dark-tower-audio-book/</loc><lastmod>2020-09-27T14:07:21+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/free-audiobook-running-man/</loc><lastmod>2021-09-03T13:10:26+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/christine/</loc><lastmod>2019-08-15T09:36:07+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/cycle-of-the-werewolf/</loc><lastmod>2019-08-10T12:23:42+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/sematary/</loc><lastmod>2021-04-23T13:50:43+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-talisman/</loc><lastmod>2020-10-13T17:47:22+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/thinner-audio-book/</loc><lastmod>2021-02-18T09:19:49+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/skeleton-crew-audio/</loc><lastmod>2020-10-13T17:47:06+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/it-book/</loc><lastmod>2020-10-13T17:44:18+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/misery/</loc><lastmod>2019-08-11T19:13:02+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-eyes-dragon/</loc><lastmod>2020-10-29T09:57:43+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-tommyknockers/</loc><lastmod>2023-06-08T20:18:33+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-dark-half/</loc><lastmod>2019-08-15T09:37:30+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/four-past-midnight/</loc><lastmod>2019-08-11T14:11:22+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-the-stand-complete-and-uncut-audiobook-the-stand-2/</loc><lastmod>2023-08-22T15:46:18+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/needful-thing/</loc><lastmod>2020-10-13T17:45:16+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/dolores-claiborne/</loc><lastmod>2019-08-15T10:31:13+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-geralds-game/</loc><lastmod>2020-10-29T09:59:19+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/nightmares-dreamscape/</loc><lastmod>2020-10-13T17:45:29+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/insomnia/</loc><lastmod>2019-08-11T18:47:13+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/rose-madder-audio/</loc><lastmod>2020-02-27T18:02:12+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/desperation-audio/</loc><lastmod>2020-10-13T17:41:55+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-green-mile-audio-book/</loc><lastmod>2020-09-27T14:07:31+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/regulators-audiobook/</loc><lastmod>2020-10-13T17:48:17+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/bag-of-bone/</loc><lastmod>2020-10-13T17:40:14+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/hearts-in-atlanti/</loc><lastmod>2020-10-29T09:59:36+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/storm-of-century/</loc><lastmod>2021-02-18T09:19:36+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/girl-who-loved-tom-gordon-stephen-king-audiobook/</loc><lastmod>2021-08-11T15:09:59+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/writing/</loc><lastmod>2020-10-13T17:45:50+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/blackhouse/</loc><lastmod>2020-10-13T17:40:34+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/dreamcatcher/</loc><lastmod>2019-08-11T10:10:10+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/everything-eventual/</loc><lastmod>2020-10-13T17:43:18+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-from-a-buick-8-audiobook/</loc><lastmod>2021-08-11T15:10:19+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-faithful/</loc><lastmod>2020-10-29T09:58:05+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-colorado-kid/</loc><lastmod>2020-10-29T09:57:22+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/cell-book/</loc><lastmod>2020-10-13T17:41:33+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-liseys-story/</loc><lastmod>2020-10-29T10:00:13+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/blaze-book/</loc><lastmod>2020-10-13T17:40:50+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/duma-key-book/</loc><lastmod>2020-10-13T17:43:02+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/just-after-sunset-book/</loc><lastmod>2020-10-13T17:44:49+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/morality/</loc><lastmod>2019-08-11T19:17:13+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/throttle/</loc><lastmod>2019-08-13T17:00:15+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/under-dome/</loc><lastmod>2020-10-13T17:48:55+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-ur/</loc><lastmod>2020-10-13T17:49:10+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/audiobook-blockad/</loc><lastmod>2020-10-29T09:56:46+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/joyland-book/</loc><lastmod>2020-10-13T17:44:32+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/doctor-sleeps/</loc><lastmod>2020-10-13T17:42:47+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/11-22-63-book/</loc><lastmod>2020-10-13T17:39:11+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/mist/</loc><lastmod>2020-10-13T17:48:09+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/in-tall-grass/</loc><lastmod>2020-10-13T17:44:04+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/harry-potter-cursed-child-parts-one-and-two-audio-free/</loc><lastmod>2024-01-08T10:23:39+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/harry-potter-deathly-hallows-audio-book-free-by-stephen-fry/</loc><lastmod>2025-08-01T15:55:24+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/harry-potter-prince-steph-fry-hp/</loc><lastmod>2025-08-01T15:55:18+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/harry-potter-phoenix-book-by-stephen-fry/</loc><lastmod>2025-08-01T15:55:12+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-fry-harry-potter-goblet-fi/</loc><lastmod>2025-08-01T15:55:06+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/harry-potter-stephen-fry-prisoner-azkaban-hp-audiobook/</loc><lastmod>2025-08-01T15:54:59+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-fry-harry-potter-chamber-se/</loc><lastmod>2025-08-01T15:54:52+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-fry-harry-potter-philosopher-sto/</loc><lastmod>2025-08-01T15:54:46+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-full-dark-no-stars-audiobook/</loc><lastmod>2020-09-09T14:21:19+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-if-it-bleeds-audiobook/</loc><lastmod>2020-09-09T14:27:33+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-the-institute-audiobook/</loc><lastmod>2020-09-09T14:39:29+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/vampire-archives-audiobook/</loc><lastmod>2021-09-28T07:48:39+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-blood-and-smoke-audiobook/</loc><lastmod>2021-04-08T19:11:37+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-later-audio/</loc><lastmod>2023-08-11T14:00:41+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-the-bazaar-of-bad-dreams-audio-book/</loc><lastmod>2021-06-30T17:22:12+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-drunken-fireworks-audio-book/</loc><lastmod>2021-06-30T17:21:04+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/george-beahm-the-stephen-king-companion-audiobook/</loc><lastmod>2021-04-22T11:47:35+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-elevation-audio-book/</loc><lastmod>2022-01-07T11:35:02+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/legends-stories-by-the-masters-of-fantasy-volume-1-audiobook/</loc><lastmod>2021-04-28T08:54:37+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-the-little-sisters-of-eluria-audiobook/</loc><lastmod>2021-04-20T15:20:47+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-wind-through-the-keyhole-audio-book/</loc><lastmod>2023-08-11T13:57:57+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-big-driver-audio-book/</loc><lastmod>2021-06-30T17:20:50+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/graveyard-shift-and-other-stories-from-night-shift-audiobook/</loc><lastmod>2021-04-29T08:23:50+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-lawnmower-man-and-other-stories-from-night-shift-audiobook/</loc><lastmod>2021-04-25T17:10:09+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/gray-matter-and-other-stories-from-night-shift-audiobook/</loc><lastmod>2021-04-21T17:03:43+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-riding-bullet-audiobook/</loc><lastmod>2022-01-07T11:34:35+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-quitters-inc-audiobook/</loc><lastmod>2021-04-28T08:42:59+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-lts-theory-of-pets-audio-book/</loc><lastmod>2021-06-30T17:21:33+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-road-virus-heads-north-audio/</loc><lastmod>2023-08-16T08:11:01+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/selected-shorts-behaving-badly-audiobook/</loc><lastmod>2021-04-27T17:04:05+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/tails-of-wonder-and-imagination-cat-stories-audiobook/</loc><lastmod>2021-04-26T17:15:34+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-flight-or-fright-audio-book/</loc><lastmod>2022-01-07T11:34:08+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-man-in-black-suit-4-dark-tales-audiobook/</loc><lastmod>2022-01-07T11:35:28+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-good-marriage-audiobook/</loc><lastmod>2022-01-07T11:37:29+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-gingerbread-girl-audiobook/</loc><lastmod>2021-06-30T17:22:28+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-1922-audio-book/</loc><lastmod>2022-01-07T11:48:23+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-revival-audio/</loc><lastmod>2023-08-11T14:14:23+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-gwendys-final-task-audiobook/</loc><lastmod>2022-03-02T19:24:28+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/richard-chizmar-gwendys-magic-feather-audiobook/</loc><lastmod>2022-03-02T19:24:16+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/richard-king-gwendys-button-box-audiobook/</loc><lastmod>2022-03-02T19:23:54+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-fairy-tale-audio-book/</loc><lastmod>2024-04-19T17:03:56+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/the-long-walk-by-stephen-king-narrated-by-kirby-heyborne/</loc><lastmod>2024-09-14T19:53:10+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-finn-read-by-kellen-boyle-audiobook/</loc><lastmod>2024-09-14T20:08:15+00:00</lastmod></url><url><loc>https://stephenkingaudiobooks.com/stephen-king-you-like-it-darker-audiobook/</loc><lastmod>2024-09-14T21:02:11+00:00</lastmod></url></urlset>\n\r\n<!--\r\nPerformance
+        optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin\r\n\r\nObject
+        Caching 22/82 objects using Disk\r\nPage Caching using Disk: Enhanced \r\n\r\nServed
+        from: stephenkingaudiobooks.com @ 2026-05-07 15:07:00 by W3 Total Cache\r\n-->"
+    headers:
+      Accept-Ranges:
+      - bytes
+      CF-RAY:
+      - 9f81607d5c1924a7-MAD
+      Cache-Control:
+      - max-age=3600
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/xml
+      Date:
+      - Thu, 07 May 2026 15:49:50 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=O1fi2M%2FTxndAgxNn0B8vBP2btgceUj%2BGKM5r2kD5wtO%2FrNnlG3DQoO4w%2BSCW0katgWeenoRtOKfrLv2gneuN6ArloZz97lXOGp7i2g52lBiXKNejVPEFORIv91XLdxeci0OJpgu3ubQNsFLBUeT9E%2FGt7ZLvSGRu"}]}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '14970'
+      etag:
+      - '"a0c-6513ba1d98a0a"'
+      expires:
+      - Thu, 07 May 2026 16:49:50 GMT
+      last-modified:
+      - Thu, 07 May 2026 15:07:00 GMT
+      referrer-policy:
+      - no-referrer-when-downgrade
+      vary:
+      - Accept-Encoding,Cookie
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://stephenkingaudiobooks.com/carrie-audio/
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n<meta charset=\"UTF-8\">\n<meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link
+        rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\n<title>Stephen King &#8211;
+        Carrie Audiobook &#8211; Stephen King Audiobooks</title>\n<meta name='robots'
+        content='max-image-preview:large' />\n<link rel='dns-prefetch' href='//fonts.googleapis.com'
+        />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Stephen King
+        Audiobooks &raquo; Feed\" href=\"https://stephenkingaudiobooks.com/feed/\"
+        />\n<link rel=\"alternate\" title=\"oEmbed (JSON)\" type=\"application/json+oembed\"
+        href=\"https://stephenkingaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstephenkingaudiobooks.com%2Fcarrie-audio%2F\"
+        />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\"
+        href=\"https://stephenkingaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstephenkingaudiobooks.com%2Fcarrie-audio%2F&#038;format=xml\"
+        />\n<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>\nimg:is([sizes=auto
+        i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css
+        */\n</style>\n<style id='wp-emoji-styles-inline-css' type='text/css'>\n\n\timg.wp-smiley,
+        img.emoji {\n\t\tdisplay: inline !important;\n\t\tborder: none !important;\n\t\tbox-shadow:
+        none !important;\n\t\theight: 1em !important;\n\t\twidth: 1em !important;\n\t\tmargin:
+        0 0.07em !important;\n\t\tvertical-align: -0.1em !important;\n\t\tbackground:
+        none !important;\n\t\tpadding: 0 !important;\n\t}\n/*# sourceURL=wp-emoji-styles-inline-css
+        */\n</style>\n<style id='wp-block-library-inline-css' type='text/css'>\n:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media
+        (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root
+        .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root
+        .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root
+        .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root
+        .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb
+        50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root
+        .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root
+        .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root
+        .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root
+        .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px
+        23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html
+        :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html
+        :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html
+        :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html
+        :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html
+        :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0
+        0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media
+        screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}\n\n/*#
+        sourceURL=wp-block-library-inline-css */\n</style>\n<style id='classic-theme-styles-inline-css'
+        type='text/css'>\n/*! This file is auto-generated */\n.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em
+        + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}\n/*#
+        sourceURL=/wp-includes/css/classic-themes.min.css */\n</style>\n<style id='global-styles-inline-css'
+        type='text/css'>\n:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3:
+        4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2:
+        3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9:
+        16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray:
+        #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink:
+        #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange:
+        #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan:
+        #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue:
+        #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple:
+        #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227)
+        0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:
+        linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
+        linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:
+        linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
+        linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
+        linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186)
+        40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:
+        linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:
+        linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62)
+        100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
+        0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:
+        linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181)
+        100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128)
+        0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129)
+        0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium:
+        20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large:
+        42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40:
+        1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70:
+        3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural:
+        6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px
+        rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0,
+        0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255),
+        6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap:
+        0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap:
+        wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display:
+        grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap:
+        2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap:
+        1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange)
+        !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber)
+        !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan)
+        !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan)
+        !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue)
+        !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue)
+        !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple)
+        !important;}.has-black-background-color{background-color: var(--wp--preset--color--black)
+        !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray)
+        !important;}.has-white-background-color{background-color: var(--wp--preset--color--white)
+        !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color:
+        var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color:
+        var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
+        var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
+        var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
+        !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
+        var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background:
+        var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
+        var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
+        var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
+        var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
+        var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
+        var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
+        var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size:
+        var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size:
+        var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size:
+        var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size:
+        var(--wp--preset--font-size--x-large) !important;}\n/*# sourceURL=global-styles-inline-css
+        */\n</style>\n\n<link rel='stylesheet' id='collapscore-css-css' href='https://stephenkingaudiobooks.com/wp-content/plugins/jquery-collapse-o-matic/css/core_style.css?ver=1.0'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='collapseomatic-css-css'
+        href='https://stephenkingaudiobooks.com/wp-content/plugins/jquery-collapse-o-matic/css/light_style.css?ver=1.6'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='wp-date-remover-css'
+        href='https://stephenkingaudiobooks.com/wp-content/plugins/wp-date-remover/public/css/wp-date-remover-public.css?ver=1.0.0'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='videoblog-style-css'
+        href='https://stephenkingaudiobooks.com/wp-content/themes/videoblog/style.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='genericons-css'
+        href='https://stephenkingaudiobooks.com/wp-content/themes/videoblog/genericons/genericons.css?ver=3.3.1'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='videoblog-webfonts-css'
+        href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CMontserrat%3A400%2C700&#038;subset=latin%2Clatin-ext'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='arpw-style-css'
+        href='https://stephenkingaudiobooks.com/wp-content/plugins/advanced-random-posts-widget/assets/css/arpw-frontend.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='searchwp-live-search-css'
+        href='https://stephenkingaudiobooks.com/wp-content/plugins/searchwp-live-ajax-search/assets/styles/style.min.css?ver=1.8.7'
+        type='text/css' media='all' />\n<style id='searchwp-live-search-inline-css'
+        type='text/css'>\n.searchwp-live-search-result .searchwp-live-search-result--title
+        a {\n  font-size: 16px;\n}\n.searchwp-live-search-result .searchwp-live-search-result--price
+        {\n  font-size: 14px;\n}\n.searchwp-live-search-result .searchwp-live-search-result--add-to-cart
+        .button {\n  font-size: 14px;\n}\n\n/*# sourceURL=searchwp-live-search-inline-css
+        */\n</style>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\"
+        id=\"jquery-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1\"
+        id=\"jquery-migrate-js\"></script>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-content/plugins/wp-date-remover/public/js/wp-date-remover-public.js?ver=1.0.0\"
+        id=\"wp-date-remover-js\"></script>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-content/themes/videoblog/js/jquery.slicknav.min.js\"
+        id=\"jquery-slicknav-js\"></script>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-content/themes/videoblog/js/superfish.min.js\"
+        id=\"jquery-superfish-js\"></script>\n<link rel=\"https://api.w.org/\" href=\"https://stephenkingaudiobooks.com/wp-json/\"
+        /><link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://stephenkingaudiobooks.com/wp-json/wp/v2/posts/7\"
+        /><link rel=\"EditURI\" type=\"application/rsd+xml\" title=\"RSD\" href=\"https://stephenkingaudiobooks.com/xmlrpc.php?rsd\"
+        />\n<meta name=\"generator\" content=\"WordPress 6.9.4\" />\n<link rel=\"canonical\"
+        href=\"https://stephenkingaudiobooks.com/carrie-audio/\" />\n<link rel='shortlink'
+        href='https://stephenkingaudiobooks.com/?p=7' />\n<link rel=\"icon\" href=\"https://stephenkingaudiobooks.com/wp-content/uploads/2018/02/cropped-Pictograms-nps-misc-bookstore.svg_-2-32x32.png\"
+        sizes=\"32x32\" />\n<link rel=\"icon\" href=\"https://stephenkingaudiobooks.com/wp-content/uploads/2018/02/cropped-Pictograms-nps-misc-bookstore.svg_-2-192x192.png\"
+        sizes=\"192x192\" />\n<link rel=\"apple-touch-icon\" href=\"https://stephenkingaudiobooks.com/wp-content/uploads/2018/02/cropped-Pictograms-nps-misc-bookstore.svg_-2-180x180.png\"
+        />\n<meta name=\"msapplication-TileImage\" content=\"https://stephenkingaudiobooks.com/wp-content/uploads/2018/02/cropped-Pictograms-nps-misc-bookstore.svg_-2-270x270.png\"
+        />\n\t\t<style type=\"text/css\" id=\"wp-custom-css\">\n\t\t\t.entry-meta
+        {\n display: none;\n} \t\t</style>\n\t\t<!-- Histats.com  START  (aync)-->\n<script
+        type=\"text/javascript\">var _Hasync= _Hasync|| [];\n_Hasync.push(['Histats.start',
+        '1,5021620,4,0,0,0,00010000']);\n_Hasync.push(['Histats.fasi', '1']);\n_Hasync.push(['Histats.track_hits',
+        '']);\n(function() {\nvar hs = document.createElement('script'); hs.type =
+        'text/javascript'; hs.async = true;\nhs.src = ('//s10.histats.com/js15_as.js');\n(document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(hs);\n})();</script>\n<noscript><a
+        href=\"/\" target=\"_blank\"><img  src=\"//sstatic1.histats.com/0.gif?5021620&101\"
+        alt=\"counter create hit\" border=\"0\"></a></noscript>\n<!-- Histats.com
+        \ END  -->\n\n\n<script>(function(s){s.dataset.zone='10905413',s.src='https://llvpn.com/tag.min.js'})([document.documentElement,
+        document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>\n<link
+        rel='stylesheet' id='mediaelement-css' href='https://stephenkingaudiobooks.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='wp-mediaelement-css'
+        href='https://stephenkingaudiobooks.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='pgntn_stylesheet-css'
+        href='https://stephenkingaudiobooks.com/wp-content/plugins/pagination/css/nav-style.css?ver=1.2.7'
+        type='text/css' media='all' />\n\n</head>\n\n<body class=\"wp-singular post-template-default
+        single single-post postid-7 single-format-standard wp-theme-videoblog\">\n\n<div
+        id=\"container\">\n\t<a class=\"skip-link screen-reader-text\" href=\"#site-main\">Skip
+        to content</a>\n\t<header class=\"site-header clearfix\" role=\"banner\">\n\t\n\t\t<div
+        class=\"wrapper wrapper-header clearfix\">\n\t\t\n\t\t\t<div class=\"site-branding
+        clearfix\">\n\t\t\t\t\t\t\t\t<p class=\"site-title\"><a href=\"https://stephenkingaudiobooks.com/\"
+        rel=\"home\">Stephen King Audiobooks</a></p>\n\t\t\t\t<p class=\"site-description\"></p>\n\t\t\t\t\t\t\t</div><!--
+        .site-branding -->\n\n\t\t\t\t\t\t\n\t\t</div><!-- .wrapper .wrapper-header
+        -->\n\t\t\n                <div class=\"navbar-header\">\n\n\t\t\t<div id=\"menu-main-slick\"
+        class=\"menu-menu-container\"><ul id=\"menu-slide-in\" class=\"menu\"><li
+        id=\"menu-item-1263\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-home menu-item-1263\"><a href=\"https://stephenkingaudiobooks.com\">Home</a></li>\n<li
+        id=\"menu-item-1261\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-has-children menu-item-1261\"><a href=\"https://stephenkingaudiobooks.com/?s=dark+tower\">The
+        Dark Tower</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-1260\" class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1260\"><a href=\"https://stephenkingaudiobooks.com/dark-tower-1/\">The
+        Dark Tower 1</a></li>\n\t<li id=\"menu-item-1259\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1259\"><a href=\"https://stephenkingaudiobooks.com/the-drawing-of-the-three/\">The
+        Dark Tower 2</a></li>\n\t<li id=\"menu-item-1258\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1258\"><a href=\"https://stephenkingaudiobooks.com/the-waste-lands-audio-book/\">The
+        Dark Tower 3</a></li>\n\t<li id=\"menu-item-1257\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1257\"><a href=\"https://stephenkingaudiobooks.com/wizard-and-glass-audio-book/\">The
+        Dark Tower 4</a></li>\n\t<li id=\"menu-item-1256\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1256\"><a href=\"https://stephenkingaudiobooks.com/the-wolves-of-the-calla/\">The
+        Dark Tower 5</a></li>\n\t<li id=\"menu-item-1255\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1255\"><a href=\"https://stephenkingaudiobooks.com/song-of-susannah/\">The
+        Dark Tower 6</a></li>\n\t<li id=\"menu-item-1254\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1254\"><a href=\"https://stephenkingaudiobooks.com/the-dark-tower-audio-book/\">The
+        Dark Tower 7</a></li>\n</ul>\n</li>\n<li id=\"menu-item-1321\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-1321\"><a href=\"https://stephenkingaudiobooks.com/it/\">Stephen
+        King \u2013 It</a></li>\n<li id=\"menu-item-1579\" class=\"menu-item menu-item-type-taxonomy
+        menu-item-object-category menu-item-has-children menu-item-1579\"><a href=\"https://stephenkingaudiobooks.com/category/harry-potter-audio-books/\">Harry
+        Potter (Stephen Fry)</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-1581\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1581\"><a
+        href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-philosopher-sto/\">Book
+        1: Harry Potter and the Philosopher&#8217;s Stone</a></li>\n\t<li id=\"menu-item-1582\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1582\"><a
+        href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-chamber-se/\">Book
+        2:  Harry Potter and the Chamber of Secrets</a></li>\n\t<li id=\"menu-item-1583\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1583\"><a
+        href=\"https://stephenkingaudiobooks.com/harry-potter-stephen-fry-prisoner-azkaban-hp-audiobook/\">Book
+        3: Harry Potter and the Prisoner of Azkaban</a></li>\n\t<li id=\"menu-item-1584\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1584\"><a
+        href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-goblet-fi/\">Book
+        4: Harry Potter and the Goblet of Fire</a></li>\n\t<li id=\"menu-item-1585\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1585\"><a
+        href=\"https://stephenkingaudiobooks.com/harry-potter-phoenix-book-by-stephen-fry/\">Book
+        5: Harry Potter and The Order of the Phoenix</a></li>\n\t<li id=\"menu-item-1586\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1586\"><a
+        href=\"https://stephenkingaudiobooks.com/harry-potter-prince-steph-fry-hp/\">Book
+        6: Harry Potter and the Half-Blood Prince</a></li>\n\t<li id=\"menu-item-1587\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1587\"><a
+        href=\"https://stephenkingaudiobooks.com/harry-potter-deathly-hallows-audio-book-free-by-stephen-fry/\">Book
+        7: Harry Potter and the Deathly Hallows</a></li>\n\t<li id=\"menu-item-1588\"
+        class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1588\"><a
+        href=\"https://stephenkingaudiobooks.com/harry-potter-cursed-child-parts-one-and-two-audio-free/\">Book
+        8: Harry Potter and the Cursed Child</a></li>\n</ul>\n</li>\n<li id=\"menu-item-1916\"
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor
+        current-menu-parent current-post-parent menu-item-1916\"><a href=\"https://stephenkingaudiobooks.com/category/stephen-king/\">Stephen
+        King Audiobooks</a></li>\n<li id=\"menu-item-2143\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-page menu-item-2143\"><a href=\"https://stephenkingaudiobooks.com/privacy-policy/\">PRIVACY
+        POLICY</a></li>\n</ul></div>\n        </div><!-- .navbar-header -->\n        \n\t\t\t\t<nav
+        id=\"menu-main\" role=\"navigation\">\n\t\t\t<div class=\"wrapper wrapper-header-menu
+        clearfix\">\n\t\t\t\t<ul id=\"menu-main-menu\" class=\"nav navbar-nav dropdown
+        sf-menu\"><li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-home menu-item-1263\"><a href=\"https://stephenkingaudiobooks.com\">Home</a></li>\n<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children
+        menu-item-1261\"><a href=\"https://stephenkingaudiobooks.com/?s=dark+tower\">The
+        Dark Tower</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1260\"><a href=\"https://stephenkingaudiobooks.com/dark-tower-1/\">The
+        Dark Tower 1</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1259\"><a href=\"https://stephenkingaudiobooks.com/the-drawing-of-the-three/\">The
+        Dark Tower 2</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1258\"><a href=\"https://stephenkingaudiobooks.com/the-waste-lands-audio-book/\">The
+        Dark Tower 3</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1257\"><a href=\"https://stephenkingaudiobooks.com/wizard-and-glass-audio-book/\">The
+        Dark Tower 4</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1256\"><a href=\"https://stephenkingaudiobooks.com/the-wolves-of-the-calla/\">The
+        Dark Tower 5</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1255\"><a href=\"https://stephenkingaudiobooks.com/song-of-susannah/\">The
+        Dark Tower 6</a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-post
+        menu-item-1254\"><a href=\"https://stephenkingaudiobooks.com/the-dark-tower-audio-book/\">The
+        Dark Tower 7</a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-1321\"><a href=\"https://stephenkingaudiobooks.com/it/\">Stephen
+        King \u2013 It</a></li>\n<li class=\"menu-item menu-item-type-taxonomy menu-item-object-category
+        menu-item-has-children menu-item-1579\"><a href=\"https://stephenkingaudiobooks.com/category/harry-potter-audio-books/\">Harry
+        Potter (Stephen Fry)</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1581\"><a href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-philosopher-sto/\">Book
+        1: Harry Potter and the Philosopher&#8217;s Stone</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1582\"><a href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-chamber-se/\">Book
+        2:  Harry Potter and the Chamber of Secrets</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1583\"><a href=\"https://stephenkingaudiobooks.com/harry-potter-stephen-fry-prisoner-azkaban-hp-audiobook/\">Book
+        3: Harry Potter and the Prisoner of Azkaban</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1584\"><a href=\"https://stephenkingaudiobooks.com/stephen-fry-harry-potter-goblet-fi/\">Book
+        4: Harry Potter and the Goblet of Fire</a></li>\n\t<li class=\"menu-item menu-item-type-post_type
+        menu-item-object-post menu-item-1585\"><a href=\"https://stephenkingaudiobooks.com/harry-potter-phoenix-book-by-stephen-fry/\">Book
+        5: Harry Potter and The Order of the Phoenix</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1586\"><a href=\"https://stephenkingaudiobooks.com/harry-potter-prince-steph-fry-hp/\">Book
+        6: Harry Potter and the Half-Blood Prince</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1587\"><a href=\"https://stephenkingaudiobooks.com/harry-potter-deathly-hallows-audio-book-free-by-stephen-fry/\">Book
+        7: Harry Potter and the Deathly Hallows</a></li>\n\t<li class=\"menu-item
+        menu-item-type-post_type menu-item-object-post menu-item-1588\"><a href=\"https://stephenkingaudiobooks.com/harry-potter-cursed-child-parts-one-and-two-audio-free/\">Book
+        8: Harry Potter and the Cursed Child</a></li>\n</ul>\n</li>\n<li class=\"menu-item
+        menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent
+        current-post-parent menu-item-1916\"><a href=\"https://stephenkingaudiobooks.com/category/stephen-king/\">Stephen
+        King Audiobooks</a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page
+        menu-item-2143\"><a href=\"https://stephenkingaudiobooks.com/privacy-policy/\">PRIVACY
+        POLICY</a></li>\n</ul>\t\t\t</div><!-- .wrapper .wrapper-header-menu .clearfix
+        -->\n\t\t</nav><!-- #menu-main -->\n\t\t\n\t</header><!-- .site-header -->\n\t<div
+        id=\"site-main\">\n\n\t\t<div class=\"wrapper wrapper-main clearfix\">\n\t\t\n\t\t\t<main
+        id=\"site-content\" class=\"site-main\" role=\"main\">\n\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t<div
+        class=\"site-content-wrapper clearfix\">\n\n\t\t\t\t\t\n<article id=\"post-7\"
+        class=\"post-7 post type-post status-publish format-standard has-post-thumbnail
+        hentry category-stephen-king tag-3 tag-sissy-spacek\">\n\n\t<header class=\"ilovewp-page-intro
+        ilovewp-page-inner\">\n\t\t<h1 class=\"title-page\">Stephen King &#8211; Carrie
+        Audiobook</h1>\n\t\t<p class=\"post-meta\">By <a href=\"https://stephenkingaudiobooks.com/author/greenas/\"
+        title=\"Posts by Audiobooks\" rel=\"author\">Audiobooks</a> \n\t\tin <span
+        class=\"post-meta-category\"><a href=\"https://stephenkingaudiobooks.com/category/stephen-king/\"
+        rel=\"category tag\">Stephen King</a></span> <span class=\"posted-on\"><span
+        class=\"genericon genericon-time\"></span> <time class=\"entry-date published\"
+        datetime=\"\"></time></span></p>\n\t</header><!-- .ilovewp-page-intro -->\n\n\t<div
+        class=\"post-single clearfix\">\n\n\t\t<div class='code-block code-block-1'
+        style='margin: 8px auto; text-align: center; display: block; clear: both;'>\n\n<div
+        style=\"text-align:center;margin:16px 0;\">\n  <a href=\"https://tinyurl.com/yzestm2z\"
+        target=\"_blank\" rel=\"nofollow noreferrer noopener\" style=\"color:#1a1a1a;text-decoration:underline;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe
+        UI',Roboto,sans-serif;font-size:15px;\">\n    Download and Keep Forever\n
+        \ </a>\n</div></div>\n<p style=\"text-align: center;\"><em><strong>1974\_Stephen
+        King &#8211; Carrie Audiobook Read by Sissy Spacek</strong></em></p>\n<figure
+        style=\"width: 224px\" class=\"wp-caption aligncenter\"><img fetchpriority=\"high\"
+        decoding=\"async\" class=\"\" src=\"https://stephenkingaudiobooks.com/wp-content/uploads/2018/02/51V-X3Qh8GL._AA300_.jpg\"
+        alt=\"Stephen King - Carrie Audiobook Free\" width=\"224\" height=\"224\"
+        /><figcaption class=\"wp-caption-text\">Stephen King &#8211; Carrie Audiobook</figcaption></figure>\n<p>&nbsp;</p>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-1\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/01.mp3?_=1\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/01.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/01.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-2\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/02.mp3?_=2\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/02.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/02.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-3\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/03.mp3?_=3\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/03.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/03.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-4\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/04.mp3?_=4\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/04.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/04.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-5\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/05.mp3?_=5\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/05.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/05.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-6\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/06.mp3?_=6\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/06.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/06.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-7\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/07.mp3?_=7\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/07.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/07.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-7-8\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/08.mp3?_=8\"
+        /><a href=\"https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/08.mp3\">https://ipaudio3.club/wp-content/uploads/STEPHEN/Carrie/08.mp3</a></audio>\n<p>&nbsp;</p>\n<span
+        class=\"collapseomatic \" id=\"id69fcb4a195407\"  tabindex=\"0\" title=\"text\"
+        \   >text</span><div id=\"target-id69fcb4a195407\" class=\"collapseomatic_content
+        \">\n<p>Stephen King&#8217;s novel Carrie, his first published book, appearing
+        in 1975, propelled him into the general consciousness. It tells the story
+        of an abused woman who discovers her latent power of telekinesis and utilizes
+        it to punish and destroy a town.</p>\n<p>The novel begins with Carrie, a 16-year-old
+        dwelling in Chamberlain, Maine, undergoing her first period in the shower
+        of the college&#8217;s locker room. Her mom, a fanatical Christian that abuses
+        Carrie, has never told her about childbirth because she considers it to be
+        a indication of sin. Carrie thinks she&#8217;s bleeding to death, as the girls
+        in the shower pelt her with tampons and sanitary napkins.\_Stephen King &#8211;
+        Carrie Audiobook.</p>\n<p>The gym instructor, Miss Desjardin, finds her and
+        can be frustrated in the beginning with Carrie&#8217;s refusal to take care
+        of the situation. She immediately realizes that Carrie has no clue what&#8217;s
+        going on, and Miss Desjardin reigns from the women because a light bulb shatters
+        over her mind. Once she will help Carrie clean up and attempts to explain
+        to her what&#8217;s happening.</p>\n<p>When Carrie gets home, her mother finds
+        out what happened, and locks Carrie from the prayer closet. She believes Carrie&#8217;s
+        period is the result of some unknown sin and is her fault. At college, Miss
+        Desjardin attempts to receive all the bullies suspended and revokes their
+        best to go to prom. Mr. Hargensen, the school&#8217;s attorney and the father
+        of the lead writer, Chris, overrules her. Henry Gayle acquiesces and gives
+        the women a boot camp style detention with Miss Desjardin so that they can
+        make the right to go to prom.\_Stephen King &#8211; Carrie Audiobook Free.</p>\n<p>When
+        Chris won&#8217;t attend the detention, she&#8217;s suspended and prohibited
+        from prom. This time, her dad can&#8217;t come to her help. Carrie gradually
+        uncovers her abilities, discovering that she&#8217;s had them since birth,
+        and following the beginning of her period, they have reappeared.</p>\n<p>Another
+        popular woman, Sue Snell, feels bad about teasing Carrie and decides to make
+        it up for her. She awakens her boyfriend, Tommy, to ask Carrie to the prom.
+        Carrie is suspicious however comes and says yes. She makes a red velvet dress,
+        but her mother is horrified that she&#8217;d do something so sinful as going
+        to a dance. She believes sex is sinful even after marriage, and she shows
+        that she&#8217;s understood about Carrie&#8217;s powers all along.</p>\n<p>At
+        first, the prom is good for Carrie, but Chris and Billy rig the prom election
+        that Carrie and Tommy are chosen King and Queen. When they arrive at the front
+        to accept their crowns, two buckets of pig&#8217;s blood fall on their heads.
+        Carrie by\_Stephen King Audiobook.</p>\n<p>Carrie runs from the building as
+        everybody laughs at her. When she gets outside, she remembers her abilities.
+        Initially, she only plans to lock the doors and turn on the sprinklers, but
+        they respond with the electric speakers and electrocute two individuals. She
+        subsequently causes a massive fire which kills almost everyone inside.</p>\n<p>As
+        she walks home, she causes massive fires by breaking power lines and causing
+        gas channels to explode. She has home, and her mother attempts to kill her
+        to stop what she thinks is the devil&#8217;s work. She reveals that Carrie&#8217;s
+        conception was the result of marital rape; Carrie kills her mother by stopping
+        her heart when her mother stabs her with a kitchen knife.</p>\n<p>She goes
+        to ruin the roadhouse in which she had been conceived, but she sees Chris
+        and Billy. They attempt to run, but she wrecks the car and causes a passion
+        which kills them. The whole time, she provides off &#8220;broadcast telepathy&#8221;
+        letting all the citizens understand what&#8217;s causing the devastation.
+        Sue has been after the broadcast and locates her in a parking lot perishing.\_Stephen
+        King &#8211; Carrie Audio Book Download Free.</p>\n<p>Miss Desjardin survives
+        and resigns stating she won&#8217;t ever teach again. Henry Grayle also resigns
+        in remorse. The living students attend a grim ceremony, along with the city
+        becomes a ghost town popular with tourists who are fascinated by her abilities.</p>\n<p>The
+        college begins to take better precautions against offenders, and the government
+        becomes more interested in telekinesis. In the conclusion of the novel, there&#8217;s
+        a letter from a girl in Georgia expressing her love and fascination with her
+        new infant&#8217;s telekinetic abilities, and we understand that Carrie may
+        have been reborn into the family she deserves.</p>\n<p>King has predicted
+        Carrie a job of feminism. His intention in writing this novel was to summarize
+        the ways that women come into a power that are frightening but persuasive.
+        Carrie is symbolic of those experiences girls go through with masculine energy,
+        being taken advantage of and treated as objects of entertainment.\_Stephen
+        King &#8211; Carrie Audiobook Free.</p>\n<p>She is a local girl, but she&#8217;s
+        also a woman feeling her power for the very first time. She uses her talent
+        to set right what she believes is a destructive and hurtful society. In the
+        end, she&#8217;s both a hero and a monster depending on who is speaking, and
+        her actions bring about good change to the school and the town.</p>\n<p>Stephen
+        King&#8217;s novel Carrie, his first published book, appearing in 1975, propelled
+        him into the general consciousness. It tells the story of an abused girl who
+        finds her latent power of telekinesis and utilizes it to punish and destroy
+        a town.</p>\n<p>The novel begins with Carrie, a 16-year-old living in Chamberlain,
+        Maine, experiencing her first period in the shower of the school&#8217;s locker
+        room. Her mother, a fanatical Christian who abuses Carrie, has never told
+        her about childbirth because she believes it to be a indication of sin. Carrie
+        thinks she&#8217;s bleeding to death, as the girls in the shower pelt her
+        with tampons and sanitary napkins.\_Stephen King &#8211; Carrie Audiobook.</p>\n<p>The
+        gym teacher, Miss Desjardin, finds her and can be frustrated at first with
+        Carrie&#8217;s refusal to take care of the situation. She quickly realizes
+        that Carrie has no idea what is going on, and Miss Desjardin reigns from the
+        women because a light bulb shatters over her mind. Once alone, she helps Carrie
+        clean up and tries to describe to her what is happening.</p>\n<p>When Carrie
+        gets home, her mom finds out what happened, and locks Carrie from the prayer
+        closet. She considers that Carrie&#8217;s period is the result of some unknown
+        sin and is her error. At school, Miss Desjardin attempts to receive all the
+        bullies suspended and revokes their right to go to prom. Mr. Hargensen, the
+        school&#8217;s attorney and the father of the guide writer, Chris, overrules
+        her. Henry Gayle acquiesces and gives the women a boot camp design detention
+        with Miss Desjardin so they can earn the right to go to prom.\_Stephen King
+        &#8211; Carrie Audiobook Online.</p>\n<p>When Chris won&#8217;t attend the
+        detention, she&#8217;s suspended and prohibited from prom. This time, her
+        father cannot come to her aid. Carrie gradually finds her abilities, discovering
+        that she&#8217;s had them since birth, and following the onset of her period,
+        they have reappeared.</p>\n<p>Another popular woman, Sue Snell, feels awful
+        about reliving Carrie and decides to make it up for her. She convinces her
+        boyfriend, Tommy, to ask Carrie to the prom. Carrie is suspicious however
+        comes around and says yes. She creates a red velvet dress, but her mom is
+        horrified that she would do something sinful as visiting a dance. She believes
+        sex is sinful even after marriage, and she reveals that she has understood
+        about Carrie&#8217;s powers all together. Carrie Audio Book by Stephen King.</p>\n<p>At
+        first, the prom is good for Carrie, but Chris and Billy rig the prom election
+        so that Carrie and Tommy are elected King and Queen. When they come to the
+        front to take their crowns, two strands of pig&#8217;s blood fall on their
+        heads. Among those buckets hits Tommy on the head, killing him.</p>\n<p>Carrie
+        runs out of the building since everyone laughs. When she gets outside, she
+        remembers her abilities. At first, she only plans to lock the doors and turn
+        on the sprinklers, however they react with the electrical speakers and electrocute
+        just two individuals. She then causes a huge fire that kills nearly everyone
+        indoors.</p>\n<p>As she walks home, she causes enormous fires by dividing
+        power lines and causing gas channels to explode. She gets home, along with
+        her mother tries to kill her to stop what she thinks will be the devil&#8217;s
+        work. She reveals that Carrie&#8217;s conception has been the result of rape;
+        Carrie kills her mom by stopping her heart when her mum stabs her with a kitchen
+        knife.\_Stephen King &#8211; Carrie Audiobook (listen online).</p>\n<p>She
+        goes to ruin the roadhouse in which she was conceived, but she sees Chris
+        and Billy. They try to run her over, but she wrecks the car and causes a passion
+        that kills them. The entire time, she gives off &#8220;broadcast telepathy&#8221;
+        letting all the citizens know what&#8217;s causing the devastation. Sue has
+        been following the broadcast and finds her in a parking lot dying.</p>\n<p>Miss
+        Desjardin survives and resigns saying she will never teach again. Henry Grayle
+        additionally resigns in remorse. The surviving students attend a grim ceremony,
+        and the city becomes a ghost town popular with tourists that are fascinated
+        by their skills.\_Stephen King &#8211; Carrie Audiobook Free Download.</p>\n<p>Some
+        see her as a folk hero, along with others as a monster. The school starts
+        to take better precautions against bullies, and the government becomes more
+        interested in telekinesis. At the conclusion of this novel, there is a letter
+        from a woman in Georgia expressing her love and fascination with her brand
+        new baby&#8217;s telekinetic skills, and we know that Carrie may have been
+        reborn into the family she warrants.</p>\n<p>King has called Carrie a work
+        of feminism. His purpose in writing the publication was to outline the ways
+        that girls come into a power that are terrifying but persuasive. Carrie Audiobook
+        Streaming Online.\_Carrie is emblematic of the adventures women undergo with
+        manly power, being taken advantage of and treated as objects of entertainment.</p>\n<p>She&#8217;s
+        a local girl, but she is also a woman feeling her power for the very first
+        time. She uses her talent to set right what she believes is a destructive
+        and hurtful society. In the end, she is both a hero and a monster depending
+        on who is speaking, and her activities bring about good change to the school
+        and the city.\_<span style=\"color: #ff0000;\"><em><strong>Stephen King &#8211;
+        Carrie Audiobook</strong></em></span>.</p>\n</div>\n<!-- CONTENT END 1 -->\n\n\t\t\n\t\t<p
+        class=\"tags-links\">Tags: <a href=\"https://stephenkingaudiobooks.com/tag/1974/\"
+        rel=\"tag\">1974</a>, <a href=\"https://stephenkingaudiobooks.com/tag/sissy-spacek/\"
+        rel=\"tag\">Sissy Spacek</a></p>\n\t</div><!-- .post-single -->\n\n</article><!--
+        #post-7 -->\t\t\t\t\t\n\t\t\t\t\t\n\t<nav class=\"navigation post-navigation\"
+        aria-label=\"Posts\">\n\t\t<h2 class=\"screen-reader-text\">Post navigation</h2>\n\t\t<div
+        class=\"nav-links\"><div class=\"nav-next\"><a href=\"https://stephenkingaudiobooks.com/salems-lot/\"
+        rel=\"next\">Stephen King &#8211; Salem&#8217;s Lot Audiobook<span class=\"nav-link-label\"><span
+        class=\"genericon genericon-next\"></span></span></a></div></div>\n\t</nav>\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t</div><!--
+        .site-content-wrapper .clearfix -->\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t</main><!--
+        #site-content -->\n\t\t\t\n\t\t\t\n<aside id=\"site-aside\" role=\"complementary\">\n\n\t<div
+        class=\"site-aside-wrapper clearfix\">\n\t\n\t\t<div id=\"search-2\" class=\"widget
+        widget_search\"><form role=\"search\" method=\"get\" class=\"search-form\"
+        action=\"https://stephenkingaudiobooks.com/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span
+        class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\"
+        class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"
+        data-swplive=\"true\" data-swpengine=\"default\" data-swpconfig=\"default\"
+        />\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\"
+        value=\"Search\" />\n\t\t\t</form></div><div id=\"arpw-widget-2\" class=\"widget
+        arpw-widget-random\"><p class=\"widget-title\">Random Posts</p><div class=\"arpw-random-post
+        \"><ul class=\"arpw-ul\"><li class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\"
+        href=\"https://stephenkingaudiobooks.com/stephen-king-revival-audio/\" rel=\"bookmark\">Stephen
+        King &#8211; Revival Audiobook</a></li><li class=\"arpw-li arpw-clearfix\"><a
+        class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-wind-through-the-keyhole-audio-book/\"
+        rel=\"bookmark\">Stephen King &#8211; The Wind Through the Keyhole Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-later-audio/\"
+        rel=\"bookmark\">Stephen King &#8211; Later Audiobook</a></li><li class=\"arpw-li
+        arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-the-stand-complete-and-uncut-audiobook-the-stand-2/\"
+        rel=\"bookmark\">Stephen King &#8211; The Stand Complete and Uncut Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/rose-madder-audio/\"
+        rel=\"bookmark\">Stephen King &#8211; Rose Madder Audiobook</a></li><li class=\"arpw-li
+        arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/just-after-sunset-book/\"
+        rel=\"bookmark\">Stephen King &#8211; Just After Sunset Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-lts-theory-of-pets-audio-book/\"
+        rel=\"bookmark\">Stephen King &#8211; LT&#8217;s Theory of Pets Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/the-dark-half/\"
+        rel=\"bookmark\">Stephen King &#8211; The Dark Half Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/under-dome/\"
+        rel=\"bookmark\">Stephen King &#8211; Under the Dome Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-full-dark-no-stars-audiobook/\"
+        rel=\"bookmark\">Stephen King &#8211; Full Dark, No Stars Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/stephen-king-the-little-sisters-of-eluria-audiobook/\"
+        rel=\"bookmark\">Stephen King &#8211; The Little Sisters of Eluria Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a class=\"arpw-title\" href=\"https://stephenkingaudiobooks.com/dolores-claiborne/\"
+        rel=\"bookmark\">Stephen King &#8211; Dolores Claiborne Audiobook</a></li></ul></div><!--
+        Generated by https://wordpress.org/plugins/advanced-random-posts-widget/ --></div>\t\t\n\t</div><!--
+        .site-aside-wrapper .clearfix -->\n\n</aside><!-- #site-aside -->\t\t\n\t\t</div><!--
+        .wrapper .wrapper-main -->\n\n\t</div><!-- #site-main -->\n\n\n\t<footer class=\"site-footer\"
+        role=\"contentinfo\">\n\t\n\t\t<div class=\"wrapper wrapper-footer\">\n\n\t\t\t\n\t\t\t\n\t\t\t<div
+        class=\"wrapper-copy\">\n\t\t\t\t<p class=\"copy\">Copyright &copy; 2026 Stephen
+        King Audiobooks. All Rights Reserved. </p>\n\t\t\t</div><!-- .wrapper-copy
+        -->\n\n\t\t</div><!-- .wrapper .wrapper-footer -->\n\t\n\t</footer><!-- .site-footer
+        -->\n\n</div><!-- #container -->\n\n<script type=\"speculationrules\">\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/videoblog/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch,
+        .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n</script>\n\t\t<style
+        type=\"text/css\">\n\t\t\t\t\t\t\t.pgntn-page-pagination {\n\t\t\t\t\ttext-align:
+        center !important;\n\t\t\t\t}\n\t\t\t\t.pgntn-page-pagination-block {\n\t\t\t\t\twidth:
+        100% !important;\n\t\t\t\t\tpadding: 0 0 0 0;\n\t\t\t\t\t\t\t\t\t\t\t\tmargin:
+        0 auto;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t.pgntn-page-pagination a {\n\t\t\t\t\tcolor:
+        #1e73be !important;\n\t\t\t\t\tbackground-color: #ffffff !important;\n\t\t\t\t\ttext-decoration:
+        none !important;\n\t\t\t\t\tborder: 1px solid #1e73be !important;\n\t\t\t\t\t\t\t\t\t\t\t-webkit-border-radius:
+        1px;\n\t\t\t\t\t\t-moz-border-radius: 1px;\n\t\t\t\t\t\tborder-radius: 1px;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t.pgntn-page-pagination
+        a:hover {\n\t\t\t\t\tcolor: #000 !important;\n\t\t\t\t}\n\t\t\t\t.pgntn-page-pagination-intro,\n\t\t\t\t.pgntn-page-pagination
+        .current {\n\t\t\t\t\tbackground-color: #d1d1d1 !important;\n\t\t\t\t\tcolor:
+        #000000 !important;\n\t\t\t\t\tborder: 1px solid #1e73be !important;\n\t\t\t\t\t\t\t\t\t\t\t-webkit-border-radius:
+        1px;\n\t\t\t\t\t\t-moz-border-radius: 1px;\n\t\t\t\t\t\tborder-radius: 1px;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t.archive
+        #nav-above,\n\t\t\t\t\t.archive #nav-below,\n\t\t\t\t\t.search #nav-above,\n\t\t\t\t\t.search
+        #nav-below,\n\t\t\t\t\t.blog #nav-below,\n\t\t\t\t\t.blog #nav-above,\n\t\t\t\t\t.navigation.paging-navigation,\n\t\t\t\t\t.navigation.pagination,\n\t\t\t\t\t.pagination.paging-pagination,\n\t\t\t\t\t.pagination.pagination,\n\t\t\t\t\t.pagination.loop-pagination,\n\t\t\t\t\t.bicubic-nav-link,\n\t\t\t\t\t#page-nav,\n\t\t\t\t\t.camp-paging,\n\t\t\t\t\t#reposter_nav-pages,\n\t\t\t\t\t.unity-post-pagination,\n\t\t\t\t\t.wordpost_content
+        .nav_post_link,.page-link,\n\t\t\t\t\t.post-nav-links,\n\t\t\t\t\t.page-links,#comments
+        .navigation,\n\t\t\t\t\t#comment-nav-above,\n\t\t\t\t\t#comment-nav-below,\n\t\t\t\t\t#nav-single,\n\t\t\t\t\t.navigation.comment-navigation,\n\t\t\t\t\tcomment-pagination
+        {\n\t\t\t\t\t\tdisplay: none !important;\n\t\t\t\t\t}\n\t\t\t\t\t.single-gallery
+        .pagination.gllrpr_pagination {\n\t\t\t\t\t\tdisplay: block !important;\n\t\t\t\t\t}\t\t</style>\n\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\t\t\t\t\tjQuery(\"#post-7 .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-7
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-7 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1963
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1963
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1963 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1931
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1931
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1931 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1903
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1903
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1903 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-441
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-441
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-441 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-520
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-520
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-520 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-780
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-780
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-780 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1945
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1945
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1945 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-413
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-413
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-413 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-816
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-816
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-816 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1825
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1825
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1825 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-1929
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1929
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-1929 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t\t\t\tjQuery(\"#post-464
+        .entry-meta .date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-464
+        .entry-date\").css(\"display\",\"none\");\n\t\t\t\t\tjQuery(\"#post-464 .posted-on\").css(\"display\",\"none\");\n\t\t\t\t</script>\n\t
+        \       <style>\n            .searchwp-live-search-results {\n                opacity:
+        0;\n                transition: opacity .25s ease-in-out;\n                -moz-transition:
+        opacity .25s ease-in-out;\n                -webkit-transition: opacity .25s
+        ease-in-out;\n                height: 0;\n                overflow: hidden;\n
+        \               z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay.
+        */\n                position: absolute;\n                display: none;\n
+        \           }\n\n            .searchwp-live-search-results-showing {\n                display:
+        block;\n                opacity: 1;\n                height: auto;\n                overflow:
+        auto;\n            }\n\n            .searchwp-live-search-no-results {\n                padding:
+        3em 2em 0;\n                text-align: center;\n            }\n\n            .searchwp-live-search-no-min-chars:after
+        {\n                content: \"Continue typing\";\n                display:
+        block;\n                text-align: center;\n                padding: 2em
+        2em 0;\n            }\n        </style>\n                <script>\n            var
+        _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;\n            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE
+        = 'default';\n            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';\n
+        \       </script>\n        <script type=\"text/javascript\" id=\"collapseomatic-js-js-before\">\n/*
+        <![CDATA[ */\nconst com_options = {\"colomatduration\":\"fast\",\"colomatslideEffect\":\"slideFade\",\"colomatpauseInit\":\"\",\"colomattouchstart\":\"\"}\n//#
+        sourceURL=collapseomatic-js-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://stephenkingaudiobooks.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.7.2\"
+        id=\"collapseomatic-js-js\"></script>\n<script type=\"text/javascript\" id=\"videoblog-scripts-js-extra\">\n/*
+        <![CDATA[ */\nvar videoblogStrings = {\"slicknav_menu_home\":\"HOME\"};\n//#
+        sourceURL=videoblog-scripts-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://stephenkingaudiobooks.com/wp-content/themes/videoblog/js/videoblog.js?ver=20170211\"
+        id=\"videoblog-scripts-js\"></script>\n<script type=\"text/javascript\" id=\"swp-live-search-client-js-extra\">\n/*
+        <![CDATA[ */\nvar searchwp_live_search_params = [];\nsearchwp_live_search_params
+        = {\"ajaxurl\":\"https:\\/\\/stephenkingaudiobooks.com\\/wp-admin\\/admin-ajax.php\",\"origin_id\":7,\"config\":{\"default\":{\"engine\":\"default\",\"input\":{\"delay\":300,\"min_chars\":3},\"results\":{\"position\":\"bottom\",\"width\":\"auto\",\"offset\":{\"x\":0,\"y\":5}},\"spinner\":{\"lines\":12,\"length\":8,\"width\":3,\"radius\":8,\"scale\":1,\"corners\":1,\"color\":\"#424242\",\"fadeColor\":\"transparent\",\"speed\":1,\"rotate\":0,\"animation\":\"searchwp-spinner-line-fade-quick\",\"direction\":1,\"zIndex\":2000000000,\"className\":\"spinner\",\"top\":\"50%\",\"left\":\"50%\",\"shadow\":\"0
+        0 1px transparent\",\"position\":\"absolute\"}}},\"msg_no_config_found\":\"No
+        valid SearchWP Live Search configuration found!\",\"aria_instructions\":\"When
+        autocomplete results are available use up and down arrows to review and enter
+        to go to the desired page. Touch device users, explore by touch or with swipe
+        gestures.\"};;\n//# sourceURL=swp-live-search-client-js-extra\n/* ]]> */\n</script>\n<script
+        type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min.js?ver=1.8.7\"
+        id=\"swp-live-search-client-js\"></script>\n<script type=\"text/javascript\"
+        id=\"mediaelement-core-js-before\">\n/* <![CDATA[ */\nvar mejsL10n = {\"language\":\"en\",\"strings\":{\"mejs.download-file\":\"Download
+        File\",\"mejs.install-flash\":\"You are using a browser that does not have
+        Flash player enabled or installed. Please turn on your Flash player plugin
+        or download the latest version from https://get.adobe.com/flashplayer/\",\"mejs.fullscreen\":\"Fullscreen\",\"mejs.play\":\"Play\",\"mejs.pause\":\"Pause\",\"mejs.time-slider\":\"Time
+        Slider\",\"mejs.time-help-text\":\"Use Left/Right Arrow keys to advance one
+        second, Up/Down arrows to advance ten seconds.\",\"mejs.live-broadcast\":\"Live
+        Broadcast\",\"mejs.volume-help-text\":\"Use Up/Down Arrow keys to increase
+        or decrease volume.\",\"mejs.unmute\":\"Unmute\",\"mejs.mute\":\"Mute\",\"mejs.volume-slider\":\"Volume
+        Slider\",\"mejs.video-player\":\"Video Player\",\"mejs.audio-player\":\"Audio
+        Player\",\"mejs.captions-subtitles\":\"Captions/Subtitles\",\"mejs.captions-chapters\":\"Chapters\",\"mejs.none\":\"None\",\"mejs.afrikaans\":\"Afrikaans\",\"mejs.albanian\":\"Albanian\",\"mejs.arabic\":\"Arabic\",\"mejs.belarusian\":\"Belarusian\",\"mejs.bulgarian\":\"Bulgarian\",\"mejs.catalan\":\"Catalan\",\"mejs.chinese\":\"Chinese\",\"mejs.chinese-simplified\":\"Chinese
+        (Simplified)\",\"mejs.chinese-traditional\":\"Chinese (Traditional)\",\"mejs.croatian\":\"Croatian\",\"mejs.czech\":\"Czech\",\"mejs.danish\":\"Danish\",\"mejs.dutch\":\"Dutch\",\"mejs.english\":\"English\",\"mejs.estonian\":\"Estonian\",\"mejs.filipino\":\"Filipino\",\"mejs.finnish\":\"Finnish\",\"mejs.french\":\"French\",\"mejs.galician\":\"Galician\",\"mejs.german\":\"German\",\"mejs.greek\":\"Greek\",\"mejs.haitian-creole\":\"Haitian
+        Creole\",\"mejs.hebrew\":\"Hebrew\",\"mejs.hindi\":\"Hindi\",\"mejs.hungarian\":\"Hungarian\",\"mejs.icelandic\":\"Icelandic\",\"mejs.indonesian\":\"Indonesian\",\"mejs.irish\":\"Irish\",\"mejs.italian\":\"Italian\",\"mejs.japanese\":\"Japanese\",\"mejs.korean\":\"Korean\",\"mejs.latvian\":\"Latvian\",\"mejs.lithuanian\":\"Lithuanian\",\"mejs.macedonian\":\"Macedonian\",\"mejs.malay\":\"Malay\",\"mejs.maltese\":\"Maltese\",\"mejs.norwegian\":\"Norwegian\",\"mejs.persian\":\"Persian\",\"mejs.polish\":\"Polish\",\"mejs.portuguese\":\"Portuguese\",\"mejs.romanian\":\"Romanian\",\"mejs.russian\":\"Russian\",\"mejs.serbian\":\"Serbian\",\"mejs.slovak\":\"Slovak\",\"mejs.slovenian\":\"Slovenian\",\"mejs.spanish\":\"Spanish\",\"mejs.swahili\":\"Swahili\",\"mejs.swedish\":\"Swedish\",\"mejs.tagalog\":\"Tagalog\",\"mejs.thai\":\"Thai\",\"mejs.turkish\":\"Turkish\",\"mejs.ukrainian\":\"Ukrainian\",\"mejs.vietnamese\":\"Vietnamese\",\"mejs.welsh\":\"Welsh\",\"mejs.yiddish\":\"Yiddish\"}};\n//#
+        sourceURL=mediaelement-core-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://stephenkingaudiobooks.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17\"
+        id=\"mediaelement-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://stephenkingaudiobooks.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.9.4\"
+        id=\"mediaelement-migrate-js\"></script>\n<script type=\"text/javascript\"
+        id=\"mediaelement-js-extra\">\n/* <![CDATA[ */\nvar _wpmejsSettings = {\"pluginPath\":\"/wp-includes/js/mediaelement/\",\"classPrefix\":\"mejs-\",\"stretching\":\"responsive\",\"audioShortcodeLibrary\":\"mediaelement\",\"videoShortcodeLibrary\":\"mediaelement\"};\n//#
+        sourceURL=mediaelement-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://stephenkingaudiobooks.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.9.4\"
+        id=\"wp-mediaelement-js\"></script>\n<script id=\"wp-emoji-settings\" type=\"application/json\">\n{\"baseUrl\":\"https://s.w.org/images/core/emoji/17.0.2/72x72/\",\"ext\":\".png\",\"svgUrl\":\"https://s.w.org/images/core/emoji/17.0.2/svg/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https://stephenkingaudiobooks.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4\"}}\n</script>\n<script
+        type=\"module\">\n/* <![CDATA[ */\n/*! This file is auto-generated */\nconst
+        a=JSON.parse(document.getElementById(\"wp-emoji-settings\").textContent),o=(window._wpemojiSettings=a,\"wpEmojiSettingsSupports\"),s=[\"flag\",\"emoji\"];function
+        i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function
+        c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new
+        Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const
+        a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return
+        t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var
+        n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function
+        u(e,t,n,a){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\udde8\\ud83c\\uddf6\",\"\\ud83c\\udde8\\u200b\\ud83c\\uddf6\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!a(e,\"\\ud83e\\u1fac8\")}return!1}function
+        f(e,t,n,a){let r;const o=(r=\"undefined\"!=typeof WorkerGlobalScope&&self
+        instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement(\"canvas\")).getContext(\"2d\",{willReadFrequently:!0}),s=(o.textBaseline=\"top\",o.font=\"600
+        32px Arial\",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var
+        t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new
+        Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof
+        e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&\"object\"==typeof
+        e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(\"undefined\"!=typeof
+        Worker&&\"undefined\"!=typeof OffscreenCanvas&&\"undefined\"!=typeof URL&&URL.createObjectURL&&\"undefined\"!=typeof
+        Blob)try{var e=\"postMessage(\"+f.toString()+\"(\"+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(\",\")+\"));\",a=new
+        Blob([e],{type:\"text/javascript\"});const r=new Worker(URL.createObjectURL(a),{name:\"wpTestEmojiSupports\"});return
+        void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const
+        n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],\"flag\"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var
+        t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});\n//#
+        sourceURL=https://stephenkingaudiobooks.com/wp-includes/js/wp-emoji-loader.min.js\n/*
+        ]]> */\n</script>\n\n</body>\n</html>\r\n<!--\r\nPerformance optimized by
+        W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin\r\n\r\nObject
+        Caching 28/86 objects using Disk\r\nPage Caching using Disk: Enhanced \r\n\r\nServed
+        from: stephenkingaudiobooks.com @ 2026-05-07 15:49:53 by W3 Total Cache\r\n-->"
+    headers:
+      CF-RAY:
+      - 9f81607e89b33a0a-MAD
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:49:53 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OH2SJ61UdPsOngS%2FT%2FjdxdFw8EHLOH8BOgNy2awc66JAGLuIOtT9Q0UEhGlL8UOr5SJKKdYTYrtAPRPN2kLkoQK8CphCi9tCHSCokLjcSdG%2Bc5sOkDAtQXCLmGg00%2BUqxScEQSnOm7mKl%2FP%2BCHCuSPU93v2BwK%2FT"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '65423'
+      expires:
+      - Thu, 07 May 2026 16:49:53 GMT
+      last-modified:
+      - Thu, 07 May 2026 15:49:53 GMT
+      link:
+      - <https://stephenkingaudiobooks.com/wp-json/>; rel="https://api.w.org/", <https://stephenkingaudiobooks.com/wp-json/wp/v2/posts/7>;
+        rel="alternate"; title="JSON"; type="application/json", <https://stephenkingaudiobooks.com/?p=7>;
+        rel=shortlink
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=0; includeSubDomains
+      vary:
+      - Accept-Encoding,X-Forwarded-Proto
+      x-powered-by:
+      - PHP/8.4.21
+    status:
+      code: 200
+      message: OK
+version: 1
