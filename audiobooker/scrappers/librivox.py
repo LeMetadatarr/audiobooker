@@ -39,7 +39,9 @@ def _api_get(params: dict, session=None) -> dict:
     sess = session if session is not None else AudioBookSource.session
     try:
         resp = sess.get(
-            _API, params={"extended": 1, "format": "json", "limit": 50, **params}
+            _API,
+            params={"extended": 1, "format": "json", "limit": 50, **params},
+            timeout=30,
         )
         if resp.status_code >= 400:
             return {}
