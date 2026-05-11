@@ -80,11 +80,11 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
     if book.source:
         extra["source"] = book.source
     if book.score:
-        extra["score"] = book.score
+        extra["score"] = str(book.score)
     if book.tags:
-        extra["tags"] = book.tags
+        extra["tags"] = ", ".join(book.tags)
     if book.streams:
-        extra["stream_urls"] = book.streams
+        extra["stream_urls"] = ", ".join(book.streams)
     if book.description:
         extra["description"] = book.description
 

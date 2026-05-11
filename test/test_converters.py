@@ -112,7 +112,7 @@ class TestAudiobookToRelease(unittest.TestCase):
     def test_extra_passes_through(self):
         rel = audiobook_to_release(_book())
         self.assertEqual(rel.extra["source"], "librivox")
-        self.assertEqual(rel.extra["tags"], ["Horror", "Classic"])
+        self.assertEqual(rel.extra["tags"], "Horror, Classic")
         self.assertIn("stream_urls", rel.extra)
         self.assertEqual(rel.extra["description"], "Test description")
 
