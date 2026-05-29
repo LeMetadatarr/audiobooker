@@ -23,10 +23,13 @@ from audiobooker.utils import random_user_agent
 def default_session():
     """Return the default HTTP session for audiobooker scrapers.
 
-    Returns a ``curl_cffi.requests.Session`` if
-    ``AUDIOBOOKER_TRANSPORT=curl_cffi`` is set in the environment AND
-    ``curl_cffi`` is importable. Otherwise returns a standard
-    ``requests.Session`` with a randomized User-Agent header.
+    When ``AUDIOBOOKER_TRANSPORT=curl_cffi`` is set in the environment AND
+    ``curl_cffi`` is importable, returns a ``curl_cffi.requests.Session``.
+    Otherwise prefers an ``unblock_requests.CloudflareSession`` when that
+    optional dependency (``[stealth]`` extra) is importable, transparently
+    routing requests through anti-bot bypass with a Wayback Machine
+    fallback. If neither is available, returns a standard
+    ``requests.Session``. All sessions carry a randomized User-Agent header.
     """
     if os.environ.get("AUDIOBOOKER_TRANSPORT") == "curl_cffi":
         try:
@@ -39,6 +42,14 @@ def default_session():
             return session
         except ImportError:
             pass
+    try:
+        from unblock_requests import CloudflareSession
+        session = CloudflareSession(env_prefix="AUDIOBOOKER",
+                                    wayback_fallback=True)
+        session.headers.update({"User-Agent": random_user_agent()})
+        return session
+    except Exception:
+        pass
     session = requests.Session()
     session.headers.update({"User-Agent": random_user_agent()})
     return session
