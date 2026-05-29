@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a1](https://github.com/TigreGotico/audiobooker/tree/0.9.0a1) (2026-05-29)
+
+[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.8.0a1...0.9.0a1)
+
+**Merged pull requests:**
+
+- feat: route HTTP through unblock\_requests CloudflareSession via soft-import [\#19](https://github.com/TigreGotico/audiobooker/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.8.0a1](https://github.com/TigreGotico/audiobooker/tree/0.8.0a1) (2026-05-07)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.7.0...0.8.0a1)
