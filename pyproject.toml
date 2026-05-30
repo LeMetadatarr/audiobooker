@@ -21,6 +21,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+anon = ["anon_requests"]
 test = ["pytest", "vcrpy", "pytest-vcr"]
 youtube = ["tutubo"]
 stealth = ["curl-cffi", "unblock_requests"]
