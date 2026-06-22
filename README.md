@@ -182,6 +182,12 @@ Full documentation is in [`/docs/`](docs/README.md):
 Runnable examples are in [`/examples/`](examples/) — numbered 01 → 10 from
 quickstart to advanced index usage.
 
+## Error handling
+
+Network failures and malformed pages are swallowed per-item — a bad page never
+aborts an `iterate_all()` run. If a source site is down or has restructured its
+HTML, that scraper silently yields nothing.
+
 ## License
 
 MIT

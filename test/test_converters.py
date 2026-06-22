@@ -42,18 +42,18 @@ class TestAudiobookToRelease(unittest.TestCase):
         self.assertEqual(rel.audio_language, "en")
         self.assertEqual(rel.image, "http://example.com/cover.jpg")
         # Public-domain license assigned for librivox source
-        self.assertEqual(rel.license, "public_domain")
+        self.assertEqual(rel.license.identifier, "public_domain")
         # Author credit present
         roles = [c.role for c in rel.work.credits]
         self.assertIn("author", roles)
 
     def test_loyalbooks_public_domain(self):
         rel = audiobook_to_release(_book(source="LoyalBooks"))
-        self.assertEqual(rel.license, "public_domain")
+        self.assertEqual(rel.license.identifier, "public_domain")
 
     def test_non_public_domain_source(self):
         rel = audiobook_to_release(_book(source="StephenKingAudioBooks"))
-        self.assertEqual(rel.license, "")
+        self.assertIsNone(rel.license)
 
     def test_no_streams_no_uri(self):
         rel = audiobook_to_release(_book(streams=[]))
