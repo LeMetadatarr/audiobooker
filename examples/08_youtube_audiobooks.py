@@ -9,7 +9,7 @@ try:
     )
     from audiobooker.base import BookAuthor
 except ImportError:
-    print("tutubo not installed. Run: pip install audiobooker[youtube]")
+    print("youtube dependencies not installed. Run: pip install audiobooker[youtube]")
     raise SystemExit(1)
 
 # Pre-configured channels

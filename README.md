@@ -91,7 +91,7 @@ from audiobooker import search, audiobook_to_release
 
 for book in search("Lovecraft", max_per_source=3):
     release = audiobook_to_release(book)
-    lic = release.parsed_license
+    lic = release.license
     if lic and lic.is_open():
         print(release.work.title, lic.identifier)
 ```

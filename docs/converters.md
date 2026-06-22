@@ -1,6 +1,6 @@
 # mediavocab Converters
 
-`audiobook_to_release()` — `audiobooker/converters.py:46`
+`audiobook_to_release()` — see `audiobooker/converters.py`
 
 Converts an `AudioBook` into a `mediavocab.Release`. `mediavocab` is a required
 runtime dependency.
@@ -41,7 +41,7 @@ print(release.license, release.codec, release.bitrate)
 | `release.chapters` | `AudioBook.chapters` → `MvChapter(offset, end, title, image)` |
 | `release.external_ids` | same as `work.external_ids` |
 
-## Credits — `audiobooker/converters.py:55`
+## Credits
 
 Authors use `RelationRole.CREATOR`, `CreditSection.PRINCIPAL`.
 Narrators use `RelationRole.PERFORMER`, `CreditSection.PRINCIPAL`.
@@ -50,13 +50,13 @@ Narrators use `RelationRole.PERFORMER`, `CreditSection.PRINCIPAL`.
 `AudioBook.narrator` (singular) is set, `base.AudioBook.__post_init__`
 promotes it to `narrators`; the converter deduplicates by `(first, last)`.
 
-## License detection — `audiobooker/converters.py:96`
+## License detection
 
 Sources whose names contain `"librivox"` or `"loyalbooks"` (case-insensitive)
 get `license="public_domain"`. All other sources get an empty string — the
 converter never guesses.
 
-## Chapter conversion — `audiobooker/converters.py:31`
+## Chapter conversion
 
 ```python
 MvChapter(
@@ -70,7 +70,7 @@ MvChapter(
 ## Checking openness
 
 ```python
-lic = release.parsed_license   # None when license == ""
+lic = release.license   # None when no license is detected
 if lic and lic.is_open():
     print("free to redistribute")
 ```

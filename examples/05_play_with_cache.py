@@ -12,6 +12,9 @@ from audiobooker.cache import play, is_cached
 book = next(Librivox().search_by_title("The Yellow Wallpaper"), None)
 if book is None:
     print("Book not found.")
+elif not book.streams:
+    print(f"Title:   {book.title!r}")
+    print("No playable streams were found.")
 else:
     print(f"Title:   {book.title!r}")
     print(f"Cached:  {is_cached(book)}")

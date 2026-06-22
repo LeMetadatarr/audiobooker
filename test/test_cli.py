@@ -1,5 +1,6 @@
 """Tests for audiobooker.cli (Click command surface)."""
 import json
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -113,18 +114,20 @@ class TestIndexCmds(unittest.TestCase):
         self.assertIn("Total books: 0", result.output)
 
     def test_build(self):
-        src = MagicMock()
-        src.iterate_all.return_value = iter([_book("Built")])
-        src.__class__.__name__ = "FakeSrc"
+        class FakeSrc:
+            pass
+        src = FakeSrc()
+        src.iterate_all = MagicMock(return_value=iter([_book("Built")]))
         with patch("audiobooker.index._default_sources", return_value=[src]):
             result = CliRunner().invoke(cli, ["index", "--db", self.db, "build"])
         self.assertEqual(result.exit_code, 0)
         self.assertIn("books indexed", result.output)
 
     def test_update(self):
-        src = MagicMock()
-        src.iterate_all.return_value = iter([_book("Up")])
-        src.__class__.__name__ = "FakeSrc"
+        class FakeSrc:
+            pass
+        src = FakeSrc()
+        src.iterate_all = MagicMock(return_value=iter([_book("Up")]))
         with patch("audiobooker.index._default_sources", return_value=[src]), \
              patch("audiobooker.index.BookIndex._followed_as_sources", return_value=[]):
             result = CliRunner().invoke(cli, ["index", "--db", self.db, "update"])
@@ -239,6 +242,9 @@ class TestFindBook(unittest.TestCase):
 class TestCacheCmds(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
 
     def test_list_empty(self):
         result = CliRunner().invoke(cli, ["cache", "--cache-dir", self.tmp, "list"])

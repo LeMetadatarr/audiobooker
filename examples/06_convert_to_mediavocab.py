@@ -23,7 +23,7 @@ if book is None:
 else:
     release = audiobook_to_release(book)
     work = release.work
-    lic = release.parsed_license
+    lic = release.license
 
     print(f"Title:        {work.title}")
     print(f"Year:         {work.year}")

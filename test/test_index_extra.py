@@ -124,12 +124,8 @@ class TestFollowedAsSources(unittest.TestCase):
         try:
             with patch.dict(sys.modules,
                             {"audiobooker.scrappers.youtube": None}):
-                # Force the import to fail
-                import importlib
-                # Easier: directly mock the function
-                pass
-            # Empty list either way
-            self.assertEqual(idx._followed_as_sources(), [])
+                # youtube import fails → no followed sources
+                self.assertEqual(idx._followed_as_sources(), [])
         finally:
             idx.close()
             Path(path).unlink(missing_ok=True)

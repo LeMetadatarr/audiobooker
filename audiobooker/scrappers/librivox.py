@@ -51,19 +51,16 @@ def _api_get(params: dict, session=None) -> dict:
 
 
 def _section_streams(rss_url: str, session=None) -> list:
-    # NOTE: ``feedparser.parse`` uses ``urllib`` internally and does NOT
-    # accept a ``requests.Session``. Injected sessions therefore do not
-    # apply to RSS fetches — only the User-Agent header is forwarded.
+    # Fetch the RSS body through the injected session so the configured
+    # transport (proxy, cookies, custom TLS / curl_cffi) applies, then parse
+    # the bytes locally — ``feedparser.parse`` accepts a raw response body.
     sess = session if session is not None else AudioBookSource.session
     try:
-        ua = sess.headers.get("User-Agent")
+        resp = sess.get(rss_url, timeout=30)
+        resp.raise_for_status()
     except Exception:
-        ua = None
-    rss = feedparser.parse(
-        rss_url,
-        agent=ua,
-        request_headers={"Connection": "close"},
-    )
+        return []
+    rss = feedparser.parse(resp.content)
     return [
         e["media_content"][0]["url"]
         for e in rss.get("entries", [])
