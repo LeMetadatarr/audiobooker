@@ -6,7 +6,7 @@ Shows off the fields the LibriVox scraper now populates end-to-end:
   - content_genres
   - external_ids (librivox_id)
   - codec / bitrate / audio_language
-  - parsed_license (public_domain → is_open())
+  - license (public_domain → is_open())
 
 Run:
   python examples/mediavocab_release.py
@@ -31,7 +31,7 @@ def main() -> None:
 
     release = audiobook_to_release(book)
     work = release.work
-    lic = release.parsed_license
+    lic = release.license
 
     print(f"Title:          {work.title}")
     print(f"Source:         {book.source}")

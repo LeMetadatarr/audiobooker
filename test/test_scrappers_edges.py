@@ -230,8 +230,9 @@ class TestLoyalBooks(unittest.TestCase):
                        '<a href="/other"></a>'
                    )), \
              patch("audiobooker.scrappers.loyalbooks.from_rss",
-                   return_value=iter([])):
+                   return_value=iter([])) as from_rss_mock:
             list(LoyalBooks().search_by_tag("Horror"))
+        self.assertGreaterEqual(from_rss_mock.call_count, 1)
 
     def test_search_by_tag_handles_rss_exception(self):
         with patch("audiobooker.scrappers.loyalbooks.get_soup",

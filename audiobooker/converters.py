@@ -25,13 +25,18 @@ from audiobooker.base import (
 _PUBLIC_DOMAIN_SOURCES = {"librivox", "loyalbooks"}
 
 
+def _full_name(first_name, last_name) -> str:
+    """Join first/last name, dropping None/empty parts (avoids "None Smith")."""
+    return " ".join(p for p in (first_name, last_name) if p).strip()
+
+
 def _author_ref(author: BookAuthor) -> EntityRef:
-    name = f"{author.first_name} {author.last_name}".strip()
+    name = _full_name(author.first_name, author.last_name)
     return EntityRef(name=name, kind=EntityKind.PERSON)
 
 
 def _narrator_ref(narrator: AudiobookNarrator) -> EntityRef:
-    name = f"{narrator.first_name} {narrator.last_name}".strip()
+    name = _full_name(narrator.first_name, narrator.last_name)
     return EntityRef(name=name, kind=EntityKind.PERSON)
 
 
@@ -63,7 +68,10 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
     for narrator in narrators:
         if not narrator:
             continue
-        key = (narrator.first_name.lower(), narrator.last_name.lower())
+        key = (
+            (narrator.first_name or "").lower(),
+            (narrator.last_name or "").lower(),
+        )
         if key in seen_narrators:
             continue
         seen_narrators.add(key)
@@ -80,11 +88,11 @@ def audiobook_to_release(book: AudioBook) -> MvRelease:
     if book.source:
         extra["source"] = book.source
     if book.score:
-        extra["score"] = book.score
+        extra["score"] = str(book.score)
     if book.tags:
-        extra["tags"] = book.tags
+        extra["tags"] = ", ".join(book.tags)
     if book.streams:
-        extra["stream_urls"] = book.streams
+        extra["stream_urls"] = ", ".join(book.streams)
     if book.description:
         extra["description"] = book.description
 
