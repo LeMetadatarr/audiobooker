@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a2](https://github.com/TigreGotico/audiobooker/tree/0.9.0a2) (2026-06-23)
+
+[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.9.0a1...0.9.0a2)
+
+**Merged pull requests:**
+
+- chore: migrate to mediavocab 1.0 [\#18](https://github.com/TigreGotico/audiobooker/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a1](https://github.com/TigreGotico/audiobooker/tree/0.9.0a1) (2026-05-29)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.8.0a1...0.9.0a1)
