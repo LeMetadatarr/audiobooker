@@ -28,7 +28,7 @@ from audiobooker.scrappers.librivox import Librivox
 
 - **Site:** librivox.org
 - **Catalogue:** ~18 000 books
-- **API:** REST JSON — the fastest source; no HTML scraping needed
+- **API:** REST JSON, the fastest source. No HTML scraping needed
 - **Native search:** title, author, narrator, tag (genre)
 - **Genres:** 30+
 - **Language:** many; normalised to ISO 639-1
@@ -50,7 +50,7 @@ from audiobooker.scrappers.loyalbooks import LoyalBooks
 - **Streams:** MP3 URLs from RSS feed per book
 
 `search_by_tag` fetches the genre page directly instead of scanning the full
-catalogue — fast for genre queries. `iterate_popular()` scrapes the front page.
+catalogue, which is fast for genre queries. `iterate_popular()` scrapes the front page.
 
 ## StephenKingAudioBooks
 
@@ -132,3 +132,6 @@ AudioBookSource.session = requests.Session()
 ```
 
 See [youtube.md](youtube.md) for YouTube channel and playlist sources.
+
+---
+[← Scoring](scoring.md) · [Home](README.md) · [YouTube Sources →](youtube.md)

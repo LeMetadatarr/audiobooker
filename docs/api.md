@@ -78,7 +78,7 @@ from audiobooker.scrappers import AudioBookSource
 AudioBookSource.session   # plain requests.Session shared across all scrapers
 ```
 
-Replace with your own session if you need caching, retries, or a custom adapter:
+Replace with your own session if you need caching, retries, or a custom adapter.
 
 ```python
 import requests
@@ -111,8 +111,9 @@ from audiobooker import score_book, iter_sitemap_urls, check_url_availability, n
 score_book(query: str, book: AudioBook, method: str = "search") -> float
 ```
 
-Returns 0.0–1.0. `method` controls field weights — use the same name as the
-search function (`"search"`, `"search_by_title"`, etc.). See [scoring.md](scoring.md).
+Returns a value from 0.0 to 1.0. `method` controls field weights: use the same
+name as the search function (`"search"`, `"search_by_title"`, etc.).
+See [scoring.md](scoring.md).
 
 ### iter_sitemap_urls
 
@@ -154,8 +155,8 @@ Called automatically by `AudioBook.__post_init__` on the `language` field.
 Every scraper inherits from `AudioBookSource`, which holds a class-level
 `requests.Session` (with a randomised User-Agent) for backward
 compatibility. You can also inject a per-instance session through the
-constructor — handy for testing, custom retries, proxies, or alternative
-HTTP backends:
+constructor. This helps with testing, custom retries, proxies, or alternative
+HTTP backends.
 
 ```python
 import requests
@@ -191,7 +192,10 @@ from audiobooker.scrappers.librivox import Librivox
 lv = Librivox(session=default_session())
 ```
 
-If `curl_cffi` isn't importable, `default_session()` silently falls back
-to a plain `requests.Session`. Note that LibriVox's RSS fetch uses
-`feedparser`, which goes through `urllib` internally — injected sessions
-do not apply to that call (only the User-Agent header is forwarded).
+If `curl_cffi` isn't importable, `default_session()` falls back
+to a plain `requests.Session` without raising an error. Note that LibriVox's RSS
+fetch uses `feedparser`, which goes through `urllib` internally. Injected
+sessions do not apply to that call, only the User-Agent header is forwarded.
+
+---
+[← HTTP Transport](transport.md) · [Home](README.md)

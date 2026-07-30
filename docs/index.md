@@ -4,7 +4,7 @@
 runs instantly without hitting any network after the initial build.
 
 ```bash
-pip install audiobooker   # no extra dependencies — uses stdlib sqlite3
+pip install audiobooker   # no extra dependencies, uses stdlib sqlite3
 ```
 
 ## When to use it
@@ -17,7 +17,7 @@ pip install audiobooker   # no extra dependencies — uses stdlib sqlite3
 Use the index when:
 - You query repeatedly (voice assistant, batch processing)
 - You need offline operation
-- You care about latency (first result in <20ms vs 10–30s)
+- You care about latency (first result in under 20ms vs 10 to 30s)
 
 ## Search strategy
 
@@ -29,8 +29,8 @@ Two-phase: **FTS5 pre-filter → rapidfuzz re-rank**.
 2. rapidfuzz WRatio re-ranks the candidate shortlist with full fuzzy
    scoring including typo handling, token reordering, and containment bonuses.
 3. If FTS returns fewer than 5 hits (e.g. a misspelled query), the search
-   automatically falls back to a full rapidfuzz scan of all rows — so typos
-   never produce zero results, they just take a bit longer (~50–100ms at 18k books).
+   falls back to a full rapidfuzz scan of all rows. Typos never produce zero
+   results, they just take a bit longer (about 50 to 100ms at 18k books).
 
 Typical query latency: **~15ms** (FTS path) vs O(N·WRatio) without an index.
 
@@ -67,8 +67,8 @@ idx.update(sources=[Librivox()])    # specific sources only
 ```
 
 `update()` uses `AudioBook.__hash__` (title + authors) as the uniqueness key.
-Existing books are skipped; new ones are inserted and the FTS index is
-updated incrementally (no full rebuild needed).
+Existing books are skipped. New ones are inserted and the FTS index is
+updated incrementally, with no full rebuild needed.
 
 ## Search
 
@@ -87,7 +87,7 @@ idx.search_by_narrator("Frank Muller")
 ### Scoring note
 
 `search()` weights: title 55%, author 30%, tag 10%, narrator 5%. A single
-genre word like "Horror" scores ~0.35 in a general search — below the 0.45
+genre word like "Horror" scores about 0.35 in a general search, below the 0.45
 threshold. Use `search_by_tag("Horror")` when you want genre results.
 
 ### Optional filters
@@ -107,7 +107,7 @@ the search automatically falls back to a full rapidfuzz scan:
 idx.search_by_title("Sherlok Holms")  # FTS misses, rapidfuzz finds it
 ```
 
-## IndexedSource — drop-in for unified search()
+## IndexedSource: drop-in for unified search()
 
 ```python
 from audiobooker import search
@@ -275,10 +275,13 @@ idx.update(sources=[HorrorBabble(), TheCybrarian()])
 
 The SQLite database has two tables:
 
-- **`books`** — one row per book; primary key is an auto-increment `id`;
-  `hash` (title + authors) is a unique constraint used for deduplication;
+- **`books`**: one row per book. The primary key is an auto-increment `id`.
+  `hash` (title + authors) is a unique constraint used for deduplication.
   `authors_text`, `tags_text`, `narrator_text` are flattened plaintext copies
   of the JSON fields used for FTS indexing.
-- **`books_fts`** — FTS5 virtual table (unicode61 tokeniser, diacritic removal)
+- **`books_fts`**: FTS5 virtual table (unicode61 tokeniser, diacritic removal)
   linked to `books.id`. Kept in sync via explicit insert/delete calls during
   `build()` and `update()`.
+
+---
+[← YouTube Sources](youtube.md) · [Home](README.md) · [Cache & Download →](cache.md)

@@ -30,9 +30,9 @@ if is_cached(book):
     paths = cached_paths(book)   # list of local Path objects
 ```
 
-`download()` skips files that are already in the cache — safe to call repeatedly.
-A `.part` temporary file is used during download; it is renamed on completion and
-deleted on error, so partial downloads never pollute the cache.
+`download()` skips files that are already in the cache. It is safe to call
+repeatedly. A `.part` temporary file is used during download. It is renamed on
+completion and deleted on error, so partial downloads never pollute the cache.
 
 ## Play
 
@@ -68,7 +68,7 @@ download(book, cache_root=Path("/data/audiobooks"))
 play(book, cache_root=Path("/data/audiobooks"))
 ```
 
-## Bulk download — example with TheCybrarian
+## Bulk download: example with TheCybrarian
 
 Download every audiobook from a YouTube channel in one pass.
 Already-cached files are skipped automatically.
@@ -132,7 +132,7 @@ idx.search_by_tag("Horror", max_duration=1800)
 # Full novels (over 2 hours)
 idx.search_by_author("Dickens", min_duration=7200)
 
-# Specific range: 1–4 hours
+# Specific range: 1 to 4 hours
 idx.search("Lovecraft", min_duration=3600, max_duration=14400)
 ```
 
@@ -142,3 +142,6 @@ CLI:
 python -m audiobooker.index search "horror" --method search_by_tag \
     --min-duration 3600 --max-duration 14400
 ```
+
+---
+[← Local Index](index.md) · [Home](README.md) · [mediavocab Converters →](converters.md)

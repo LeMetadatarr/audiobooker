@@ -1,6 +1,6 @@
 # mediavocab Converters
 
-`audiobook_to_release()` — see `audiobooker/converters.py`
+`audiobook_to_release()`, defined in `audiobooker/converters.py`.
 
 Converts an `AudioBook` into a `mediavocab.Release`. `mediavocab` is a required
 runtime dependency.
@@ -26,15 +26,15 @@ print(release.license, release.codec, release.bitrate)
 | `work.runtime` | `AudioBook.runtime` (int seconds → `float \| None`) |
 | `work.language` | `AudioBook.language` (already ISO 639-1) |
 | `work.media_type` | hard-coded `MediaType.AUDIOBOOK` |
-| `work.content_genres` | `AudioBook.genres`; falls back to `[]` (not `tags`) |
-| `work.credits` | authors → `RelationRole.CREATOR`; narrators → `RelationRole.PERFORMER` |
+| `work.content_genres` | `AudioBook.genres`, falls back to `[]` (not `tags`) |
+| `work.credits` | authors map to `RelationRole.CREATOR`, narrators to `RelationRole.PERFORMER` |
 | `work.external_ids` | `AudioBook.external_ids` pass-through + `audiobooker_id` (SHA-256 stable ID) |
 | `work.extra` | source name, score, tags, stream URLs, description |
 | `release.uri` | `AudioBook.streams[0]` (empty string when no streams) |
 | `release.image` | `AudioBook.image` |
 | `release.stream_mode` | hard-coded `StreamMode.ON_DEMAND` |
-| `release.release_date` | `str(AudioBook.year)` — ISO-compatible YYYY |
-| `release.license` | `"public_domain"` for LibriVox and LoyalBooks; `""` otherwise |
+| `release.release_date` | `str(AudioBook.year)`, an ISO-compatible YYYY value |
+| `release.license` | `"public_domain"` for LibriVox and LoyalBooks, `""` otherwise |
 | `release.codec` | `AudioBook.codec` |
 | `release.bitrate` | `AudioBook.bitrate` |
 | `release.audio_language` | mirrors `work.language` |
@@ -48,12 +48,12 @@ Narrators use `RelationRole.PERFORMER`, `CreditSection.PRINCIPAL`.
 
 `AudioBook.narrators` (plural) is the authoritative list. When only
 `AudioBook.narrator` (singular) is set, `base.AudioBook.__post_init__`
-promotes it to `narrators`; the converter deduplicates by `(first, last)`.
+promotes it to `narrators`. The converter deduplicates by `(first, last)`.
 
 ## License detection
 
 Sources whose names contain `"librivox"` or `"loyalbooks"` (case-insensitive)
-get `license="public_domain"`. All other sources get an empty string — the
+get `license="public_domain"`. All other sources get an empty string. The
 converter never guesses.
 
 ## Chapter conversion
@@ -74,3 +74,6 @@ lic = release.license   # None when no license is detected
 if lic and lic.is_open():
     print("free to redistribute")
 ```
+
+---
+[← Cache & Download](cache.md) · [Home](README.md) · [HTTP Transport →](transport.md)

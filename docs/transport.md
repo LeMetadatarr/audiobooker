@@ -1,6 +1,6 @@
 # HTTP Transport
 
-`default_session()` — `audiobooker/transport.py:22`
+`default_session()`, defined in `audiobooker/transport.py:22`.
 
 Returns the HTTP session used by all scrapers. Two backends are supported:
 
@@ -27,7 +27,7 @@ If `AUDIOBOOKER_TRANSPORT=curl_cffi` is set but `curl_cffi` is not installed,
 
 ## Per-instance injection
 
-Every `AudioBookSource.__init__` accepts an optional `session` parameter —
+Every `AudioBookSource.__init__` accepts an optional `session` parameter, in
 `audiobooker/scrappers/__init__.py:21`.
 
 ```python
@@ -41,10 +41,10 @@ ga = GoldenAudioBooks(session=session)
 ```
 
 When `session=None` (the default), the class-level `AudioBookSource.session`
-is used — a module-level `requests.Session` initialised with a random
+is used: a module-level `requests.Session` initialised with a random
 `User-Agent`.
 
-## Pluggable session — `audiobooker/scrappers/__init__.py:14`
+## Pluggable session, `audiobooker/scrappers/__init__.py:14`
 
 Any object that satisfies the `requests.Session` interface works:
 `get()`, `post()`, `Session.headers`. The `curl_cffi.requests.Session` is
@@ -52,6 +52,9 @@ API-compatible.
 
 ## User-Agent rotation
 
-`random_user_agent()` — `audiobooker/utils.py` — picks a random modern
+`random_user_agent()`, in `audiobooker/utils.py`, picks a random modern
 browser UA string on every call. Both `default_session()` and the
 module-level `_default_session` apply it at construction time.
+
+---
+[← mediavocab Converters](converters.md) · [Home](README.md) · [API Reference →](api.md)
