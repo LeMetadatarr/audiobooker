@@ -1,8 +1,9 @@
 # audiobooker
 
-Search and stream free audiobooks from multiple web sources. Parallel search,
-fuzzy scoring, a unified `AudioBook` dataclass, local cache, SQLite index, and
-a mediavocab `Release` converter — one API regardless of where the book comes from.
+Search and stream free audiobooks from multiple web sources. It gives one API
+regardless of where the book comes from, with parallel search, fuzzy scoring,
+a unified `AudioBook` dataclass, a local cache, a SQLite index, and a mediavocab
+`Release` converter.
 
 ## Install
 
@@ -55,7 +56,7 @@ from audiobooker import (
     AudioBook, BookAuthor, AudiobookNarrator, AudioBookChapter,
 )
 
-# Targeted searches — all run in parallel across all sources
+# Targeted searches, all run in parallel across all sources
 for book in search_by_author("Dickens", max_per_source=5):
     print(book.title)
 
@@ -83,7 +84,7 @@ All scrapers share the same interface: `search()`, `search_by_title()`,
 ## mediavocab integration
 
 `mediavocab` is a required dependency. `audiobook_to_release()` projects an
-`AudioBook` into the typed `mediavocab.Release` schema — `Work`, credits,
+`AudioBook` into the typed `mediavocab.Release` schema: `Work`, credits,
 chapters, external IDs, codec, license.
 
 ```python
@@ -103,14 +104,14 @@ See [docs/converters.md](docs/converters.md) for the full field mapping.
 By default every scraper uses a `requests.Session` with a randomised
 `User-Agent`. Two ways to override:
 
-**Environment variable** — set before any import:
+**Environment variable**, set before any import:
 ```bash
 AUDIOBOOKER_TRANSPORT=curl_cffi python myscript.py
 ```
 Falls back to plain `requests` if `curl_cffi` is not installed. Install with
 `pip install audiobooker[stealth]`.
 
-**Per-instance injection** — pass any `requests`-compatible session:
+**Per-instance injection**, pass any `requests`-compatible session:
 ```python
 from curl_cffi import requests as cffi_requests
 from audiobooker.scrappers.librivox import Librivox
@@ -120,7 +121,7 @@ lv = Librivox(session=session)
 ```
 
 `default_session()` from `audiobooker.transport` respects `AUDIOBOOKER_TRANSPORT`
-and returns the appropriate session type. — `audiobooker/transport.py:1`
+and returns the matching session type (`audiobooker/transport.py:1`).
 
 ## Local index
 
@@ -170,23 +171,23 @@ to override default locations (`~/.audiobooker/index.db` and
 Full documentation is in [`/docs/`](docs/README.md):
 
 - [Getting started](docs/getting-started.md)
-- [Sources](docs/sources.md) — per-scraper details and quirks
+- [Sources](docs/sources.md): per-scraper details and quirks
 - [Search orchestrator](docs/search.md)
 - [Scoring](docs/scoring.md)
-- [Index](docs/index.md) — SQLite index, offline search, YouTube follow
-- [Cache](docs/cache.md) — download + play
-- [Converters](docs/converters.md) — mediavocab Release shape
-- [Transport](docs/transport.md) — HTTP session, stealth backend
+- [Index](docs/index.md): SQLite index, offline search, YouTube follow
+- [Cache](docs/cache.md): download and play
+- [Converters](docs/converters.md): mediavocab Release shape
+- [Transport](docs/transport.md): HTTP session, stealth backend
 - [API reference](docs/api.md)
 
-Runnable examples are in [`/examples/`](examples/) — numbered 01 → 10 from
+Runnable examples are in [`/examples/`](examples/), numbered 01 to 10 from
 quickstart to advanced index usage.
 
 ## Error handling
 
-Network failures and malformed pages are swallowed per-item — a bad page never
+Network failures and malformed pages are swallowed per-item. A bad page never
 aborts an `iterate_all()` run. If a source site is down or has restructured its
-HTML, that scraper silently yields nothing.
+HTML, that scraper yields nothing without raising an error.
 
 ## License
 

@@ -44,7 +44,7 @@ for book in HorrorBabble().search_by_title("Lovecraft"):
 - Channel: [@HorrorBabble](https://www.youtube.com/@HorrorBabble)
 - Authors: `BookAuthor(last_name="Various")`
 - Tags: Horror, Lovecraft, Weird Fiction, Short Stories
-- `min_runtime`: 300 s (5 minutes — filters out shorts and trailers)
+- `min_runtime`: 300 s (5 minutes, filters out shorts and trailers)
 
 ### TheDustyTome
 
@@ -153,7 +153,7 @@ in the playlist in playlist order via `tutubo.models.Playlist.initial_data`.
 ### Pagination
 
 YouTube's initial page for a playlist contains up to ~100 videos. Playlists
-beyond that limit are not currently paginated — only the first page is fetched.
+beyond that limit are not paginated. Only the first page is fetched.
 Most audiobook playlists are well under this limit.
 
 ## Using YouTube sources in unified search
@@ -179,5 +179,8 @@ for book in search("Dunwich", sources=[TheCybrarian(), my_playlist], timeout=20)
 
 YouTube sources produce `streams` containing YouTube watch URLs
 (`https://www.youtube.com/watch?v=VIDEO_ID`). These are not direct audio
-streams — a downstream player must resolve them (e.g. via `yt-dlp`).
-`has_live_streams()` will return True for any reachable watch URL.
+streams. A downstream player must resolve them, for example with `yt-dlp`.
+`has_live_streams()` returns `True` for any reachable watch URL.
+
+---
+[← Sources](sources.md) · [Home](README.md) · [Local Index →](index.md)

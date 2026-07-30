@@ -31,7 +31,7 @@ by relevance score and deduplicated by title + authors.
 
 | Object | Module | Purpose |
 |---|---|---|
-| `AudioBook` | `audiobooker.base` | Unified book dataclass — title, authors, chapters, streams |
+| `AudioBook` | `audiobooker.base` | Unified book dataclass: title, authors, chapters, streams |
 | `BookAuthor` | `audiobooker.base` | Author name (first + last) |
 | `AudiobookNarrator` | `audiobooker.base` | Reader name |
 | `AudioBookChapter` | `audiobooker.base` | Chapter with offset, runtime, stream URL |
@@ -84,3 +84,6 @@ audiobooker index search "Lovecraft" --method search_by_author
 audiobooker cache download "Dracula" --source Librivox
 audiobooker cache play "Dracula"
 ```
+
+---
+[Home](README.md) · [Unified Search →](search.md)

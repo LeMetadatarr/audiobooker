@@ -28,7 +28,7 @@ by `score` descending. Books scoring below **0.45** are filtered out.
 
 | Parameter | Default | Description |
 |---|---|---|
-| `query` | — | Search string |
+| `query` | n/a | Search string |
 | `sources` | all sources | List of instantiated `AudioBookSource` objects |
 | `max_per_source` | 10 | Max results collected per source before that thread stops |
 | `timeout` | 30.0 | Seconds before slow sources are cancelled |
@@ -92,3 +92,6 @@ print([cls.__name__ for cls in ALL_SOURCES])
 ## Scoring details
 
 See [scoring.md](scoring.md).
+
+---
+[← Getting Started](getting-started.md) · [Home](README.md) · [Scoring →](scoring.md)
