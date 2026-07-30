@@ -1,0 +1,1590 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://goldenaudiobooks.com/
+  response:
+    body:
+      string: "\n\t<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n<meta charset=\"UTF-8\">\n<meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link
+        rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\n<meta name='robots' content='index,
+        follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!--
+        This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/
+        -->\n\t<title>- Goldenaudiobooks</title><link rel=\"preload\" data-rocket-preload
+        as=\"image\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2025/12/51bzC69H4L._SL500-300x300.jpg\"
+        fetchpriority=\"high\">\n\t<link rel=\"canonical\" href=\"https://goldenaudiobooks.com/\"
+        />\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\"
+        content=\"website\" />\n\t<meta property=\"og:title\" content=\"- Goldenaudiobooks\"
+        />\n\t<meta property=\"og:url\" content=\"https://goldenaudiobooks.com/\"
+        />\n\t<meta property=\"og:site_name\" content=\"Goldenaudiobooks\" />\n\t<meta
+        property=\"article:modified_time\" content=\"2024-06-22T09:13:04+00:00\" />\n\t<meta
+        name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\"
+        class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/\",\"url\":\"https:\\/\\/goldenaudiobooks.com\\/\",\"name\":\"-
+        Goldenaudiobooks\",\"isPartOf\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#website\"},\"datePublished\":\"2023-04-30T15:43:59+00:00\",\"dateModified\":\"2024-06-22T09:13:04+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/goldenaudiobooks.com\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#website\",\"url\":\"https:\\/\\/goldenaudiobooks.com\\/\",\"name\":\"Goldenaudiobooks\",\"description\":\"Online\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/goldenaudiobooks.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"}]}</script>\n\t<meta
+        name=\"google-site-verification\" content=\"9zX5m2UcAMplgOnx5PdVChW39NQ6lxruO6ia3-Qt9ZQ\"
+        />\n\t<!-- / Yoast SEO plugin. -->\n\n\n<link rel='dns-prefetch' href='//fonts.googleapis.com'
+        />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Goldenaudiobooks
+        &raquo; Feed\" href=\"https://goldenaudiobooks.com/feed/\" />\n<link rel=\"alternate\"
+        title=\"oEmbed (JSON)\" type=\"application/json+oembed\" href=\"https://goldenaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoldenaudiobooks.com%2F\"
+        />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\"
+        href=\"https://goldenaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoldenaudiobooks.com%2F&#038;format=xml\"
+        />\n<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>\nimg:is([sizes=auto
+        i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css
+        */\n</style>\n<link data-minify=\"1\" rel='stylesheet' id='pt-cv-public-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1776770754'
+        type='text/css' media='all' />\n<style id='wp-emoji-styles-inline-css' type='text/css'>\n\n\timg.wp-smiley,
+        img.emoji {\n\t\tdisplay: inline !important;\n\t\tborder: none !important;\n\t\tbox-shadow:
+        none !important;\n\t\theight: 1em !important;\n\t\twidth: 1em !important;\n\t\tmargin:
+        0 0.07em !important;\n\t\tvertical-align: -0.1em !important;\n\t\tbackground:
+        none !important;\n\t\tpadding: 0 !important;\n\t}\n/*# sourceURL=wp-emoji-styles-inline-css
+        */\n</style>\n<style id='wp-block-library-inline-css' type='text/css'>\n:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media
+        (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root
+        .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root
+        .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root
+        .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root
+        .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb
+        50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root
+        .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root
+        .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root
+        .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root
+        .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px
+        23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html
+        :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html
+        :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html
+        :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html
+        :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html
+        :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0
+        0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media
+        screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}\n\n/*#
+        sourceURL=wp-block-library-inline-css */\n</style>\n<style id='classic-theme-styles-inline-css'
+        type='text/css'>\n/*! This file is auto-generated */\n.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em
+        + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}\n/*#
+        sourceURL=/wp-includes/css/classic-themes.min.css */\n</style>\n<style id='global-styles-inline-css'
+        type='text/css'>\n:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3:
+        4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2:
+        3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9:
+        16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray:
+        #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink:
+        #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange:
+        #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan:
+        #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue:
+        #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple:
+        #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227)
+        0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:
+        linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
+        linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:
+        linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
+        linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
+        linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186)
+        40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:
+        linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:
+        linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62)
+        100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
+        0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:
+        linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181)
+        100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128)
+        0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129)
+        0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium:
+        20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large:
+        42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40:
+        1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70:
+        3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural:
+        6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px
+        rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0,
+        0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255),
+        6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap:
+        0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap:
+        wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display:
+        grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap:
+        2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap:
+        1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange)
+        !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber)
+        !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan)
+        !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan)
+        !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue)
+        !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue)
+        !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple)
+        !important;}.has-black-background-color{background-color: var(--wp--preset--color--black)
+        !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray)
+        !important;}.has-white-background-color{background-color: var(--wp--preset--color--white)
+        !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color:
+        var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color:
+        var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
+        var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
+        var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
+        !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
+        var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background:
+        var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
+        var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
+        var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
+        var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
+        var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
+        var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
+        var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size:
+        var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size:
+        var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size:
+        var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size:
+        var(--wp--preset--font-size--x-large) !important;}\n/*# sourceURL=global-styles-inline-css
+        */\n</style>\n\n<link data-minify=\"1\" rel='stylesheet' id='collapscore-css-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/jquery-collapse-o-matic/css/core_style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='collapseomatic-css-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/jquery-collapse-o-matic/css/light_style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='ivory-search-styles-css'
+        href='https://goldenaudiobooks.com/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.5.14'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='videoblog-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/themes/videoblog/style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='genericons-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/themes/videoblog/genericons/genericons.css?ver=1776770754'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='videoblog-webfonts-css'
+        href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CMontserrat%3A400%2C700&#038;subset=latin%2Clatin-ext'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='arpw-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/advanced-random-posts-widget/assets/css/arpw-frontend.css?ver=1776770754'
+        type='text/css' media='all' />\n<style id='rocket-lazyload-inline-css' type='text/css'>\n.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline:
+        2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0
+        0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s
+        all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player
+        .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://goldenaudiobooks.com/wp-content/plugins/site-speed-booster/assets/img/youtube.png)
+        no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}\n/*#
+        sourceURL=rocket-lazyload-inline-css */\n</style>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\"
+        id=\"jquery-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1\"
+        id=\"jquery-migrate-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/jquery.slicknav.min.js\"
+        id=\"jquery-slicknav-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/superfish.min.js\"
+        id=\"jquery-superfish-js\"></script>\n<link rel=\"https://api.w.org/\" href=\"https://goldenaudiobooks.com/wp-json/\"
+        /><link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://goldenaudiobooks.com/wp-json/wp/v2/pages/28854\"
+        /><link rel=\"EditURI\" type=\"application/rsd+xml\" title=\"RSD\" href=\"https://goldenaudiobooks.com/xmlrpc.php?rsd\"
+        />\n<meta name=\"generator\" content=\"WordPress 6.9.4\" />\n<link rel='shortlink'
+        href='https://goldenaudiobooks.com/' />\n<script type=\"text/javascript\">\n(function(url){\n\tif(/(?:Chrome\\/26\\.0\\.1410\\.63
+        Safari\\/537\\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return;
+        }\n\tvar addEvent = function(evt, handler) {\n\t\tif (window.addEventListener)
+        {\n\t\t\tdocument.addEventListener(evt, handler, false);\n\t\t} else if (window.attachEvent)
+        {\n\t\t\tdocument.attachEvent('on' + evt, handler);\n\t\t}\n\t};\n\tvar removeEvent
+        = function(evt, handler) {\n\t\tif (window.removeEventListener) {\n\t\t\tdocument.removeEventListener(evt,
+        handler, false);\n\t\t} else if (window.detachEvent) {\n\t\t\tdocument.detachEvent('on'
+        + evt, handler);\n\t\t}\n\t};\n\tvar evts = 'contextmenu dblclick drag dragend
+        dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown
+        mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');\n\tvar
+        logHuman = function() {\n\t\tif (window.wfLogHumanRan) { return; }\n\t\twindow.wfLogHumanRan
+        = true;\n\t\tvar wfscr = document.createElement('script');\n\t\twfscr.type
+        = 'text/javascript';\n\t\twfscr.async = true;\n\t\twfscr.src = url + '&r='
+        + Math.random();\n\t\t(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);\n\t\tfor
+        (var i = 0; i < evts.length; i++) {\n\t\t\tremoveEvent(evts[i], logHuman);\n\t\t}\n\t};\n\tfor
+        (var i = 0; i < evts.length; i++) {\n\t\taddEvent(evts[i], logHuman);\n\t}\n})('//goldenaudiobooks.com/?wordfence_lh=1&hid=E8DBB84EBB5C601140F76AC92EB93A75');\n</script><!--
+        Histats --><script>var _Hasync=_Hasync||[];_Hasync.push([\"Histats.start\",\"1,4898731,4,0,0,0,00010000\"]);_Hasync.push([\"Histats.fasi\",\"1\"]);(function(){var
+        hs=document.createElement(\"script\");hs.async=true;hs.src=\"//s10.histats.com/js15_as.js\";document.head.appendChild(hs);})();</script><link
+        rel=\"icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-32x32.jpg\"
+        sizes=\"32x32\" />\n<link rel=\"icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-192x192.jpg\"
+        sizes=\"192x192\" />\n<link rel=\"apple-touch-icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-180x180.jpg\"
+        />\n<meta name=\"msapplication-TileImage\" content=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-270x270.jpg\"
+        />\n\t\t<style type=\"text/css\" id=\"wp-custom-css\">\n\t\t\t.entry-meta
+        {\n display: none;\n}             \n/* Hide the date on single posts */\n.single
+        .entry-date {\n  display: none;\n}\n\n/* Hide the date on post listings */\n.entry-date
+        {\n  display: none;\n}\t\t</style>\n\t\t<!-- Histats.com  START  (aync)-->\n<script
+        type=\"text/javascript\">var _Hasync= _Hasync|| [];\n_Hasync.push(['Histats.start',
+        '1,4898731,4,0,0,0,00010000']);\n_Hasync.push(['Histats.fasi', '1']);\n_Hasync.push(['Histats.track_hits',
+        '']);\n(function() {\nvar hs = document.createElement('script'); hs.type =
+        'text/javascript'; hs.async = true;\nhs.src = ('//s10.histats.com/js15_as.js');\n(document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(hs);\n})();</script>\n<noscript><a
+        href=\"/\" target=\"_blank\"><img  src=\"//sstatic1.histats.com/0.gif?4898731&101\"
+        alt=\"counter create hit\" border=\"0\"></a></noscript>\n<!-- Histats.com
+        \ END  -->\n\n\n\n\n\n<script>(function(s){s.dataset.zone='10905413',s.src='https://llvpn.com/tag.min.js'})([document.documentElement,
+        document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script><noscript><style
+        id=\"rocket-lazyload-nojs-css\">.rll-youtube-player, [data-lazy-src]{display:none
+        !important;}</style></noscript><meta name=\"generator\" content=\"WP Rocket
+        3.18.3\" data-wpr-features=\"wpr_lazyload_images wpr_lazyload_iframes wpr_oci
+        wpr_minify_css wpr_desktop\" /></head>\n\t\n<!-- Google tag (gtag.js) -->\n<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=UA-105853786-1\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'UA-105853786-1');\n</script>\n\t\n<body
+        data-rsssl=1 class=\"home wp-singular page-template-default page page-id-28854
+        wp-theme-videoblog videoblog comments-closed\">\n\n<div  id=\"container\">\n\t<a
+        class=\"skip-link screen-reader-text\" href=\"#site-main\">Skip to content</a>\n\t<header
+        \ class=\"site-header clearfix\" role=\"banner\">\n\t\n\t\t<div  class=\"wrapper
+        wrapper-header clearfix\">\n\t\t\n\t\t\t<div class=\"site-branding clearfix\">\n\t\t\t\t\t\t\t\t<p
+        class=\"site-title\"><a href=\"https://goldenaudiobooks.com/\" rel=\"home\">Goldenaudiobooks</a></p>\n\t\t\t\t<p
+        class=\"site-description\">Online</p>\n\t\t\t\t\t\t\t</div><!-- .site-branding
+        -->\n\n\t\t\t\t\t\t\n\t\t</div><!-- .wrapper .wrapper-header -->\n\t\t\n                <div
+        class=\"navbar-header\">\n\n\t\t\t<div id=\"menu-main-slick\" class=\"menu-menu-container\"><ul
+        id=\"menu-slide-in\" class=\"menu\"><li id=\"menu-item-14626\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom current-menu-item current_page_item
+        menu-item-home menu-item-14626\"><a href=\"https://goldenaudiobooks.com\"
+        aria-current=\"page\">Home</a></li>\n<li id=\"menu-item-14624\" class=\"menu-item
+        menu-item-type-taxonomy menu-item-object-category menu-item-14624\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a></li>\n<li
+        id=\"menu-item-14627\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category
+        menu-item-14627\"><a href=\"https://goldenaudiobooks.com/category/action/\">Action</a></li>\n<li
+        id=\"menu-item-23540\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category
+        menu-item-23540\"><a href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a></li>\n<li
+        id=\"menu-item-14621\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-has-children menu-item-14621\"><a href=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audiobook-free-online/\">Ready
+        Player One</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-22027\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-22027\"><a href=\"https://goldenaudiobooks.com/ready-player-two/\">Ready
+        Player Two</a></li>\n</ul>\n</li>\n<li id=\"menu-item-23751\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23751\"><a
+        href=\"https://goldenaudiobooks.com/?s=harry+potter\">Harry Potter</a>\n<ul
+        class=\"sub-menu\">\n\t<li id=\"menu-item-23750\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23750\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+jim+dale\">Jim
+        Dale</a></li>\n\t<li id=\"menu-item-23752\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23752\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+stephen+fry\">Stephen
+        Fry</a></li>\n</ul>\n</li>\n<li id=\"menu-item-14628\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-has-children menu-item-14628\"><a href=\"https://goldenaudiobooks.com/?s=shades+\">Fifty
+        Shades</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-14631\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-14631\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-of-grey-audiobook-online-free/\">Fifty
+        Shades of Grey</a></li>\n\t<li id=\"menu-item-14630\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14630\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-darker-audio/\">Fifty
+        Shades Darker</a></li>\n\t<li id=\"menu-item-14629\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14629\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-freed-audiobook-online-free/\">Fifty
+        Shades Freed</a></li>\n\t<li id=\"menu-item-25337\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-25337\"><a href=\"https://goldenaudiobooks.com/grey-e-l-james/\">Grey</a></li>\n\t<li
+        id=\"menu-item-25312\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25312\"><a href=\"https://goldenaudiobooks.com/e-l-james-darker-audiobook/\">Darker</a></li>\n\t<li
+        id=\"menu-item-25359\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25359\"><a href=\"https://goldenaudiobooks.com/freed-fifty-shades-freed-as-told-by-christian-audiobook/\">Freed</a></li>\n</ul>\n</li>\n<li
+        id=\"menu-item-22028\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-22028\"><a href=\"https://goldenaudiobooks.com/?s=anna+todd&#038;id=28332\">Anna
+        Todd</a></li>\n<li id=\"menu-item-28057\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-page menu-item-28057\"><a href=\"https://goldenaudiobooks.com/privacy-policy/\">PRIVACY
+        POLICY</a></li>\n</ul></div>\n        </div><!-- .navbar-header -->\n        \n\t\t\t\t<nav
+        id=\"menu-main\" role=\"navigation\">\n\t\t\t<div class=\"wrapper wrapper-header-menu
+        clearfix\">\n\t\t\t\t<ul id=\"menu-main-menu\" class=\"nav navbar-nav dropdown
+        sf-menu\"><li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        current-menu-item current_page_item menu-item-home menu-item-14626\"><a href=\"https://goldenaudiobooks.com\"
+        aria-current=\"page\">Home</a></li>\n<li class=\"menu-item menu-item-type-taxonomy
+        menu-item-object-category menu-item-14624\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a></li>\n<li
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14627\"><a
+        href=\"https://goldenaudiobooks.com/category/action/\">Action</a></li>\n<li
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23540\"><a
+        href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a></li>\n<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children
+        menu-item-14621\"><a href=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audiobook-free-online/\">Ready
+        Player One</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-22027\"><a href=\"https://goldenaudiobooks.com/ready-player-two/\">Ready
+        Player Two</a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-has-children menu-item-23751\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter\">Harry
+        Potter</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23750\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+jim+dale\">Jim
+        Dale</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-23752\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+stephen+fry\">Stephen
+        Fry</a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-has-children menu-item-14628\"><a href=\"https://goldenaudiobooks.com/?s=shades+\">Fifty
+        Shades</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14631\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-of-grey-audiobook-online-free/\">Fifty
+        Shades of Grey</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-14630\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-darker-audio/\">Fifty
+        Shades Darker</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-14629\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-freed-audiobook-online-free/\">Fifty
+        Shades Freed</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25337\"><a href=\"https://goldenaudiobooks.com/grey-e-l-james/\">Grey</a></li>\n\t<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-25312\"><a
+        href=\"https://goldenaudiobooks.com/e-l-james-darker-audiobook/\">Darker</a></li>\n\t<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-25359\"><a
+        href=\"https://goldenaudiobooks.com/freed-fifty-shades-freed-as-told-by-christian-audiobook/\">Freed</a></li>\n</ul>\n</li>\n<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-22028\"><a
+        href=\"https://goldenaudiobooks.com/?s=anna+todd&#038;id=28332\">Anna Todd</a></li>\n<li
+        class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-28057\"><a
+        href=\"https://goldenaudiobooks.com/privacy-policy/\">PRIVACY POLICY</a></li>\n</ul>\t\t\t</div><!--
+        .wrapper .wrapper-header-menu .clearfix -->\n\t\t</nav><!-- #menu-main -->\n\t\t\n\t</header><!--
+        .site-header -->\n\t<div  id=\"site-main\">\n\n\t\t<div  class=\"wrapper wrapper-main
+        clearfix\">\n\t\t\n\t\t\t<main id=\"site-content\" class=\"site-main\" role=\"main\">\n\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t<div
+        class=\"site-content-wrapper clearfix\">\n\n\t\t\t\t\t\n<article id=\"post-28854\"
+        class=\"post-28854 page type-page status-publish hentry\">\n\n\t<header class=\"ilovewp-page-intro
+        ilovewp-page-inner\">\n\t\t<h1 class=\"title-page\"></h1>\n\t</header><!--
+        .ilovewp-page-intro -->\n\n\t<div class=\"post-single clearfix\">\n\n\t\t<div
+        class=\"pt-cv-wrapper\"><div class=\"pt-cv-view pt-cv-grid pt-cv-colsys\"
+        id=\"pt-cv-view-dfc722dcde\"><div data-id=\"pt-cv-page-1\" class=\"pt-cv-page\"
+        data-cvc=\"4\"><div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/juliet-marillier-the-amber-owl-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\"
+        src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/12/51bzC69H4L._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/juliet-marillier-the-amber-owl-audiobook/\"
+        class=\"_self\" target=\"_self\" >Juliet Marillier &#8211; The Amber Owl Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/jonathan-french-free-bastards-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/12/51AH-18sQXS._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/jonathan-french-free-bastards-audiobook/\"
+        class=\"_self\" target=\"_self\" >Jonathan French &#8211; Free Bastards Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/bonnie-garmus-lessons-in-chemistry-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/12/41tCNqHzHfL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/bonnie-garmus-lessons-in-chemistry-audiobook/\"
+        class=\"_self\" target=\"_self\" >Bonnie Garmus &#8211; Lessons in Chemistry
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/j-t-geissinger-pen-pal-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/12/51QV4TbEamL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/j-t-geissinger-pen-pal-audiobook/\"
+        class=\"_self\" target=\"_self\" >J.T. Geissinger &#8211; Pen Pal Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/sylvia-mercedes-the-moonfire-bride-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/11/511-FAiyuBL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/sylvia-mercedes-the-moonfire-bride-audiobook/\"
+        class=\"_self\" target=\"_self\" >Sylvia Mercedes &#8211; The Moonfire Bride
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/harry-potter-and-the-sorcerers-stone-full-cast-edition-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/11/Harry-Potter-and-the-Sorcerers-Stone-2025-J.K.-Rowling-ASIN.B0F14RPXHR-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/harry-potter-and-the-sorcerers-stone-full-cast-edition-audiobook/\"
+        class=\"_self\" target=\"_self\" >Harry Potter and the Sorcerers Stone (Full-Cast
+        Edition) Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6
+        pt-cv-content-item pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/danielle-lori-the-sweetest-oblivion-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41HCSUF4cKL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/danielle-lori-the-sweetest-oblivion-audiobook/\"
+        class=\"_self\" target=\"_self\" >Danielle Lori &#8211; The Sweetest Oblivion
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/shari-franke-the-house-of-my-mother-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41sua0yq03L._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/shari-franke-the-house-of-my-mother-audiobook/\"
+        class=\"_self\" target=\"_self\" >Shari Franke &#8211; The House of My Mother
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/martha-wells-all-systems-red-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41pWTv4OU-L._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/martha-wells-all-systems-red-audiobook/\"
+        class=\"_self\" target=\"_self\" >Martha Wells &#8211; All Systems Red Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/carley-fortune-meet-me-at-the-lake-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51cvaxlKGTL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/carley-fortune-meet-me-at-the-lake-audiobook/\"
+        class=\"_self\" target=\"_self\" >Carley Fortune &#8211; Meet Me at the Lake
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/maureen-johnson-nine-liars-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"225\" height=\"225\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/imagesqtbnANd9GcQUGaFhnTHnCQ8ms8xZxX0fUC9_jEOTGrbo0Aamps.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/maureen-johnson-nine-liars-audiobook/\"
+        class=\"_self\" target=\"_self\" >Maureen Johnson &#8211; Nine Liars Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/wendy-walker-the-room-next-door-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51bxgQ13OhL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></a>\n<div class=\"pt-cv-title\"><a href=\"https://goldenaudiobooks.com/wendy-walker-the-room-next-door-audiobook/\"
+        class=\"_self\" target=\"_self\" >Wendy Walker &#8211; The Room Next Door
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/keri-lake-nocticadia-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51WckAeDmvL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51WckAeDmvL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/keri-lake-nocticadia-audiobook/\" class=\"_self\"
+        target=\"_self\" >Keri Lake &#8211; Nocticadia Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/selena-winters-carnival-obsession-audio-book/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/81rfuQsAe0L._UF350350_QL50-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/81rfuQsAe0L._UF350350_QL50-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/selena-winters-carnival-obsession-audio-book/\"
+        class=\"_self\" target=\"_self\" >Selena Winters &#8211; Carnival Obsession
+        Audiobook</a></div></div></div>\n<div class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item
+        pt-cv-1-col\" ><div class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/nicole-blanchard-toxic-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51wbJWezuqL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51wbJWezuqL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/nicole-blanchard-toxic-audiobook/\" class=\"_self\"
+        target=\"_self\" >Nicole Blanchard &#8211; Toxic Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/kamala-harris-107-days-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41KaMTbwHcL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41KaMTbwHcL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/kamala-harris-107-days-audiobook/\" class=\"_self\"
+        target=\"_self\" >Kamala Harris &#8211; 107 Days Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/k-m-moronova-leave-me-behind-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51AP0bxz6jL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51AP0bxz6jL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/k-m-moronova-leave-me-behind-audiobook/\"
+        class=\"_self\" target=\"_self\" >K.M. Moronova &#8211; Leave Me Behind Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/steph-macca-unhinged-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41pGCLULx9L._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/41pGCLULx9L._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/steph-macca-unhinged-audiobook/\" class=\"_self\"
+        target=\"_self\" >Steph Macca &#8211; Unhinged Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/chris-wooding-the-ember-blade-audiobook/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/08/51A3zC9pRwL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/08/51A3zC9pRwL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/chris-wooding-the-ember-blade-audiobook/\"
+        class=\"_self\" target=\"_self\" >Chris Wooding &#8211; The Ember Blade Audiobook</a></div></div></div>\n<div
+        class=\"col-md-3 col-sm-4 col-xs-6 pt-cv-content-item pt-cv-1-col\" ><div
+        class='pt-cv-ifield'><a href=\"https://goldenaudiobooks.com/rina-kent-beautiful-venom-audio-book/\"
+        class=\"_self pt-cv-href-thumbnail pt-cv-thumb-default\" target=\"_self\"
+        ><img decoding=\"async\" width=\"300\" height=\"300\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E\"
+        class=\"pt-cv-thumbnail\" alt=\"\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/08/51MKdRtqtdL._SL500-300x300.jpg\"
+        /><noscript><img decoding=\"async\" width=\"300\" height=\"300\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/08/51MKdRtqtdL._SL500-300x300.jpg\"
+        class=\"pt-cv-thumbnail\" alt=\"\" /></noscript></a>\n<div class=\"pt-cv-title\"><a
+        href=\"https://goldenaudiobooks.com/rina-kent-beautiful-venom-audio-book/\"
+        class=\"_self\" target=\"_self\" >Rina Kent &#8211; Beautiful Venom Audiobook</a></div></div></div></div></div>\n<div
+        class=\" pt-cv-pagination-wrapper\"><ul class=\"pt-cv-pagination pt-cv-ajax
+        pagination\" data-totalpages=\"106\" data-currentpage=\"1\" data-sid=\"dfc722dcde\"
+        data-unid=\"\" data-isblock=\"\" data-postid=\"\"><li class=\"active\"><a
+        href=\"#\">1</a></li>\n\t<li ><a class=\"\" href=\"https://goldenaudiobooks.com/?_page=2\">2</a></li>\n\t<li
+        ><a class=\"\" href=\"https://goldenaudiobooks.com/?_page=3\">3</a></li>\n\t<li
+        ><a href=\"#\">&hellip;</a></li>\n\t<li ><a class=\"\" href=\"https://goldenaudiobooks.com/?_page=106\">106</a></li>\n\t<li
+        ><a class=\" \" href=\"https://goldenaudiobooks.com/?_page=2\">&rsaquo;</a></li>\n\t</ul><img
+        decoding=\"async\" width=\"15\" height=\"15\" class=\"pt-cv-spinner\" alt=\"Loading...\"
+        src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2015%2015'%3E%3C/svg%3E\"
+        data-lazy-src=\"data:image/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM/DJKZNLND/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw==\"
+        /><noscript><img decoding=\"async\" width=\"15\" height=\"15\" class=\"pt-cv-spinner\"
+        alt=\"Loading...\" src=\"data:image/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM/DJKZNLND/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw==\"
+        /></noscript><div class=\"clear pt-cv-clear-pagination\"></div></div></div>\n<!--
+        CONTENT END 3 -->\n\n\t\t\n\t</div><!-- .post-single -->\n\n</article><!--
+        #post-28854 -->\t\t\t\t\t\n\t\t\t\t</div><!-- .site-content-wrapper .clearfix
+        -->\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t</main><!-- #site-content -->\n\t\t\t\n\t\t\t\n<aside
+        id=\"site-aside\" role=\"complementary\">\n\n\t<div class=\"site-aside-wrapper
+        clearfix\">\n\t\n\t\t<div id=\"is_widget-2\" class=\"widget widget_is_search
+        widget_search\"><form role=\"search\" method=\"get\" class=\"search-form\"
+        action=\"https://goldenaudiobooks.com/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span
+        class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\"
+        class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"
+        data-swplive=\"true\" data-swpengine=\"default\" data-swpconfig=\"default\"
+        />\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\"
+        value=\"Search\" />\n\t\t\t<input type=\"hidden\" name=\"id\" value=\"28332\"
+        /></form></div><div id=\"arpw-widget-3\" class=\"widget arpw-widget-random\"><p
+        class=\"widget-title\">Random Posts</p><div class=\"arpw-random-post \"><ul
+        class=\"arpw-ul\"><li class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/tamsyn-muir-gideon-ninth-audio-book/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Tamsyn Muir &#8211;
+        Gideon the Ninth Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/06/42036538-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/06/42036538-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Tamsyn Muir &#8211;
+        Gideon the Ninth Audiobook\" decoding=\"async\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/tamsyn-muir-gideon-ninth-audio-book/\"
+        rel=\"bookmark\">Tamsyn Muir &#8211; Gideon the Ninth Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/freida-mcfadden-the-boyfriend-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Freida McFadden &#8211;
+        The Boyfriend Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2024/11/41qtDU1VMjL._SL500-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2024/11/41qtDU1VMjL._SL500-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Freida McFadden &#8211;
+        The Boyfriend Audiobook\" decoding=\"async\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/freida-mcfadden-the-boyfriend-audiobook/\"
+        rel=\"bookmark\">Freida McFadden &#8211; The Boyfriend Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/cassandra-clare-ghosts-of-shadow-market-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Cassandra Clare &#8211;
+        Ghosts of the Shadow Market Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/05/516OAsNUUAL._SX329_BO1204203200-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/05/516OAsNUUAL._SX329_BO1204203200-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Cassandra Clare &#8211;
+        Ghosts of the Shadow Market Audiobook\" decoding=\"async\" /></noscript></a><a
+        class=\"arpw-title\" href=\"https://goldenaudiobooks.com/cassandra-clare-ghosts-of-shadow-market-audiobook/\"
+        rel=\"bookmark\">Cassandra Clare &#8211; Ghosts of the Shadow Market Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/ronan-farrow-catch-and-kill-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Ronan Farrow &#8211;
+        Catch and Kill Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/03/41zwYYq2kHL._SX323_BO1204203200-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/03/41zwYYq2kHL._SX323_BO1204203200-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Ronan Farrow &#8211;
+        Catch and Kill Audiobook\" decoding=\"async\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/ronan-farrow-catch-and-kill-audiobook/\"
+        rel=\"bookmark\">Ronan Farrow &#8211; Catch and Kill Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/carley-fortune-meet-me-at-the-lake-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Carley Fortune &#8211;
+        Meet Me at the Lake Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51cvaxlKGTL._SL500-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2025/10/51cvaxlKGTL._SL500-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Carley Fortune &#8211;
+        Meet Me at the Lake Audiobook\" decoding=\"async\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/carley-fortune-meet-me-at-the-lake-audiobook/\"
+        rel=\"bookmark\">Carley Fortune &#8211; Meet Me at the Lake Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/alan-bradley-dead-in-their-vaulted-arches-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Alan Bradley &#8211;
+        The Dead in Their Vaulted Arches Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51xwUpM3C1L._SX304_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51xwUpM3C1L._SX304_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Alan Bradley &#8211;
+        The Dead in Their Vaulted Arches Audiobook\" decoding=\"async\" /></noscript></a><a
+        class=\"arpw-title\" href=\"https://goldenaudiobooks.com/alan-bradley-dead-in-their-vaulted-arches-audiobook/\"
+        rel=\"bookmark\">Alan Bradley &#8211; The Dead in Their Vaulted Arches Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/laura-thalassa-a-strange-hymn-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Laura Thalassa &#8211;
+        A Strange Hymn Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/07/41nnWPxQ52L-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/07/41nnWPxQ52L-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Laura Thalassa &#8211;
+        A Strange Hymn Audiobook\" decoding=\"async\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/laura-thalassa-a-strange-hymn-audiobook/\"
+        rel=\"bookmark\">Laura Thalassa &#8211; A Strange Hymn Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/gabriella-coleman-hacker-hoaxer-whistleblower-spy/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Gabriella Coleman &#8211;
+        Hacker, Hoaxer, Whistleblower, Spy Audiobook\" decoding=\"async\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/04/51VuT3219dL._SX331_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/04/51VuT3219dL._SX331_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Gabriella Coleman &#8211;
+        Hacker, Hoaxer, Whistleblower, Spy Audiobook\" decoding=\"async\" /></noscript></a><a
+        class=\"arpw-title\" href=\"https://goldenaudiobooks.com/gabriella-coleman-hacker-hoaxer-whistleblower-spy/\"
+        rel=\"bookmark\">Gabriella Coleman &#8211; Hacker, Hoaxer, Whistleblower,
+        Spy Audiobook</a></li></ul></div><!-- Generated by https://wordpress.org/plugins/advanced-random-posts-widget/
+        --></div><div id=\"categories-2\" class=\"widget widget_categories\"><p class=\"widget-title\">Categories</p>\n\t\t\t<ul>\n\t\t\t\t\t<li
+        class=\"cat-item cat-item-2\"><a href=\"https://goldenaudiobooks.com/category/action/\">Action</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-3\"><a href=\"https://goldenaudiobooks.com/category/adults-audios/\">Adults</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-4\"><a href=\"https://goldenaudiobooks.com/category/adventure/\">Adventure</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-5\"><a href=\"https://goldenaudiobooks.com/category/autobiography-biographies/\">Autobiography
+        &amp; Biographies</a>\n</li>\n\t<li class=\"cat-item cat-item-6\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-7\"><a href=\"https://goldenaudiobooks.com/category/business/\">Business</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-8\"><a href=\"https://goldenaudiobooks.com/category/children/\">Children</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-9\"><a href=\"https://goldenaudiobooks.com/category/classic/\">Classic</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-10\"><a href=\"https://goldenaudiobooks.com/category/crime-audiobooks/\">Crime</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-11\"><a href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-12\"><a href=\"https://goldenaudiobooks.com/category/general-fiction/\">General
+        Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-13\"><a href=\"https://goldenaudiobooks.com/category/historical-fiction/\">Historical
+        Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-14\"><a href=\"https://goldenaudiobooks.com/category/history/\">History</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-15\"><a href=\"https://goldenaudiobooks.com/category/horror/\">Horror</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-16\"><a href=\"https://goldenaudiobooks.com/category/humors/\">Humor</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-17\"><a href=\"https://goldenaudiobooks.com/category/literary/\">Literary</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-18\"><a href=\"https://goldenaudiobooks.com/category/literature-fiction/\">Literature
+        &amp; Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-19\"><a href=\"https://goldenaudiobooks.com/category/mystery/\">Mystery</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-1241\"><a href=\"https://goldenaudiobooks.com/category/nonfiction/\">Nonfiction</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-20\"><a href=\"https://goldenaudiobooks.com/category/novel-audiobooks/\">Novel</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-21\"><a href=\"https://goldenaudiobooks.com/category/other/\">Other</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-22\"><a href=\"https://goldenaudiobooks.com/category/paranormal-audio-books/\">Paranormal</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-23\"><a href=\"https://goldenaudiobooks.com/category/philosophy/\">Philosophy</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-24\"><a href=\"https://goldenaudiobooks.com/category/audiobooks-romance/\">Romance</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-25\"><a href=\"https://goldenaudiobooks.com/category/science-fiction-audiobooks/\">Sci-Fi</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-26\"><a href=\"https://goldenaudiobooks.com/category/science/\">Science</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-27\"><a href=\"https://goldenaudiobooks.com/category/self-help/\">Self-help</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-28\"><a href=\"https://goldenaudiobooks.com/category/short-story/\">Short
+        Story</a>\n</li>\n\t<li class=\"cat-item cat-item-29\"><a href=\"https://goldenaudiobooks.com/category/spiritual-religious/\">Spiritual
+        &amp; Religious</a>\n</li>\n\t<li class=\"cat-item cat-item-30\"><a href=\"https://goldenaudiobooks.com/category/sports/\">Sports</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-31\"><a href=\"https://goldenaudiobooks.com/category/suspense/\">Suspense</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-32\"><a href=\"https://goldenaudiobooks.com/category/teen-and-young-adult/\">Teen
+        &amp; Young Adult</a>\n</li>\n\t<li class=\"cat-item cat-item-33\"><a href=\"https://goldenaudiobooks.com/category/thriller/\">Thriller</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-1\"><a href=\"https://goldenaudiobooks.com/category/uncategorized/\">Uncategorized</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-34\"><a href=\"https://goldenaudiobooks.com/category/westerns/\">Westerns</a>\n</li>\n\t\t\t</ul>\n\n\t\t\t</div>\t\t\n\t</div><!--
+        .site-aside-wrapper .clearfix -->\n\n</aside><!-- #site-aside -->\t\t\n\t\t</div><!--
+        .wrapper .wrapper-main -->\n\n\t</div><!-- #site-main -->\n\n\n\t<footer class=\"site-footer\"
+        role=\"contentinfo\">\n\t\n\t\t<div class=\"wrapper wrapper-footer\">\n\n\t\t\t\n\t\t\t<a
+        href=\"/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"29414c454546694e46454d4c47485c4d40464b46464207474c5d\">[email&#160;protected]</a>\n\t\t\t</div><!--
+        .wrapper-copy -->\n\n\t\t</div><!-- .wrapper .wrapper-footer -->\n\t\n\t</footer><!--
+        .site-footer -->\n\n</div><!-- #container -->\n\n<script data-cfasync=\"false\"
+        src=\"/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\"></script><script
+        type=\"speculationrules\">\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/videoblog/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch,
+        .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n</script>\n        <style>\n
+        \           .searchwp-live-search-results {\n                opacity: 0;\n
+        \               transition: opacity .25s ease-in-out;\n                -moz-transition:
+        opacity .25s ease-in-out;\n                -webkit-transition: opacity .25s
+        ease-in-out;\n                height: 0;\n                overflow: hidden;\n
+        \               z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay.
+        */\n                position: absolute;\n                display: none;\n
+        \           }\n\n            .searchwp-live-search-results-showing {\n                display:
+        block;\n                opacity: 1;\n                height: auto;\n                overflow:
+        auto;\n            }\n\n            .searchwp-live-search-no-results {\n                padding:
+        3em 2em 0;\n                text-align: center;\n            }\n\n            .searchwp-live-search-no-min-chars:after
+        {\n                content: \"Continue typing\";\n                display:
+        block;\n                text-align: center;\n                padding: 2em
+        2em 0;\n            }\n        </style>\n                <script>\n            var
+        _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;\n            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE
+        = 'default';\n            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';\n
+        \       </script>\n        <script type=\"text/javascript\" id=\"pt-cv-content-views-script-js-extra\">\n/*
+        <![CDATA[ */\nvar PT_CV_PUBLIC = {\"_prefix\":\"pt-cv-\",\"page_to_show\":\"5\",\"_nonce\":\"28249b40cb\",\"is_admin\":\"\",\"is_mobile\":\"\",\"ajaxurl\":\"https://goldenaudiobooks.com/wp-admin/admin-ajax.php\",\"lang\":\"\",\"loading_image_src\":\"data:image/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM/DJKZNLND/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw==\"};\nvar
+        PT_CV_PAGINATION = {\"first\":\"\\u00ab\",\"prev\":\"\\u2039\",\"next\":\"\\u203a\",\"last\":\"\\u00bb\",\"goto_first\":\"Go
+        to first page\",\"goto_prev\":\"Go to previous page\",\"goto_next\":\"Go to
+        next page\",\"goto_last\":\"Go to last page\",\"current_page\":\"Current page
+        is\",\"goto_page\":\"Go to page\"};\n//# sourceURL=pt-cv-content-views-script-js-extra\n/*
+        ]]> */\n</script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=4.3\"
+        id=\"pt-cv-content-views-script-js\"></script>\n<script type=\"text/javascript\"
+        id=\"collapseomatic-js-js-before\">\n/* <![CDATA[ */\nconst com_options =
+        {\"colomatduration\":\"fast\",\"colomatslideEffect\":\"slideFade\",\"colomatpauseInit\":\"\",\"colomattouchstart\":\"\"}\n//#
+        sourceURL=collapseomatic-js-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.7.2\"
+        id=\"collapseomatic-js-js\"></script>\n<script type=\"text/javascript\" id=\"videoblog-scripts-js-extra\">\n/*
+        <![CDATA[ */\nvar videoblogStrings = {\"slicknav_menu_home\":\"HOME\"};\n//#
+        sourceURL=videoblog-scripts-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/videoblog.js?ver=20170211\"
+        id=\"videoblog-scripts-js\"></script>\n<script type=\"text/javascript\" id=\"swp-live-search-client-js-extra\">\n/*
+        <![CDATA[ */\nvar searchwp_live_search_params = [];\nsearchwp_live_search_params
+        = {\"ajaxurl\":\"https:\\/\\/goldenaudiobooks.com\\/wp-admin\\/admin-ajax.php\",\"origin_id\":28854,\"config\":{\"default\":{\"engine\":\"default\",\"input\":{\"delay\":300,\"min_chars\":3},\"results\":{\"position\":\"bottom\",\"width\":\"auto\",\"offset\":{\"x\":0,\"y\":5}},\"spinner\":{\"lines\":12,\"length\":8,\"width\":3,\"radius\":8,\"scale\":1,\"corners\":1,\"color\":\"#424242\",\"fadeColor\":\"transparent\",\"speed\":1,\"rotate\":0,\"animation\":\"searchwp-spinner-line-fade-quick\",\"direction\":1,\"zIndex\":2000000000,\"className\":\"spinner\",\"top\":\"50%\",\"left\":\"50%\",\"shadow\":\"0
+        0 1px transparent\",\"position\":\"absolute\"}}},\"msg_no_config_found\":\"No
+        valid SearchWP Live Search configuration found!\",\"aria_instructions\":\"When
+        autocomplete results are available use up and down arrows to review and enter
+        to go to the desired page. Touch device users, explore by touch or with swipe
+        gestures.\"};;\n//# sourceURL=swp-live-search-client-js-extra\n/* ]]> */\n</script>\n<script
+        type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min.js?ver=1.8.7\"
+        id=\"swp-live-search-client-js\"></script>\n<script type=\"text/javascript\"
+        id=\"ivory-search-scripts-js-extra\">\n/* <![CDATA[ */\nvar IvorySearchVars
+        = {\"is_analytics_enabled\":\"1\"};\n//# sourceURL=ivory-search-scripts-js-extra\n/*
+        ]]> */\n</script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.5.14\"
+        id=\"ivory-search-scripts-js\"></script>\n<script id=\"wp-emoji-settings\"
+        type=\"application/json\">\n{\"baseUrl\":\"https://s.w.org/images/core/emoji/17.0.2/72x72/\",\"ext\":\".png\",\"svgUrl\":\"https://s.w.org/images/core/emoji/17.0.2/svg/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https://goldenaudiobooks.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4\"}}\n</script>\n<script
+        type=\"module\">\n/* <![CDATA[ */\n/*! This file is auto-generated */\nconst
+        a=JSON.parse(document.getElementById(\"wp-emoji-settings\").textContent),o=(window._wpemojiSettings=a,\"wpEmojiSettingsSupports\"),s=[\"flag\",\"emoji\"];function
+        i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function
+        c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new
+        Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const
+        a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return
+        t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var
+        n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function
+        u(e,t,n,a){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\udde8\\ud83c\\uddf6\",\"\\ud83c\\udde8\\u200b\\ud83c\\uddf6\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!a(e,\"\\ud83e\\u1fac8\")}return!1}function
+        f(e,t,n,a){let r;const o=(r=\"undefined\"!=typeof WorkerGlobalScope&&self
+        instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement(\"canvas\")).getContext(\"2d\",{willReadFrequently:!0}),s=(o.textBaseline=\"top\",o.font=\"600
+        32px Arial\",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var
+        t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new
+        Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof
+        e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&\"object\"==typeof
+        e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(\"undefined\"!=typeof
+        Worker&&\"undefined\"!=typeof OffscreenCanvas&&\"undefined\"!=typeof URL&&URL.createObjectURL&&\"undefined\"!=typeof
+        Blob)try{var e=\"postMessage(\"+f.toString()+\"(\"+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(\",\")+\"));\",a=new
+        Blob([e],{type:\"text/javascript\"});const r=new Worker(URL.createObjectURL(a),{name:\"wpTestEmojiSupports\"});return
+        void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const
+        n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],\"flag\"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var
+        t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});\n//#
+        sourceURL=https://goldenaudiobooks.com/wp-includes/js/wp-emoji-loader.min.js\n/*
+        ]]> */\n</script>\n<script id='pt-cv-append-scripts'>if( typeof PT_CV_PAGINATION
+        !== 'undefined' ) { PT_CV_PAGINATION.links = {\"page_1\":\"https:\\/\\/goldenaudiobooks.com\\/\",\"page_n\":\"https:\\/\\/goldenaudiobooks.com\\/?_page=_CVNUMBER_\"};
+        }\r\n            </script><script>window.lazyLoadOptions=[{elements_selector:\"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]\",data_src:\"lazy-src\",data_srcset:\"lazy-srcset\",data_sizes:\"lazy-sizes\",class_loading:\"lazyloading\",class_loaded:\"lazyloaded\",threshold:300,callback_loaded:function(element){if(element.tagName===\"IFRAME\"&&element.dataset.rocketLazyload==\"fitvidscompatible\"){if(element.classList.contains(\"lazyloaded\")){if(typeof
+        window.jQuery!=\"undefined\"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:\".rocket-lazyload\",data_src:\"lazy-src\",data_srcset:\"lazy-srcset\",data_sizes:\"lazy-sizes\",class_loading:\"lazyloading\",class_loaded:\"lazyloaded\",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var
+        lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new
+        MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var
+        rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof
+        mutation.addedNodes[i].getElementsByTagName!=='function'){continue}\nif(typeof
+        mutation.addedNodes[i].getElementsByClassName!=='function'){continue}\nimages=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName==\"IMG\";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName==\"IFRAME\";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}\nif(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var
+        b=document.getElementsByTagName(\"body\")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script
+        data-no-minify=\"1\" async src=\"https://goldenaudiobooks.com/wp-content/plugins/site-speed-booster/assets/js/lazyload/17.8.3/lazyload.min.js\"></script><script>function
+        lazyLoadThumb(e,alt,l){var t='<img data-lazy-src=\"https://i.ytimg.com/vi/ID/hqdefault.jpg\"
+        alt=\"\" width=\"480\" height=\"360\"><noscript><img src=\"https://i.ytimg.com/vi/ID/hqdefault.jpg\"
+        alt=\"\" width=\"480\" height=\"360\"></noscript>',a='<button class=\"play\"
+        aria-label=\"Play Youtube video\"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading=\"lazy\"','');t=t.replace(/<noscript>.*?<\\/noscript>/g,'');}t=t.replace('alt=\"\"','alt=\"'+alt+'\"');return
+        t.replace(\"ID\",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement(\"iframe\"),t=\"ID?autoplay=1\";t+=0===this.parentNode.dataset.query.length?\"\":\"&\"+this.parentNode.dataset.query;e.setAttribute(\"src\",t.replace(\"ID\",this.parentNode.dataset.src)),e.setAttribute(\"frameborder\",\"0\"),e.setAttribute(\"allowfullscreen\",\"1\"),e.setAttribute(\"allow\",\"accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture\"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener(\"DOMContentLoaded\",function(){var
+        exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName(\"rll-youtube-player\");for(t=0;t<a.length;t++)(e=document.createElement(\"div\")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute(\"data-id\",a[t].dataset.id),e.setAttribute(\"data-query\",a[t].dataset.query),e.setAttribute(\"data-src\",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(\".play\")),(p.onclick=lazyLoadYoutubeIframe)});</script>\n</body>\n</html>\n\n<!--
+        This website is like a Rocket, isn't it? Performance optimized by WP Rocket.
+        Learn more: https://wp-rocket.me - Debug: cached@1777712857 -->"
+    headers:
+      CF-RAY:
+      - 9f815f047bf6a5fe-MAD
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:48:50 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=jyi%2BSBlTIyQO3aipRhnZ%2BHjTP84%2FJBNZK9ssp7ZmoU%2FAvxQW1r6KlQJcu9vEdIPDNe8eDk1eS6LeTa5vB7ElAwCE%2FZmATJx1Kzz2baQ7%2BNAI489HUXYigYj2kR91ah1y57Nn3Xyc1mXOooZmCWMPbRCK4Q%3D%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '78094'
+      expires:
+      - Thu, 07 May 2026 15:48:50 GMT
+      last-modified:
+      - Sat, 02 May 2026 09:07:37 GMT
+      vary:
+      - Accept-Encoding,User-Agent
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://goldenaudiobooks.com/ernest-cline-ready-player-one-audiobook-free-online/
+  response:
+    body:
+      string: ''
+    headers:
+      CF-RAY:
+      - 9f815f053b7a7cec-MAD
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0, no-store, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:48:51 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=viRcSyg4XHf5wBq4nMDLYr452Ibd259ir9dFKgNYneulhRL%2B0j7a5c9ch63bl5yFBQqr6BbQGVRptv9HLaDUr6EhzoikAYGWYpWIVVpx28Z0VZS6sHNIJ9EXBhCUBlXwy3QUtdnKwqSKjkGlzdtI7rFUSw%3D%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      expires:
+      - Wed, 11 Jan 1984 05:00:00 GMT
+      location:
+      - https://goldenaudiobooks.com/ernest-cline-ready-player-one-audio-book/
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - PHP/8.4.21
+      x-redirect-by:
+      - WordPress
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://goldenaudiobooks.com/ernest-cline-ready-player-one-audio-book/
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n<meta charset=\"UTF-8\">\n<meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link
+        rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\n<meta name='robots' content='index,
+        follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!--
+        This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/
+        -->\n\t<title>Ernest Cline - Ready Player One Audiobook (Free Online)</title><link
+        rel=\"preload\" data-rocket-preload as=\"image\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2020/09/51bE6SBNroL._SX318_BO1204203200.jpg\"
+        fetchpriority=\"high\">\n\t<meta name=\"description\" content=\"Ernest Cline
+        - Ready Player One Audiobook Free Online. Books &gt; Science Fiction &amp;
+        Fantasy &gt; Science Fiction. Stream auidobook online Ready Player One.\"
+        />\n\t<link rel=\"canonical\" href=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audio-book/\"
+        />\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\"
+        content=\"article\" />\n\t<meta property=\"og:title\" content=\"Ernest Cline
+        - Ready Player One Audiobook (Free Online)\" />\n\t<meta property=\"og:description\"
+        content=\"Ernest Cline - Ready Player One Audiobook Free Online. Books &gt;
+        Science Fiction &amp; Fantasy &gt; Science Fiction. Stream auidobook online
+        Ready Player One.\" />\n\t<meta property=\"og:url\" content=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audio-book/\"
+        />\n\t<meta property=\"og:site_name\" content=\"Goldenaudiobooks\" />\n\t<meta
+        property=\"article:published_time\" content=\"2016-11-29T21:24:18+00:00\"
+        />\n\t<meta property=\"article:modified_time\" content=\"2024-04-19T16:37:20+00:00\"
+        />\n\t<meta property=\"og:image\" content=\"https://goldenaudiobooks.com/wp-content/uploads/2016/11/51bE6SBNroL._SX318_BO1204203200_.jpg\"
+        />\n\t<meta property=\"og:image:width\" content=\"320\" />\n\t<meta property=\"og:image:height\"
+        content=\"499\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\"
+        />\n\t<meta name=\"author\" content=\"stream\" />\n\t<meta name=\"twitter:card\"
+        content=\"summary_large_image\" />\n\t<meta name=\"twitter:label1\" content=\"Written
+        by\" />\n\t<meta name=\"twitter:data1\" content=\"stream\" />\n\t<meta name=\"twitter:label2\"
+        content=\"Est. reading time\" />\n\t<meta name=\"twitter:data2\" content=\"5
+        minutes\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/\"},\"author\":{\"name\":\"stream\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#\\/schema\\/person\\/4ca3cd638a397a555519ee6e2bb7ba7e\"},\"headline\":\"Ernest
+        Cline &#8211; Ready Player One Audiobook\",\"datePublished\":\"2016-11-29T21:24:18+00:00\",\"dateModified\":\"2024-04-19T16:37:20+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/\"},\"wordCount\":1023,\"image\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/goldenaudiobooks.com\\/wp-content\\/uploads\\/2016\\/11\\/51bE6SBNroL._SX318_BO1204203200_.jpg\",\"keywords\":[\"Ernest
+        Cline\"],\"articleSection\":[\"Action\",\"Adventure\",\"Bestsellers\",\"Literature
+        &amp; Fiction\",\"Sci-Fi\",\"Suspense\",\"Thriller\"],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/\",\"url\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/\",\"name\":\"Ernest
+        Cline - Ready Player One Audiobook (Free Online)\",\"isPartOf\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/goldenaudiobooks.com\\/wp-content\\/uploads\\/2016\\/11\\/51bE6SBNroL._SX318_BO1204203200_.jpg\",\"datePublished\":\"2016-11-29T21:24:18+00:00\",\"dateModified\":\"2024-04-19T16:37:20+00:00\",\"author\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#\\/schema\\/person\\/4ca3cd638a397a555519ee6e2bb7ba7e\"},\"description\":\"Ernest
+        Cline - Ready Player One Audiobook Free Online. Books > Science Fiction &
+        Fantasy > Science Fiction. Stream auidobook online Ready Player One.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#primaryimage\",\"url\":\"https:\\/\\/goldenaudiobooks.com\\/wp-content\\/uploads\\/2016\\/11\\/51bE6SBNroL._SX318_BO1204203200_.jpg\",\"contentUrl\":\"https:\\/\\/goldenaudiobooks.com\\/wp-content\\/uploads\\/2016\\/11\\/51bE6SBNroL._SX318_BO1204203200_.jpg\",\"width\":320,\"height\":499,\"caption\":\"51bE6SBNroL._SX318_BO1204203200_.jpg\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/ernest-cline-ready-player-one-audio-book\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/goldenaudiobooks.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Ernest
+        Cline &#8211; Ready Player One Audiobook\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#website\",\"url\":\"https:\\/\\/goldenaudiobooks.com\\/\",\"name\":\"Goldenaudiobooks\",\"description\":\"Online\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/goldenaudiobooks.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/goldenaudiobooks.com\\/#\\/schema\\/person\\/4ca3cd638a397a555519ee6e2bb7ba7e\",\"name\":\"stream\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/a3a1c0a255f62d54602400d32f8f8405d744367ce9c6281a9752d068dee81489?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/a3a1c0a255f62d54602400d32f8f8405d744367ce9c6281a9752d068dee81489?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/a3a1c0a255f62d54602400d32f8f8405d744367ce9c6281a9752d068dee81489?s=96&d=mm&r=g\",\"caption\":\"stream\"},\"url\":\"https:\\/\\/goldenaudiobooks.com\\/author\\/stream\\/\"}]}</script>\n\t<!--
+        / Yoast SEO plugin. -->\n\n\n<link rel='dns-prefetch' href='//fonts.googleapis.com'
+        />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Goldenaudiobooks
+        &raquo; Feed\" href=\"https://goldenaudiobooks.com/feed/\" />\n<link rel=\"alternate\"
+        title=\"oEmbed (JSON)\" type=\"application/json+oembed\" href=\"https://goldenaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoldenaudiobooks.com%2Fernest-cline-ready-player-one-audio-book%2F\"
+        />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\"
+        href=\"https://goldenaudiobooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgoldenaudiobooks.com%2Fernest-cline-ready-player-one-audio-book%2F&#038;format=xml\"
+        />\n<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>\nimg:is([sizes=auto
+        i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css
+        */\n</style>\n<link data-minify=\"1\" rel='stylesheet' id='pt-cv-public-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1776770754'
+        type='text/css' media='all' />\n<style id='wp-emoji-styles-inline-css' type='text/css'>\n\n\timg.wp-smiley,
+        img.emoji {\n\t\tdisplay: inline !important;\n\t\tborder: none !important;\n\t\tbox-shadow:
+        none !important;\n\t\theight: 1em !important;\n\t\twidth: 1em !important;\n\t\tmargin:
+        0 0.07em !important;\n\t\tvertical-align: -0.1em !important;\n\t\tbackground:
+        none !important;\n\t\tpadding: 0 !important;\n\t}\n/*# sourceURL=wp-emoji-styles-inline-css
+        */\n</style>\n<style id='wp-block-library-inline-css' type='text/css'>\n:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media
+        (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root
+        .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root
+        .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root
+        .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root
+        .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb
+        50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root
+        .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root
+        .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root
+        .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root
+        .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px
+        23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html
+        :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html
+        :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html
+        :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html
+        :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html
+        :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0
+        0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media
+        screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}\n\n/*#
+        sourceURL=wp-block-library-inline-css */\n</style>\n<style id='classic-theme-styles-inline-css'
+        type='text/css'>\n/*! This file is auto-generated */\n.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em
+        + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}\n/*#
+        sourceURL=/wp-includes/css/classic-themes.min.css */\n</style>\n<style id='global-styles-inline-css'
+        type='text/css'>\n:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3:
+        4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2:
+        3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9:
+        16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray:
+        #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink:
+        #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange:
+        #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan:
+        #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue:
+        #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple:
+        #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227)
+        0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:
+        linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
+        linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:
+        linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
+        linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
+        linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186)
+        40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:
+        linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:
+        linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62)
+        100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
+        0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:
+        linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181)
+        100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128)
+        0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129)
+        0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium:
+        20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large:
+        42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40:
+        1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70:
+        3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural:
+        6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px
+        rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0,
+        0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255),
+        6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap:
+        0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap:
+        wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display:
+        grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap:
+        2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap:
+        1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange)
+        !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber)
+        !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan)
+        !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan)
+        !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue)
+        !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue)
+        !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple)
+        !important;}.has-black-background-color{background-color: var(--wp--preset--color--black)
+        !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray)
+        !important;}.has-white-background-color{background-color: var(--wp--preset--color--white)
+        !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink)
+        !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red)
+        !important;}.has-luminous-vivid-orange-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color:
+        var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color:
+        var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color:
+        var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color:
+        var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color:
+        var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color:
+        var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color:
+        var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color:
+        var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color:
+        var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color:
+        var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
+        var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
+        var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
+        !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
+        var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
+        var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background:
+        var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
+        var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
+        var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
+        var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
+        var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
+        var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
+        var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size:
+        var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size:
+        var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size:
+        var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size:
+        var(--wp--preset--font-size--x-large) !important;}\n/*# sourceURL=global-styles-inline-css
+        */\n</style>\n\n<link data-minify=\"1\" rel='stylesheet' id='collapscore-css-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/jquery-collapse-o-matic/css/core_style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='collapseomatic-css-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/jquery-collapse-o-matic/css/light_style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='ivory-search-styles-css'
+        href='https://goldenaudiobooks.com/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.5.14'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='videoblog-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/themes/videoblog/style.css?ver=1776770754'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='genericons-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/themes/videoblog/genericons/genericons.css?ver=1776770754'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='videoblog-webfonts-css'
+        href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CMontserrat%3A400%2C700&#038;subset=latin%2Clatin-ext'
+        type='text/css' media='all' />\n<link data-minify=\"1\" rel='stylesheet' id='arpw-style-css'
+        href='https://goldenaudiobooks.com/wp-content/cache/min/1/wp-content/plugins/advanced-random-posts-widget/assets/css/arpw-frontend.css?ver=1776770754'
+        type='text/css' media='all' />\n<style id='rocket-lazyload-inline-css' type='text/css'>\n.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline:
+        2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0
+        0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s
+        all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player
+        .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://goldenaudiobooks.com/wp-content/plugins/site-speed-booster/assets/img/youtube.png)
+        no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}\n/*#
+        sourceURL=rocket-lazyload-inline-css */\n</style>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1\"
+        id=\"jquery-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1\"
+        id=\"jquery-migrate-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/jquery.slicknav.min.js\"
+        id=\"jquery-slicknav-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/superfish.min.js\"
+        id=\"jquery-superfish-js\"></script>\n<link rel=\"https://api.w.org/\" href=\"https://goldenaudiobooks.com/wp-json/\"
+        /><link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://goldenaudiobooks.com/wp-json/wp/v2/posts/1947\"
+        /><link rel=\"EditURI\" type=\"application/rsd+xml\" title=\"RSD\" href=\"https://goldenaudiobooks.com/xmlrpc.php?rsd\"
+        />\n<meta name=\"generator\" content=\"WordPress 6.9.4\" />\n<link rel='shortlink'
+        href='https://goldenaudiobooks.com/?p=1947' />\n<script type=\"text/javascript\">\n(function(url){\n\tif(/(?:Chrome\\/26\\.0\\.1410\\.63
+        Safari\\/537\\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return;
+        }\n\tvar addEvent = function(evt, handler) {\n\t\tif (window.addEventListener)
+        {\n\t\t\tdocument.addEventListener(evt, handler, false);\n\t\t} else if (window.attachEvent)
+        {\n\t\t\tdocument.attachEvent('on' + evt, handler);\n\t\t}\n\t};\n\tvar removeEvent
+        = function(evt, handler) {\n\t\tif (window.removeEventListener) {\n\t\t\tdocument.removeEventListener(evt,
+        handler, false);\n\t\t} else if (window.detachEvent) {\n\t\t\tdocument.detachEvent('on'
+        + evt, handler);\n\t\t}\n\t};\n\tvar evts = 'contextmenu dblclick drag dragend
+        dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown
+        mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');\n\tvar
+        logHuman = function() {\n\t\tif (window.wfLogHumanRan) { return; }\n\t\twindow.wfLogHumanRan
+        = true;\n\t\tvar wfscr = document.createElement('script');\n\t\twfscr.type
+        = 'text/javascript';\n\t\twfscr.async = true;\n\t\twfscr.src = url + '&r='
+        + Math.random();\n\t\t(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);\n\t\tfor
+        (var i = 0; i < evts.length; i++) {\n\t\t\tremoveEvent(evts[i], logHuman);\n\t\t}\n\t};\n\tfor
+        (var i = 0; i < evts.length; i++) {\n\t\taddEvent(evts[i], logHuman);\n\t}\n})('//goldenaudiobooks.com/?wordfence_lh=1&hid=AF2474D6B451535BE79A0D0D2489943A');\n</script><!--
+        Histats --><script>var _Hasync=_Hasync||[];_Hasync.push([\"Histats.start\",\"1,4898731,4,0,0,0,00010000\"]);_Hasync.push([\"Histats.fasi\",\"1\"]);(function(){var
+        hs=document.createElement(\"script\");hs.async=true;hs.src=\"//s10.histats.com/js15_as.js\";document.head.appendChild(hs);})();</script><link
+        rel=\"icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-32x32.jpg\"
+        sizes=\"32x32\" />\n<link rel=\"icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-192x192.jpg\"
+        sizes=\"192x192\" />\n<link rel=\"apple-touch-icon\" href=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-180x180.jpg\"
+        />\n<meta name=\"msapplication-TileImage\" content=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/cropped-rsz_1golden-open-book-vector-3716385-1-270x270.jpg\"
+        />\n\t\t<style type=\"text/css\" id=\"wp-custom-css\">\n\t\t\t.entry-meta
+        {\n display: none;\n}             \n/* Hide the date on single posts */\n.single
+        .entry-date {\n  display: none;\n}\n\n/* Hide the date on post listings */\n.entry-date
+        {\n  display: none;\n}\t\t</style>\n\t\t<!-- Histats.com  START  (aync)-->\n<script
+        type=\"text/javascript\">var _Hasync= _Hasync|| [];\n_Hasync.push(['Histats.start',
+        '1,4898731,4,0,0,0,00010000']);\n_Hasync.push(['Histats.fasi', '1']);\n_Hasync.push(['Histats.track_hits',
+        '']);\n(function() {\nvar hs = document.createElement('script'); hs.type =
+        'text/javascript'; hs.async = true;\nhs.src = ('//s10.histats.com/js15_as.js');\n(document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(hs);\n})();</script>\n<noscript><a
+        href=\"/\" target=\"_blank\"><img  src=\"//sstatic1.histats.com/0.gif?4898731&101\"
+        alt=\"counter create hit\" border=\"0\"></a></noscript>\n<!-- Histats.com
+        \ END  -->\n\n\n\n\n\n<script>(function(s){s.dataset.zone='10905413',s.src='https://llvpn.com/tag.min.js'})([document.documentElement,
+        document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script><noscript><style
+        id=\"rocket-lazyload-nojs-css\">.rll-youtube-player, [data-lazy-src]{display:none
+        !important;}</style></noscript><link rel='stylesheet' id='mediaelement-css'
+        href='https://goldenaudiobooks.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17'
+        type='text/css' media='all' />\n<link rel='stylesheet' id='wp-mediaelement-css'
+        href='https://goldenaudiobooks.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.9.4'
+        type='text/css' media='all' />\n\n<meta name=\"generator\" content=\"WP Rocket
+        3.18.3\" data-wpr-features=\"wpr_lazyload_images wpr_lazyload_iframes wpr_oci
+        wpr_minify_css wpr_desktop\" /></head>\n\t\n<!-- Google tag (gtag.js) -->\n<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=UA-105853786-1\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'UA-105853786-1');\n</script>\n\t\n<body
+        data-rsssl=1 class=\"wp-singular post-template-default single single-post
+        postid-1947 single-format-video wp-theme-videoblog videoblog\">\n\n<div  id=\"container\">\n\t<a
+        class=\"skip-link screen-reader-text\" href=\"#site-main\">Skip to content</a>\n\t<header
+        \ class=\"site-header clearfix\" role=\"banner\">\n\t\n\t\t<div  class=\"wrapper
+        wrapper-header clearfix\">\n\t\t\n\t\t\t<div class=\"site-branding clearfix\">\n\t\t\t\t\t\t\t\t<p
+        class=\"site-title\"><a href=\"https://goldenaudiobooks.com/\" rel=\"home\">Goldenaudiobooks</a></p>\n\t\t\t\t<p
+        class=\"site-description\">Online</p>\n\t\t\t\t\t\t\t</div><!-- .site-branding
+        -->\n\n\t\t\t\t\t\t\n\t\t</div><!-- .wrapper .wrapper-header -->\n\t\t\n                <div
+        class=\"navbar-header\">\n\n\t\t\t<div id=\"menu-main-slick\" class=\"menu-menu-container\"><ul
+        id=\"menu-slide-in\" class=\"menu\"><li id=\"menu-item-14626\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14626\"><a
+        href=\"https://goldenaudiobooks.com\">Home</a></li>\n<li id=\"menu-item-14624\"
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor
+        current-menu-parent current-post-parent menu-item-14624\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a></li>\n<li
+        id=\"menu-item-14627\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category
+        current-post-ancestor current-menu-parent current-post-parent menu-item-14627\"><a
+        href=\"https://goldenaudiobooks.com/category/action/\">Action</a></li>\n<li
+        id=\"menu-item-23540\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category
+        menu-item-23540\"><a href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a></li>\n<li
+        id=\"menu-item-14621\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-has-children menu-item-14621\"><a href=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audiobook-free-online/\">Ready
+        Player One</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-22027\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-22027\"><a href=\"https://goldenaudiobooks.com/ready-player-two/\">Ready
+        Player Two</a></li>\n</ul>\n</li>\n<li id=\"menu-item-23751\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23751\"><a
+        href=\"https://goldenaudiobooks.com/?s=harry+potter\">Harry Potter</a>\n<ul
+        class=\"sub-menu\">\n\t<li id=\"menu-item-23750\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23750\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+jim+dale\">Jim
+        Dale</a></li>\n\t<li id=\"menu-item-23752\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23752\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+stephen+fry\">Stephen
+        Fry</a></li>\n</ul>\n</li>\n<li id=\"menu-item-14628\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-has-children menu-item-14628\"><a href=\"https://goldenaudiobooks.com/?s=shades+\">Fifty
+        Shades</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-14631\" class=\"menu-item
+        menu-item-type-custom menu-item-object-custom menu-item-14631\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-of-grey-audiobook-online-free/\">Fifty
+        Shades of Grey</a></li>\n\t<li id=\"menu-item-14630\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14630\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-darker-audio/\">Fifty
+        Shades Darker</a></li>\n\t<li id=\"menu-item-14629\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14629\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-freed-audiobook-online-free/\">Fifty
+        Shades Freed</a></li>\n\t<li id=\"menu-item-25337\" class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-25337\"><a href=\"https://goldenaudiobooks.com/grey-e-l-james/\">Grey</a></li>\n\t<li
+        id=\"menu-item-25312\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25312\"><a href=\"https://goldenaudiobooks.com/e-l-james-darker-audiobook/\">Darker</a></li>\n\t<li
+        id=\"menu-item-25359\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25359\"><a href=\"https://goldenaudiobooks.com/freed-fifty-shades-freed-as-told-by-christian-audiobook/\">Freed</a></li>\n</ul>\n</li>\n<li
+        id=\"menu-item-22028\" class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-22028\"><a href=\"https://goldenaudiobooks.com/?s=anna+todd&#038;id=28332\">Anna
+        Todd</a></li>\n<li id=\"menu-item-28057\" class=\"menu-item menu-item-type-post_type
+        menu-item-object-page menu-item-28057\"><a href=\"https://goldenaudiobooks.com/privacy-policy/\">PRIVACY
+        POLICY</a></li>\n</ul></div>\n        </div><!-- .navbar-header -->\n        \n\t\t\t\t<nav
+        id=\"menu-main\" role=\"navigation\">\n\t\t\t<div class=\"wrapper wrapper-header-menu
+        clearfix\">\n\t\t\t\t<ul id=\"menu-main-menu\" class=\"nav navbar-nav dropdown
+        sf-menu\"><li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-home menu-item-14626\"><a href=\"https://goldenaudiobooks.com\">Home</a></li>\n<li
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor
+        current-menu-parent current-post-parent menu-item-14624\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a></li>\n<li
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor
+        current-menu-parent current-post-parent menu-item-14627\"><a href=\"https://goldenaudiobooks.com/category/action/\">Action</a></li>\n<li
+        class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23540\"><a
+        href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a></li>\n<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children
+        menu-item-14621\"><a href=\"https://goldenaudiobooks.com/ernest-cline-ready-player-one-audiobook-free-online/\">Ready
+        Player One</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-22027\"><a href=\"https://goldenaudiobooks.com/ready-player-two/\">Ready
+        Player Two</a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-has-children menu-item-23751\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter\">Harry
+        Potter</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-23750\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+jim+dale\">Jim
+        Dale</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-23752\"><a href=\"https://goldenaudiobooks.com/?s=harry+potter+stephen+fry\">Stephen
+        Fry</a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-has-children menu-item-14628\"><a href=\"https://goldenaudiobooks.com/?s=shades+\">Fifty
+        Shades</a>\n<ul class=\"sub-menu\">\n\t<li class=\"menu-item menu-item-type-custom
+        menu-item-object-custom menu-item-14631\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-of-grey-audiobook-online-free/\">Fifty
+        Shades of Grey</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-14630\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-darker-audio/\">Fifty
+        Shades Darker</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-14629\"><a href=\"https://goldenaudiobooks.com/el-james-fifty-shades-freed-audiobook-online-free/\">Fifty
+        Shades Freed</a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom
+        menu-item-25337\"><a href=\"https://goldenaudiobooks.com/grey-e-l-james/\">Grey</a></li>\n\t<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-25312\"><a
+        href=\"https://goldenaudiobooks.com/e-l-james-darker-audiobook/\">Darker</a></li>\n\t<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-25359\"><a
+        href=\"https://goldenaudiobooks.com/freed-fifty-shades-freed-as-told-by-christian-audiobook/\">Freed</a></li>\n</ul>\n</li>\n<li
+        class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-22028\"><a
+        href=\"https://goldenaudiobooks.com/?s=anna+todd&#038;id=28332\">Anna Todd</a></li>\n<li
+        class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-28057\"><a
+        href=\"https://goldenaudiobooks.com/privacy-policy/\">PRIVACY POLICY</a></li>\n</ul>\t\t\t</div><!--
+        .wrapper .wrapper-header-menu .clearfix -->\n\t\t</nav><!-- #menu-main -->\n\t\t\n\t</header><!--
+        .site-header -->\n\t<div  id=\"site-main\">\n\n\t\t<div  class=\"wrapper wrapper-main
+        clearfix\">\n\t\t\n\t\t\t<main id=\"site-content\" class=\"site-main\" role=\"main\">\n\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t<div
+        class=\"site-content-wrapper clearfix\">\n\n\t\t\t\t\t\n<article id=\"post-1947\"
+        class=\"post-1947 post type-post status-publish format-video has-post-thumbnail
+        hentry category-action category-adventure category-bestsellers category-literature-fiction
+        category-science-fiction-audiobooks category-suspense category-thriller tag-ernest-cline
+        post_format-post-format-video\">\n\n\t<header class=\"ilovewp-page-intro ilovewp-page-inner\">\n\t\t<h1
+        class=\"title-page\">Ernest Cline &#8211; Ready Player One Audiobook</h1>\n\t\t<p
+        class=\"post-meta\">By <a href=\"https://goldenaudiobooks.com/author/stream/\"
+        title=\"Posts by stream\" rel=\"author\">stream</a> \n\t\tin <span class=\"post-meta-category\"><a
+        href=\"https://goldenaudiobooks.com/category/action/\" rel=\"category tag\">Action</a>
+        <a href=\"https://goldenaudiobooks.com/category/adventure/\" rel=\"category
+        tag\">Adventure</a> <a href=\"https://goldenaudiobooks.com/category/bestsellers/\"
+        rel=\"category tag\">Bestsellers</a> <a href=\"https://goldenaudiobooks.com/category/literature-fiction/\"
+        rel=\"category tag\">Literature &amp; Fiction</a> <a href=\"https://goldenaudiobooks.com/category/science-fiction-audiobooks/\"
+        rel=\"category tag\">Sci-Fi</a> <a href=\"https://goldenaudiobooks.com/category/suspense/\"
+        rel=\"category tag\">Suspense</a> <a href=\"https://goldenaudiobooks.com/category/thriller/\"
+        rel=\"category tag\">Thriller</a></span> <span class=\"posted-on\"><span class=\"genericon
+        genericon-time\"></span> <time class=\"entry-date published\" datetime=\"2016-11-29T21:24:18+00:00\">November
+        29, 2016</time></span></p>\n\t</header><!-- .ilovewp-page-intro -->\n\n\t<div
+        class=\"post-single clearfix\">\n\n\t\t<div class='code-block code-block-4'
+        style='margin: 8px auto; text-align: center; display: block; clear: both;'>\n<div
+        style=\"text-align:center;margin:16px 0;\">\n  <a href=\"https://tinyurl.com/yzestm2z\"
+        target=\"_blank\" rel=\"nofollow noreferrer noopener\" style=\"color:#1a1a1a;text-decoration:underline;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe
+        UI',Roboto,sans-serif;font-size:15px;\">\n    Download and Keep Forever\n
+        \ </a>\n</div>\n</div>\n<p style=\"text-align: center;\">Ernest Cline &#8211;
+        <strong>Ready Player One Audiobook</strong> (A Novel)</p>\n<figure style=\"width:
+        165px\" class=\"wp-caption aligncenter\"><img fetchpriority=\"high\" decoding=\"async\"
+        src=\"https://goldenaudiobooks.com/wp-content/uploads/2020/09/51bE6SBNroL._SX318_BO1204203200.jpg\"
+        alt=\"Ernest Cline - Ready Player One Audiobook Free Online\" width=\"165\"
+        height=\"257\" /><figcaption class=\"wp-caption-text\">Ernest Cline &#8211;
+        Ready Player One Audiobook</figcaption></figure>\n<p>&nbsp;</p>\n<audio class=\"wp-audio-shortcode\"
+        id=\"audio-1947-1\" preload=\"none\" style=\"width: 100%;\" controls=\"controls\"><source
+        type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/01.mp3?_=1\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/01.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/01.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-2\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/02.mp3?_=2\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/02.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/02.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-3\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/03.mp3?_=3\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/03.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/03.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-4\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/04.mp3?_=4\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/04.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/04.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-5\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/05.mp3?_=5\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/05.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/05.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-6\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/06.mp3?_=6\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/06.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/06.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-7\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/07.mp3?_=7\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/07.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/07.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-8\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/08.mp3?_=8\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/08.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/08.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-9\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/09.mp3?_=9\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/09.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/09.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-10\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/10.mp3?_=10\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/10.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/10.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-11\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/11.mp3?_=11\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/11.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/11.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-12\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/12.mp3?_=12\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/12.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/12.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-13\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/13.mp3?_=13\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/13.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/13.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-14\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/14.mp3?_=14\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/14.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/14.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-15\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/15.mp3?_=15\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/15.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/15.mp3</a></audio>\n<audio
+        class=\"wp-audio-shortcode\" id=\"audio-1947-16\" preload=\"none\" style=\"width:
+        100%;\" controls=\"controls\"><source type=\"audio/mpeg\" src=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/16.mp3?_=16\"
+        /><a href=\"https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/16.mp3\">https://ipaudio.club/wp-content/uploads/GOLN/Ready%20Player%20One/16.mp3</a></audio>\n<p>&nbsp;</p>\n<p><a
+        href=\"https://goldenaudiobooks.com/ready-player-two/\">Ernest Cline &#8211;
+        Ready Player Two Audiobook</a></p>\n<p>&nbsp;</p>\n<span class=\"collapseomatic
+        \" id=\"id69f5d6ea7dfe3\"  tabindex=\"0\" title=\"text\"    >text</span><div
+        id=\"target-id69f5d6ea7dfe3\" class=\"collapseomatic_content \">\n<p>This
+        book showed the distinction between perusing as a peruser and perusing as
+        a writer. The essence of the issue: my internal nerd began to look all starry
+        eyed at this book, while the target side of my brain experienced considerable
+        difficulties the imperfections. This is an endeavor to handle evaluate from
+        both perspectives. Remember that if this audit is a bit broke. free audio
+        books mp3.</p>\n<p>My two sides didn&#8217;t generally war; they conceded
+        to the characters, or rather, the scarcity in that department. I experienced
+        issues shaping an unmistakable perspective of the characters from the get-go.
+        It required me some investment to make sense of it, stunned as I was by the
+        sentimentality racing through my framework: they are generalizations. The
+        hermitic maverick. The so-punk-it-harms snarky young lady who helps the hero
+        &#8220;level up&#8221; at connections by tolerating her regardless of her
+        one little imperfection. The muscle head. The respectable Japanese character.
+        Cline misses a major opportunity to compensate for this by transforming his
+        miscreants into non specific &#8220;Sway Evils&#8221; of &#8220;Evilcorp&#8221;
+        remain in organization IOI. We discover that the adversary once composed computer
+        games, however observe no clue of how he went from a generous amusement architect
+        to a heartless killer. Lost open door there. Ernest Cline &#8211; Ready Player
+        One Audiobook Free Online.</p>\n<p>Sadly, pacing presents an issue. Nerd brain
+        was satisfied with an apparent energetic pace, and needed to tear directly
+        through it. It&#8217;s hard to give a book awful stamps for pacing when that
+        happens, with the exception of Cline stops the show practically every time
+        a popular culture reference goes along, offering a nitty gritty clarification.
+        This may have been intended to help the more youthful perusers, however it
+        kills the pace.</p>\n<p>At that point we have the plot: it talked ideal to
+        my nerdy soul. From the book title itself (a reference to the arcade recreations
+        of my childhood) to the various 80s film and music references, the writer
+        knows his topic well and wears it like a symbol of respect. He makes an alright
+        showing with regards to of meshing it into the account, notwithstanding the
+        cases above. I&#8217;m additionally a sucker for a well-done journey plot.
+        This book conveys on the mission plot, no doubt. The sentiment is flat. Ernest
+        Cline &#8211; Ready Player One Audiobook Free Online. I never looked after
+        the cardboard set pattern that was Art3mis, so it just never associated. The
+        EvilCorp subplot, lamentably, hit incredible levels notwithstanding for my
+        nerd mind, and would have taken a toll it a star even starting there of view.</p>\n<p>Essayist
+        Brain concedes to the journey plot, however the 80s references? Pandering.
+        Immaculate and basic. They&#8217;re not by any means well done, with some
+        simply being immaculate name drops, a wink and a prod proposed to make me
+        like the book &#8211; it&#8217;s a simple enthusiastic note to play, utilizing
+        the peruser&#8217;s nostalgic feelings as a support for the characters&#8217;
+        feelings, which are hard to get to. At that point there are the over the top
+        plot creations, particularly Parzival&#8217;s &#8220;great arrangement&#8221;.
+        Ernest Cline &#8211; Ready Player One Audiobook Free Online. No spoilers here,
+        yet you&#8217;ll know it when you see it and it might make you frantic. Cline
+        plainly painted himself into a corner and found an exceptionally implausible
+        way out of it utilizing enchantment devices at no other time said. This happens
+        in different places in the book, similar to a youngster getting to be distinctly
+        inspired by and completely concentrating on the way of life from six decades
+        past, however this is especially shocking.</p>\n<p>Along these lines, we have
+        the cons: depending too intensely on sentimentality, strange plot contraptions,
+        level characters, and uneven pace. At that point come the aces: a story that
+        keeps you perusing, a well-done journey plot, and &#8211; from my quirky viewpoint
+        &#8211; nourishing of the nostalgic inclination. In this way, I prescribe
+        this book with a few admonitions. One, you totally should have an association
+        with the 80s. This must seem to be an exceptionally empty book without that
+        association. Ernest Cline &#8211; Ready Player One Audiobook Free Online.
+        Two, on the off chance that you have that association, it ought to be an association
+        of the geekier stripe. Three, be set up to kill your cerebrum and appreciate
+        as it you would an activity film. On the off chance that you can do the greater
+        part of that, you may have a ton of fun with it as I evened, while impartially
+        knowing it&#8217;s somewhat touchy.\_ Ready Player One Audiobook Download
+        Free.</p>\n</div>\n<p>&nbsp;</p>\n<!-- CONTENT END 1 -->\n\n\t\t\n\t\t<p class=\"tags-links\">Tags:
+        <a href=\"https://goldenaudiobooks.com/Author/ernest-cline/\" rel=\"tag\">Ernest
+        Cline</a></p>\n\t</div><!-- .post-single -->\n\n</article><!-- #post-1947
+        -->\t\t\t\t\t\n\t\t\t\t\t\n\t<nav class=\"navigation post-navigation\" aria-label=\"Posts\">\n\t\t<h2
+        class=\"screen-reader-text\">Post navigation</h2>\n\t\t<div class=\"nav-links\"><div
+        class=\"nav-previous\"><a href=\"https://goldenaudiobooks.com/john-sandford-escape-clause-audiobook-free-online/\"
+        rel=\"prev\"><span class=\"nav-link-label\"><span class=\"genericon genericon-previous\"></span></span>John
+        Sandford &#8211; Escape Clause Audiobook</a></div><div class=\"nav-next\"><a
+        href=\"https://goldenaudiobooks.com/jodi-picoult-small-great-things-audiobook-free-online/\"
+        rel=\"next\">Jodi Picoult &#8211; Small Great Things Audiobook<span class=\"nav-link-label\"><span
+        class=\"genericon genericon-next\"></span></span></a></div></div>\n\t</nav>\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t</div><!--
+        .site-content-wrapper .clearfix -->\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t</main><!--
+        #site-content -->\n\t\t\t\n\t\t\t\n<aside id=\"site-aside\" role=\"complementary\">\n\n\t<div
+        class=\"site-aside-wrapper clearfix\">\n\t\n\t\t<div id=\"is_widget-2\" class=\"widget
+        widget_is_search widget_search\"><form role=\"search\" method=\"get\" class=\"search-form\"
+        action=\"https://goldenaudiobooks.com/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span
+        class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\"
+        class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"
+        data-swplive=\"true\" data-swpengine=\"default\" data-swpconfig=\"default\"
+        />\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\"
+        value=\"Search\" />\n\t\t\t<input type=\"hidden\" name=\"id\" value=\"28332\"
+        /></form></div><div id=\"arpw-widget-3\" class=\"widget arpw-widget-random\"><p
+        class=\"widget-title\">Random Posts</p><div class=\"arpw-random-post \"><ul
+        class=\"arpw-ul\"><li class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/harry-potters-chamber-secret-jim-dale/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Harry Potter And The
+        Chamber Of Secrets Audiobook Jim Dale\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Harry Potter And The
+        Chamber Of Secrets Audiobook Jim Dale\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2018/08/51jNORv6nQL._SX340_BO1204203200_-1-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/harry-potters-chamber-secret-jim-dale/\"
+        rel=\"bookmark\">Harry Potter And The Chamber Of Secrets Audiobook Jim Dale</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/julia-quinn-on-the-way-to-the-wedding-bridgerton-audio-book/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Julia Quinn &#8211;
+        On the Way to the Wedding (Bridgerton) Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Julia Quinn &#8211;
+        On the Way to the Wedding (Bridgerton) Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2022/05/110388-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/julia-quinn-on-the-way-to-the-wedding-bridgerton-audio-book/\"
+        rel=\"bookmark\">Julia Quinn &#8211; On the Way to the Wedding (Bridgerton)
+        Audiobook</a></li><li class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/tricia-levenseller-shadows-between-us-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Tricia Levenseller
+        &#8211; The Shadows Between Us Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Tricia Levenseller
+        &#8211; The Shadows Between Us Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2021/08/51F5ZFYxAYL._SX329_BO1204203200-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/tricia-levenseller-shadows-between-us-audiobook/\"
+        rel=\"bookmark\">Tricia Levenseller &#8211; The Shadows Between Us Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/terry-pratchett-pyramids-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Terry Pratchett &#8211;
+        Pyramids Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Terry Pratchett &#8211;
+        Pyramids Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/02/51KEEDlNUsL._SX280_BO1204203200_-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/terry-pratchett-pyramids-audiobook/\"
+        rel=\"bookmark\">Terry Pratchett &#8211; Pyramids Audiobook</a></li><li class=\"arpw-li
+        arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/scott-carney-what-doesnt-kill-us-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Scott Carney &#8211;
+        What Doesn\u2019t Kill Us Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Scott Carney &#8211;
+        What Doesn\u2019t Kill Us Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/07/516PklM4AbL._SX328_BO1204203200_-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/scott-carney-what-doesnt-kill-us-audiobook/\"
+        rel=\"bookmark\">Scott Carney &#8211; What Doesn\u2019t Kill Us Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/ive-got-my-eyes-on-you-audiobook/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Mary Higgins Clark
+        &#8211; I&#8217;ve Got My Eyes on You Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Mary Higgins Clark
+        &#8211; I&#8217;ve Got My Eyes on You Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2018/09/51v-2vz8jGL._SX329_BO1204203200_-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/ive-got-my-eyes-on-you-audiobook/\" rel=\"bookmark\">Mary
+        Higgins Clark &#8211; I&#8217;ve Got My Eyes on You Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/christina-lauren-dating-you-hating-you-audiobook-streaming/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Christina Lauren &#8211;
+        Dating You / Hating You Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Christina Lauren &#8211;
+        Dating You / Hating You Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/08/51dEHzJAO7L._SX320_BO1204203200_-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/christina-lauren-dating-you-hating-you-audiobook-streaming/\"
+        rel=\"bookmark\">Christina Lauren &#8211; Dating You / Hating You Audiobook</a></li><li
+        class=\"arpw-li arpw-clearfix\"><a href=\"https://goldenaudiobooks.com/paulo-coelho-adultery-audiobook-free-online/\"
+        \ rel=\"bookmark\"><img width=\"50\" height=\"50\" src=\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Paulo Coelho &#8211;
+        Adultery Audiobook\" decoding=\"async\" data-lazy-srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-150x150.jpg
+        150w\" data-lazy-sizes=\"(max-width: 50px) 100vw, 50px\" data-lazy-src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-50x50.jpg\"
+        /><noscript><img width=\"50\" height=\"50\" src=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-50x50.jpg\"
+        class=\"arpw-thumbnail alignleft wp-post-image\" alt=\"Paulo Coelho &#8211;
+        Adultery Audiobook\" decoding=\"async\" srcset=\"https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-50x50.jpg
+        50w, https://goldenaudiobooks.com/wp-content/uploads/2017/07/412e3X7Ld1L._SX322_BO1204203200_-150x150.jpg
+        150w\" sizes=\"(max-width: 50px) 100vw, 50px\" /></noscript></a><a class=\"arpw-title\"
+        href=\"https://goldenaudiobooks.com/paulo-coelho-adultery-audiobook-free-online/\"
+        rel=\"bookmark\">Paulo Coelho &#8211; Adultery Audiobook</a></li></ul></div><!--
+        Generated by https://wordpress.org/plugins/advanced-random-posts-widget/ --></div><div
+        id=\"categories-2\" class=\"widget widget_categories\"><p class=\"widget-title\">Categories</p>\n\t\t\t<ul>\n\t\t\t\t\t<li
+        class=\"cat-item cat-item-2\"><a href=\"https://goldenaudiobooks.com/category/action/\">Action</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-3\"><a href=\"https://goldenaudiobooks.com/category/adults-audios/\">Adults</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-4\"><a href=\"https://goldenaudiobooks.com/category/adventure/\">Adventure</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-5\"><a href=\"https://goldenaudiobooks.com/category/autobiography-biographies/\">Autobiography
+        &amp; Biographies</a>\n</li>\n\t<li class=\"cat-item cat-item-6\"><a href=\"https://goldenaudiobooks.com/category/bestsellers/\">Bestsellers</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-7\"><a href=\"https://goldenaudiobooks.com/category/business/\">Business</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-8\"><a href=\"https://goldenaudiobooks.com/category/children/\">Children</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-9\"><a href=\"https://goldenaudiobooks.com/category/classic/\">Classic</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-10\"><a href=\"https://goldenaudiobooks.com/category/crime-audiobooks/\">Crime</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-11\"><a href=\"https://goldenaudiobooks.com/category/audio-fantasy/\">Fantasy</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-12\"><a href=\"https://goldenaudiobooks.com/category/general-fiction/\">General
+        Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-13\"><a href=\"https://goldenaudiobooks.com/category/historical-fiction/\">Historical
+        Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-14\"><a href=\"https://goldenaudiobooks.com/category/history/\">History</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-15\"><a href=\"https://goldenaudiobooks.com/category/horror/\">Horror</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-16\"><a href=\"https://goldenaudiobooks.com/category/humors/\">Humor</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-17\"><a href=\"https://goldenaudiobooks.com/category/literary/\">Literary</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-18\"><a href=\"https://goldenaudiobooks.com/category/literature-fiction/\">Literature
+        &amp; Fiction</a>\n</li>\n\t<li class=\"cat-item cat-item-19\"><a href=\"https://goldenaudiobooks.com/category/mystery/\">Mystery</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-1241\"><a href=\"https://goldenaudiobooks.com/category/nonfiction/\">Nonfiction</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-20\"><a href=\"https://goldenaudiobooks.com/category/novel-audiobooks/\">Novel</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-21\"><a href=\"https://goldenaudiobooks.com/category/other/\">Other</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-22\"><a href=\"https://goldenaudiobooks.com/category/paranormal-audio-books/\">Paranormal</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-23\"><a href=\"https://goldenaudiobooks.com/category/philosophy/\">Philosophy</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-24\"><a href=\"https://goldenaudiobooks.com/category/audiobooks-romance/\">Romance</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-25\"><a href=\"https://goldenaudiobooks.com/category/science-fiction-audiobooks/\">Sci-Fi</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-26\"><a href=\"https://goldenaudiobooks.com/category/science/\">Science</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-27\"><a href=\"https://goldenaudiobooks.com/category/self-help/\">Self-help</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-28\"><a href=\"https://goldenaudiobooks.com/category/short-story/\">Short
+        Story</a>\n</li>\n\t<li class=\"cat-item cat-item-29\"><a href=\"https://goldenaudiobooks.com/category/spiritual-religious/\">Spiritual
+        &amp; Religious</a>\n</li>\n\t<li class=\"cat-item cat-item-30\"><a href=\"https://goldenaudiobooks.com/category/sports/\">Sports</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-31\"><a href=\"https://goldenaudiobooks.com/category/suspense/\">Suspense</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-32\"><a href=\"https://goldenaudiobooks.com/category/teen-and-young-adult/\">Teen
+        &amp; Young Adult</a>\n</li>\n\t<li class=\"cat-item cat-item-33\"><a href=\"https://goldenaudiobooks.com/category/thriller/\">Thriller</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-1\"><a href=\"https://goldenaudiobooks.com/category/uncategorized/\">Uncategorized</a>\n</li>\n\t<li
+        class=\"cat-item cat-item-34\"><a href=\"https://goldenaudiobooks.com/category/westerns/\">Westerns</a>\n</li>\n\t\t\t</ul>\n\n\t\t\t</div>\t\t\n\t</div><!--
+        .site-aside-wrapper .clearfix -->\n\n</aside><!-- #site-aside -->\t\t\n\t\t</div><!--
+        .wrapper .wrapper-main -->\n\n\t</div><!-- #site-main -->\n\n\n\t<footer class=\"site-footer\"
+        role=\"contentinfo\">\n\t\n\t\t<div class=\"wrapper wrapper-footer\">\n\n\t\t\t\n\t\t\t<a
+        href=\"/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"660e030a0a092601090a0203080713020f090409090d48080312\">[email&#160;protected]</a>\n\t\t\t</div><!--
+        .wrapper-copy -->\n\n\t\t</div><!-- .wrapper .wrapper-footer -->\n\t\n\t</footer><!--
+        .site-footer -->\n\n</div><!-- #container -->\n\n<script data-cfasync=\"false\"
+        src=\"/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\"></script><script
+        type=\"speculationrules\">\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/videoblog/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch,
+        .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n</script>\n        <style>\n
+        \           .searchwp-live-search-results {\n                opacity: 0;\n
+        \               transition: opacity .25s ease-in-out;\n                -moz-transition:
+        opacity .25s ease-in-out;\n                -webkit-transition: opacity .25s
+        ease-in-out;\n                height: 0;\n                overflow: hidden;\n
+        \               z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay.
+        */\n                position: absolute;\n                display: none;\n
+        \           }\n\n            .searchwp-live-search-results-showing {\n                display:
+        block;\n                opacity: 1;\n                height: auto;\n                overflow:
+        auto;\n            }\n\n            .searchwp-live-search-no-results {\n                padding:
+        3em 2em 0;\n                text-align: center;\n            }\n\n            .searchwp-live-search-no-min-chars:after
+        {\n                content: \"Continue typing\";\n                display:
+        block;\n                text-align: center;\n                padding: 2em
+        2em 0;\n            }\n        </style>\n                <script>\n            var
+        _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;\n            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE
+        = 'default';\n            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';\n
+        \       </script>\n        <script type=\"text/javascript\" id=\"pt-cv-content-views-script-js-extra\">\n/*
+        <![CDATA[ */\nvar PT_CV_PUBLIC = {\"_prefix\":\"pt-cv-\",\"page_to_show\":\"5\",\"_nonce\":\"28249b40cb\",\"is_admin\":\"\",\"is_mobile\":\"\",\"ajaxurl\":\"https://goldenaudiobooks.com/wp-admin/admin-ajax.php\",\"lang\":\"\",\"loading_image_src\":\"data:image/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM/DJKZNLND/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw==\"};\nvar
+        PT_CV_PAGINATION = {\"first\":\"\\u00ab\",\"prev\":\"\\u2039\",\"next\":\"\\u203a\",\"last\":\"\\u00bb\",\"goto_first\":\"Go
+        to first page\",\"goto_prev\":\"Go to previous page\",\"goto_next\":\"Go to
+        next page\",\"goto_last\":\"Go to last page\",\"current_page\":\"Current page
+        is\",\"goto_page\":\"Go to page\"};\n//# sourceURL=pt-cv-content-views-script-js-extra\n/*
+        ]]> */\n</script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=4.3\"
+        id=\"pt-cv-content-views-script-js\"></script>\n<script type=\"text/javascript\"
+        id=\"collapseomatic-js-js-before\">\n/* <![CDATA[ */\nconst com_options =
+        {\"colomatduration\":\"fast\",\"colomatslideEffect\":\"slideFade\",\"colomatpauseInit\":\"\",\"colomattouchstart\":\"\"}\n//#
+        sourceURL=collapseomatic-js-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.7.2\"
+        id=\"collapseomatic-js-js\"></script>\n<script type=\"text/javascript\" id=\"videoblog-scripts-js-extra\">\n/*
+        <![CDATA[ */\nvar videoblogStrings = {\"slicknav_menu_home\":\"HOME\"};\n//#
+        sourceURL=videoblog-scripts-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-content/themes/videoblog/js/videoblog.js?ver=20170211\"
+        id=\"videoblog-scripts-js\"></script>\n<script type=\"text/javascript\" id=\"swp-live-search-client-js-extra\">\n/*
+        <![CDATA[ */\nvar searchwp_live_search_params = [];\nsearchwp_live_search_params
+        = {\"ajaxurl\":\"https:\\/\\/goldenaudiobooks.com\\/wp-admin\\/admin-ajax.php\",\"origin_id\":1947,\"config\":{\"default\":{\"engine\":\"default\",\"input\":{\"delay\":300,\"min_chars\":3},\"results\":{\"position\":\"bottom\",\"width\":\"auto\",\"offset\":{\"x\":0,\"y\":5}},\"spinner\":{\"lines\":12,\"length\":8,\"width\":3,\"radius\":8,\"scale\":1,\"corners\":1,\"color\":\"#424242\",\"fadeColor\":\"transparent\",\"speed\":1,\"rotate\":0,\"animation\":\"searchwp-spinner-line-fade-quick\",\"direction\":1,\"zIndex\":2000000000,\"className\":\"spinner\",\"top\":\"50%\",\"left\":\"50%\",\"shadow\":\"0
+        0 1px transparent\",\"position\":\"absolute\"}}},\"msg_no_config_found\":\"No
+        valid SearchWP Live Search configuration found!\",\"aria_instructions\":\"When
+        autocomplete results are available use up and down arrows to review and enter
+        to go to the desired page. Touch device users, explore by touch or with swipe
+        gestures.\"};;\n//# sourceURL=swp-live-search-client-js-extra\n/* ]]> */\n</script>\n<script
+        type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min.js?ver=1.8.7\"
+        id=\"swp-live-search-client-js\"></script>\n<script type=\"text/javascript\"
+        id=\"ivory-search-scripts-js-extra\">\n/* <![CDATA[ */\nvar IvorySearchVars
+        = {\"is_analytics_enabled\":\"1\"};\n//# sourceURL=ivory-search-scripts-js-extra\n/*
+        ]]> */\n</script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.5.14\"
+        id=\"ivory-search-scripts-js\"></script>\n<script type=\"text/javascript\"
+        id=\"mediaelement-core-js-before\">\n/* <![CDATA[ */\nvar mejsL10n = {\"language\":\"en\",\"strings\":{\"mejs.download-file\":\"Download
+        File\",\"mejs.install-flash\":\"You are using a browser that does not have
+        Flash player enabled or installed. Please turn on your Flash player plugin
+        or download the latest version from https://get.adobe.com/flashplayer/\",\"mejs.fullscreen\":\"Fullscreen\",\"mejs.play\":\"Play\",\"mejs.pause\":\"Pause\",\"mejs.time-slider\":\"Time
+        Slider\",\"mejs.time-help-text\":\"Use Left/Right Arrow keys to advance one
+        second, Up/Down arrows to advance ten seconds.\",\"mejs.live-broadcast\":\"Live
+        Broadcast\",\"mejs.volume-help-text\":\"Use Up/Down Arrow keys to increase
+        or decrease volume.\",\"mejs.unmute\":\"Unmute\",\"mejs.mute\":\"Mute\",\"mejs.volume-slider\":\"Volume
+        Slider\",\"mejs.video-player\":\"Video Player\",\"mejs.audio-player\":\"Audio
+        Player\",\"mejs.captions-subtitles\":\"Captions/Subtitles\",\"mejs.captions-chapters\":\"Chapters\",\"mejs.none\":\"None\",\"mejs.afrikaans\":\"Afrikaans\",\"mejs.albanian\":\"Albanian\",\"mejs.arabic\":\"Arabic\",\"mejs.belarusian\":\"Belarusian\",\"mejs.bulgarian\":\"Bulgarian\",\"mejs.catalan\":\"Catalan\",\"mejs.chinese\":\"Chinese\",\"mejs.chinese-simplified\":\"Chinese
+        (Simplified)\",\"mejs.chinese-traditional\":\"Chinese (Traditional)\",\"mejs.croatian\":\"Croatian\",\"mejs.czech\":\"Czech\",\"mejs.danish\":\"Danish\",\"mejs.dutch\":\"Dutch\",\"mejs.english\":\"English\",\"mejs.estonian\":\"Estonian\",\"mejs.filipino\":\"Filipino\",\"mejs.finnish\":\"Finnish\",\"mejs.french\":\"French\",\"mejs.galician\":\"Galician\",\"mejs.german\":\"German\",\"mejs.greek\":\"Greek\",\"mejs.haitian-creole\":\"Haitian
+        Creole\",\"mejs.hebrew\":\"Hebrew\",\"mejs.hindi\":\"Hindi\",\"mejs.hungarian\":\"Hungarian\",\"mejs.icelandic\":\"Icelandic\",\"mejs.indonesian\":\"Indonesian\",\"mejs.irish\":\"Irish\",\"mejs.italian\":\"Italian\",\"mejs.japanese\":\"Japanese\",\"mejs.korean\":\"Korean\",\"mejs.latvian\":\"Latvian\",\"mejs.lithuanian\":\"Lithuanian\",\"mejs.macedonian\":\"Macedonian\",\"mejs.malay\":\"Malay\",\"mejs.maltese\":\"Maltese\",\"mejs.norwegian\":\"Norwegian\",\"mejs.persian\":\"Persian\",\"mejs.polish\":\"Polish\",\"mejs.portuguese\":\"Portuguese\",\"mejs.romanian\":\"Romanian\",\"mejs.russian\":\"Russian\",\"mejs.serbian\":\"Serbian\",\"mejs.slovak\":\"Slovak\",\"mejs.slovenian\":\"Slovenian\",\"mejs.spanish\":\"Spanish\",\"mejs.swahili\":\"Swahili\",\"mejs.swedish\":\"Swedish\",\"mejs.tagalog\":\"Tagalog\",\"mejs.thai\":\"Thai\",\"mejs.turkish\":\"Turkish\",\"mejs.ukrainian\":\"Ukrainian\",\"mejs.vietnamese\":\"Vietnamese\",\"mejs.welsh\":\"Welsh\",\"mejs.yiddish\":\"Yiddish\"}};\n//#
+        sourceURL=mediaelement-core-js-before\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17\"
+        id=\"mediaelement-core-js\"></script>\n<script type=\"text/javascript\" src=\"https://goldenaudiobooks.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.9.4\"
+        id=\"mediaelement-migrate-js\"></script>\n<script type=\"text/javascript\"
+        id=\"mediaelement-js-extra\">\n/* <![CDATA[ */\nvar _wpmejsSettings = {\"pluginPath\":\"/wp-includes/js/mediaelement/\",\"classPrefix\":\"mejs-\",\"stretching\":\"responsive\",\"audioShortcodeLibrary\":\"mediaelement\",\"videoShortcodeLibrary\":\"mediaelement\"};\n//#
+        sourceURL=mediaelement-js-extra\n/* ]]> */\n</script>\n<script type=\"text/javascript\"
+        src=\"https://goldenaudiobooks.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.9.4\"
+        id=\"wp-mediaelement-js\"></script>\n<script id=\"wp-emoji-settings\" type=\"application/json\">\n{\"baseUrl\":\"https://s.w.org/images/core/emoji/17.0.2/72x72/\",\"ext\":\".png\",\"svgUrl\":\"https://s.w.org/images/core/emoji/17.0.2/svg/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https://goldenaudiobooks.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4\"}}\n</script>\n<script
+        type=\"module\">\n/* <![CDATA[ */\n/*! This file is auto-generated */\nconst
+        a=JSON.parse(document.getElementById(\"wp-emoji-settings\").textContent),o=(window._wpemojiSettings=a,\"wpEmojiSettingsSupports\"),s=[\"flag\",\"emoji\"];function
+        i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function
+        c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new
+        Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const
+        a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return
+        t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var
+        n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function
+        u(e,t,n,a){switch(t){case\"flag\":return n(e,\"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f\",\"\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f\")?!1:!n(e,\"\\ud83c\\udde8\\ud83c\\uddf6\",\"\\ud83c\\udde8\\u200b\\ud83c\\uddf6\")&&!n(e,\"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f\",\"\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f\");case\"emoji\":return!a(e,\"\\ud83e\\u1fac8\")}return!1}function
+        f(e,t,n,a){let r;const o=(r=\"undefined\"!=typeof WorkerGlobalScope&&self
+        instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement(\"canvas\")).getContext(\"2d\",{willReadFrequently:!0}),s=(o.textBaseline=\"top\",o.font=\"600
+        32px Arial\",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var
+        t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new
+        Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(\"object\"==typeof
+        e&&\"number\"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&\"object\"==typeof
+        e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(\"undefined\"!=typeof
+        Worker&&\"undefined\"!=typeof OffscreenCanvas&&\"undefined\"!=typeof URL&&URL.createObjectURL&&\"undefined\"!=typeof
+        Blob)try{var e=\"postMessage(\"+f.toString()+\"(\"+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(\",\")+\"));\",a=new
+        Blob([e],{type:\"text/javascript\"});const r=new Worker(URL.createObjectURL(a),{name:\"wpTestEmojiSupports\"});return
+        void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const
+        n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],\"flag\"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var
+        t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});\n//#
+        sourceURL=https://goldenaudiobooks.com/wp-includes/js/wp-emoji-loader.min.js\n/*
+        ]]> */\n</script>\n<script>window.lazyLoadOptions=[{elements_selector:\"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]\",data_src:\"lazy-src\",data_srcset:\"lazy-srcset\",data_sizes:\"lazy-sizes\",class_loading:\"lazyloading\",class_loaded:\"lazyloaded\",threshold:300,callback_loaded:function(element){if(element.tagName===\"IFRAME\"&&element.dataset.rocketLazyload==\"fitvidscompatible\"){if(element.classList.contains(\"lazyloaded\")){if(typeof
+        window.jQuery!=\"undefined\"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:\".rocket-lazyload\",data_src:\"lazy-src\",data_srcset:\"lazy-srcset\",data_sizes:\"lazy-sizes\",class_loading:\"lazyloading\",class_loaded:\"lazyloaded\",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var
+        lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new
+        MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var
+        rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof
+        mutation.addedNodes[i].getElementsByTagName!=='function'){continue}\nif(typeof
+        mutation.addedNodes[i].getElementsByClassName!=='function'){continue}\nimages=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName==\"IMG\";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName==\"IFRAME\";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}\nif(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var
+        b=document.getElementsByTagName(\"body\")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script
+        data-no-minify=\"1\" async src=\"https://goldenaudiobooks.com/wp-content/plugins/site-speed-booster/assets/js/lazyload/17.8.3/lazyload.min.js\"></script><script>function
+        lazyLoadThumb(e,alt,l){var t='<img data-lazy-src=\"https://i.ytimg.com/vi/ID/hqdefault.jpg\"
+        alt=\"\" width=\"480\" height=\"360\"><noscript><img src=\"https://i.ytimg.com/vi/ID/hqdefault.jpg\"
+        alt=\"\" width=\"480\" height=\"360\"></noscript>',a='<button class=\"play\"
+        aria-label=\"Play Youtube video\"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading=\"lazy\"','');t=t.replace(/<noscript>.*?<\\/noscript>/g,'');}t=t.replace('alt=\"\"','alt=\"'+alt+'\"');return
+        t.replace(\"ID\",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement(\"iframe\"),t=\"ID?autoplay=1\";t+=0===this.parentNode.dataset.query.length?\"\":\"&\"+this.parentNode.dataset.query;e.setAttribute(\"src\",t.replace(\"ID\",this.parentNode.dataset.src)),e.setAttribute(\"frameborder\",\"0\"),e.setAttribute(\"allowfullscreen\",\"1\"),e.setAttribute(\"allow\",\"accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture\"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener(\"DOMContentLoaded\",function(){var
+        exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName(\"rll-youtube-player\");for(t=0;t<a.length;t++)(e=document.createElement(\"div\")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute(\"data-id\",a[t].dataset.id),e.setAttribute(\"data-query\",a[t].dataset.query),e.setAttribute(\"data-src\",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(\".play\")),(p.onclick=lazyLoadYoutubeIframe)});</script>\n</body>\n</html>\n<!--
+        This website is like a Rocket, isn't it? Performance optimized by WP Rocket.
+        Learn more: https://wp-rocket.me - Debug: cached@1777719018 -->"
+    headers:
+      CF-RAY:
+      - 9f815f0b8cdd215e-MAD
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:48:51 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XhAWELU2E2VFIgNyzX4y%2BvC0acpTRoKyAPBM%2BZKcG3HnLdG%2BvN5nlZRPYrRrLuHiYHaFm4sU3QzqNQkPNlTo%2BihZCxz2ovyje5E9G9%2BylReJyELrhImvsSjs8HraxuzrDQs5D8k3FKH7FzsUmr7m73oCXg%3D%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '86337'
+      expires:
+      - Thu, 07 May 2026 15:48:51 GMT
+      last-modified:
+      - Sat, 02 May 2026 10:50:18 GMT
+      vary:
+      - Accept-Encoding,User-Agent
+    status:
+      code: 200
+      message: OK
+version: 1

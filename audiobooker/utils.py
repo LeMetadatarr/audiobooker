@@ -47,7 +47,7 @@ def get_html(url, **kwargs):
     from audiobooker.scrappers import AudioBookSource
     try:
         return AudioBookSource.session.get(url, **kwargs).text
-    except Exception as e:
+    except Exception:
         try:
             return AudioBookSource.session.get(url, verify=False, **kwargs).text
         except:

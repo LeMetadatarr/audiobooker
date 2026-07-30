@@ -1,6 +1,6 @@
 import feedparser
 
-from audiobooker.base import AudioBook, BookAuthor
+from audiobooker.base import AudioBook, AudioBookChapter, BookAuthor
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import normalize_name, get_soup, fuzzy_match, iter_sitemap_urls
 
@@ -35,6 +35,10 @@ def calc_runtime(rss_data):
 
 
 def from_rss(rss_url):
+    """Yield a single ``AudioBook`` per LoyalBooks RSS feed.
+
+    Each feed corresponds to one book; the entries inside it are chapters.
+    """
     data = feedparser.parse(rss_url)
     feed = data.get("feed", {})
     lang = feed.get("language", "en")
@@ -43,28 +47,60 @@ def from_rss(rss_url):
     img = (feed.get("image") or {}).get("href", "")
     feed_title = feed.get("title", "")
 
+    authors: list = []
+    seen_authors: set = set()
+    chapters: list = []
+    streams: list = []
+    offset = 0.0
+    total_runtime = 0
+
     for rss in data.get("entries", []):
-        authors = []
-        streams = [s['href'] for s in rss.get("links", []) if "audio" in s.get("type", "")]
-        for rss_data in rss.get("authors", []):
+        for rss_data in rss.get("authors", []) or []:
             if not rss_data:
                 continue
-            f, l = normalize_name(rss_data.get("name", ""))
+            name = rss_data.get("name", "")
+            if not name or name in seen_authors:
+                continue
+            seen_authors.add(name)
+            f, l = normalize_name(name)
             authors.append(BookAuthor(first_name=f, last_name=l))
         try:
-            runtime = calc_runtime(rss)
+            chap_runtime = calc_runtime(rss)
         except Exception:
-            runtime = 0
-        yield AudioBook(
-            language=lang,
-            description=desc,
-            tags=tags,
-            image=img,
-            streams=streams,
-            title=f"{feed_title} | {rss.get('title', '')}",
-            runtime=runtime,
-            authors=authors,
+            chap_runtime = 0
+        ch_streams = [
+            s['href'] for s in rss.get("links", [])
+            if "audio" in s.get("type", "")
+        ]
+        ch_stream = ch_streams[0] if ch_streams else ""
+        chapters.append(
+            AudioBookChapter(
+                title=rss.get("title", ""),
+                offset=offset,
+                runtime=float(chap_runtime),
+                stream=ch_stream,
+            )
         )
+        offset += chap_runtime
+        total_runtime += chap_runtime
+        streams.extend(ch_streams)
+
+    if not chapters:
+        return
+
+    yield AudioBook(
+        language=lang,
+        description=desc,
+        tags=tags,
+        genres=list(tags),
+        image=img,
+        streams=streams,
+        title=feed_title,
+        runtime=total_runtime,
+        authors=authors,
+        chapters=chapters,
+        codec="mp3",
+    )
 
 
 class LoyalBooks(AudioBookSource):
@@ -135,7 +171,6 @@ class LoyalBooks(AudioBookSource):
 
 
 if __name__ == "__main__":
-    from pprint import pprint
 
     for book in LoyalBooks().search_by_author("lovecraft"):
         print(book)

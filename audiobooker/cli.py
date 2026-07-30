@@ -28,7 +28,7 @@ import click
 from audiobooker.cache import (
     clear_cache, download, is_cached, list_cached, cached_paths, play,
 )
-from audiobooker.index import BookIndex, _resolve_sources, _default_sources
+from audiobooker.index import BookIndex, _resolve_sources
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,335 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://www.loyalbooks.com/genre/Horror_and_Supernatural_Fiction
+  response:
+    body:
+      string: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html
+        xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://ogp.me/ns/fb#\">
+        \n<head>\n\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n\n<title>404
+        Page not found - Loyal Books - Audio Books + eBooks for Free</title>\n<meta
+        name=\"description\" content=\"404 Page not found - Loyal Books - Thousands
+        of free audio books that you can download in mp3, iPod and iTunes format for
+        your portable audio player. Audio previews, convenient categories and excellent
+        search functionality make LoyalBooks.com your best source for free audio books.\">\n<meta
+        name=\"keywords\" content=\"audio books,free audio books,free audio book downloads,ebooks,mp3,ipod,itunes,books,audio,download,free,adventure,children,comedy,fairy
+        tales,fantasy,fiction,historical fiction,history,humor,literature,mystery,non-fiction,philosophy,poetry,romance,religion,science
+        fiction,short stories,teen,young adult\">\n<meta property=\"og:title\" content=\"404
+        Page not found - LoyalBooks.com\">\n<meta property=\"og:type\" content=\"website\">\n<meta
+        property=\"fb:app_id\" content=\"130567253662565\">\n<meta property=\"og:image\"
+        content=\"https://www.loyalbooks.com/image/ui/logo.png\">\n<meta property=\"og:site_name\"
+        content=\"Loyal Books\">\n\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/desktop3.css\">\r\n\r\n\r\n\r\n</head>\r\n<body>\r\n\r\n<!--
+        Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-819143-4\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'UA-819143-4');\n</script>\n\r\n<div
+        id=\"topsection\"><div class=\"innertube\">\r\n\r\n<table class=\"header\"
+        border=\"1\" style=\"width:931px;\">\r\n<tr>\r\n<td class=\"header\" width=\"145px\">\r\n\r\n<div
+        id=\"header\" style=\"display:block;\"><a href=\"/\" style=\"text-decoration:none\"><img
+        src=\"/image/ui/logo.png\" class=\"header\" alt=\"LoyalBooks.com logo\"></a></div>\r\n\r\n</td><td
+        class=\"header\" style=\"width:425px;\">\r\n\r\n\r\n<a href=\"/\" class=\"header-name\"><font
+        class=\"header-name\">Books Should Be Free</font></a><br>\r\n<a href=\"/\"
+        class=\"header-name\"><font class=\"header-loyal\">Loyal Books</font></a><br>\r\n<a
+        href=\"/\" class=\"header-sub-name\"><font class=\"header-sub-name\">Free
+        Public Domain Audiobooks & eBook Downloads</font></a><br>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n\r\n<td
+        class=\"header\" style=\"width:361px;\">\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n</table>\r\n\r\n</div></div>\r\n<div
+        id=\"contentwrapper\"><div id=\"contentcolumn\"><div class=\"innertube\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<br><table
+        class=\"layout2-blue\" summary=\"Audio books\"><tr><th class=\"layout2-blue\"
+        colspan=\"4\"><h1>404 Page not found - Try one of these popular books</h1></th></tr><tr>\n<td
+        class=\"layout2-blue\" width=\"25%\" valign=\"top\" align=\"center\">\n<a
+        href=\"/book/the-prince-by-niccolo-machiavelli\">\n<img class=\"layout\" src=\"/image/layout2/81.jpg\"
+        alt=\"The Prince by Niccol\xF2 Machiavelli\"></a><br>\n<a href=\"/book/the-prince-by-niccolo-machiavelli\">\n<b>The
+        Prince</b></a><br>Niccol\xF2 Machiavelli\n<br><a href=\"/book/the-prince-by-niccolo-machiavelli\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<img
+        class=\"layout\" src=\"/image/layout2/Pollyanna-.jpg\" alt=\"Pollyanna by
+        Eleanor H. Porter\"></a><br>\n<a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<b>Pollyanna</b></a><br>Eleanor
+        H. Porter\n<br><a href=\"/book/pollyanna-by-eleanor-h-porter\">\n<div class=\"s-desktop\"
+        id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\" width=\"25%\"
+        valign=\"top\" align=\"center\">\n<a href=\"/book/a-little-princess-by-frances-hodgson-burnett\">\n<img
+        class=\"layout\" src=\"/image/layout2/Little-Princess.jpg\" alt=\"A Little
+        Princess by Frances Hodgson Burnett\"></a><br>\n<a href=\"/book/a-little-princess-by-frances-hodgson-burnett\">\n<b>A
+        Little Princess</b></a><br>Frances Hodgson Burnett\n<br><a href=\"/book/a-little-princess-by-frances-hodgson-burnett\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/beowulf\">\n<img
+        class=\"layout\" src=\"/image/layout2/Beowulf.jpg\" alt=\"Beowulf by Unknown\"></a><br>\n<a
+        href=\"/book/beowulf\">\n<b>Beowulf</b></a><br>Unknown\n<br><a href=\"/book/beowulf\">\n<div
+        class=\"s-desktop\" id=\"star3\"></div>\n</a>\n</td>\n</tr>\n<tr>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/the-red-badge-of-courage-by-stephen-crane\">\n<img
+        class=\"layout\" src=\"/image/layout2/Red-Badge-of-Courage.jpg\" alt=\"The
+        Red Badge of Courage by Stephen Crane\"></a><br>\n<a href=\"/book/the-red-badge-of-courage-by-stephen-crane\">\n<b>The
+        Red Badge of Courage</b></a><br>Stephen Crane\n<br><a href=\"/book/the-red-badge-of-courage-by-stephen-crane\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/paradise-lost-by-john-milton\">\n<img
+        class=\"layout\" src=\"/image/layout2/paradise_lost.jpg\" alt=\"Paradise Lost
+        by John Milton\"></a><br>\n<a href=\"/book/paradise-lost-by-john-milton\">\n<b>Paradise
+        Lost</b></a><br>John Milton\n<br><a href=\"/book/paradise-lost-by-john-milton\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/invisible-man-by-h-g-wells\">\n<img
+        class=\"layout\" src=\"/image/layout2/Invisible-Man.jpg\" alt=\"The Invisible
+        Man by H. G. Wells\"></a><br>\n<a href=\"/book/invisible-man-by-h-g-wells\">\n<b>The
+        Invisible Man</b></a><br>H. G. Wells\n<br><a href=\"/book/invisible-man-by-h-g-wells\">\n<div
+        class=\"s-desktop\" id=\"star5\"></div>\n</a>\n</td>\n<td class=\"layout2-blue\"
+        width=\"25%\" valign=\"top\" align=\"center\">\n<a href=\"/book/a-midsummer-nights-dream-by-william-shakespeare\">\n<img
+        class=\"layout\" src=\"/image/layout2/midsummer_nights_dream.jpg\" alt=\"A
+        Midsummer Night's Dream by William Shakespeare\"></a><br>\n<a href=\"/book/a-midsummer-nights-dream-by-william-shakespeare\">\n<b>A
+        Midsummer Night's Dream</b></a><br>William Shakespeare\n<br><a href=\"/book/a-midsummer-nights-dream-by-william-shakespeare\">\n<div
+        class=\"s-desktop\" id=\"star4\"></div>\n</a>\n</td>\n</tr>\n</table>\n\n<br></div></div></div>\n\n\n<div
+        id=\"leftcolumn\">\n<div class=\"innertube\">\n\n\n<strong>Popular Genres</strong>\n<div
+        id=\"glossymenu\">\n<ul class=\"glossymenu\">\n<li><a href=\"/Top_100\">Top
+        100</a></li>\n<li><a href=\"/genre/Children\">Kids</a></li>\n<li><a href=\"/genre/Fiction\">Fiction</a></li>\n<li><a
+        href=\"/genre/Fantasy\">Fantasy</a></li>\n<li><a href=\"/genre/Mystery\">Mystery</a></li>\n</ul>\n</div><br>\n\n<strong>More
+        Genres</strong>\n<div id=\"glossymenu\">\n<ul class=\"glossymenu\">\n\n<li><a
+        href=\"/genre/Adventure\">Adventure</a></li><li><a href=\"/genre/Children\">Kids</a></li><li><a
+        href=\"/genre/Comedy\">Comedy</a></li><li><a href=\"/genre/Fairy_tales\">Fairy
+        tales</a></li><li><a href=\"/genre/Fantasy\">Fantasy</a></li><li><a href=\"/genre/Fiction\">Fiction</a></li><li><a
+        href=\"/genre/Historical_Fiction\">Historical Fiction</a></li><li><a href=\"/genre/History\">History</a></li><li><a
+        href=\"/genre/Humor\">Humor</a></li><li><a href=\"/genre/Literature\">Literature</a></li><li><a
+        href=\"/genre/Mystery\">Mystery</a></li><li><a href=\"/genre/Non-fiction\">Non-fiction</a></li><li><a
+        href=\"/genre/Philosophy\">Philosophy</a></li><li><a href=\"/genre/Poetry\">Poetry</a></li><li><a
+        href=\"/genre/Romance\">Romance</a></li><li><a href=\"/genre/Religion\">Religion</a></li><li><a
+        href=\"/genre/Science_fiction\">Science fiction</a></li><li><a href=\"/genre/Short_stories\">Short
+        stories</a></li><li><a href=\"/genre/Teen_Young_adult\">Teen/Young adult</a></li><li><a
+        href=\"/genre-menu\">More...</a></li></ul>\n</div><br>\n\n<strong>Languages</strong>\n<div
+        id=\"glossymenu\">\n<ul class=\"glossymenu\">\n<li><a href=\"/language/Chinese\">Chinese</a></li><li><a
+        href=\"/language/French\">French</a></li>\n<li><a href=\"/language/German\">German</a></li>\n<li><a
+        href=\"/language/Italian\">Italian</a></li>\n<li><a href=\"/language/Japanese\">Japanese</a></li>\n<li><a
+        href=\"/language/Spanish\">Spanish</a></li>\n<li><a href=\"/language-menu\">More...</a></li>\n</ul>\n</div><br>\n\n<strong>Paid
+        Books</strong>\n<div id=\"glossymenu\">\n<ul class=\"glossymenu\">\n<li><a
+        href=\"/paid\">Best Sellers</a></li>\n<li><a href=\"/paid?tag=kids\" rel=\"nofollow\">Kid's
+        Books</a></li>\n<li><a href=\"/paid?tag=opera\" rel=\"nofollow\">Oprah's Book
+        Club</a></li>\n<li><a href=\"/paid?tag=business\" rel=\"nofollow\">Business</a></li>\n</ul>\n</div>\n\n\n</div></div>\r\n\r\n\r\n<div
+        id=\"footer\">\r\n\r\n\r\n<footer class=\"footer\">\r\n\r\n<div class=\"f-box\">\r\n\t<ul
+        class=\"f-ul\">\r\n\t\t\t<li class=\"f-social f-social-m1\">\r\n\t\t\t\t\t\t\t\t<a
+        href=\"https://www.facebook.com/MyLoyalBooks\" target=\"_blank\">\r\n\t\t\t\t\t<div
+        class=\"s-desktop\" id=\"facebook\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li
+        class=\"f-social f-social-m1\">\r\n\t\t\t\t<a href=\"https://twitter.com/LoyalBooks\"
+        target=\"_blank\">\r\n\t\t\t\t\t<div class=\"s-desktop\" id=\"twitter\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t\t\t\t<li
+        class=\"f-social f-social-m2\">\r\n\t\t\t\t<a href=\"mailto:?subject=3000%20Free%20Audio%20Books%20%26%20eBooks&body=Check%20out%20the%20free%20books%20at%20this%20site%3A%0A%0Ahttps%3A%2F%2Fwww.loyalbooks.com\"
+        target=\"_blank\">\r\n\t\t\t\t\t<div class=\"s-desktop\" id=\"email\"></div>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li
+        class=\"f-social-clear\">&copy;2026 Loyal Books | <a href=\"/about\">About</a>
+        | <a href=\"/privacy\">Privacy</a></li>\r\n\t</ul>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"f-box\">\r\n\t<ul class=\"f-ul\">\r\n\t\t<li class=\"f-title-small\"><a
+        href=\"/articles/\">Articles</a></li>\r\n\t\t<li class=\"f-title-small\"><a
+        href=\"/app\">Android & iPhone App</a></li>\r\n\t\t\t\t<li>\r\n\t\t\t<div
+        class=\"f-mobile\">\r\n\t\t\t\t\t\t<form action=\"\" method=\"post\" style=\"height:
+        25px;\"> \r\n\t\t\t<input type=\"hidden\" name=\"isMobile\" value=\"1\">\r\n\t\t\t<input
+        type=\"submit\" class=\"mobileview\" style=\"cursor: pointer;\" value=\"Mobile
+        View\">\r\n\t\t\t</form>\r\n\t\t</div>\r\n\t\t</li>\r\n\t</ul>\r\n</div>\r\n\r\n\r\n</footer>\r\n\r\n\r\n</div>\r\n<script>\r\ndocument.addEventListener(\"DOMContentLoaded\",
+        () => {\r\n  grecaptcha.enterprise.ready(async () => {\r\n    try {\r\n      const
+        token = await grecaptcha.enterprise.execute(\r\n        \"6LdgTVUsAAAAAIQTvFhKGtOKeUrFvanXSkMyxii2\",\r\n
+        \       { action: \"PAGE_LOAD\" }\r\n      );\r\n\r\n      // Send the token
+        to the backend\r\n      fetch('/recaptcha-monitor.php', {\r\n        method:
+        'POST',\r\n        headers: { 'Content-Type': 'application/json' },\r\n        body:
+        JSON.stringify({ token: token, action: 'PAGE_LOAD' })\r\n      });\r\n\r\n
+        \   } catch (e) {\r\n      console.warn(\"reCAPTCHA failed\", e);\r\n    }\r\n
+        \ });\r\n});\r\n</script>\r\n\r\n\r\n<script>(function(){function c(){var
+        b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9f815ffe4d5fcff0',t:'MTc3ODE2ODk2OQ=='};var
+        a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var
+        a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else
+        if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var
+        e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>"
+    headers:
+      CF-RAY:
+      - 9f815ffe4d5fcff0-MAD
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:49:30 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=P8VyiOKxV5HGnFvJ%2FsEGCHF3p%2F3C5S7%2B9ogbVYDKaq8sTmPVtTqR56dsNQYCKoMXMk4PvWwvgEco00rb7%2Btm8uvLMJZpkuF5nnGLVIgUF7CiG0fIGlw2XJXXd0XuhbjBCVSQcU7JH9DySMNZJHqUKpU%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '11408'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      pragma:
+      - no-cache
+      vary:
+      - User-Agent
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      A-Im:
+      - feed
+      Accept:
+      - application/atom+xml,application/rdf+xml,application/rss+xml,application/x-netcdf,application/xml;q=0.9,text/xml;q=0.2,*/*;q=0.1
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - close
+      Host:
+      - www.loyalbooks.com
+    method: GET
+    uri: https://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli/feed
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\" xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"
+        xmlns:atom=\"http://www.w3.org/2005/Atom\">\n<channel>\n\n<title><![CDATA[The
+        Prince by Niccol\xF2 Machiavelli]]></title>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<language>en-us</language>\n<copyright>&#169;
+        2026 LoyalBooks.com</copyright>\n<itunes:author>Loyal Books</itunes:author>\n\n<itunes:subtitle><![CDATA[Machiavelli
+        has created a ruthless guide on how to rule the country in his volume \"The
+        Prince\".  The book is dedicated to Lorenzo De Medici, the ruler of Florence.
+        \ The author...]]></itunes:subtitle>\n\n<itunes:summary><![CDATA[Machiavelli
+        has created a ruthless guide on how to rule the country in his volume \"The
+        Prince\".  The book is dedicated to Lorenzo De Medici, the ruler of Florence.
+        \ The author explains in simple language about the nature of great men and
+        the characters of the government.  The first chapter gives an outline of the
+        book discussing various styles of ruling as a prince, character traits that
+        a ruler should have and the political situation of Italy in the 16th century.\r\n\r\nThe
+        book is composed of 26 chapters which fall into four major sections.  In part
+        one Machiavelli discusses the four types of principalities. The first type
+        is hereditary princedoms meaning they are inherited by the ruler.  There are
+        also mixed principalities which are seized by force, civic principalities
+        which are acquired by various criminal methods and finally ecclesiastical
+        principalities influenced by the church.  Machiavelli outlines how to maintain
+        a newly acquired territory as these various types of principalities. \r\n\r\nThe
+        author details the characters of a prince for example paying close consideration
+        to the armed forces so that they help him keep his power.  There are four
+        types of armies that are identified by the author beginning with mercenaries
+        who are the hired soldiers and tend to be unreliable and dangerous.  There
+        are also auxiliaries which are the soldiers lent by other rulers, native troops
+        which are the soldiers in their own country and lastly the mixed troops which
+        will have soldiers from native troops, auxiliaries and mercenaries. \r\n\r\nMachiavelli
+        also takes a chapter to put forth the character and behavior of a prince.
+        \ In an ideal world a virtuous prince would do well.  Additionally Machiavelli
+        considers it better to be economical than to be generous, pitiless than amorous
+        and sneaky rather than sincere. \r\n\r\nReading \u201CThe Prince\u201D will
+        take you into the ruthless and cunning mind of Machiavelli as he systematically
+        describes how to conquer and rule in the 16th century Italy.  The astute reader
+        will find that Machiavelli's principals apply just as much in today's world
+        as they did hundreds of years ago.]]></itunes:summary>\n\n<description><![CDATA[Machiavelli
+        has created a ruthless guide on how to rule the country in his volume \"The
+        Prince\".  The book is dedicated to Lorenzo De Medici, the ruler of Florence.
+        \ The author explains in simple language about the nature of great men and
+        the characters of the government.  The first chapter gives an outline of the
+        book discussing various styles of ruling as a prince, character traits that
+        a ruler should have and the political situation of Italy in the 16th century.\r\n\r\nThe
+        book is composed of 26 chapters which fall into four major sections.  In part
+        one Machiavelli discusses the four types of principalities. The first type
+        is hereditary princedoms meaning they are inherited by the ruler.  There are
+        also mixed principalities which are seized by force, civic principalities
+        which are acquired by various criminal methods and finally ecclesiastical
+        principalities influenced by the church.  Machiavelli outlines how to maintain
+        a newly acquired territory as these various types of principalities. \r\n\r\nThe
+        author details the characters of a prince for example paying close consideration
+        to the armed forces so that they help him keep his power.  There are four
+        types of armies that are identified by the author beginning with mercenaries
+        who are the hired soldiers and tend to be unreliable and dangerous.  There
+        are also auxiliaries which are the soldiers lent by other rulers, native troops
+        which are the soldiers in their own country and lastly the mixed troops which
+        will have soldiers from native troops, auxiliaries and mercenaries. \r\n\r\nMachiavelli
+        also takes a chapter to put forth the character and behavior of a prince.
+        \ In an ideal world a virtuous prince would do well.  Additionally Machiavelli
+        considers it better to be economical than to be generous, pitiless than amorous
+        and sneaky rather than sincere. \r\n\r\nReading \u201CThe Prince\u201D will
+        take you into the ruthless and cunning mind of Machiavelli as he systematically
+        describes how to conquer and rule in the 16th century Italy.  The astute reader
+        will find that Machiavelli's principals apply just as much in today's world
+        as they did hundreds of years ago.]]></description>\n\n<itunes:keywords><![CDATA[The
+        Prince, Niccol\xF2 Machiavelli, loyalbooks.com, Loyal Books, audio books,
+        audiobook, free audio books, ebooks]]></itunes:keywords>\n\n<itunes:explicit>clean</itunes:explicit>\n\n<itunes:owner>\n<itunes:name>Loyal
+        Books</itunes:name>\n<itunes:email>feeds@loyalbooks.com</itunes:email>\n</itunes:owner>\n\n<itunes:image
+        href=\"http://www.loyalbooks.com/image/feed/81.jpg\" />\n<image>\n<url>http://www.loyalbooks.com/image/feed/81.jpg</url>\n<title><![CDATA[The
+        Prince by Niccol\xF2 Machiavelli]]></title>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n</image>\n\n<atom:link
+        href=\"http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli/feed\"
+        rel=\"self\" type=\"application/rss+xml\" />\n\n<itunes:category text=\"Arts\">\n<itunes:category
+        text=\"Literature\" />\n</itunes:category>\n\n<ttl>43,200</ttl>\n\n<item>\n<title><![CDATA[01
+        - Dedication; Chapters 1 - 5]]></title>\n<itunes:author><![CDATA[Niccol\xF2
+        Machiavelli]]></itunes:author>\n<itunes:summary>More great books at LoyalBooks.com</itunes:summary>\n<description>More
+        great books at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_01_machiavelli_64kb.mp3\"
+        length=\"16000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_01_machiavelli_64kb.mp3</guid>\n<pubDate>Fri,
+        02 Jan 2026 00:00:00 +0000</pubDate>\n<itunes:duration>34:10</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[02
+        - Chapters 6 - 11]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_02_machiavelli_64kb.mp3\"
+        length=\"25000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_02_machiavelli_64kb.mp3</guid>\n<pubDate>Thu,
+        01 Jan 2026 00:00:00 +0000</pubDate>\n<itunes:duration>53:51</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[03
+        - Chapters 12 - 13]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_03_machiavelli_64kb.mp3\"
+        length=\"9000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_03_machiavelli_64kb.mp3</guid>\n<pubDate>Wed,
+        31 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>19:20</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[04
+        - Chapters 14 - 17]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_04_machiavelli_64kb.mp3\"
+        length=\"10000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_04_machiavelli_64kb.mp3</guid>\n<pubDate>Tue,
+        30 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>21:51</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[05
+        - Chapters 18 - 19]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_05_machiavelli_64kb.mp3\"
+        length=\"14000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_05_machiavelli_64kb.mp3</guid>\n<pubDate>Mon,
+        29 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>30:11</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[06
+        - Chapters 20 - 22]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_06_machiavelli_64kb.mp3\"
+        length=\"10000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_06_machiavelli_64kb.mp3</guid>\n<pubDate>Sun,
+        28 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>21:50</itunes:duration>\n</item>\n\n<item>\n<title><![CDATA[07
+        - Chapters 23 - 26]]></title>\n<itunes:author><![CDATA[Niccol\xF2 Machiavelli]]></itunes:author>\n<itunes:summary>More
+        great books at LoyalBooks.com</itunes:summary>\n<description>More great books
+        at LoyalBooks.com</description>\n<link>http://www.loyalbooks.com/book/the-prince-by-niccolo-machiavelli</link>\n<enclosure
+        url=\"http://www.archive.org/download/prince_bn_librivox/prince_07_machiavelli_64kb.mp3\"
+        length=\"11000000\" type=\"audio/mpeg\" />\n<guid>http://www.archive.org/download/prince_bn_librivox/prince_07_machiavelli_64kb.mp3</guid>\n<pubDate>Sat,
+        27 Dec 2025 00:00:00 +0000</pubDate>\n<itunes:duration>24:55</itunes:duration>\n</item>\n\n</channel>\n</rss>"
+    headers:
+      CF-RAY:
+      - 9f8160000bd1c912-MAD
+      Cache-Control:
+      - max-age=172800
+      Connection:
+      - close
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Thu, 07 May 2026 15:49:30 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fHx%2Fr%2F79mJGqINHp6JcuIecKqPBuiA9y%2B3tm8ttwojHAjYpJ%2BC9BeFznnCav4Ce2n0K0Axy2QoDDMr3Iq3eRX1xvNIyqY06%2BMpXVh5mZ2NcOA%2BByuNCY5NgX8%2FA6nF1njwjz73sFbJditzuUMBonBGY%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '10499'
+      expires:
+      - Sat, 09 May 2026 15:49:30 GMT
+      vary:
+      - User-Agent
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -15,13 +15,15 @@ dependencies = [
     "bs4",
     "feedparser",
     "rapidfuzz",
-    "requests-cache",
     "site-map-parser",
     "click>=8.0",
+    "mediavocab>=1.0.0",
 ]
 
 [project.optional-dependencies]
+test = ["pytest", "vcrpy", "pytest-vcr"]
 youtube = ["tutubo"]
+stealth = ["curl-cffi", "unblock_requests"]
 
 [project.scripts]
 audiobooker = "audiobooker.cli:cli"

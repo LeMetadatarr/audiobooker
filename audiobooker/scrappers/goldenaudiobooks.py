@@ -4,15 +4,23 @@ from audiobooker.base import AudioBook, BookAuthor
 from audiobooker.scrappers import AudioBookSource
 from audiobooker.utils import get_soup, normalize_name, iter_sitemap_urls
 
-_ROOT_SITEMAP = "https://goldenaudiobook.co/sitemap.xml"
-_FRONT_PAGE = "https://goldenaudiobook.co"
+_ROOT_SITEMAP = "https://goldenaudiobooks.com/sitemap_index.xml"
+_FRONT_PAGE = "https://goldenaudiobooks.com"
 
 
-def _iter_post_sitemaps():
-    """Yield all post-sitemap leaf URLs from the root sitemap index."""
+def _iter_book_urls():
+    """Yield candidate book leaf URLs from the root sitemap index.
+
+    The sitemap index transparently expands post-sitemap, page-sitemap, etc.
+    We filter to URLs that look like individual book post pages.
+    """
     for url in iter_sitemap_urls(_ROOT_SITEMAP):
-        if "post-sitemap" in url:
-            yield url
+        # skip non-book pages (front page, category, tag, author, attachment)
+        if any(p in url for p in ("/category/", "/tag/", "/author/", "/page/", "/wp-content/")):
+            continue
+        if url.rstrip("/") == _FRONT_PAGE:
+            continue
+        yield url
 
 
 @dataclass
@@ -84,11 +92,10 @@ class GoldenAudioBooks(AudioBookSource):
                 continue
 
     def iterate_all(self):
-        for sitemap_url in _iter_post_sitemaps():
-            for url in iter_sitemap_urls(sitemap_url):
-                try:
-                    book = GoldenAudioBooksAudioBook(url=url).parse_page()
-                    if book:
-                        yield self._tag(book)
-                except Exception:
-                    continue
+        for url in _iter_book_urls():
+            try:
+                book = GoldenAudioBooksAudioBook(url=url).parse_page()
+                if book:
+                    yield self._tag(book)
+            except Exception:
+                continue
