@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a3](https://github.com/TigreGotico/audiobooker/tree/0.9.0a3) (2026-07-30)
+
+[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.9.0a2...0.9.0a3)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#24](https://github.com/TigreGotico/audiobooker/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a2](https://github.com/TigreGotico/audiobooker/tree/0.9.0a2) (2026-06-23)
 
 [Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.9.0a1...0.9.0a2)
