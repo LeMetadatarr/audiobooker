@@ -8,8 +8,9 @@ pip install audiobooker[youtube]
 pip install tutubo
 ```
 
-When installed, `TheCybrarian`, `HorrorBabble`, and `TheDustyTome` are
-automatically added to `ALL_SOURCES` and participate in every `search*()` call.
+When installed, `TheCybrarian` and `HorrorBabble` are automatically added to
+`ALL_SOURCES` and participate in every `search*()` call. `TheDustyTome` is not
+in `ALL_SOURCES`; pass it explicitly via `sources=` (see below).
 
 ## Pre-configured channels
 
@@ -60,8 +61,8 @@ for book in TheDustyTome().iterate_all():
 
 - Channel: [@TheDustyTome](https://www.youtube.com/@TheDustyTome)
 - Authors: extracted per-video (falls back to empty)
-- Tags: Classic Literature, Fantasy, Audiobook
-- `min_runtime`: 300 s
+- Tags: Classic Literature, Horror, Weird Fiction, Audiobook
+- `min_runtime`: 600 s (10 minutes)
 
 ## YoutubeChannelSource
 

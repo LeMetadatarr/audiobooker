@@ -17,16 +17,37 @@ class AudioBook:
     tags: List[str] = field(default_factory=list)
     streams: List[str] = field(default_factory=list)   # direct audio URLs
     narrator: Optional[AudiobookNarrator] = None
+    narrators: List[AudiobookNarrator] = field(default_factory=list)
+    chapters: List[AudioBookChapter] = field(default_factory=list)
+    genres: List[str] = field(default_factory=list)
     year: int = 0
     runtime: int = 0           # seconds (where available)
     source: str = ""           # set automatically by the scraper, e.g. "Librivox"
     score: float = 0.0         # relevance score from last search (0..1)
+    codec: str = ""            # audio codec of the primary stream, when known
+    bitrate: str = ""          # bitrate of the primary stream, when known
+    external_ids: dict = field(default_factory=dict)   # e.g. librivox_id, gutenberg_id
 ```
+
+`__post_init__` normalises `language` and reconciles the singular `narrator`
+with the plural `narrators` list so callers can use either one.
+
+### stable_id()
+
+```python
+book.stable_id() -> str
+```
+
+A deterministic SHA-256-derived hex digest of `title + authors`, truncated to
+16 characters. Stable across processes and Python versions, unlike the
+built-in `hash()`. Used as the cache directory name (see
+[cache.md](cache.md)) and the index deduplication key.
 
 ### Equality and hashing
 
-`AudioBook.__hash__` and `__eq__` are keyed on `(title.lower(), sorted authors)`.
-Use a `set` to deduplicate across sources:
+`AudioBook.__hash__` and `__eq__` are both derived from `stable_id()`
+(title + authors), so two books with the same title and authors compare
+equal regardless of source. Use a `set` to deduplicate across sources:
 
 ```python
 seen = set()
@@ -63,6 +84,18 @@ from audiobooker.base import AudiobookNarrator
 
 n = AudiobookNarrator(first_name="Frank", last_name="Muller")
 ```
+
+## AudioBookChapter
+
+```python
+from audiobooker.base import AudioBookChapter
+
+c = AudioBookChapter(title="Chapter 1", offset=0.0, runtime=612.0, stream="https://...")
+```
+
+A single chapter or section of an audiobook. `offset` is the start position
+in seconds from the beginning of the book; `runtime` is the chapter duration
+in seconds; `stream` is the per-chapter audio URL when known.
 
 ## AudioBookSource
 
