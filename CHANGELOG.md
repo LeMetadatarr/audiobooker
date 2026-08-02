@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a5](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a5) (2026-08-02)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a4...0.9.0a5)
+
+**Merged pull requests:**
+
+- fix: pin mediavocab\>=2.0.0a0 \(2.x prerelease has the API audiobooker targets\) [\#27](https://github.com/LeMetadatarr/audiobooker/pull/27) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a4](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a4) (2026-08-02)
 
 [Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a3...0.9.0a4)
