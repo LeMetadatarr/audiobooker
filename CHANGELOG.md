@@ -1,36 +1,44 @@
 # Changelog
 
-## [0.9.0a3](https://github.com/TigreGotico/audiobooker/tree/0.9.0a3) (2026-07-30)
+## [0.9.0a4](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a4) (2026-08-02)
 
-[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.9.0a2...0.9.0a3)
-
-**Merged pull requests:**
-
-- docs: rewrite README in Simplified Technical English [\#24](https://github.com/TigreGotico/audiobooker/pull/24) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.9.0a2](https://github.com/TigreGotico/audiobooker/tree/0.9.0a2) (2026-06-23)
-
-[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.9.0a1...0.9.0a2)
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a3...0.9.0a4)
 
 **Merged pull requests:**
 
-- chore: migrate to mediavocab 1.0 [\#18](https://github.com/TigreGotico/audiobooker/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+- docs: QA pass — accuracy, org-move URLs, related projects [\#26](https://github.com/LeMetadatarr/audiobooker/pull/26) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.9.0a1](https://github.com/TigreGotico/audiobooker/tree/0.9.0a1) (2026-05-29)
+## [0.9.0a3](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a3) (2026-07-30)
 
-[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.8.0a1...0.9.0a1)
-
-**Merged pull requests:**
-
-- feat: route HTTP through unblock\_requests CloudflareSession via soft-import [\#19](https://github.com/TigreGotico/audiobooker/pull/19) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.8.0a1](https://github.com/TigreGotico/audiobooker/tree/0.8.0a1) (2026-05-07)
-
-[Full Changelog](https://github.com/TigreGotico/audiobooker/compare/0.7.0...0.8.0a1)
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a2...0.9.0a3)
 
 **Merged pull requests:**
 
-- feat: declare mediavocab as hard runtime dep [\#14](https://github.com/TigreGotico/audiobooker/pull/14) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#24](https://github.com/LeMetadatarr/audiobooker/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.9.0a2](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a2) (2026-06-23)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a1...0.9.0a2)
+
+**Merged pull requests:**
+
+- chore: migrate to mediavocab 1.0 [\#18](https://github.com/LeMetadatarr/audiobooker/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.9.0a1](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a1) (2026-05-29)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.8.0a1...0.9.0a1)
+
+**Merged pull requests:**
+
+- feat: route HTTP through unblock\_requests CloudflareSession via soft-import [\#19](https://github.com/LeMetadatarr/audiobooker/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.8.0a1](https://github.com/LeMetadatarr/audiobooker/tree/0.8.0a1) (2026-05-07)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.7.0...0.8.0a1)
+
+**Merged pull requests:**
+
+- feat: declare mediavocab as hard runtime dep [\#14](https://github.com/LeMetadatarr/audiobooker/pull/14) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
