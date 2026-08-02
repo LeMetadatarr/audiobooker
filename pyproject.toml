@@ -29,8 +29,8 @@ stealth = ["curl-cffi", "unblock_requests"]
 audiobooker = "audiobooker.cli:cli"
 
 [project.urls]
-Homepage = "https://github.com/OpenJarbas/audiobooker"
-Repository = "https://github.com/OpenJarbas/audiobooker"
+Homepage = "https://github.com/LeMetadatarr/audiobooker"
+Repository = "https://github.com/LeMetadatarr/audiobooker"
 
 [tool.setuptools.packages.find]
 where = ["."]

@@ -10,7 +10,7 @@ Optional extras:
 
 | Extra | Installs | Enables |
 |---|---|---|
-| `[youtube]` | tutubo | `TheCybrarian`, `HorrorBabble`, `YoutubeChannelSource` |
+| `[youtube]` | tutubo | `TheCybrarian`, `HorrorBabble`, `TheDustyTome`, `YoutubeChannelSource` |
 | `[stealth]` | curl-cffi | TLS-fingerprint transport to bypass bot protection |
 | `[test]` | pytest, vcrpy, pytest-vcr | running the test suite |
 
@@ -59,7 +59,7 @@ All accept `sources`, `max_per_source`, `timeout`, `deduplicate`. See
 from audiobooker.scrappers.librivox import Librivox
 
 lv = Librivox()
-for book in lv.search_by_author("Lovecraft", max_per_source=5):
+for book in lv.search_by_author("Lovecraft"):
     print(book.title, book.runtime, "s")
 ```
 

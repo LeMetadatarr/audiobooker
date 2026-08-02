@@ -1,16 +1,22 @@
 # HTTP Transport
 
-`default_session()`, defined in `audiobooker/transport.py:22`.
+`default_session()`, defined in `audiobooker/transport.py`, builds a session
+you can inject into any scraper. It is not applied automatically — without
+explicit injection, every scraper uses the shared class-level
+`AudioBookSource.session`, a plain `requests.Session`.
 
-Returns the HTTP session used by all scrapers. Two backends are supported:
+`default_session()` picks a backend in this order:
 
-| Backend | When used | Package |
+| Backend | Chosen when | Package |
 |---|---|---|
-| `requests.Session` | default | `requests` (always installed) |
 | `curl_cffi.requests.Session` | `AUDIOBOOKER_TRANSPORT=curl_cffi` + package importable | `pip install audiobooker[stealth]` |
+| `unblock_requests.CloudflareSession` | `unblock_requests` importable | `pip install audiobooker[stealth]` |
+| `requests.Session` | fallback | `requests` (always installed) |
 
-`curl_cffi` impersonates a real browser TLS fingerprint and can bypass
-bot-protection on scraping targets that reject `requests`.
+`curl_cffi` impersonates a real browser TLS fingerprint. `unblock_requests`
+routes through anti-bot bypass with a Wayback Machine fallback. Both are
+optional; `default_session()` falls back to plain `requests` when neither is
+installed.
 
 ## Environment variable
 
@@ -22,13 +28,26 @@ pip install audiobooker[stealth]
 AUDIOBOOKER_TRANSPORT=curl_cffi python myscript.py
 ```
 
-If `AUDIOBOOKER_TRANSPORT=curl_cffi` is set but `curl_cffi` is not installed,
-`default_session()` silently falls back to a plain `requests.Session`.
+Setting `AUDIOBOOKER_TRANSPORT` only affects what `default_session()`
+returns; it has no effect until you call `default_session()` and inject the
+result into a scraper (see below). If `AUDIOBOOKER_TRANSPORT=curl_cffi` is
+set but `curl_cffi` is not installed, `default_session()` silently falls
+back to the next backend.
+
+```python
+import os
+os.environ["AUDIOBOOKER_TRANSPORT"] = "curl_cffi"
+
+from audiobooker.transport import default_session
+from audiobooker.scrappers.librivox import Librivox
+
+lv = Librivox(session=default_session())
+```
 
 ## Per-instance injection
 
 Every `AudioBookSource.__init__` accepts an optional `session` parameter, in
-`audiobooker/scrappers/__init__.py:21`.
+`audiobooker/scrappers/__init__.py:22`.
 
 ```python
 from curl_cffi import requests as cffi_requests

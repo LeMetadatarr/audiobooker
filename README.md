@@ -45,6 +45,11 @@ for book in search("Lovecraft", max_per_source=5, timeout=30):
 |---|---|---|
 | `TheCybrarian` | @TheCybrarian | Robert E. Howard fiction |
 | `HorrorBabble` | @HorrorBabble | Horror short fiction |
+| `TheDustyTome` | @TheDustyTome | Classic literature, horror, and weird fiction |
+
+`TheCybrarian` and `HorrorBabble` are added to `ALL_SOURCES` automatically.
+`TheDustyTome` must be passed explicitly via `sources=`. See
+[docs/youtube.md](docs/youtube.md).
 
 ## Python API
 
@@ -101,17 +106,28 @@ See [docs/converters.md](docs/converters.md) for the full field mapping.
 
 ## HTTP transport
 
-By default every scraper uses a `requests.Session` with a randomised
-`User-Agent`. Two ways to override:
+By default every scraper uses a shared `requests.Session` with a randomised
+`User-Agent`. To use a different backend, build a session and inject it into
+the scraper instance — this is not automatic, you must pass it explicitly.
 
-**Environment variable**, set before any import:
+**Stealth backend**, for sites that fingerprint the TLS handshake:
 ```bash
-AUDIOBOOKER_TRANSPORT=curl_cffi python myscript.py
+pip install audiobooker[stealth]
 ```
-Falls back to plain `requests` if `curl_cffi` is not installed. Install with
-`pip install audiobooker[stealth]`.
+```python
+import os
+os.environ["AUDIOBOOKER_TRANSPORT"] = "curl_cffi"
 
-**Per-instance injection**, pass any `requests`-compatible session:
+from audiobooker.transport import default_session
+from audiobooker.scrappers.librivox import Librivox
+
+lv = Librivox(session=default_session())
+```
+`default_session()` returns a `curl_cffi`-backed session when
+`AUDIOBOOKER_TRANSPORT=curl_cffi` is set and `curl_cffi` is importable, and
+falls back to plain `requests` otherwise.
+
+**Per-instance injection**, pass any `requests`-compatible session directly:
 ```python
 from curl_cffi import requests as cffi_requests
 from audiobooker.scrappers.librivox import Librivox
@@ -120,8 +136,7 @@ session = cffi_requests.Session(impersonate="chrome")
 lv = Librivox(session=session)
 ```
 
-`default_session()` from `audiobooker.transport` respects `AUDIOBOOKER_TRANSPORT`
-and returns the matching session type (`audiobooker/transport.py:1`).
+See [docs/transport.md](docs/transport.md) for the full backend list.
 
 ## Local index
 
@@ -147,7 +162,7 @@ audiobooker search <query>
     --timeout seconds (default 30)
     -v        verbose (tags, narrator, stream URLs)
 
-audiobooker index build [--sources librivox loyalbooks ...]
+audiobooker index build [--sources librivox --sources loyalbooks ...]
 audiobooker index update
 audiobooker index search <query> [--method ...] [-n N]
 audiobooker index stats
@@ -182,6 +197,13 @@ Full documentation is in [`/docs/`](docs/README.md):
 
 Runnable examples are in [`/examples/`](examples/), numbered 01 to 10 from
 quickstart to advanced index usage.
+
+## Related projects
+
+- [tutubo](https://github.com/LeMetadatarr/tutubo): YouTube channel/playlist
+  scraping, used by the `[youtube]` extra.
+- [unblock_requests](https://github.com/LeMetadatarr/unblock_requests): IP
+  rotation and Cloudflare bypass, used by the `[stealth]` extra.
 
 ## Error handling
 
