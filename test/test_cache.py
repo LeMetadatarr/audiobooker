@@ -78,6 +78,21 @@ class TestSerialisation(unittest.TestCase):
         book2 = _meta_to_book(meta)
         self.assertEqual(book2.narrator.last_name, "June")
 
+    def test_meta_roundtrip_preserves_genres_codec_bitrate_external_ids(self):
+        """Regression: these fields used to be dropped by _book_to_meta,
+        so a book's meta.json on disk silently lost them."""
+        book = _book()
+        book.genres = ["Horror", "Weird Fiction"]
+        book.codec = "mp3"
+        book.bitrate = "128kbps"
+        book.external_ids = {"librivox_id": "12345"}
+        meta = _book_to_meta(book)
+        book2 = _meta_to_book(meta)
+        self.assertEqual(book2.genres, ["Horror", "Weird Fiction"])
+        self.assertEqual(book2.codec, "mp3")
+        self.assertEqual(book2.bitrate, "128kbps")
+        self.assertEqual(book2.external_ids, {"librivox_id": "12345"})
+
 
 # ---------------------------------------------------------------------------
 # is_cached / cached_paths

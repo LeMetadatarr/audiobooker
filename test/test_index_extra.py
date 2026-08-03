@@ -244,6 +244,69 @@ class TestFtsFallbackPaths(unittest.TestCase):
             Path(path).unlink(missing_ok=True)
 
 
+class TestExtendedFieldRoundTrip(unittest.TestCase):
+    """Regression test: genres/codec/bitrate/external_ids/narrators/chapters
+    used to be silently dropped when a book was written to and read back
+    from the SQLite index (no columns existed for them)."""
+
+    def test_extended_fields_survive_round_trip(self):
+        from audiobooker.base import AudioBookChapter
+
+        book = AudioBook(
+            title="The Call of Cthulhu",
+            authors=[BookAuthor(first_name="H. P.", last_name="Lovecraft")],
+            tags=["Horror"],
+            narrators=[AudiobookNarrator(first_name="Wayne", last_name="June"),
+                       AudiobookNarrator(first_name="Ian", last_name="Fraser")],
+            source="TestSource",
+            language="en",
+            runtime=3600,
+            streams=["http://x/a.mp3"],
+            genres=["Horror", "Weird Fiction"],
+            codec="mp3",
+            bitrate="128kbps",
+            external_ids={"librivox_id": "12345"},
+            chapters=[AudioBookChapter(title="Part 1", offset=0.0, runtime=1800.0,
+                                       stream="http://x/a.mp3", image="")],
+        )
+        idx, path = _make_index([book])
+        try:
+            [restored] = idx.search_by_title("Cthulhu", max_results=1)
+            self.assertEqual(restored.genres, ["Horror", "Weird Fiction"])
+            self.assertEqual(restored.codec, "mp3")
+            self.assertEqual(restored.bitrate, "128kbps")
+            self.assertEqual(restored.external_ids, {"librivox_id": "12345"})
+            self.assertEqual(len(restored.narrators), 2)
+            self.assertEqual(restored.narrators[0].first_name, "Wayne")
+            self.assertEqual(len(restored.chapters), 1)
+            self.assertEqual(restored.chapters[0].title, "Part 1")
+            self.assertEqual(restored.chapters[0].runtime, 1800.0)
+        finally:
+            idx.close()
+            Path(path).unlink(missing_ok=True)
+
+    def test_extended_fields_default_empty_on_update(self):
+        """_upsert_if_new (used by update()) must also persist the extended
+        fields, not just _upsert (used by build())."""
+        idx, path = _make_index([])
+        try:
+            book = AudioBook(title="Faust", authors=[BookAuthor(last_name="Goethe")],
+                             genres=["Drama"], codec="mp3", bitrate="64kbps",
+                             external_ids={"gutenberg_id": "9"})
+            row_id = idx._upsert_if_new(book)
+            self.assertIsNotNone(row_id)
+            idx._con.commit()
+            idx._fts_insert_ids([row_id])
+            [restored] = idx.iterate_all()
+            self.assertEqual(restored.genres, ["Drama"])
+            self.assertEqual(restored.codec, "mp3")
+            self.assertEqual(restored.bitrate, "64kbps")
+            self.assertEqual(restored.external_ids, {"gutenberg_id": "9"})
+        finally:
+            idx.close()
+            Path(path).unlink(missing_ok=True)
+
+
 class TestRepr(unittest.TestCase):
     def test_repr_and_len(self):
         idx, path = _make_index([_b("X")])
