@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a7](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a7) (2026-08-03)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a6...0.9.0a7)
+
+**Merged pull requests:**
+
+- ci: grant conventional-label workflow write permissions [\#29](https://github.com/LeMetadatarr/audiobooker/pull/29) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a6](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a6) (2026-08-03)
 
 [Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a5...0.9.0a6)
