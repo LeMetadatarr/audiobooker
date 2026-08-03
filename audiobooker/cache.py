@@ -89,6 +89,10 @@ def _book_to_meta(book) -> dict:
         "narrator":    ({"first_name": book.narrator.first_name,
                          "last_name":  book.narrator.last_name}
                         if book.narrator else None),
+        "genres":       book.genres,
+        "codec":        book.codec,
+        "bitrate":      book.bitrate,
+        "external_ids": book.external_ids,
     }
 
 
@@ -108,6 +112,10 @@ def _meta_to_book(meta: dict):
         tags=meta.get("tags", []),
         authors=[BookAuthor(**a) for a in meta.get("authors", [])],
         narrator=narrator,
+        genres=meta.get("genres", []),
+        codec=meta.get("codec", ""),
+        bitrate=meta.get("bitrate", ""),
+        external_ids=meta.get("external_ids", {}),
     )
 
 

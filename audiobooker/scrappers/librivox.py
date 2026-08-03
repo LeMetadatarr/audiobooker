@@ -141,11 +141,17 @@ def _build_book(k: dict, session=None) -> AudioBook:
 class Librivox(AudioBookSource):
 
     def iterate_all(self, offset=0, max_offset=100000) -> Iterable[AudioBook]:
-        data = _api_get({"offset": offset}, session=self.session)
-        for k in data.get("books", []):
-            yield self._tag(_build_book(k, session=self.session))
-        if offset < max_offset and data.get("books"):
-            yield from self.iterate_all(offset + 50, max_offset)
+        # Iterative, not recursive: max_offset=100000 at a page size of 50
+        # is 2000 pages, which would blow Python's default recursion limit
+        # (1000) if each page were fetched via a recursive ``yield from``.
+        while True:
+            data = _api_get({"offset": offset}, session=self.session)
+            books = data.get("books", [])
+            for k in books:
+                yield self._tag(_build_book(k, session=self.session))
+            offset += 50
+            if offset > max_offset or not books:
+                break
 
     def search_by_author(self, query) -> Iterable[AudioBook]:
         for k in _api_get({"author": query}, session=self.session).get("books", []):

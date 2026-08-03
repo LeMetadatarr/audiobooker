@@ -41,7 +41,7 @@ import time
 from pathlib import Path
 from typing import Iterable, List, Optional
 
-from audiobooker.base import AudioBook, BookAuthor, AudiobookNarrator
+from audiobooker.base import AudioBook, AudioBookChapter, BookAuthor, AudiobookNarrator
 from audiobooker.utils import score_book
 
 _DEFAULT_DB = Path("~/.audiobooker/index.db").expanduser()
@@ -79,6 +79,12 @@ CREATE TABLE IF NOT EXISTS books (
     tags          TEXT DEFAULT '[]',
     authors       TEXT DEFAULT '[]',
     narrator      TEXT,
+    narrators     TEXT DEFAULT '[]',
+    genres        TEXT DEFAULT '[]',
+    codec         TEXT DEFAULT '',
+    bitrate       TEXT DEFAULT '',
+    external_ids  TEXT DEFAULT '{}',
+    chapters      TEXT DEFAULT '[]',
     -- Flattened plaintext copies for FTS indexing
     authors_text  TEXT DEFAULT '',
     tags_text     TEXT DEFAULT '',
@@ -142,6 +148,16 @@ def _book_to_row(book: AudioBook) -> dict:
                                       "last_name":  a.last_name}
                                      for a in book.authors]),
         "narrator":      narrator_json,
+        "narrators":     json.dumps([{"first_name": n.first_name,
+                                      "last_name":  n.last_name}
+                                     for n in book.narrators]),
+        "genres":        json.dumps(book.genres),
+        "codec":         book.codec,
+        "bitrate":       book.bitrate,
+        "external_ids":  json.dumps(book.external_ids),
+        "chapters":      json.dumps([{"title": c.title, "offset": c.offset,
+                                      "runtime": c.runtime, "stream": c.stream,
+                                      "image": c.image} for c in book.chapters]),
         "authors_text":  _flatten_authors(book),
         "tags_text":     _flatten_tags(book),
         "narrator_text": _flatten_narrator(book),
@@ -153,6 +169,10 @@ def _row_to_book(row: sqlite3.Row) -> AudioBook:
     narrator = None
     if row["narrator"]:
         narrator = AudiobookNarrator(**json.loads(row["narrator"]))
+    narrators = [AudiobookNarrator(**n) for n in json.loads(row["narrators"])] \
+        if row["narrators"] else []
+    chapters = [AudioBookChapter(**c) for c in json.loads(row["chapters"])] \
+        if row["chapters"] else []
     return AudioBook(
         title=row["title"],
         description=row["description"],
@@ -165,6 +185,12 @@ def _row_to_book(row: sqlite3.Row) -> AudioBook:
         tags=json.loads(row["tags"]),
         authors=authors,
         narrator=narrator,
+        narrators=narrators,
+        genres=json.loads(row["genres"]) if row["genres"] else [],
+        codec=row["codec"] or "",
+        bitrate=row["bitrate"] or "",
+        external_ids=json.loads(row["external_ids"]) if row["external_ids"] else {},
+        chapters=chapters,
     )
 
 
@@ -295,11 +321,13 @@ class BookIndex:
         self._con.execute("""
             INSERT OR REPLACE INTO books
               (hash, title, description, image, language, year, runtime,
-               source, streams, tags, authors, narrator,
+               source, streams, tags, authors, narrator, narrators,
+               genres, codec, bitrate, external_ids, chapters,
                authors_text, tags_text, narrator_text)
             VALUES
               (:hash, :title, :description, :image, :language, :year, :runtime,
-               :source, :streams, :tags, :authors, :narrator,
+               :source, :streams, :tags, :authors, :narrator, :narrators,
+               :genres, :codec, :bitrate, :external_ids, :chapters,
                :authors_text, :tags_text, :narrator_text)
         """, row)
 
@@ -315,11 +343,13 @@ class BookIndex:
         cur = self._con.execute("""
             INSERT INTO books
               (hash, title, description, image, language, year, runtime,
-               source, streams, tags, authors, narrator,
+               source, streams, tags, authors, narrator, narrators,
+               genres, codec, bitrate, external_ids, chapters,
                authors_text, tags_text, narrator_text)
             VALUES
               (:hash, :title, :description, :image, :language, :year, :runtime,
-               :source, :streams, :tags, :authors, :narrator,
+               :source, :streams, :tags, :authors, :narrator, :narrators,
+               :genres, :codec, :bitrate, :external_ids, :chapters,
                :authors_text, :tags_text, :narrator_text)
         """, row)
         return cur.lastrowid

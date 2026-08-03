@@ -278,6 +278,40 @@ class TestLibrivox(unittest.TestCase):
                    return_value={}):
             self.assertEqual(list(Librivox().iterate_all()), [])
 
+    def test_iterate_all_paginates_without_recursion(self):
+        """Regression: iterate_all() used to page via a recursive
+        ``yield from self.iterate_all(offset + 50, ...)`` call. With the
+        default max_offset=100000 (2000 pages of 50), that blew Python's
+        default recursion limit (RecursionError) long before reaching the
+        real end of a large catalogue. It must page iteratively instead."""
+        calls = {"n": 0}
+
+        def fake_api_get(params, session=None):
+            calls["n"] += 1
+            offset = params.get("offset", 0)
+            if offset >= 60000:
+                return {"books": []}
+            return {"books": [{"title": f"book{offset}", "sections": [],
+                               "authors": [], "url_rss": ""}]}
+
+        with patch("audiobooker.scrappers.librivox._api_get",
+                   side_effect=fake_api_get), \
+             patch("audiobooker.scrappers.librivox._section_streams",
+                   return_value=[]):
+            books = list(Librivox().iterate_all(max_offset=100000))
+        self.assertEqual(len(books), 1200)
+        self.assertEqual(calls["n"], 1201)
+
+    def test_iterate_all_stops_at_max_offset(self):
+        with patch("audiobooker.scrappers.librivox._api_get",
+                   return_value={"books": [{"title": "x", "sections": [],
+                                            "authors": [], "url_rss": ""}]}), \
+             patch("audiobooker.scrappers.librivox._section_streams",
+                   return_value=[]):
+            books = list(Librivox().iterate_all(offset=0, max_offset=100))
+        # offsets 0, 50, 100 => 3 pages before offset (150) exceeds max_offset
+        self.assertEqual(len(books), 3)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -50,7 +50,7 @@ def get_html(url, **kwargs):
     except Exception:
         try:
             return AudioBookSource.session.get(url, verify=False, **kwargs).text
-        except:
+        except Exception:
             return None
 
 
