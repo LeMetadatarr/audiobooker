@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a6](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a6) (2026-08-03)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a5...0.9.0a6)
+
+**Merged pull requests:**
+
+- fix: migrate to mediavocab 2.x license\_model overlay [\#28](https://github.com/LeMetadatarr/audiobooker/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a5](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a5) (2026-08-02)
 
 [Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a4...0.9.0a5)
