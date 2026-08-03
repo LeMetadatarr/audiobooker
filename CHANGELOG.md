@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a8](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a8) (2026-08-03)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a7...0.9.0a8)
+
+**Merged pull requests:**
+
+- deep: bugs, real-fixture tests, docs/examples [\#30](https://github.com/LeMetadatarr/audiobooker/pull/30) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a7](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a7) (2026-08-03)
 
 [Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a6...0.9.0a7)
