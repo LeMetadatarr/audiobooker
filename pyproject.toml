@@ -17,7 +17,7 @@ dependencies = [
     "rapidfuzz",
     "site-map-parser",
     "click>=8.0",
-    "mediavocab>=2.0.0a0",
+    "mediavocab>=2.0.0a2",
 ]
 
 [project.optional-dependencies]
