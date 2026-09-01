@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.1a1](https://github.com/LeMetadatarr/audiobooker/tree/0.9.1a1) (2026-09-01)
+
+[Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a8...0.9.1a1)
+
+**Merged pull requests:**
+
+- fix: follow the mediavocab 2.x license model [\#31](https://github.com/LeMetadatarr/audiobooker/pull/31) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.9.0a8](https://github.com/LeMetadatarr/audiobooker/tree/0.9.0a8) (2026-08-03)
 
 [Full Changelog](https://github.com/LeMetadatarr/audiobooker/compare/0.9.0a7...0.9.0a8)
